@@ -1,0 +1,14 @@
+{
+	"category" : "HLR",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "<historical>",
+	"instvars" : [
+		 ],
+	"name" : "HLR",
+	"pools" : [
+		 ],
+	"super" : "Object",
+	"type" : "normal" }
