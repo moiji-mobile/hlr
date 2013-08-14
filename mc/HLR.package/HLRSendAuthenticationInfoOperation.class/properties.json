@@ -9,7 +9,8 @@
 		"imsi",
 		"formatResponse",
 		"database",
-		"dialogue" ],
+		"dialogue",
+		"vectors" ],
 	"name" : "HLRSendAuthenticationInfoOperation",
 	"pools" : [
 		 ],

@@ -5,7 +5,7 @@ execute
 		imsi: imsi;
 		onSuccess: [:subscriber |
 			| tripletList |
-			tripletList := self generateAuthenticationListFor: subscriber count: 4.
+			tripletList := self generateAuthenticationListFor: subscriber count: vectors.
 			dialogue returnLast: (formatResponse value: tripletList).
 		];
 		onFailure: [:reason |
