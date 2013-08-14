@@ -6,11 +6,9 @@
 		 ],
 	"commentStamp" : "<historical>",
 	"instvars" : [
-		"e164",
-		"pointCode",
-		"database" ],
-	"name" : "HLR",
+		 ],
+	"name" : "LogAreaHLR",
 	"pools" : [
 		 ],
-	"super" : "Object",
+	"super" : "LogArea",
 	"type" : "normal" }

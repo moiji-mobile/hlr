@@ -1,0 +1,3 @@
+access
+msisdn
+	^msisdn

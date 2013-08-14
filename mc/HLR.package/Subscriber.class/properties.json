@@ -1,0 +1,26 @@
+{
+	"category" : "HLR",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "<historical>",
+	"instvars" : [
+		"msisdn",
+		"subscriberStatus",
+		"subscriberCategory",
+		"bearerServiceList",
+		"teleServiceList",
+		"provisionedSS",
+		"odbData",
+		"regionalSubscriptionResponse",
+		"imsi",
+		"roamingRestriction",
+		"vbsSubscriptionData",
+		"vgcsSubscriptionData",
+		"vlrCamelSubscriptionInfo" ],
+	"name" : "Subscriber",
+	"pools" : [
+		 ],
+	"super" : "Object",
+	"type" : "normal" }

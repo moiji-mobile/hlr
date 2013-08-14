@@ -1,15 +1,13 @@
 {
-	"category" : "HLR",
+	"category" : "HLR-Operations",
 	"classinstvars" : [
 		 ],
 	"classvars" : [
 		 ],
 	"commentStamp" : "<historical>",
 	"instvars" : [
-		"e164",
-		"pointCode",
-		"database" ],
-	"name" : "HLR",
+		 ],
+	"name" : "InsertSubscriberManager",
 	"pools" : [
 		 ],
 	"super" : "Object",

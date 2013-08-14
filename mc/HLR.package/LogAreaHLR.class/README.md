@@ -1,0 +1,1 @@
+Logging area for the HLR

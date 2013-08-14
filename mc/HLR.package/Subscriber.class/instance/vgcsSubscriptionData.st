@@ -1,0 +1,3 @@
+access
+vgcsSubscriptionData
+	^vgcsSubscriptionData

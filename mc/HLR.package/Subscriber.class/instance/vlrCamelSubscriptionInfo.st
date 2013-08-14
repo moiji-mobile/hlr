@@ -1,0 +1,3 @@
+access-map-v3
+vlrCamelSubscriptionInfo
+	^vlrCamelSubscriptionInfo

@@ -1,16 +1,14 @@
 {
-	"category" : "HLR",
+	"category" : "HLR-Operations-Tests",
 	"classinstvars" : [
 		 ],
 	"classvars" : [
 		 ],
 	"commentStamp" : "<historical>",
 	"instvars" : [
-		"e164",
-		"pointCode",
-		"database" ],
-	"name" : "HLR",
+		 ],
+	"name" : "InsertSubscriberManagerTest",
 	"pools" : [
 		 ],
-	"super" : "Object",
+	"super" : "TestCase",
 	"type" : "normal" }
