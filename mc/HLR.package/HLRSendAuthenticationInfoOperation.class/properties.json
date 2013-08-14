@@ -1,0 +1,17 @@
+{
+	"category" : "HLR-Operations",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "<historical>",
+	"instvars" : [
+		"imsi",
+		"formatResponse",
+		"database",
+		"dialogue" ],
+	"name" : "HLRSendAuthenticationInfoOperation",
+	"pools" : [
+		 ],
+	"super" : "Object",
+	"type" : "normal" }
