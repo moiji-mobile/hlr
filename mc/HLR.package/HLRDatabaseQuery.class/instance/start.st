@@ -1,0 +1,3 @@
+execution
+start
+	^self subclassResponsibility

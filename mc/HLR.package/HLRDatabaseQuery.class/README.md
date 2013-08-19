@@ -1,0 +1,1 @@
+I represent the base class for all queries.. I mostly contain the boilerplate code.

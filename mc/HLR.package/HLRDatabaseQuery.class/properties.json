@@ -1,16 +1,16 @@
 {
-	"category" : "HLR",
+	"category" : "HLR-Database",
 	"classinstvars" : [
 		 ],
 	"classvars" : [
 		 ],
 	"commentStamp" : "<historical>",
 	"instvars" : [
-		"e164",
-		"pointCode",
-		"database" ],
-	"name" : "HLR",
+		"onSuccess",
+		"onFailure",
+		"imsi" ],
+	"name" : "HLRDatabaseQuery",
 	"pools" : [
 		 ],
-	"super" : "TCAPUser",
+	"super" : "Object",
 	"type" : "normal" }

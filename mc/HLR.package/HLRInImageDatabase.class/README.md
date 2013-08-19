@@ -1,0 +1,1 @@
+I store my objects in the image... I have no secondary storage..

@@ -1,0 +1,3 @@
+query
+newQuery
+	^self subclassResponsibility
