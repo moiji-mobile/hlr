@@ -1,5 +1,5 @@
 anyTimeInformationHandlingPackage
-anyTimeSubscriptionModification: aDialogue request: aRequest
+anyTimeModification: aDialogue request: aRequest
 	<consumer: 'gsmSCF'>
 	<package: 'anyTimeInformationHandlingPackage-v3'>
 

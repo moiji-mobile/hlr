@@ -1,17 +1,14 @@
 {
-	"category" : "HLR",
+	"category" : "HLR-Profiles",
 	"classinstvars" : [
 		 ],
 	"classvars" : [
 		 ],
 	"commentStamp" : "<historical>",
 	"instvars" : [
-		"e164",
-		"pointCode",
-		"database",
-		"acnMapping" ],
-	"name" : "HLR",
+		 ],
+	"name" : "TeleServiceProfile",
 	"pools" : [
 		 ],
-	"super" : "TCAPUser",
+	"super" : "Object",
 	"type" : "normal" }

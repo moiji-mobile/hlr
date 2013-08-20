@@ -1,17 +1,14 @@
 {
-	"category" : "HLR",
+	"category" : "HLR-Operations",
 	"classinstvars" : [
 		 ],
 	"classvars" : [
 		 ],
 	"commentStamp" : "<historical>",
 	"instvars" : [
-		"e164",
-		"pointCode",
-		"database",
-		"acnMapping" ],
-	"name" : "HLR",
+		 ],
+	"name" : "InsertSubscriberDataOperation",
 	"pools" : [
 		 ],
-	"super" : "TCAPUser",
+	"super" : "Object",
 	"type" : "normal" }

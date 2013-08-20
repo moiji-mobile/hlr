@@ -2,16 +2,18 @@
 	"class" : {
 		 },
 	"instance" : {
-		"bearerServiceList" : "HolgerHansPeterFreyther 8/13/2013 16:36",
+		"bearerServiceProfile" : "HolgerHansPeterFreyther 8/19/2013 16:07",
 		"imsi" : "HolgerHansPeterFreyther 8/13/2013 16:47",
+		"imsi:" : "HolgerHansPeterFreyther 8/19/2013 16:19",
 		"msisdn" : "HolgerHansPeterFreyther 8/13/2013 15:36",
+		"msisdn:" : "HolgerHansPeterFreyther 8/19/2013 16:20",
 		"odbData" : "HolgerHansPeterFreyther 8/13/2013 16:44",
 		"provisionedSS" : "HolgerHansPeterFreyther 8/13/2013 16:42",
 		"regionalSubscriptionResponse" : "HolgerHansPeterFreyther 8/13/2013 16:46",
 		"roamingRestrictionsDueToUnsupportedFeature" : "HolgerHansPeterFreyther 8/13/2013 16:48",
 		"subscriberCategory" : "HolgerHansPeterFreyther 8/13/2013 16:31",
 		"subscriberStatus" : "HolgerHansPeterFreyther 8/13/2013 16:35",
-		"teleServiceList" : "HolgerHansPeterFreyther 8/13/2013 16:41",
+		"teleServiceProfile" : "HolgerHansPeterFreyther 8/19/2013 15:34",
 		"vbsSubscriptionData" : "HolgerHansPeterFreyther 8/13/2013 16:48",
 		"vgcsSubscriptionData" : "HolgerHansPeterFreyther 8/13/2013 16:49",
 		"vlrCamelSubscriptionInfo" : "HolgerHansPeterFreyther 8/13/2013 16:49" } }

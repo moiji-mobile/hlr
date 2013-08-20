@@ -1,5 +1,5 @@
 {
-	"category" : "HLR-Operations",
+	"category" : "HLR-Profiles",
 	"classinstvars" : [
 		 ],
 	"classvars" : [
@@ -7,7 +7,7 @@
 	"commentStamp" : "<historical>",
 	"instvars" : [
 		 ],
-	"name" : "InsertSubscriberManager",
+	"name" : "BearerServiceProfile",
 	"pools" : [
 		 ],
 	"super" : "Object",

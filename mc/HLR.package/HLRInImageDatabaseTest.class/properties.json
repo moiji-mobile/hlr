@@ -1,17 +1,14 @@
 {
-	"category" : "HLR",
+	"category" : "HLR-Database-Tests",
 	"classinstvars" : [
 		 ],
 	"classvars" : [
 		 ],
 	"commentStamp" : "<historical>",
 	"instvars" : [
-		"e164",
-		"pointCode",
-		"database",
-		"acnMapping" ],
-	"name" : "HLR",
+		"dataBase" ],
+	"name" : "HLRInImageDatabaseTest",
 	"pools" : [
 		 ],
-	"super" : "TCAPUser",
+	"super" : "TestCase",
 	"type" : "normal" }
