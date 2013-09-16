@@ -5,4 +5,4 @@ registerCCEntry: anInvocation
 	<package: 'callCompletionPackage-v3'>
 	<operation: 'registerCC-Entry'>
 
-	self notYetImplemented
+	self notImplementedInHLR

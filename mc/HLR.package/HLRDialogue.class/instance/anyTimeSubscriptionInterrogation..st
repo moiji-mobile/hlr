@@ -1,6 +1,6 @@
 anyTimeInformationHandlingPackage
-anyTimeSubscriptionInterrogation: aDialogue request: aRequest
+anyTimeSubscriptionInterrogation: anInvocation
 	<consumer: 'gsmSCF'>
 	<package: 'anyTimeInformationHandlingPackage-v3'>
 
-	self notYetImplemented
+	self notImplementedInHLR

@@ -5,4 +5,4 @@ istAlert: anInvocation
 	<consumer: 'GMSC'>
 	<operation: 'ist-Alert'>
 	
-	self notYetImplemented
+	self notImplementedInHLR

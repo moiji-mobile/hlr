@@ -4,4 +4,4 @@ activateTraceModeV3: anInvocation
 	<consumer: 'HLR'>
 	<package: 'tracingPackage-v3'>
 
-	self notYetImplemented
+	self notImplementedInHLR

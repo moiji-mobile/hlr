@@ -4,4 +4,4 @@ authenticationFailureReport: anInvocation
 	<consumer: 'SGSN'>
 	<package: 'authenticationFailureReportPackage-v3'>
 
-	self notYetImplemented
+	self notImplementedInHLR

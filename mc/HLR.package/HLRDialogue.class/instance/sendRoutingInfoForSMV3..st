@@ -3,4 +3,4 @@ sendRoutingInfoForSMV3: anInvocation
 	<consumer: 'GMSC'>
 	<package: 'shortMsgGatewayPackage-v3'>
 
-	self notYetImplemented
+	self notImplementedInHLR

@@ -5,4 +5,4 @@ processUnstructuredSSRequest: anInvocation
 	<package: 'unstructuredSsPackage-v2'>
 	<operation: 'processUnstructuredSS-Request'>
 
-	self notYetImplemented
+	self notImplementedInHLR

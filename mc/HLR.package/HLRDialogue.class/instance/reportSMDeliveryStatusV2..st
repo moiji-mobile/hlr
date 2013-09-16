@@ -4,4 +4,4 @@ reportSMDeliveryStatusV2: anInvocation
 	<package: 'shortMsgGatewayPackage-v2'>
 	<operation: 'reportSM-DeliveryStatusV2'>
 
-	self notYetImplemented
+	self notImplementedInHLR

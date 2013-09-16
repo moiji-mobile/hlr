@@ -4,4 +4,4 @@ purgeMSV2: anInvocation
 	<consumer: 'SGSN'>
 	<package: 'purgingPackage-v2'>
 
-	self notYetImplemented
+	self notImplementedInHLR

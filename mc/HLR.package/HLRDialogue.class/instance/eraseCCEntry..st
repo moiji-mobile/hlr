@@ -5,4 +5,4 @@ eraseCCEntry: anInvocation
 	<package: 'callCompletionPackage-v3'>
 	<operation: 'eraseCC-Entry'>
 
-	self notYetImplemented
+	self notImplementedInHLR

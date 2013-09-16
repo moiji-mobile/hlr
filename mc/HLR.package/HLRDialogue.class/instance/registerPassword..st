@@ -4,4 +4,4 @@ registerPassword: anInvocation
 	<package: 'functionalSsPackage-v1'>
 	<package: 'functionalSsPackage-v2'>
 
-	self notYetImplemented
+	self notImplementedInHLR

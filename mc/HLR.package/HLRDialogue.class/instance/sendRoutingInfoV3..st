@@ -4,4 +4,4 @@ sendRoutingInfoV3: anInvocation
 	<consumer: 'gsmSCF'>
 	<package: 'interrogationPackage-v3'>
 
-	self notYetImplemented
+	self notImplementedInHLR

@@ -4,4 +4,4 @@ readyForSMV3: anInvocation
 	<consumer: 'VLR'>
 	<package: 'mwdMngtPackage-v3'>
 
-	self notYetImplemented
+	self notImplementedInHLR

@@ -4,4 +4,4 @@ sendRoutingInfoForGprs: anInvocation
 	<package: 'gprsLocationUpdatingPackage-v3'>
 	<package: 'gprsLocationUpdatingPackage-v4'>
 
-	self notYetImplemented
+	self notImplementedInHLR
