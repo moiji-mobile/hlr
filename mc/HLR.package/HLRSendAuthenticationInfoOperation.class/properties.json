@@ -9,8 +9,8 @@
 		"imsi",
 		"formatResponse",
 		"database",
-		"dialogue",
-		"vectors" ],
+		"vectors",
+		"invocation" ],
 	"name" : "HLRSendAuthenticationInfoOperation",
 	"pools" : [
 		 ],

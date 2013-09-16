@@ -6,10 +6,14 @@ execute
 		onSuccess: [:subscriber |
 			| tripletList |
 			tripletList := self generateAuthenticationListFor: subscriber count: vectors.
-			dialogue returnLast: (formatResponse value: tripletList)];
+			invocation
+				returnLast: (formatResponse value: tripletList);
+				endDialogue];
 		onFailure: [:reason |
 			self logError:
 					('HLR failed to find subscriber IMSI(<1p>) Reason(<2p>)'
 							expandMacrosWith: imsi with: reason) area: #hlr.
-			dialogue returnError: 'systemFailure'];
+			invocation
+				returnError: 'systemFailure';
+				endDialogue];
 		start.

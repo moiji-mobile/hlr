@@ -6,9 +6,9 @@
 		 ],
 	"commentStamp" : "",
 	"instvars" : [
-		"serviceEndPoint" ],
-	"name" : "HLR",
+		"serviceEndpoint" ],
+	"name" : "HLRServiceEndPoint",
 	"pools" : [
 		 ],
-	"super" : "Object",
+	"super" : "TCAPServiceEndPoint",
 	"type" : "normal" }

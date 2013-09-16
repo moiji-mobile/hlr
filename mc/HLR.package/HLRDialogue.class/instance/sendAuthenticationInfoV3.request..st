@@ -1,16 +1,16 @@
 infoRetrievalPackage
-sendAuthenticationInfoV3: aDialogue request: anInvoke
+sendAuthenticationInfoV3: aDialogue request: anInvocation
 	<consumer: 'VLR'>
 	<consumer: 'HLR'>
 	<package: 'infoRetrievalPackage-v3'>
 
 	| imsi vectors |
-	imsi := GSMNumberDigits decodeFrom: anInvoke components first imsi.
-	vectors := anInvoke components first numberOfRequestedVectors.
+	imsi := GSMNumberDigits decodeFrom: anInvocation components first imsi.
+	vectors := anInvocation components first numberOfRequestedVectors.
 	
 	(HLRSendAuthenticationInfoOperation for: imsi)
 		vectors: vectors;
 		formatResponse: [:list | ASN1Array new add: list; yourself];
 		database: database;
-		dialogue: aDialogue;
+		invocation: anInvocation;
 		execute.

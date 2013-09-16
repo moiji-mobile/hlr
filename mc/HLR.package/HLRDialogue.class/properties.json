@@ -1,0 +1,17 @@
+{
+	"category" : "HLR",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "<historical>",
+	"instvars" : [
+		"e164",
+		"pointCode",
+		"database",
+		"acnMapping" ],
+	"name" : "HLRDialogue",
+	"pools" : [
+		 ],
+	"super" : "TCAPDialogue",
+	"type" : "normal" }
