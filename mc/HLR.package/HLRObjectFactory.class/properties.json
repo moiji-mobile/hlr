@@ -6,10 +6,9 @@
 		 ],
 	"commentStamp" : "",
 	"instvars" : [
-		"database",
-		"globalTtitle" ],
-	"name" : "HLRServiceEndPoint",
+		 ],
+	"name" : "HLRObjectFactory",
 	"pools" : [
 		 ],
-	"super" : "TCAPServiceEndPoint",
+	"super" : "TCAPObjectFactory",
 	"type" : "normal" }
