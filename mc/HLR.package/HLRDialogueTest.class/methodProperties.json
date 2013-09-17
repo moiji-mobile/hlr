@@ -1,0 +1,12 @@
+{
+	"class" : {
+		 },
+	"instance" : {
+		"applicationContextFor:" : "HolgerHansPeterFreyther 9/17/2013 15:01",
+		"hlrAddr" : "HolgerHansPeterFreyther 9/17/2013 15:00",
+		"imsi" : "HolgerHansPeterFreyther 9/17/2013 14:59",
+		"localAddr" : "HolgerHansPeterFreyther 9/17/2013 15:01",
+		"sendAuthV3" : "HolgerHansPeterFreyther 9/17/2013 15:18",
+		"setUp" : "HolgerHansPeterFreyther 9/17/2013 15:00",
+		"testSendAuthenticationInfoV2" : "HolgerHansPeterFreyther 9/17/2013 15:01",
+		"testSendAuthenticationInfoV3" : "HolgerHansPeterFreyther 9/17/2013 15:17" } }

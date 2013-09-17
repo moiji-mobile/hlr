@@ -1,0 +1,1 @@
+Does this base class make sense here? For some operations the invocation will be started here?!

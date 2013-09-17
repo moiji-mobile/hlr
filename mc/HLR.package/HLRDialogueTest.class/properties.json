@@ -1,14 +1,15 @@
 {
-	"category" : "HLR-Operations",
+	"category" : "HLR-Tests",
 	"classinstvars" : [
 		 ],
 	"classvars" : [
 		 ],
 	"commentStamp" : "<historical>",
 	"instvars" : [
-		 ],
-	"name" : "InsertSubscriberDataOperation",
+		"hlrEndPoint",
+		"testEndPoint" ],
+	"name" : "HLRDialogueTest",
 	"pools" : [
 		 ],
-	"super" : "HLROperationBase",
+	"super" : "TestCase",
 	"type" : "normal" }

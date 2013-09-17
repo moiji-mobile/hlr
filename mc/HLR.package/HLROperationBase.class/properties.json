@@ -6,11 +6,10 @@
 		 ],
 	"commentStamp" : "<historical>",
 	"instvars" : [
-		"imsi",
-		"formatResponse",
-		"vectors" ],
-	"name" : "HLRSendAuthenticationInfoOperation",
+		"invocation",
+		"database" ],
+	"name" : "HLROperationBase",
 	"pools" : [
 		 ],
-	"super" : "HLROperationBase",
+	"super" : "Object",
 	"type" : "normal" }
