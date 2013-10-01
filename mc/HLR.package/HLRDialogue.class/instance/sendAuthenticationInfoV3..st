@@ -5,12 +5,12 @@ sendAuthenticationInfoV3: anInvocation
 	<package: 'infoRetrievalPackage-v3'>
 
 	| imsi vectors |
-	imsi := GSMNumberDigits decodeFrom: anInvocation components first imsi.
-	vectors := anInvocation components first numberOfRequestedVectors.
+	imsi := GSMNumberDigits decodeFrom: (ByteArray readHexFrom: anInvocation argument imsi).
+	vectors := anInvocation argument numberOfRequestedVectors.
 	
 	(HLRSendAuthenticationInfoOperation for: imsi)
 		vectors: vectors;
 		formatResponse: [:list | ASN1Array new add: list; yourself];
-		database: database;
+		database: hlr database;
 		invocation: anInvocation;
 		execute.

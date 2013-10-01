@@ -14,7 +14,7 @@ testSendAuthenticationInfoV3
 	| operationName dialogue  |
 	operationName := 'sendAuthenticationInfoV3'.
 	dialogue := testEndPoint createDialogue.
-	dialogue requestTcInvokeNamed: operationName parameters:  self sendAuthV3 class: 1 timeout: 500.
+	dialogue requestTcInvokeNamed: operationName parameters:  self createAuthV3Params class: 1 timeout: 500.
 	dialogue
 		requestTcBeginDestinationAddress: self hlrAddr
 		originatingAddress: self localAddr

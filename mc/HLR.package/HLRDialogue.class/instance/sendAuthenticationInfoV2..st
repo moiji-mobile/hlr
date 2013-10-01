@@ -5,10 +5,10 @@ sendAuthenticationInfoV2: anInvocation
 	<package: 'infoRetrievalPackage-v2'>
 	| imsi  |
 
-	imsi := GSMNumberDigits decodeFrom: anInvocation components first imsi.
+	imsi := GSMNumberDigits decodeFrom: (ByteArray readHexFrom: anInvocation argument).
 	(HLRSendAuthenticationInfoOperation for: imsi)
 		formatResponse: [:list | list];
-		database: database;
+		database: hlr database;
 		invocation: anInvocation;
 		execute.
 	

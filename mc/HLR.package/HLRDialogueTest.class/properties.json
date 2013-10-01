@@ -7,7 +7,8 @@
 	"commentStamp" : "<historical>",
 	"instvars" : [
 		"hlrEndPoint",
-		"testEndPoint" ],
+		"testEndPoint",
+		"testHlr" ],
 	"name" : "HLRDialogueTest",
 	"pools" : [
 		 ],

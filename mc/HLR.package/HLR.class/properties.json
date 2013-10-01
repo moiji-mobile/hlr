@@ -4,11 +4,11 @@
 		 ],
 	"classvars" : [
 		 ],
-	"commentStamp" : "<historical>",
+	"commentStamp" : "",
 	"instvars" : [
-		"hlr" ],
-	"name" : "HLRDialogue",
+		"database" ],
+	"name" : "HLR",
 	"pools" : [
 		 ],
-	"super" : "TCAPDialogue",
+	"super" : "Object",
 	"type" : "normal" }
