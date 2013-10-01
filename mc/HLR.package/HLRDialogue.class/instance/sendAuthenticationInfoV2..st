@@ -9,6 +9,7 @@ sendAuthenticationInfoV2: anInvocation
 	(HLRSendAuthenticationInfoOperation for: imsi)
 		formatResponse: [:list | list];
 		database: hlr database;
+		dialogue: self;
 		invocation: anInvocation;
 		execute.
 	

@@ -12,5 +12,6 @@ sendAuthenticationInfoV3: anInvocation
 		vectors: vectors;
 		formatResponse: [:list | ASN1Array new add: list; yourself];
 		database: hlr database;
+		dialogue: self;
 		invocation: anInvocation;
 		execute.
