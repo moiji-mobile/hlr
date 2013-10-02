@@ -4,10 +4,11 @@
 		 ],
 	"classvars" : [
 		 ],
-	"commentStamp" : "<historical>",
+	"commentStamp" : "",
 	"instvars" : [
-		 ],
-	"name" : "HLRSendAuthenticationInfoOperation",
+		"mscNumber",
+		"vlrNumber" ],
+	"name" : "HLRUpdateLocationOperation",
 	"pools" : [
 		 ],
 	"super" : "HLRIMSIOperationBase",

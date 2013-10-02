@@ -1,0 +1,17 @@
+{
+	"category" : "HLR-Operations",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		"dialogue",
+		"subscriber",
+		"onSuccessBlock",
+		"pendingInvokes" ],
+	"name" : "HLRInsertSubscriberData",
+	"pools" : [
+		 ],
+	"super" : "Object",
+	"type" : "normal" }

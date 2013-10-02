@@ -1,9 +1,10 @@
-tests-infoRetrievalPackage
-testSendAuthenticationInfoV3
+test-locationUpdatingPackage
+testUpdateLocation
 	| operationName dialogue invoke |
-	operationName := 'sendAuthenticationInfoV3'.
+	operationName := 'updateLocation'.
 	dialogue := testEndPoint createDialogue.
-	invoke := dialogue requestTcInvokeNamed: operationName parameters:  self createAuthV3Params class: 1 timeout: 500.
+
+	invoke := dialogue requestTcInvokeNamed: operationName parameters:  self createUpdateLocationParams class: 1 timeout: 500.
 	invoke
 		onReturn: [self assert: false ];
 		onError: [self assert: false];

@@ -1,7 +1,8 @@
 {
 	"class" : {
-		"testSubscriber" : "HolgerHansPeterFreyther 10/2/2013 11:25" },
+		"testSubscriber" : "HolgerHansPeterFreyther 10/2/2013 14:28" },
 	"instance" : {
+		"bearerServiceList" : "HolgerHansPeterFreyther 10/2/2013 13:55",
 		"bearerServiceProfile" : "HolgerHansPeterFreyther 8/19/2013 16:07",
 		"generateSRESKc:" : "HolgerHansPeterFreyther 10/2/2013 11:21",
 		"imsi" : "HolgerHansPeterFreyther 8/13/2013 16:47",
@@ -16,6 +17,7 @@
 		"roamingRestrictionsDueToUnsupportedFeature" : "HolgerHansPeterFreyther 8/13/2013 16:48",
 		"subscriberCategory" : "HolgerHansPeterFreyther 8/13/2013 16:31",
 		"subscriberStatus" : "HolgerHansPeterFreyther 8/13/2013 16:35",
+		"teleServiceList" : "HolgerHansPeterFreyther 10/2/2013 13:55",
 		"teleServiceProfile" : "HolgerHansPeterFreyther 8/19/2013 15:34",
 		"vbsSubscriptionData" : "HolgerHansPeterFreyther 8/13/2013 16:48",
 		"vgcsSubscriptionData" : "HolgerHansPeterFreyther 8/13/2013 16:49",
