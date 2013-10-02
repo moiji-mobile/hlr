@@ -1,6 +1,6 @@
 as yet unclassified
 testSubscriber
-	"TODO"
 	^Subscriber new
-		imsi: '';
+		imsi: '274080000004764';
+		ki: (ByteArray readHexFrom: '00112233445566778899AABBCCDDEEFF');
 		yourself.

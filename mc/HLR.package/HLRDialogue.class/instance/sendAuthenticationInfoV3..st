@@ -7,10 +7,10 @@ sendAuthenticationInfoV3: anInvocation
 	| imsi vectors |
 	imsi := GSMNumberDigits decodeFrom: (ByteArray readHexFrom: anInvocation argument imsi).
 	vectors := anInvocation argument numberOfRequestedVectors.
+	vectors ifNil: [vectors := 4].
 	
-	(HLRSendAuthenticationInfoOperation for: imsi)
+	(HLRSendAuthenticationInfoOperationV3 for: imsi)
 		vectors: vectors;
-		formatResponse: [:list | ASN1Array new add: list; yourself];
 		database: hlr database;
 		dialogue: self;
 		invocation: anInvocation;

@@ -1,10 +1,13 @@
 {
 	"class" : {
-		"testSubscriber" : "HolgerHansPeterFreyther 10/1/2013 13:16" },
+		"testSubscriber" : "HolgerHansPeterFreyther 10/2/2013 11:25" },
 	"instance" : {
 		"bearerServiceProfile" : "HolgerHansPeterFreyther 8/19/2013 16:07",
+		"generateSRESKc:" : "HolgerHansPeterFreyther 10/2/2013 11:21",
 		"imsi" : "HolgerHansPeterFreyther 8/13/2013 16:47",
 		"imsi:" : "HolgerHansPeterFreyther 8/19/2013 16:19",
+		"ki" : "HolgerHansPeterFreyther 10/2/2013 11:21",
+		"ki:" : "HolgerHansPeterFreyther 10/2/2013 11:25",
 		"msisdn" : "HolgerHansPeterFreyther 8/13/2013 15:36",
 		"msisdn:" : "HolgerHansPeterFreyther 8/19/2013 16:20",
 		"odbData" : "HolgerHansPeterFreyther 8/13/2013 16:44",

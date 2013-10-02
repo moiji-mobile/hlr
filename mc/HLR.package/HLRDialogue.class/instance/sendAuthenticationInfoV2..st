@@ -7,7 +7,6 @@ sendAuthenticationInfoV2: anInvocation
 
 	imsi := GSMNumberDigits decodeFrom: (ByteArray readHexFrom: anInvocation argument).
 	(HLRSendAuthenticationInfoOperation for: imsi)
-		formatResponse: [:list | list];
 		database: hlr database;
 		dialogue: self;
 		invocation: anInvocation;

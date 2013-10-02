@@ -1,3 +1,3 @@
-creation
-formatResponse: aBlock
-	formatResponse := aBlock
+as yet unclassified
+formatResponse: aResp
+	^aResp

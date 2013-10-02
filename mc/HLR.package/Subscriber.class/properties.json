@@ -18,7 +18,8 @@
 		"vgcsSubscriptionData",
 		"vlrCamelSubscriptionInfo",
 		"teleServiceProfile",
-		"bearerServiceProfile" ],
+		"bearerServiceProfile",
+		"ki" ],
 	"name" : "Subscriber",
 	"pools" : [
 		 ],

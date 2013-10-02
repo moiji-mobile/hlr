@@ -1,12 +1,11 @@
 execution
 execute
-
 	database newQuery
 		imsi: imsi;
 		onSuccess: [:subscriber |
 			| tripletList |
-			tripletList := self generateAuthenticationListFor: subscriber count: vectors.
-			invocation returnLast: (formatResponse value: tripletList).
+			tripletList := self generateAuthenticationListFor: subscriber count: self vectors.
+			invocation returnResultLast: (self formatResponse: tripletList).
 			dialogue endDialogue];
 		onFailure: [:reason |
 			self logError:
