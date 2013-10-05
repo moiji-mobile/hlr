@@ -1,6 +1,6 @@
 tests-infoRetrievalPackage
 testSendAuthenticationInfoV2
-	| operationName dialogue  invoke |
+	| operationName dialogue  invoke invokeResult |
 	operationName := 'sendAuthenticationInfoV2'.
 	dialogue := testEndPoint createDialogue.
 	invoke := dialogue requestTcInvokeNamed: operationName parameters:  self imsi class: 1 timeout: 500.
@@ -8,8 +8,10 @@ testSendAuthenticationInfoV2
 		onReturn: [self assert: false ];
 		onError: [self assert: false];
 		onReject: [self assert: false];
-		onReturnLast: [ self halt ].
+		onReturnLast: [:result | invokeResult := result tripletList ].
 	dialogue
 		requestTcBeginDestinationAddress: self hlrAddr
 		originatingAddress: self localAddr
-		applicationContextName: (self applicationContextFor: operationName)
+		applicationContextName: (self applicationContextFor: operationName).
+
+	self assert: invokeResult size = 3.
