@@ -9,9 +9,9 @@ generateAuthenticationListFor: aSubscriber count: numVectors
 		sreskc := aSubscriber generateSRESKc: rand.
 
 		dict := ASN1Dictionary new
-			at: 'rand' put: rand;
-			at: 'sres' put: (sreskc copyFrom: 1 to: 4);
-			at: 'kc' put: (sreskc copyFrom: 5 to: 12);
+			at: 'rand' put: rand hex;
+			at: 'sres' put: (sreskc copyFrom: 1 to: 4) hex;
+			at: 'kc' put: (sreskc copyFrom: 5 to: 12) hex;
 			yourself.
 		res add: dict.
 	].

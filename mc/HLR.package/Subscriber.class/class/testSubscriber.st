@@ -5,7 +5,7 @@ testSubscriber
 		msisdn: '1234';
 		ki: (ByteArray readHexFrom: '00112233445566778899AABBCCDDEEFF');
 		subscriberCategory: '0a';
-		subscriberStatus: 'operatorDeterminedBarring';
+		subscriberStatus: 1;
 		bearerServiceProfile: BearerServiceProfile defaultProfile;
 		teleServiceProfile: TeleServiceProfile defaultProfile;
 		ssCallingLineIdentificationPresentation: self ssClipDefault;

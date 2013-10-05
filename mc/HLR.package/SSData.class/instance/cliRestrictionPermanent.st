@@ -1,5 +1,5 @@
 creation
 cliRestrictionPermanent
 	subscriptionOption := ASN1Dictionary new
-			at: 'cliRestrictionOption' put: self class permanent;
+			at: 'cliRestrictionOption' put: (ByteArray with: self class permanent) hex;
 			yourself.
