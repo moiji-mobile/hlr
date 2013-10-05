@@ -1,0 +1,3 @@
+creation
+ssCallingLineIdentiticationRestriction: aSSData 
+	callingLineIdentificationRestriction := aSSData

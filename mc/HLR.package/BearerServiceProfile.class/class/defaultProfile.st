@@ -1,0 +1,3 @@
+defaults
+defaultProfile
+	^self new

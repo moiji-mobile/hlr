@@ -1,5 +1,28 @@
 {
 	"class" : {
-		 },
+		"allAlternateSpeechDataCDA" : "HolgerHansPeterFreyther 10/5/2013 11:13",
+		"allAlternateSpeechDataCDS" : "HolgerHansPeterFreyther 10/5/2013 11:16",
+		"allSpeechFollowedByDataCDA" : "HolgerHansPeterFreyther 10/5/2013 11:13",
+		"allSpeechFollowedByDataCDS" : "HolgerHansPeterFreyther 10/5/2013 11:16",
+		"bearerAsn1:" : "HolgerHansPeterFreyther 10/5/2013 11:38",
+		"dataCDA120075bps" : "HolgerHansPeterFreyther 10/5/2013 11:13",
+		"dataCDA1200bps" : "HolgerHansPeterFreyther 10/5/2013 11:12",
+		"dataCDA300bps" : "HolgerHansPeterFreyther 10/5/2013 11:11",
+		"dataCDS2400bps" : "HolgerHansPeterFreyther 10/5/2013 11:15",
+		"dataCDS4800bps" : "HolgerHansPeterFreyther 10/5/2013 11:15",
+		"dataCDS9600bps" : "HolgerHansPeterFreyther 10/5/2013 11:15",
+		"dataPDS2400bps" : "HolgerHansPeterFreyther 10/5/2013 11:16",
+		"dataPDS4800bps" : "HolgerHansPeterFreyther 10/5/2013 11:17",
+		"dataPDS9600bps" : "HolgerHansPeterFreyther 10/5/2013 11:17",
+		"defaultProfile" : "HolgerHansPeterFreyther 10/4/2013 18:18",
+		"generalDataCDS" : "HolgerHansPeterFreyther 10/5/2013 11:16",
+		"generalDataPDS" : "HolgerHansPeterFreyther 10/5/2013 11:17",
+		"generalPadAccessCA" : "HolgerHansPeterFreyther 10/5/2013 11:15",
+		"padAccessCA120075bps" : "HolgerHansPeterFreyther 10/5/2013 11:14",
+		"padAccessCA1200bps" : "HolgerHansPeterFreyther 10/5/2013 11:13",
+		"padAccessCA2400bps" : "HolgerHansPeterFreyther 10/5/2013 11:14",
+		"padAccessCA300bps" : "HolgerHansPeterFreyther 10/5/2013 11:13",
+		"padAccessCA4800bps" : "HolgerHansPeterFreyther 10/5/2013 11:14",
+		"padAccessCA9600bps" : "HolgerHansPeterFreyther 10/5/2013 11:14" },
 	"instance" : {
-		 } }
+		"toAsn1" : "HolgerHansPeterFreyther 10/5/2013 11:10" } }

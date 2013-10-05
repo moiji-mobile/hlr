@@ -1,0 +1,3 @@
+creation
+defaultProfile
+	^TeleServiceProfile new.

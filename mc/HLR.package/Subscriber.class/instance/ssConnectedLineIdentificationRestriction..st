@@ -1,0 +1,3 @@
+creation
+ssConnectedLineIdentificationRestriction: aSSData 
+	connectedLineIdentificationRestriction := aSSData

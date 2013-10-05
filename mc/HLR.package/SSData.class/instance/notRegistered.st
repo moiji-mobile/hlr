@@ -1,0 +1,3 @@
+creation
+notRegistered
+	registeredBit := false

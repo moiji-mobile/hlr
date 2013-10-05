@@ -1,0 +1,3 @@
+creation
+ssCallingLineIdentificationPresentation: aSSData 
+	callingLineIdentifcationPresentation := aSSData

@@ -1,4 +1,4 @@
 access
-odbData
+odbGeneralData
 	"A nice bitstring of things"
-	^odbData
+	^odbGeneralData

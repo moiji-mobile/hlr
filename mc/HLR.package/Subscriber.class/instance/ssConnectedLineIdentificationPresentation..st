@@ -1,0 +1,3 @@
+creation
+ssConnectedLineIdentificationPresentation: aSSData 
+	connectedLineIdentificationPresentation := aSSData
