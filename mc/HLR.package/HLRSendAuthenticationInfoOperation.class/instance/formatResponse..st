@@ -1,5 +1,6 @@
-as yet unclassified
+creation
 formatResponse: aResp
-	^ASN1Dictionary new
-		at: 'tripletList' put: (ASN1Array new addAll: aResp; yourself);
+	self halt.
+	^ASN1Array new
+		addAll: aResp;
 		yourself

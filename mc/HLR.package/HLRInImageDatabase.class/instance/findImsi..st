@@ -1,3 +1,3 @@
 internal
 findImsi: anImsi
-	^ imsis at: anImsi ifAbsent: [^nil].
+	^ self imsis at: anImsi ifAbsent: [^nil].
