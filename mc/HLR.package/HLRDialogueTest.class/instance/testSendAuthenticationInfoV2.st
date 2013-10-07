@@ -8,7 +8,7 @@ testSendAuthenticationInfoV2
 		onReturn: [self assert: false ];
 		onError: [self assert: false];
 		onReject: [self assert: false];
-		onReturnLast: [:result | invokeResult := result tripletList ].
+		onReturnLast: [:result | invokeResult := result ].
 	dialogue
 		requestTcBeginDestinationAddress: self hlrAddr
 		originatingAddress: self localAddr
