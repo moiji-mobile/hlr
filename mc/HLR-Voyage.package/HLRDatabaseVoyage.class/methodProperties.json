@@ -1,5 +1,8 @@
 {
 	"class" : {
-		 },
+		"createTestDefault" : "HolgerHansPeterFreyther 10/8/2013 16:19",
+		"initializeWith:" : "HolgerHansPeterFreyther 10/8/2013 16:19",
+		"populateWithDummySubscribers:" : "HolgerHansPeterFreyther 10/8/2013 17:40" },
 	"instance" : {
-		 } }
+		"insert:" : "HolgerHansPeterFreyther 10/8/2013 16:26",
+		"voyageRepository:" : "HolgerHansPeterFreyther 10/8/2013 16:20" } }
