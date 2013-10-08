@@ -1,0 +1,14 @@
+{
+	"category" : "HLR-Voyage",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "<historical>",
+	"instvars" : [
+		 ],
+	"name" : "SubscriberVoyage",
+	"pools" : [
+		 ],
+	"super" : "Subscriber",
+	"type" : "normal" }

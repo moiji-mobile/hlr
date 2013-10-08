@@ -1,0 +1,3 @@
+*HLR-Voyage
+isVoyageRoot
+	^true

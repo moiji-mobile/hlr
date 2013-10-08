@@ -1,0 +1,1 @@
+I can be used to store a subscriber in voyage. I am created by the HLRDatabaseVoyage system.
