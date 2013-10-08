@@ -1,3 +1,3 @@
 defaults
 defaultProfile
-	^self new
+	^defaultProfile ifNil: [defaultProfile := self new]

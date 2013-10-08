@@ -1,7 +1,7 @@
 {
 	"category" : "HLR-Core-Profiles",
 	"classinstvars" : [
-		 ],
+		"defaultProfile" ],
 	"classvars" : [
 		 ],
 	"commentStamp" : "<historical>",

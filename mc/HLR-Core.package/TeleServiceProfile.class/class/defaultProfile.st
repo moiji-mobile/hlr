@@ -1,3 +1,3 @@
 creation
 defaultProfile
-	^TeleServiceProfile new.
+	^defaultProfile ifNil: [defaultProfile := self new].
