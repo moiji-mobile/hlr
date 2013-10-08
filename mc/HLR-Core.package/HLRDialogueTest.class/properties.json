@@ -1,0 +1,16 @@
+{
+	"category" : "HLR-Core-Tests",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "<historical>",
+	"instvars" : [
+		"hlrEndPoint",
+		"testEndPoint",
+		"testHlr" ],
+	"name" : "HLRDialogueTest",
+	"pools" : [
+		 ],
+	"super" : "TestCase",
+	"type" : "normal" }

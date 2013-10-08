@@ -1,0 +1,14 @@
+{
+	"category" : "HLR-Core-Profiles",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "<historical>",
+	"instvars" : [
+		 ],
+	"name" : "BearerServiceProfile",
+	"pools" : [
+		 ],
+	"super" : "Object",
+	"type" : "normal" }

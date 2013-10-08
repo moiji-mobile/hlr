@@ -1,0 +1,14 @@
+{
+	"category" : "HLR-Core",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "<historical>",
+	"instvars" : [
+		 ],
+	"name" : "LogAreaHLR",
+	"pools" : [
+		 ],
+	"super" : "LogArea",
+	"type" : "normal" }

@@ -1,0 +1,14 @@
+{
+	"category" : "HLR-Core-Database",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "<historical>",
+	"instvars" : [
+		"imsis" ],
+	"name" : "HLRInImageDatabase",
+	"pools" : [
+		 ],
+	"super" : "HLRDatabase",
+	"type" : "normal" }

@@ -1,0 +1,14 @@
+{
+	"category" : "HLR-Core-Tests",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		 ],
+	"name" : "HLRTestEnvironment",
+	"pools" : [
+		 ],
+	"super" : "TCAPTestEnvironment",
+	"type" : "normal" }

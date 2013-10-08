@@ -1,0 +1,14 @@
+{
+	"category" : "HLR-Core-Database-Tests",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "<historical>",
+	"instvars" : [
+		"dataBase" ],
+	"name" : "HLRInImageDatabaseTest",
+	"pools" : [
+		 ],
+	"super" : "TestCase",
+	"type" : "normal" }

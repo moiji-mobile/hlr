@@ -1,0 +1,14 @@
+{
+	"category" : "HLR-Core-Operations",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		"vectors" ],
+	"name" : "HLRSendAuthenticationInfoOperationV3",
+	"pools" : [
+		 ],
+	"super" : "HLRSendAuthenticationInfoOperation",
+	"type" : "normal" }

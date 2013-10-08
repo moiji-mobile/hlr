@@ -1,0 +1,16 @@
+{
+	"category" : "HLR-Core-Database",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "<historical>",
+	"instvars" : [
+		"onSuccess",
+		"onFailure",
+		"imsi" ],
+	"name" : "HLRDatabaseQuery",
+	"pools" : [
+		 ],
+	"super" : "Object",
+	"type" : "normal" }

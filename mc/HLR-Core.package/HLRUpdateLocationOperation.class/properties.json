@@ -1,0 +1,15 @@
+{
+	"category" : "HLR-Core-Operations",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		"mscNumber",
+		"vlrNumber" ],
+	"name" : "HLRUpdateLocationOperation",
+	"pools" : [
+		 ],
+	"super" : "HLRIMSIOperationBase",
+	"type" : "normal" }

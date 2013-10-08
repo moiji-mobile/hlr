@@ -1,0 +1,18 @@
+{
+	"category" : "HLR-Core",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		"provisionedBit",
+		"registeredBit",
+		"activeBit",
+		"subscriptionOption",
+		"ssCode" ],
+	"name" : "SSData",
+	"pools" : [
+		 ],
+	"super" : "Object",
+	"type" : "normal" }

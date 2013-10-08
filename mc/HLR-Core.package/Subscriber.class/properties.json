@@ -1,0 +1,31 @@
+{
+	"category" : "HLR-Core",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "<historical>",
+	"instvars" : [
+		"msisdn",
+		"subscriberStatus",
+		"subscriberCategory",
+		"provisionedSS",
+		"odbGeneralData",
+		"regionalSubscriptionResponse",
+		"imsi",
+		"roamingRestriction",
+		"vbsSubscriptionData",
+		"vgcsSubscriptionData",
+		"vlrCamelSubscriptionInfo",
+		"teleServiceProfile",
+		"bearerServiceProfile",
+		"ki",
+		"callingLineIdentifcationPresentation",
+		"callingLineIdentificationRestriction",
+		"connectedLineIdentificationPresentation",
+		"connectedLineIdentificationRestriction" ],
+	"name" : "Subscriber",
+	"pools" : [
+		 ],
+	"super" : "Object",
+	"type" : "normal" }

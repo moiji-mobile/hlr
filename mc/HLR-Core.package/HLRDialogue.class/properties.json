@@ -1,0 +1,14 @@
+{
+	"category" : "HLR-Core",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "<historical>",
+	"instvars" : [
+		"hlr" ],
+	"name" : "HLRDialogue",
+	"pools" : [
+		 ],
+	"super" : "TCAPDialogue",
+	"type" : "normal" }

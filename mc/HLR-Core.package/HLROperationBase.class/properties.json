@@ -1,0 +1,16 @@
+{
+	"category" : "HLR-Core-Operations",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "<historical>",
+	"instvars" : [
+		"invocation",
+		"database",
+		"dialogue" ],
+	"name" : "HLROperationBase",
+	"pools" : [
+		 ],
+	"super" : "Object",
+	"type" : "normal" }

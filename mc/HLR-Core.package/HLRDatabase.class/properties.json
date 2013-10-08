@@ -1,0 +1,14 @@
+{
+	"category" : "HLR-Core-Database",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "<historical>",
+	"instvars" : [
+		 ],
+	"name" : "HLRDatabase",
+	"pools" : [
+		 ],
+	"super" : "Object",
+	"type" : "normal" }
