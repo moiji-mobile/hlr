@@ -7,8 +7,8 @@ setUp
 			database: db;
 			yourself.
 
-	testEndPoint := TCAPServiceEndPoint new.
-	hlrEndPoint := TCAPServiceEndPoint newHLR.
+	testEndPoint := TCAPTestServiceEndPoint new.
+	hlrEndPoint := TCAPTestServiceEndPoint newHLR.
 	hlrEndPoint factory hlr: testHlr.
 
 	testEndPoint connectTo: hlrEndPoint.
