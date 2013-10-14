@@ -1,0 +1,1 @@
+A SubscriberTest is a test class for testing the behavior of Subscriber

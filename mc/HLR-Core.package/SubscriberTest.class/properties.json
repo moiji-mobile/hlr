@@ -1,0 +1,14 @@
+{
+	"category" : "HLR-Core-Tests",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "<historical>",
+	"instvars" : [
+		 ],
+	"name" : "SubscriberTest",
+	"pools" : [
+		 ],
+	"super" : "TestCase",
+	"type" : "normal" }
