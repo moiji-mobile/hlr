@@ -1,0 +1,14 @@
+{
+	"category" : "HLR-Voyage",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		"database" ],
+	"name" : "HLRVoyageQuery",
+	"pools" : [
+		 ],
+	"super" : "HLRInImageQuery",
+	"type" : "normal" }

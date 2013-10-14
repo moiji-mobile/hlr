@@ -1,0 +1,14 @@
+{
+	"category" : "HLR-Voyage-Tests",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		"dataBase" ],
+	"name" : "HLRVoyageDatabaseTest",
+	"pools" : [
+		 ],
+	"super" : "TestCase",
+	"type" : "normal" }
