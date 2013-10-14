@@ -11,6 +11,8 @@
 		"setUp" : "HolgerHansPeterFreyther 10/9/2013 15:09",
 		"testCancelLocation" : "HolgerHansPeterFreyther 10/14/2013 15:25",
 		"testCancelLocationV3" : "HolgerHansPeterFreyther 10/14/2013 15:51",
+		"testPurgeV2" : "HolgerHansPeterFreyther 10/14/2013 15:59",
+		"testPurgeV3" : "HolgerHansPeterFreyther 10/14/2013 16:12",
 		"testSendAuthenticationInfoV2" : "HolgerHansPeterFreyther 10/7/2013 16:56",
 		"testSendAuthenticationInfoV3" : "HolgerHansPeterFreyther 10/5/2013 17:29",
 		"testUpdateLocation" : "HolgerHansPeterFreyther 10/2/2013 11:40" } }

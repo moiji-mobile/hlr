@@ -1,0 +1,14 @@
+{
+	"category" : "HLR-Core-Operations",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		 ],
+	"name" : "HLRPurgeOperationV3",
+	"pools" : [
+		 ],
+	"super" : "HLRPurgeOperation",
+	"type" : "normal" }

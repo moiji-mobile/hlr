@@ -23,7 +23,9 @@
 		"callingLineIdentifcationPresentation",
 		"callingLineIdentificationRestriction",
 		"connectedLineIdentificationPresentation",
-		"connectedLineIdentificationRestriction" ],
+		"connectedLineIdentificationRestriction",
+		"vlrNumber",
+		"mscNumber" ],
 	"name" : "Subscriber",
 	"pools" : [
 		 ],
