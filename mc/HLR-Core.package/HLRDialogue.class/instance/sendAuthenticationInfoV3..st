@@ -11,7 +11,7 @@ sendAuthenticationInfoV3: anInvocation
 	
 	(HLRSendAuthenticationInfoOperationV3 for: imsi)
 		vectors: vectors;
-		database: hlr database;
+		hlr: hlr;
 		dialogue: self;
 		invocation: anInvocation;
 		execute.

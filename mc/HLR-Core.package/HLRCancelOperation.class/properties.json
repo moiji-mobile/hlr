@@ -6,11 +6,15 @@
 		 ],
 	"commentStamp" : "<historical>",
 	"instvars" : [
-		"invocation",
+		"subscriber",
 		"dialogue",
-		"hlr" ],
-	"name" : "HLROperationBase",
+		"invoke",
+		"imsi",
+		"hlrAddress",
+		"vlrAddress",
+		"endPoint" ],
+	"name" : "HLRCancelOperation",
 	"pools" : [
 		 ],
-	"super" : "Object",
+	"super" : "HLROperationBase",
 	"type" : "normal" }

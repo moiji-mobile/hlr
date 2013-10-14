@@ -4,12 +4,14 @@
 		 ],
 	"classvars" : [
 		 ],
-	"commentStamp" : "",
+	"commentStamp" : "<historical>",
 	"instvars" : [
 		"dialogue",
 		"subscriber",
 		"onSuccessBlock",
-		"pendingInvokes" ],
+		"pendingInvokes",
+		"onErrorBlock",
+		"failed" ],
 	"name" : "HLRInsertSubscriberData",
 	"pools" : [
 		 ],

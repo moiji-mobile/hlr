@@ -4,8 +4,12 @@
 	"instance" : {
 		"dialogue:" : "HolgerHansPeterFreyther 10/2/2013 13:44",
 		"execute" : "HolgerHansPeterFreyther 10/2/2013 13:51",
+		"initialize" : "HolgerHansPeterFreyther 10/14/2013 11:49",
+		"insertFailed" : "HolgerHansPeterFreyther 10/14/2013 11:48",
 		"insertFirst" : "HolgerHansPeterFreyther 10/5/2013 11:58",
 		"insertSecond" : "HolgerHansPeterFreyther 10/7/2013 17:04",
 		"insertSubscriberData:" : "HolgerHansPeterFreyther 10/2/2013 14:02",
+		"insertSucess:" : "HolgerHansPeterFreyther 10/14/2013 11:50",
+		"onFailure:" : "HolgerHansPeterFreyther 10/14/2013 11:47",
 		"onSuccess:" : "HolgerHansPeterFreyther 10/2/2013 13:44",
 		"subscriber:" : "HolgerHansPeterFreyther 10/2/2013 13:44" } }

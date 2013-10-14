@@ -1,0 +1,13 @@
+{
+	"class" : {
+		"applicationContextFor:" : "HolgerHansPeterFreyther 10/14/2013 14:25",
+		"cancelOperation" : "HolgerHansPeterFreyther 10/14/2013 15:45" },
+	"instance" : {
+		"endPoint:" : "HolgerHansPeterFreyther 10/14/2013 13:56",
+		"hlrAddress:" : "HolgerHansPeterFreyther 10/14/2013 13:55",
+		"imsi:" : "HolgerHansPeterFreyther 10/14/2013 13:55",
+		"localAddress" : "HolgerHansPeterFreyther 10/14/2013 15:43",
+		"parameters" : "HolgerHansPeterFreyther 10/14/2013 15:45",
+		"remoteAddress" : "HolgerHansPeterFreyther 10/14/2013 15:43",
+		"start" : "HolgerHansPeterFreyther 10/14/2013 15:47",
+		"vlrAddress:" : "HolgerHansPeterFreyther 10/14/2013 13:56" } }

@@ -4,13 +4,13 @@
 		 ],
 	"classvars" : [
 		 ],
-	"commentStamp" : "<historical>",
+	"commentStamp" : "",
 	"instvars" : [
-		"invocation",
+		"subscriber",
 		"dialogue",
-		"hlr" ],
-	"name" : "HLROperationBase",
+		"invoke" ],
+	"name" : "HLRCancelOperationV3",
 	"pools" : [
 		 ],
-	"super" : "Object",
+	"super" : "HLRCancelOperation",
 	"type" : "normal" }

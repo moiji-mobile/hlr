@@ -1,0 +1,1 @@
+Cancel the presence in a remote subscriber.

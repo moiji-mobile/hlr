@@ -1,6 +1,6 @@
 execution
 execute
-	database newQuery
+	hlr database newQuery
 		imsi: imsi;
 		onSuccess: [:subscriber |
 			self onSuccess: subscriber];

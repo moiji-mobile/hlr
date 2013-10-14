@@ -12,7 +12,7 @@ updateLocation: anInvocation
 	(HLRUpdateLocationOperation for: imsi)
 		mscNumber: mscNumber;
 		vlrNumber: vlrNumber;
-		database: hlr database;
+		hlr: hlr;
 		dialogue: self;
 		invocation: anInvocation;
 		execute.
