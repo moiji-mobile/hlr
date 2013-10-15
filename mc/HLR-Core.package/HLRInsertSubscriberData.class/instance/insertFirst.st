@@ -1,7 +1,7 @@
 data
 insertFirst
 	^ASN1Dictionary new
-		at: 'msisdn' put: subscriber msisdn;
+		at: 'msisdn' put: subscriber msisdnAsE164;
 		at: 'category' put: subscriber subscriberCategory;
 		at: 'subscriberStatus' put: subscriber subscriberStatus;
 		at: 'bearerServiceList' put: subscriber bearerServiceList;
