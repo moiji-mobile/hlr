@@ -4,6 +4,11 @@ testUpdateLocation
 	operationName := 'updateLocation'.
 	dialogue := testEndPoint createDialogue.
 
+	dialogue
+		onInvoke: [ :insert |
+			insert returnResultLast: nil.
+			dialogue requestTcContinue].
+
 	invoke := dialogue requestTcInvokeNamed: operationName parameters:  self createUpdateLocationParams class: 1 timeout: 500.
 	invoke
 		onReturn: [self assert: false ];
