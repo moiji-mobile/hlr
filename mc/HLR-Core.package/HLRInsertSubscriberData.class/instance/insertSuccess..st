@@ -1,5 +1,5 @@
 invoke
-insertSucess: anInvoke
+insertSuccess: anInvoke
 	pendingInvokes remove: anInvoke.
 	
 	"We still wait for invokes or have already failed."
