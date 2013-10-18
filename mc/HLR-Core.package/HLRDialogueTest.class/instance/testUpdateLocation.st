@@ -1,6 +1,6 @@
 test-locationUpdatingPackage
 testUpdateLocation
-	| operationName dialogue invoke |
+	| operationName dialogue invoke res |
 	operationName := 'updateLocation'.
 	dialogue := testEndPoint createDialogue.
 
@@ -14,8 +14,10 @@ testUpdateLocation
 		onReturn: [self assert: false ];
 		onError: [self assert: false];
 		onReject: [self assert: false];
-		onReturnLast: [ self halt ].
+		onReturnLast: [:param | res := true ].
 	dialogue
 		requestTcBeginDestinationAddress: self hlrAddr
 		originatingAddress: self localAddr
-		applicationContextName: (self applicationContextFor: operationName)
+		applicationContextName: (self applicationContextFor: operationName).
+
+	self assert: res.
