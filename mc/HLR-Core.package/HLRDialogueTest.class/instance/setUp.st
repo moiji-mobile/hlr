@@ -2,7 +2,8 @@ as yet unclassified
 setUp
 	| db |
 	db := HLRInImageDatabase new.
-	db insert: Subscriber testSubscriber.
+	subscriber := Subscriber testSubscriber.
+	db insert: subscriber.
 	testHlr := HLR new
 			database: db;
 			yourself.

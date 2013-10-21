@@ -8,7 +8,8 @@
 	"instvars" : [
 		"hlrEndPoint",
 		"testEndPoint",
-		"testHlr" ],
+		"testHlr",
+		"subscriber" ],
 	"name" : "HLRDialogueTest",
 	"pools" : [
 		 ],
