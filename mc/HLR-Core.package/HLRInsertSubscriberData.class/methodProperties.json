@@ -2,14 +2,14 @@
 	"class" : {
 		 },
 	"instance" : {
-		"dialogue:" : "HolgerHansPeterFreyther 10/2/2013 13:44",
 		"execute" : "HolgerHansPeterFreyther 10/16/2013 21:15",
-		"initialize" : "HolgerHansPeterFreyther 10/14/2013 11:49",
+		"initialize" : "HolgerHansPeterFreyther 10/21/2013 14:42",
 		"insertFailed" : "HolgerHansPeterFreyther 10/14/2013 11:48",
 		"insertFirst" : "HolgerHansPeterFreyther 10/14/2013 16:57",
 		"insertSecond" : "HolgerHansPeterFreyther 10/7/2013 17:04",
-		"insertSubscriberData:" : "HolgerHansPeterFreyther 10/2/2013 14:02",
+		"insertSubscriberData:" : "HolgerHansPeterFreyther 10/21/2013 14:44",
 		"insertSuccess:" : "HolgerHansPeterFreyther 10/18/2013 10:04",
 		"onFailure:" : "HolgerHansPeterFreyther 10/14/2013 11:47",
 		"onSuccess:" : "HolgerHansPeterFreyther 10/2/2013 13:44",
+		"startWithNewDialogue" : "HolgerHansPeterFreyther 10/21/2013 14:42",
 		"subscriber:" : "HolgerHansPeterFreyther 10/2/2013 13:44" } }

@@ -1,3 +1,3 @@
-creation
+sccp
 hlrAddress: anAddress
 	hlrAddress := anAddress.

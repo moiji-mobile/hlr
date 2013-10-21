@@ -1,3 +1,3 @@
-creation
+sccp
 vlrAddress: anAddress
 	vlrAddress := anAddress

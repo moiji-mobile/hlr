@@ -8,7 +8,10 @@
 	"instvars" : [
 		"invocation",
 		"dialogue",
-		"hlr" ],
+		"hlr",
+		"hlrAddress",
+		"vlrAddress",
+		"endPoint" ],
 	"name" : "HLROperationBase",
 	"pools" : [
 		 ],

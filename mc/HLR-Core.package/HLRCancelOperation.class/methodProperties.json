@@ -1,18 +1,12 @@
 {
 	"class" : {
-		"applicationContextFor:" : "HolgerHansPeterFreyther 10/14/2013 14:25",
 		"cancelOperation" : "HolgerHansPeterFreyther 10/14/2013 15:45" },
 	"instance" : {
-		"endPoint:" : "HolgerHansPeterFreyther 10/14/2013 13:56",
 		"failure" : "HolgerHansPeterFreyther 10/21/2013 11:49",
-		"hlrAddress:" : "HolgerHansPeterFreyther 10/14/2013 13:55",
 		"imsi:" : "HolgerHansPeterFreyther 10/14/2013 13:55",
 		"imsiTBCD" : "HolgerHansPeterFreyther 10/21/2013 11:48",
-		"localAddress" : "HolgerHansPeterFreyther 10/14/2013 15:43",
 		"onFailure:" : "HolgerHansPeterFreyther 10/21/2013 10:33",
 		"onSuccess:" : "HolgerHansPeterFreyther 10/21/2013 10:33",
 		"parameters" : "HolgerHansPeterFreyther 10/21/2013 11:47",
-		"remoteAddress" : "HolgerHansPeterFreyther 10/14/2013 15:43",
-		"start" : "HolgerHansPeterFreyther 10/21/2013 10:34",
-		"success" : "HolgerHansPeterFreyther 10/21/2013 11:45",
-		"vlrAddress:" : "HolgerHansPeterFreyther 10/14/2013 13:56" } }
+		"start" : "HolgerHansPeterFreyther 10/21/2013 14:35",
+		"success" : "HolgerHansPeterFreyther 10/21/2013 11:45" } }

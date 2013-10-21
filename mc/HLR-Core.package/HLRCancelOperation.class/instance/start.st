@@ -13,6 +13,6 @@ start
 		onReturnLast: [self success];
 		onError: [self failure].
 	dialogue
-		requestTcBeginDestinationAddress: self remoteAddress
-		originatingAddress: self localAddress
+		requestTcBeginDestinationAddress: self remoteSCCPAddress
+		originatingAddress: self localSCCPAddress
 		applicationContextName: (self class applicationContextFor: self class cancelOperation)

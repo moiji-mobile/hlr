@@ -6,6 +6,7 @@ setUp
 	db insert: subscriber.
 	testHlr := HLR new
 			database: db;
+			hlrNumber: '35412';
 			yourself.
 
 	testEndPoint := TCAPTestServiceEndPoint new.

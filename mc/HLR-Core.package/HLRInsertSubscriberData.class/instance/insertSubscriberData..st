@@ -8,4 +8,13 @@ insertSubscriberData: aParameter
 		onReject: [self insertFailed];
 		onReturnLast: [ self insertSuccess: invoke].
 	pendingInvokes add: invoke.
-	dialogue requestTcContinue.	
+
+	needsBegin
+		ifTrue: [
+			needsBegin := false.
+			dialogue
+				requestTcBeginDestinationAddress: self remoteSCCPAddress
+				originatingAddress: self localSCCPAddress
+				applicationContextName: (self class applicationContextFor: 'sendAuthenticationInfoV2')
+		]
+		ifFalse: [dialogue requestTcContinue].
