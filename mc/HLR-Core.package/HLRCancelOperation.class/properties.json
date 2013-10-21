@@ -12,7 +12,9 @@
 		"imsi",
 		"hlrAddress",
 		"vlrAddress",
-		"endPoint" ],
+		"endPoint",
+		"onSuccessBlock",
+		"onFailureBlock" ],
 	"name" : "HLRCancelOperation",
 	"pools" : [
 		 ],

@@ -8,7 +8,7 @@ testCancelLocationV3
 	testEndPoint
 		onDialogue: [:diag |
 			diag onInvoke: [:invocation |
-				res := invocation argument identity imsi.
+				res := ByteArray readHexFrom: invocation argument identity imsi.
 				invocation returnResultLast: nil.
 				diag requestTcEnd: false]].
 
@@ -20,4 +20,4 @@ testCancelLocationV3
 		endPoint: hlrEndPoint;
 		start.
 
-	self assert: res = imsi.
+	self assert: (GSMNumberDigits decodeFrom: res) = imsi.
