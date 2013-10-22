@@ -4,4 +4,5 @@
 	"instance" : {
 		"setUp" : "HolgerHansPeterFreyther 10/14/2013 10:58",
 		"testFindSubscriber" : "HolgerHansPeterFreyther 10/14/2013 11:09",
+		"testFindSubscriberMSISDN" : "HolgerHansPeterFreyther 10/21/2013 15:23",
 		"testUnavailableSubscriber" : "HolgerHansPeterFreyther 10/14/2013 10:53" } }
