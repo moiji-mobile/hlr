@@ -1,0 +1,14 @@
+{
+	"category" : "HLR-Core-Operations",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		 ],
+	"name" : "HLRProvideRoamingNumberOperationV3",
+	"pools" : [
+		 ],
+	"super" : "HLRProvideRoamingNumberOperation",
+	"type" : "normal" }

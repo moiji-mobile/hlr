@@ -13,7 +13,7 @@ start
 		onUAbort: [self failure].
 
 	invoke := dialogue
-		requestTcInvokeNamed: 'provideRoamingNumberV2'
+		requestTcInvokeNamed: self class operationName
 		parameters: parameters
 		class: 1 timeout: 500.
 	invoke
@@ -22,4 +22,4 @@ start
 	dialogue
 		requestTcBeginDestinationAddress: self remoteSCCPAddress
 		originatingAddress: self localSCCPAddress
-		applicationContextName: (self class applicationContextFor: 'provideRoamingNumberV2')
+		applicationContextName: (self class applicationContextFor: self class operationName)
