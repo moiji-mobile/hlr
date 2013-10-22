@@ -1,0 +1,16 @@
+{
+	"category" : "HLR-Core-Operations",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "<historical>",
+	"instvars" : [
+		"invoke",
+		"subscriber",
+		"onSuccessBlock" ],
+	"name" : "HLRProvideRoamingNumberOperation",
+	"pools" : [
+		 ],
+	"super" : "HLROperationBase",
+	"type" : "normal" }

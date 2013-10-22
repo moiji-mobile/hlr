@@ -1,17 +1,14 @@
 {
-	"category" : "HLR-Core-Database",
+	"category" : "HLR-Core-Operations",
 	"classinstvars" : [
 		 ],
 	"classvars" : [
 		 ],
 	"commentStamp" : "<historical>",
 	"instvars" : [
-		"onSuccess",
-		"onFailure",
-		"imsi",
 		"msisdn" ],
-	"name" : "HLRDatabaseQuery",
+	"name" : "HLRSendRoutingInfoOperationV2",
 	"pools" : [
 		 ],
-	"super" : "Object",
+	"super" : "HLROperationBase",
 	"type" : "normal" }
