@@ -25,7 +25,9 @@
 		"connectedLineIdentificationPresentation",
 		"connectedLineIdentificationRestriction",
 		"vlrNumber",
-		"mscNumber" ],
+		"mscNumber",
+		"forwardingMode",
+		"forwardingNumber" ],
 	"name" : "Subscriber",
 	"pools" : [
 		 ],

@@ -1,12 +1,16 @@
 as yet unclassified
 onSuccess: aSubscriber 
 	"The subscriber has been found."
-	| res |
 
-	"TODO: Check if the subscriber is in a VLR/MSC.. and then get a roaning number"
-	res := ASN1Dictionary new
-		at: 'imsi' put: aSubscriber imsiAsTBCD;
-		at: 'routingInfo' put: nil;
-		yourself.
+	"Check if we unconditionally forward these calls"
+	aSubscriber alwaysForwardTeleService
+		ifTrue: [^self finishForward: aSubscriber].
 
-	self halt.
+	"Do we know where the subscriber is?"
+	aSubscriber vlrNumber isNil
+		ifTrue: [^self maybeForward: aSubscriber].
+	aSubscriber mscNumber isNil
+		ifTrue: [^self maybeForward: aSubscriber].
+
+	"Provide a roaming number and continue."
+	self querySubscriberInformation: aSubscriber.
