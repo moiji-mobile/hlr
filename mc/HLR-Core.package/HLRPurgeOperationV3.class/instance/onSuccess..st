@@ -1,5 +1,7 @@
 as yet unclassified
 onSuccess: aSubscriber 
+	self flag: #todo. "If vlrNumber matches vlrNumber of Subscriber freezeTMSI must
+	be sent. Or freezeP-TMSI for the SGSN case"
 	aSubscriber
 		vlrNumber: nil;
 		mscNumber: nil.

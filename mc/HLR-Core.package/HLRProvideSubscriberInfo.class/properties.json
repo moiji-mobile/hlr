@@ -1,0 +1,16 @@
+{
+	"category" : "HLR-Core-Operations",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		"invoke",
+		"subscriber",
+		"onSuccessBlock" ],
+	"name" : "HLRProvideSubscriberInfo",
+	"pools" : [
+		 ],
+	"super" : "HLROperationBase",
+	"type" : "normal" }
