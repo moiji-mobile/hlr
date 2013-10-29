@@ -1,20 +1,16 @@
 tests-infoRetrievalPackage
-testSendRoutingInfoV2
+testSendRoutingInfoV2NoForward
 	| operationName dialogue  invoke invokeResult sriArg |
 	
+	"Test that lack of vlrNumber/mscNumber/forwardingNumber will fail"
 	subscriber
-		mscNumber: '123';
-		vlrNumber: '456'.
+		vlrNumber: nil;
+		mscNumber: nil;
+		forwardingNumber: nil.
 
 	sriArg := ASN1Dictionary new
 				at: 'msisdn' put: subscriber msisdnAsE164;
 				yourself.
-
-	testEndPoint
-		onDialogue: [:diag |
-			diag onInvoke: [:invocation |
-				invocation returnResultLast: '10123' asAsn1Value.
-				diag requestTcEnd: false]].
 
 	operationName := 'sendRoutingInfoV2'.
 	dialogue := testEndPoint createDialogue.
@@ -25,11 +21,11 @@ testSendRoutingInfoV2
 		onReturn: [self assert: false ];
 		onError: [self assert: false];
 		onReject: [self assert: false];
-		onReturnLast: [:result | invokeResult := result ].
+		onReturnLast: [self assert: false].
 	dialogue
 		requestTcBeginDestinationAddress: self hlrAddr
 		originatingAddress: self localAddr
 		applicationContextName: (self applicationContextFor: operationName).
 
-	"TODO.. make sure things return"
-	self assert: invokeResult routingInfo roamingNumber = '10123'.
+	"Verify things have failed"
+	self halt.

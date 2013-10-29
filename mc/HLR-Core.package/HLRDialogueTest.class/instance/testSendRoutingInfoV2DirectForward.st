@@ -1,20 +1,17 @@
 tests-infoRetrievalPackage
-testSendRoutingInfoV2
+testSendRoutingInfoV2DirectForward
 	| operationName dialogue  invoke invokeResult sriArg |
 	
+	"Test that direct forward will not ask anyone for the subscriber number"
 	subscriber
-		mscNumber: '123';
-		vlrNumber: '456'.
+		vlrNumber: '1234';
+		mscNumber: '1234';
+		forwardingMode: subscriber class forwardAlways;
+		forwardingNumber: '678'.
 
 	sriArg := ASN1Dictionary new
 				at: 'msisdn' put: subscriber msisdnAsE164;
 				yourself.
-
-	testEndPoint
-		onDialogue: [:diag |
-			diag onInvoke: [:invocation |
-				invocation returnResultLast: '10123' asAsn1Value.
-				diag requestTcEnd: false]].
 
 	operationName := 'sendRoutingInfoV2'.
 	dialogue := testEndPoint createDialogue.
@@ -31,5 +28,5 @@ testSendRoutingInfoV2
 		originatingAddress: self localAddr
 		applicationContextName: (self applicationContextFor: operationName).
 
-	"TODO.. make sure things return"
-	self assert: invokeResult routingInfo roamingNumber = '10123'.
+	"Verify things"
+	self assert: invokeResult routingInfo roamingNumber = subscriber forwardingNumberAsE164 asUppercase.

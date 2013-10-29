@@ -8,7 +8,8 @@
 	"instvars" : [
 		"invoke",
 		"subscriber",
-		"onSuccessBlock" ],
+		"onSuccessBlock",
+		"onFailureBlock" ],
 	"name" : "HLRProvideRoamingNumberOperation",
 	"pools" : [
 		 ],
