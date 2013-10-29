@@ -1,6 +1,6 @@
 operations
-provideRoamingNumber: aSubscriber onEndPoint: anEndpoint
-	| vlrNumber |
+insertSubscriberData: aSubscriber
+	| vlrNumber  |
 	"Cancel the current location of a Subscriber"
 
 	vlrNumber := aSubscriber vlrNumber.
@@ -9,9 +9,9 @@ provideRoamingNumber: aSubscriber onEndPoint: anEndpoint
 	vlrNumber isNil
 		ifTrue: [^self].
 
-	HLRProvideRoamingNumberOperation new 
-		dialogueHandler: anEndpoint;
+	HLRInsertSubscriberData new 
+		dialogueHandler: endPoint;
 		hlrAddress: self hlrNumber;
 		vlrAddress: vlrNumber;
 		subscriber: aSubscriber;
-		start.
+		startWithNewDialogue.

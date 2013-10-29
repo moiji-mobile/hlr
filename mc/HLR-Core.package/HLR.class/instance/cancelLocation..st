@@ -1,5 +1,5 @@
 operations
-cancelLocation: aSubscriber onEndPoint: anEndpoint
+cancelLocation: aSubscriber
 	| vlrNumber  |
 	"Cancel the current location of a Subscriber"
 
@@ -10,7 +10,7 @@ cancelLocation: aSubscriber onEndPoint: anEndpoint
 		ifTrue: [^self].
 
 	HLRCancelOperation new
-		dialogueHandler: anEndpoint;
+		dialogueHandler: endPoint;
 		hlrAddress: self hlrNumber;
 		vlrAddress: vlrNumber;
 		imsi: aSubscriber imsi;

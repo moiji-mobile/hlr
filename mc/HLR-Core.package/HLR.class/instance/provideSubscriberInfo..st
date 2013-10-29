@@ -1,5 +1,5 @@
 operations
-provideSubscriberInfo: aSubscriber onEndPoint: anEndpoint
+provideSubscriberInfo: aSubscriber
 	| vlrNumber |
 	"Cancel the current location of a Subscriber"
 
@@ -10,7 +10,7 @@ provideSubscriberInfo: aSubscriber onEndPoint: anEndpoint
 		ifTrue: [^self].
 
 	HLRProvideSubscriberInfo new 
-		dialogueHandler: anEndpoint;
+		dialogueHandler: endPoint;
 		hlrAddress: self hlrNumber;
 		vlrAddress: vlrNumber;
 		subscriber: aSubscriber;
