@@ -10,7 +10,7 @@ provideRoamingNumber: aSubscriber onEndPoint: anEndpoint
 		ifTrue: [^self].
 
 	HLRProvideRoamingNumberOperation new 
-		endPoint: anEndpoint;
+		dialogueHandler: anEndpoint;
 		hlrAddress: self hlrNumber;
 		vlrAddress: vlrNumber;
 		subscriber: aSubscriber;

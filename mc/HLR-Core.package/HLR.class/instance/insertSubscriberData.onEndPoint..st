@@ -10,7 +10,7 @@ insertSubscriberData: aSubscriber onEndPoint: anEndpoint
 		ifTrue: [^self].
 
 	HLRInsertSubscriberData new 
-		endPoint: anEndpoint;
+		dialogueHandler: anEndpoint;
 		hlrAddress: self hlrNumber;
 		vlrAddress: vlrNumber;
 		subscriber: aSubscriber;

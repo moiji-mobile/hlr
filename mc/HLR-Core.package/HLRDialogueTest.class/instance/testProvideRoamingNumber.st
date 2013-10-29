@@ -17,7 +17,7 @@ testProvideRoamingNumber
 		subscriber: subscriber;
 		hlrAddress: '3548999973';
 		vlrAddress: '46707963173';
-		endPoint: hlrEndPoint;
+		dialogueHandler: hlrEndPoint;
 		onSuccess: [:res | resRoamingNumber := res ];
 		start.
 

@@ -10,7 +10,7 @@ cancelLocation: aSubscriber onEndPoint: anEndpoint
 		ifTrue: [^self].
 
 	HLRCancelOperation new
-		endPoint: anEndpoint;
+		dialogueHandler: anEndpoint;
 		hlrAddress: self hlrNumber;
 		vlrAddress: vlrNumber;
 		imsi: aSubscriber imsi;

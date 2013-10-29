@@ -2,13 +2,13 @@
 	"class" : {
 		 },
 	"instance" : {
-		"cancelLocation:onEndPoint:" : "HolgerHansPeterFreyther 10/21/2013 11:42",
+		"cancelLocation:onEndPoint:" : "HolgerHansPeterFreyther 10/29/2013 08:42",
 		"database" : "HolgerHansPeterFreyther 10/1/2013 13:41",
 		"database:" : "HolgerHansPeterFreyther 10/1/2013 13:10",
 		"endPoint:" : "HolgerHansPeterFreyther 10/14/2013 13:54",
 		"hlrNumber" : "HolgerHansPeterFreyther 10/21/2013 10:16",
 		"hlrNumber:" : "HolgerHansPeterFreyther 10/21/2013 10:16",
 		"hlrNumberAsE164" : "HolgerHansPeterFreyther 10/21/2013 10:19",
-		"insertSubscriberData:onEndPoint:" : "HolgerHansPeterFreyther 10/21/2013 14:39",
-		"provideRoamingNumber:onEndPoint:" : "HolgerHansPeterFreyther 10/22/2013 11:15",
-		"provideSubscriberInfo:onEndPoint:" : "HolgerHansPeterFreyther 10/22/2013 14:35" } }
+		"insertSubscriberData:onEndPoint:" : "HolgerHansPeterFreyther 10/29/2013 08:42",
+		"provideRoamingNumber:onEndPoint:" : "HolgerHansPeterFreyther 10/29/2013 08:42",
+		"provideSubscriberInfo:onEndPoint:" : "HolgerHansPeterFreyther 10/29/2013 08:42" } }

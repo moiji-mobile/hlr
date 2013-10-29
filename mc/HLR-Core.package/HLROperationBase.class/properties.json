@@ -11,7 +11,7 @@
 		"hlr",
 		"hlrAddress",
 		"vlrAddress",
-		"endPoint" ],
+		"dialogueHandler" ],
 	"name" : "HLROperationBase",
 	"pools" : [
 		 ],

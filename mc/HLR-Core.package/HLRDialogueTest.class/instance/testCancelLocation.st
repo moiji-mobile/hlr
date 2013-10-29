@@ -17,7 +17,7 @@ testCancelLocation
 		imsi: imsi;
 		hlrAddress: '3548999973';
 		vlrAddress: '46707963173';
-		endPoint: hlrEndPoint;
+		dialogueHandler: hlrEndPoint;
 		start.
 
 	self assert: (GSMNumberDigits decodeFrom: res) = imsi.

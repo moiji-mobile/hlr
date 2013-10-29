@@ -7,7 +7,7 @@ start
 		at: 'msc-Number' put: subscriber mscNumberAsE164;
 		yourself.
 
-	dialogue := endPoint createDialogue.
+	dialogue := dialogueHandler createDialogue.
 	dialogue
 		onPAbort: [self failure];
 		onUAbort: [self failure].

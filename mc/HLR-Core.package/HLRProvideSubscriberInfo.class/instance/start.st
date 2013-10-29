@@ -12,7 +12,7 @@ start
 			yourself);
 		yourself.
 
-	dialogue := endPoint createDialogue.
+	dialogue := dialogueHandler  createDialogue.
 	dialogue
 		onPAbort: [self failure];
 		onUAbort: [self failure].
