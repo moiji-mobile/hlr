@@ -6,5 +6,8 @@ maybeForward: aSubscriber
 	aSubscriber maybeForward
 		ifTrue: [^self finishForward: aSubscriber].
 
-	self flag: #todo. "Error handling in rose"
-	invocation returnError: 'absentSubscriber'.
+	self flag: #todo. "Enumeration value.."
+	invocation returnError: 'absentSubscriber' with: (
+					ASN1Dictionary new
+						at: 'absentSubscriberReason' put: 'imsiDetach';
+						yourself).
