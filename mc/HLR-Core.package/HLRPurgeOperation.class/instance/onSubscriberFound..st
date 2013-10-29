@@ -1,5 +1,5 @@
 handling
-onSuccess: aSubscriber 
+onSubscriberFound: aSubscriber 
 	aSubscriber
 		vlrNumber: nil;
 		mscNumber: nil.

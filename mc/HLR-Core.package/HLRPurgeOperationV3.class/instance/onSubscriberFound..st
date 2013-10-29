@@ -1,5 +1,5 @@
 as yet unclassified
-onSuccess: aSubscriber 
+onSubscriberFound: aSubscriber 
 	self flag: #todo. "If vlrNumber matches vlrNumber of Subscriber freezeTMSI must
 	be sent. Or freezeP-TMSI for the SGSN case"
 	aSubscriber

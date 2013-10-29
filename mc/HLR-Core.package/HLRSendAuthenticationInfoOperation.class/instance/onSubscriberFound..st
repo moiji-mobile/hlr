@@ -1,5 +1,5 @@
 execution
-onSuccess: subscriber
+onSubscriberFound: subscriber
 	| tripletList |
 	
 	tripletList := self generateAuthenticationListFor: subscriber count: self vectors.

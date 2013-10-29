@@ -3,7 +3,7 @@ execute
 	hlr database newQuery
 		imsi: imsi;
 		onSuccess: [:subscriber |
-			self onSuccess: subscriber];
+			self onSubscriberFound: subscriber];
 		onFailure: [:reason |
-			self onFailure: reason];
+			self onNoSubscriber: reason];
 		start.

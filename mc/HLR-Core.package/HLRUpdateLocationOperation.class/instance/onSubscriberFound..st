@@ -1,5 +1,5 @@
 execution
-onSuccess: aSubscriber
+onSubscriberFound: aSubscriber
 	"Remember the subscriber"
 	subscriber := aSubscriber.
 
