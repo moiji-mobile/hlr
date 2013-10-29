@@ -15,7 +15,7 @@ finishUpdate
 		imsi: subscriber imsi;
 		hlrAddress: hlr hlrNumber;
 		vlrAddress: subscriber vlrAddress;
-		endPoint: hlr endPoint;
+		dialogueHandler: hlr endPoint;
 		start.
 		
 	self updateInformationAndEnd
