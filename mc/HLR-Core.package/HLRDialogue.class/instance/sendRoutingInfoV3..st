@@ -4,4 +4,12 @@ sendRoutingInfoV3: anInvocation
 	<consumer: 'gsmSCF'>
 	<package: 'interrogationPackage-v3'>
 
-	self notImplementedInHLR
+	| msisdn |
+	msisdn := GSMNumberDigits decodeFrom: (ByteArray readHexFrom: anInvocation argument msisdn) allButFirst.
+
+	HLRSendRoutingInfoOperationV3 new
+		hlr: hlr;
+		dialogue: self;
+		invocation: anInvocation;
+		msisdn: msisdn;
+		execute

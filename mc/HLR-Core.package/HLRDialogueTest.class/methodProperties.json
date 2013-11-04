@@ -22,4 +22,7 @@
 		"testSendRoutingInfoV2" : "HolgerHansPeterFreyther 10/28/2013 22:15",
 		"testSendRoutingInfoV2DirectForward" : "HolgerHansPeterFreyther 10/28/2013 21:17",
 		"testSendRoutingInfoV2NoForward" : "HolgerHansPeterFreyther 10/28/2013 21:18",
+		"testSendRoutingInfoV3" : "HolgerHansPeterFreyther 11/4/2013 14:30",
+		"testSendRoutingInfoV3DirectForward" : "HolgerHansPeterFreyther 10/29/2013 17:32",
+		"testSendRoutingInfoV3NoForward" : "HolgerHansPeterFreyther 10/29/2013 17:34",
 		"testUpdateLocation" : "HolgerHansPeterFreyther 10/17/2013 18:47" } }

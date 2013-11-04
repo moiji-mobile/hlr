@@ -1,0 +1,14 @@
+{
+	"category" : "HLR-Core-Operations",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		 ],
+	"name" : "HLRSendRoutingInfoOperationV3",
+	"pools" : [
+		 ],
+	"super" : "HLRSendRoutingInfoOperationV2",
+	"type" : "normal" }

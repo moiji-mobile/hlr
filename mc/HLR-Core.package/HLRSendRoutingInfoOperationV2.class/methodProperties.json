@@ -1,6 +1,6 @@
 {
 	"class" : {
-		 },
+		"provideSubscriberInfoClass" : "HolgerHansPeterFreyther 10/29/2013 16:46" },
 	"instance" : {
 		"execute" : "HolgerHansPeterFreyther 10/29/2013 09:15",
 		"fail" : "HolgerHansPeterFreyther 10/28/2013 12:07",
@@ -10,4 +10,4 @@
 		"msisdn:" : "HolgerHansPeterFreyther 10/21/2013 15:13",
 		"onNoSubscriber:" : "HolgerHansPeterFreyther 10/29/2013 09:15",
 		"onSubscriberFound:" : "HolgerHansPeterFreyther 10/29/2013 09:15",
-		"querySubscriberInformation:" : "HolgerHansPeterFreyther 10/29/2013 08:41" } }
+		"querySubscriberInformation:" : "HolgerHansPeterFreyther 10/29/2013 17:14" } }
