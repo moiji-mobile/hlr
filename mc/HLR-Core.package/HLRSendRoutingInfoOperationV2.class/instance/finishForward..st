@@ -5,4 +5,4 @@ finishForward: aSubscriber
 	number := aSubscriber forwardingNumberAsE164.
 	number ifNil: [^self fail].
 
-	self finishWithRoute: aSubscriber number: number.
+	self finishForward: aSubscriber number: number.

@@ -2,4 +2,5 @@
 	"class" : {
 		"provideSubscriberInfoClass" : "HolgerHansPeterFreyther 11/1/2013 21:30" },
 	"instance" : {
-		"finishWithRoute:number:" : "HolgerHansPeterFreyther 11/4/2013 15:58" } }
+		"finishForward:number:" : "HolgerHansPeterFreyther 11/7/2013 09:53",
+		"finishWithRoute:number:" : "HolgerHansPeterFreyther 11/7/2013 09:52" } }

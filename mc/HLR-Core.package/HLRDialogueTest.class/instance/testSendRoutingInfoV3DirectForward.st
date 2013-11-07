@@ -29,4 +29,4 @@ testSendRoutingInfoV3DirectForward
 		applicationContextName: (self applicationContextFor: operationName).
 
 	"Verify things"
-	self assert: invokeResult extendedRoutingInfo roamingNumber = subscriber forwardingNumberAsE164 asUppercase.
+	self assert: invokeResult extendedRoutingInfo forwardingData forwardedToNumber = subscriber forwardingNumberAsE164 asUppercase.

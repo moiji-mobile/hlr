@@ -1,10 +1,10 @@
 as yet unclassified
-finishWithRoute: aSubscriber number: aMSISDN
+finishWithRoute: aSubscriber number: aMSRN
 	invocation returnResultLast:
 		(ASN1Dictionary new
 			at: 'imsi' put: aSubscriber imsiAsTBCD;
 			at: 'routingInfo' put: (ASN1Dictionary new
-				at: 'roamingNumber' put: aMSISDN;
+				at: 'roamingNumber' put: aMSRN;
 				yourself);
 			yourself).
 	dialogue requestTcEnd: false.

@@ -1,12 +1,15 @@
 as yet unclassified
-finishWithRoute: aSubscriber number: aMSISDN
+finishForward: aSubscriber number: aMSISDN
 	invocation returnResultLast:
 		(ASN1Dictionary new
 			at: 'imsi' put: aSubscriber imsiAsTBCD;
 			at: 'extendedRoutingInfo' put: 
 				(ASN1Dictionary new
-					at: 'roamingNumber' put: aMSISDN;
-					yourself);
+					at: 'forwardingData'  put:
+						(ASN1Dictionary new
+							at: 'forwardedToNumber' put: aMSISDN;
+							yourself);
+						yourself);
 			yourself).
 
 	dialogue requestTcEnd: false.
