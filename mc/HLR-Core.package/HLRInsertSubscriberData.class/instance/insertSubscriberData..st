@@ -15,6 +15,6 @@ insertSubscriberData: aParameter
 			dialogue
 				requestTcBeginDestinationAddress: self remoteSCCPAddress
 				originatingAddress: self localSCCPAddress
-				applicationContextName: (self class applicationContextFor: 'sendAuthenticationInfoV2')
+				applicationContextName: (self class applicationContextFor: 'insertSubscriberDataV3')
 		]
 		ifFalse: [dialogue requestTcContinue].

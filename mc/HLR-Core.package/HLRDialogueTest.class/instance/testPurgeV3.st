@@ -18,12 +18,13 @@ testPurgeV3
 		onReturn: [self assert: false ];
 		onError: [self assert: false];
 		onReject: [self assert: false];
-		onReturnLast: [:result | invokeResult := true ].
+		onReturnLast: [:result | invokeResult := result].
 	dialogue
 		requestTcBeginDestinationAddress: self hlrAddr
 		originatingAddress: self localAddr
 		applicationContextName: (self applicationContextFor: operationName).
 
-	self assert: invokeResult.
+	self deny: invokeResult isNil.
+	self assert: invokeResult freezeTMSI = #null.
 	self assert: subscriber vlrNumber isNil.
 	self assert: subscriber mscNumber isNil.

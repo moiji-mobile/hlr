@@ -11,7 +11,9 @@
 		"pendingInvokes",
 		"onErrorBlock",
 		"failed",
-		"needsBegin" ],
+		"needsBegin",
+		"needsEnd",
+		"blockHandling" ],
 	"name" : "HLRInsertSubscriberData",
 	"pools" : [
 		 ],
