@@ -4,11 +4,11 @@
 		 ],
 	"classvars" : [
 		 ],
-	"commentStamp" : "<historical>",
+	"commentStamp" : "",
 	"instvars" : [
-		 ],
-	"name" : "HLRSendRoutingInfoOperationV2",
+		"msisdn" ],
+	"name" : "HLRMSISDNOperationBase",
 	"pools" : [
 		 ],
-	"super" : "HLRMSISDNOperationBase",
+	"super" : "HLROperationBase",
 	"type" : "normal" }

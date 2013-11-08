@@ -21,6 +21,8 @@
 		"testSendAuthenticationInfoV2" : "HolgerHansPeterFreyther 10/7/2013 16:56",
 		"testSendAuthenticationInfoV2NotFound" : "HolgerHansPeterFreyther 10/21/2013 09:43",
 		"testSendAuthenticationInfoV3" : "HolgerHansPeterFreyther 10/5/2013 17:29",
+		"testSendIMSI" : "HolgerHansPeterFreyther 11/8/2013 10:52",
+		"testSendIMSINotFound" : "HolgerHansPeterFreyther 11/7/2013 10:15",
 		"testSendRoutingInfoV2" : "HolgerHansPeterFreyther 10/28/2013 22:15",
 		"testSendRoutingInfoV2DirectForward" : "HolgerHansPeterFreyther 11/7/2013 09:33",
 		"testSendRoutingInfoV2NoForward" : "HolgerHansPeterFreyther 10/28/2013 21:18",
