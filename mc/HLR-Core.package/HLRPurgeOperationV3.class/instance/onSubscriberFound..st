@@ -3,9 +3,7 @@ onSubscriberFound: aSubscriber
 	| res |
 	self flag: #todo. "Check if the vlrNumber is actually matching!"
 
-	aSubscriber
-		vlrNumber: nil;
-		mscNumber: nil.
+	aSubscriber clearVlr.
 	hlr database updateSubscriber: aSubscriber.
 
 	res := ASN1Dictionary new

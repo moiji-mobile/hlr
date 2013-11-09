@@ -31,7 +31,8 @@
 		"apnOctetString",
 		"teleServiceProfileGPRS",
 		"sgsnNumber",
-		"sgsnAddress" ],
+		"sgsnAddress",
+		"mobileStationNotReachable" ],
 	"name" : "Subscriber",
 	"pools" : [
 		 ],

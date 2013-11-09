@@ -17,6 +17,7 @@
 		"bearerServiceProfile" : "HolgerHansPeterFreyther 8/19/2013 16:07",
 		"bearerServiceProfile:" : "HolgerHansPeterFreyther 10/4/2013 18:18",
 		"category:" : "HolgerHansPeterFreyther 10/4/2013 14:07",
+		"clearVlr" : "HolgerHansPeterFreyther 11/9/2013 18:15",
 		"forwardingMode" : "HolgerHansPeterFreyther 10/28/2013 12:05",
 		"forwardingMode:" : "HolgerHansPeterFreyther 10/28/2013 21:10",
 		"forwardingNumber" : "HolgerHansPeterFreyther 10/28/2013 11:51",
@@ -26,9 +27,11 @@
 		"imsi" : "HolgerHansPeterFreyther 8/13/2013 16:47",
 		"imsi:" : "HolgerHansPeterFreyther 8/19/2013 16:19",
 		"imsiAsTBCD" : "HolgerHansPeterFreyther 10/21/2013 15:33",
+		"initialize" : "HolgerHansPeterFreyther 11/9/2013 18:16",
 		"ki" : "HolgerHansPeterFreyther 10/2/2013 11:21",
 		"ki:" : "HolgerHansPeterFreyther 10/2/2013 11:25",
 		"maybeForward" : "HolgerHansPeterFreyther 10/28/2013 11:46",
+		"mobileStationNotReachable" : "HolgerHansPeterFreyther 11/9/2013 18:18",
 		"mscNumber" : "HolgerHansPeterFreyther 10/21/2013 09:54",
 		"mscNumber:" : "HolgerHansPeterFreyther 10/14/2013 16:02",
 		"mscNumberAsE164" : "HolgerHansPeterFreyther 10/22/2013 10:46",
@@ -61,4 +64,4 @@
 		"vgcsSubscriptionData" : "HolgerHansPeterFreyther 8/13/2013 16:49",
 		"vlrCamelSubscriptionInfo" : "HolgerHansPeterFreyther 8/13/2013 16:49",
 		"vlrNumber" : "NorbertHartl 10/17/2013 17:12",
-		"vlrNumber:" : "HolgerHansPeterFreyther 10/14/2013 16:02" } }
+		"vlrNumber:" : "HolgerHansPeterFreyther 11/9/2013 18:17" } }

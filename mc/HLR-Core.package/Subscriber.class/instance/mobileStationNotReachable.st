@@ -1,0 +1,3 @@
+vlr
+mobileStationNotReachable
+	^ mobileStationNotReachable

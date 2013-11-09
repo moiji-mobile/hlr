@@ -1,17 +1,14 @@
 operations
 provideRoamingNumber: aSubscriber
-	| vlrNumber |
 	"Cancel the current location of a Subscriber"
-
-	vlrNumber := aSubscriber vlrNumber.
 	
 	"It is not registered anywhere?!"
-	vlrNumber isNil
+	aSubscriber mobileStationNotReachable
 		ifTrue: [^self].
 
 	HLRProvideRoamingNumberOperation new 
 		dialogueHandler: endPoint;
 		hlrAddress: self hlrNumber;
-		remoteAddress: vlrNumber;
+		remoteAddress: aSubscriber vlrNumber;
 		subscriber: aSubscriber;
 		start.

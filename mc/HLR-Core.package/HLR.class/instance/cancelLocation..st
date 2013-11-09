@@ -1,22 +1,18 @@
 operations
 cancelLocation: aSubscriber
-	| vlrNumber  |
 	"Cancel the current location of a Subscriber"
-
-	vlrNumber := aSubscriber vlrNumber.
 	
 	"It is not registered anywhere?!"
-	vlrNumber isNil
+	aSubscriber mobileStationNotReachable
 		ifTrue: [^self].
 
 	HLRCancelOperation new
 		dialogueHandler: endPoint;
 		hlrAddress: self hlrNumber;
-		remoteAddress: vlrNumber;
+		remoteAddress: aSubscriber vlrNumber;
 		imsi: aSubscriber imsi;
 		onSuccess: [
-			aSubscriber vlrNumber: nil.
-			aSubscriber mscNumber: nil.
+			aSubscriber clearVlr.
 			database updateSubscriber: aSubscriber];
 		onFailure: [];
 		start.
