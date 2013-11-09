@@ -35,3 +35,4 @@ testUpdateLocationWithCancelLocation
 
 	self assert: res.
 	self assert: receivedCancel.
+	self deny: subscriber mobileStationNotReachable.
