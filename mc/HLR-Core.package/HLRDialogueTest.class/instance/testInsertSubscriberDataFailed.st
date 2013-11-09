@@ -13,7 +13,7 @@ testInsertSubscriberDataFailed
 	"Fire and forget the operation"
 	HLRInsertSubscriberData new
 		hlrAddress: '3548999973';
-		vlrAddress: '46707963173';
+		remoteAddress: '46707963173';
 		dialogueHandler: hlrEndPoint;
 		subscriber: subscriber;
 		onSuccess: [success := true];

@@ -10,7 +10,8 @@
 		"dialogue",
 		"hlr",
 		"hlrAddress",
-		"vlrAddress",
+		"remoteAddress",
+		"remoteSSN",
 		"dialogueHandler" ],
 	"name" : "HLROperationBase",
 	"pools" : [

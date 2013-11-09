@@ -10,5 +10,5 @@
 	"name" : "HLRInsertSubscriberDataGprs",
 	"pools" : [
 		 ],
-	"super" : "HLROperationBase",
+	"super" : "HLRInsertSubscriberDataBase",
 	"type" : "normal" }

@@ -13,7 +13,7 @@ testUpdateGprsLocation
 
 	param := ASN1Dictionary new
 				at: 'imsi' put: subscriber imsiAsTBCD;
-				at: 'sgsn-Number' put: '6123';
+				at: 'sgsn-Number' put: '9123';
 				at: 'sgsn-Address' put: 'AABBCCDD';
 				at: 'sgsn-Capability' put: (ASN1Dictionary new
 						at: 'gprsEnhancementsSupportIndicator' put: #null;
@@ -33,3 +33,4 @@ testUpdateGprsLocation
 
 	self assert: res.
 	self assert: invoked = 1.
+	self assert: subscriber sgsnNumber = '32'.

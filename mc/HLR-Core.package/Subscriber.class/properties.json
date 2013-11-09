@@ -27,7 +27,11 @@
 		"vlrNumber",
 		"mscNumber",
 		"forwardingMode",
-		"forwardingNumber" ],
+		"forwardingNumber",
+		"apnOctetString",
+		"teleServiceProfileGPRS",
+		"sgsnNumber",
+		"sgsnAddress" ],
 	"name" : "Subscriber",
 	"pools" : [
 		 ],

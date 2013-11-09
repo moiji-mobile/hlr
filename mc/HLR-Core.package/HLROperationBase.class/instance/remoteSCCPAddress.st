@@ -1,11 +1,11 @@
 sccp
 remoteSCCPAddress
-	^(SCCPAddress createForSSN: #vlr)
+	^(SCCPAddress createForSSN: remoteSSN)
 		routedOnSSN: false;
 		gtiFromAddr:  (SCCPGlobalTitleTranslation new
 							nature: SCCPGlobalTitle naiInternationalNumber;
 							plan: SCCPGlobalTitle npISDN;
-							addr: vlrAddress;
+							addr: remoteAddress;
 							translation: 0;
 							yourself);
 		yourself.

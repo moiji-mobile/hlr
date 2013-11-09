@@ -1,3 +1,10 @@
 execution
 onSubscriberFound: aSubscriber 
-	self shouldBeImplemented.
+	subscriber := aSubscriber.
+
+	HLRInsertSubscriberDataGprs new
+			dialogue: dialogue;
+			subscriber: subscriber;
+			onSuccess: [self finishUpdate];
+			onFailure: [self failUpdate];
+			execute

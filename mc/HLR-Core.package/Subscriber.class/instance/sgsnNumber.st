@@ -1,0 +1,3 @@
+gprs
+sgsnNumber
+	^sgsnNumber

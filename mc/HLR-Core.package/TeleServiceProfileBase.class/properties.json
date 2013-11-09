@@ -1,0 +1,14 @@
+{
+	"category" : "HLR-Core-Profiles",
+	"classinstvars" : [
+		"defaultProfile" ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "<historical>",
+	"instvars" : [
+		 ],
+	"name" : "TeleServiceProfileBase",
+	"pools" : [
+		 ],
+	"super" : "Object",
+	"type" : "normal" }

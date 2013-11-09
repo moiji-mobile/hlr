@@ -1,0 +1,21 @@
+{
+	"category" : "HLR-Core-Operations",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		"subscriber",
+		"onSuccessBlock",
+		"pendingInvokes",
+		"onErrorBlock",
+		"failed",
+		"needsBegin",
+		"needsEnd",
+		"blockHandling" ],
+	"name" : "HLRInsertSubscriberDataBase",
+	"pools" : [
+		 ],
+	"super" : "HLROperationBase",
+	"type" : "normal" }

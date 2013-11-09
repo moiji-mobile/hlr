@@ -12,7 +12,7 @@ cancelLocation: aSubscriber
 	HLRCancelOperation new
 		dialogueHandler: endPoint;
 		hlrAddress: self hlrNumber;
-		vlrAddress: vlrNumber;
+		remoteAddress: vlrNumber;
 		imsi: aSubscriber imsi;
 		onSuccess: [
 			aSubscriber vlrNumber: nil.

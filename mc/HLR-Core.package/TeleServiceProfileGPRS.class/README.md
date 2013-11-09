@@ -1,0 +1,1 @@
+My instances are teleService profiles for GPRS. This way we do not need to store hundreds of bits.

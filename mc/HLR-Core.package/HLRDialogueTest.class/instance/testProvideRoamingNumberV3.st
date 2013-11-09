@@ -18,9 +18,9 @@ testProvideRoamingNumberV3
 	HLRProvideRoamingNumberOperationV3 new
 		subscriber: subscriber;
 		hlrAddress: '3548999973';
-		vlrAddress: '46707963173';
+		remoteAddress: '46707963173';
 		dialogueHandler: hlrEndPoint;
-		onSuccess: [:res | resRoamingNumber := res roamingNumber ];
+		onSuccess: [:res | resRoamingNumber := res];
 		start.
 
 	self assert: (GSMNumberDigits decodeFrom: reqImsi) = subscriber imsi.

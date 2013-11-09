@@ -14,7 +14,7 @@ finishUpdate
 	HLRCancelOperation new
 		imsi: subscriber imsi;
 		hlrAddress: hlr hlrNumber;
-		vlrAddress: subscriber vlrAddress;
+		remoteAddress: subscriber vlrNumber;
 		dialogueHandler: hlr endPoint;
 		start.
 		

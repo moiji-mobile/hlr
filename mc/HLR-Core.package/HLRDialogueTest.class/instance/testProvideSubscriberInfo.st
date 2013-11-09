@@ -20,7 +20,7 @@ testProvideSubscriberInfo
 	HLRProvideSubscriberInfo new
 		subscriber: subscriber;
 		hlrAddress: '3548999973';
-		vlrAddress: '46707963173';
+		remoteAddress: '46707963173';
 		dialogueHandler: hlrEndPoint;
 		onSuccess: [:res | resImei := res subscriberInfo imei];
 		start.

@@ -6,16 +6,9 @@
 		 ],
 	"commentStamp" : "<historical>",
 	"instvars" : [
-		"subscriber",
-		"onSuccessBlock",
-		"pendingInvokes",
-		"onErrorBlock",
-		"failed",
-		"needsBegin",
-		"needsEnd",
-		"blockHandling" ],
+		 ],
 	"name" : "HLRInsertSubscriberData",
 	"pools" : [
 		 ],
-	"super" : "HLROperationBase",
+	"super" : "HLRInsertSubscriberDataBase",
 	"type" : "normal" }

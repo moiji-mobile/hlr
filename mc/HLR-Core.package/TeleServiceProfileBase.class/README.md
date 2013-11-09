@@ -1,0 +1,1 @@
+Base for different teleservice profiles. Currently Tele and GPRS

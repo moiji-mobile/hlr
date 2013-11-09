@@ -12,6 +12,6 @@ provideRoamingNumber: aSubscriber
 	HLRProvideRoamingNumberOperation new 
 		dialogueHandler: endPoint;
 		hlrAddress: self hlrNumber;
-		vlrAddress: vlrNumber;
+		remoteAddress: vlrNumber;
 		subscriber: aSubscriber;
 		start.

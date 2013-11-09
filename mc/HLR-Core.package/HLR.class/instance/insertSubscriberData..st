@@ -12,6 +12,6 @@ insertSubscriberData: aSubscriber
 	HLRInsertSubscriberData new 
 		dialogueHandler: endPoint;
 		hlrAddress: self hlrNumber;
-		vlrAddress: vlrNumber;
+		remoteAddress: vlrNumber;
 		subscriber: aSubscriber;
 		startWithNewDialogue.
