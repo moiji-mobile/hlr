@@ -1,0 +1,17 @@
+{
+	"category" : "HLR-Core-Operations",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "<historical>",
+	"instvars" : [
+		"msisdn",
+		"onSuccessBlock",
+		"onErrorBlock",
+		"smscAddr" ],
+	"name" : "HLRAlertServiceCentreOperation",
+	"pools" : [
+		 ],
+	"super" : "HLROperationBase",
+	"type" : "normal" }

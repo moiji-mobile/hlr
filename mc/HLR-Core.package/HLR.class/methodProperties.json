@@ -2,6 +2,8 @@
 	"class" : {
 		 },
 	"instance" : {
+		"alertServiceCentre:for:" : "HolgerHansPeterFreyther 11/9/2013 22:28",
+		"alertServiceCentresFor:" : "HolgerHansPeterFreyther 11/9/2013 22:10",
 		"cancelLocation:" : "HolgerHansPeterFreyther 11/9/2013 18:20",
 		"database" : "HolgerHansPeterFreyther 10/1/2013 13:41",
 		"database:" : "HolgerHansPeterFreyther 10/1/2013 13:10",
@@ -12,5 +14,7 @@
 		"hlrNumberAsE164" : "HolgerHansPeterFreyther 10/21/2013 10:19",
 		"insertSubscriberData:" : "HolgerHansPeterFreyther 11/9/2013 18:20",
 		"insertSubscriberDataGPRS:" : "HolgerHansPeterFreyther 11/9/2013 16:27",
+		"iwmscNumber" : "HolgerHansPeterFreyther 11/9/2013 22:20",
+		"iwmscNumber:" : "HolgerHansPeterFreyther 11/9/2013 22:31",
 		"provideRoamingNumber:" : "HolgerHansPeterFreyther 11/9/2013 18:21",
 		"provideSubscriberInfo:" : "HolgerHansPeterFreyther 11/9/2013 18:21" } }

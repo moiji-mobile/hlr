@@ -9,7 +9,7 @@
 		"imsi" : "HolgerHansPeterFreyther 9/17/2013 14:59",
 		"localAddr" : "HolgerHansPeterFreyther 9/17/2013 15:01",
 		"localSGSNAddr" : "HolgerHansPeterFreyther 11/9/2013 16:08",
-		"setUp" : "HolgerHansPeterFreyther 11/9/2013 16:28",
+		"setUp" : "HolgerHansPeterFreyther 11/9/2013 22:30",
 		"testCancelLocation" : "HolgerHansPeterFreyther 11/9/2013 15:58",
 		"testCancelLocationV3" : "HolgerHansPeterFreyther 11/9/2013 15:58",
 		"testInsertSubscriberData" : "HolgerHansPeterFreyther 11/9/2013 15:58",
@@ -44,4 +44,6 @@
 		"testUpdateGprsLocationNotFound" : "HolgerHansPeterFreyther 11/9/2013 13:36",
 		"testUpdateGprsLocationWithCancelLocation" : "HolgerHansPeterFreyther 11/9/2013 16:32",
 		"testUpdateLocation" : "HolgerHansPeterFreyther 11/9/2013 18:26",
+		"testUpdateLocationMWD" : "HolgerHansPeterFreyther 11/9/2013 22:34",
+		"testUpdateLocationMWDError" : "HolgerHansPeterFreyther 11/9/2013 22:35",
 		"testUpdateLocationWithCancelLocation" : "HolgerHansPeterFreyther 11/9/2013 18:26" } }

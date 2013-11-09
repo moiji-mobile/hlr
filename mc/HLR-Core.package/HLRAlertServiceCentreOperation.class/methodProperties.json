@@ -1,0 +1,12 @@
+{
+	"class" : {
+		 },
+	"instance" : {
+		"alertFailed" : "HolgerHansPeterFreyther 11/9/2013 22:37",
+		"alertSuccess:" : "HolgerHansPeterFreyther 11/9/2013 22:29",
+		"execute" : "HolgerHansPeterFreyther 11/9/2013 22:28",
+		"msisdn:" : "HolgerHansPeterFreyther 11/9/2013 22:19",
+		"onFailure:" : "HolgerHansPeterFreyther 11/9/2013 22:20",
+		"onSuccess:" : "HolgerHansPeterFreyther 11/9/2013 22:20",
+		"smscAddress:" : "HolgerHansPeterFreyther 11/9/2013 22:30",
+		"startWithNewDialogue" : "HolgerHansPeterFreyther 11/9/2013 22:23" } }

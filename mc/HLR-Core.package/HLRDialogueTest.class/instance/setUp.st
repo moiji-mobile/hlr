@@ -7,6 +7,7 @@ setUp
 	testHlr := HLR new
 			database: db;
 			hlrNumber: '35412';
+			iwmscNumber: '35413';
 			yourself.
 
 	testEndPoint := TCAPTestServiceEndPoint new.
