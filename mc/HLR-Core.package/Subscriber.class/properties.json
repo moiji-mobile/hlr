@@ -32,7 +32,8 @@
 		"teleServiceProfileGPRS",
 		"sgsnNumber",
 		"sgsnAddress",
-		"mobileStationNotReachable" ],
+		"mobileStationNotReachable",
+		"messageWaitingSet" ],
 	"name" : "Subscriber",
 	"pools" : [
 		 ],
