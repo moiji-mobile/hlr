@@ -13,6 +13,7 @@ setUp
 	hlrEndPoint := TCAPTestServiceEndPoint newHLR.
 	hlrEndPoint transactionCoordinator: TCAPTestTransactionCoordinator new.
 	hlrEndPoint factory hlr: testHlr.
+	testHlr endPoint: hlrEndPoint.
 
 	testEndPoint connectTo: hlrEndPoint.
 	hlrEndPoint connectTo: testEndPoint.
