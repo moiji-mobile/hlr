@@ -1,0 +1,14 @@
+{
+	"category" : "HLR-Core-Operations",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		"subscriber" ],
+	"name" : "HLRRestoreDataOperation",
+	"pools" : [
+		 ],
+	"super" : "HLRIMSIOperationBase",
+	"type" : "normal" }

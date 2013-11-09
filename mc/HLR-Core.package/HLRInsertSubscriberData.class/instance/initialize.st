@@ -2,5 +2,5 @@ as yet unclassified
 initialize
 	super initialize.
 	needsBegin := false.
-	needsEnd := true.
+	needsEnd := false.
 	failed := false.
