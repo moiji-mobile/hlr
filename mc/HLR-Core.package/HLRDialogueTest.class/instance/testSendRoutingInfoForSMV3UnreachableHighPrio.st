@@ -9,6 +9,7 @@ testSendRoutingInfoForSMV3UnreachableHighPrio
 	mwStatus := nil.
 
 	self assert: subscriber mobileStationNotReachable.
+	self assert: subscriber messageWaitingSet isEmpty.
 
 	sriArg := ASN1Dictionary new
 				at: 'msisdn' put: subscriber msisdnAsE164;
@@ -37,3 +38,4 @@ testSendRoutingInfoForSMV3UnreachableHighPrio
 	"TODO.. make sure things return"
 	self assert: invokeResult isNil.
 	self assert: mwStatus = '0100'.
+	self assert: (subscriber messageWaitingSet includes: '3234')

@@ -7,6 +7,7 @@ testSendRoutingInfoForSMV3
 		vlrNumber: '456'.
 
 	self deny: subscriber mobileStationNotReachable.
+	self assert: subscriber messageWaitingSet isEmpty.
 
 	sriArg := ASN1Dictionary new
 				at: 'msisdn' put: subscriber msisdnAsE164;
@@ -31,3 +32,4 @@ testSendRoutingInfoForSMV3
 
 	"TODO.. make sure things return"
 	self assert: invokeResult imsi = subscriber imsiAsTBCD asUppercase.
+	self assert: subscriber messageWaitingSet isEmpty.
