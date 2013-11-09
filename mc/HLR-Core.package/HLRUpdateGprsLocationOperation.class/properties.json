@@ -1,0 +1,16 @@
+{
+	"category" : "HLR-Core-Operations",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		"sgsnNumber",
+		"sgsnAddress",
+		"subscriber" ],
+	"name" : "HLRUpdateGprsLocationOperation",
+	"pools" : [
+		 ],
+	"super" : "HLRIMSIOperationBase",
+	"type" : "normal" }
