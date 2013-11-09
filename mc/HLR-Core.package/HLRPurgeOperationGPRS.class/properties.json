@@ -1,0 +1,14 @@
+{
+	"category" : "HLR-Core-Operations",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		 ],
+	"name" : "HLRPurgeOperationGPRS",
+	"pools" : [
+		 ],
+	"super" : "HLRPurgeOperationV3",
+	"type" : "normal" }

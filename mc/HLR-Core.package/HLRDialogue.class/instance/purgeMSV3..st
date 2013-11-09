@@ -4,11 +4,17 @@ purgeMSV3: anInvocation
 	<consumer: 'SGSN'>
 	<package: 'purgingPackage-v3'>
 
-	| imsi |
-
-	self flag: #todo. "Check the vlr-Number/sgsn-Number if it is matching?"
+	| imsi sgsn operation |
+	
 	imsi := GSMNumberDigits decodeFrom: (ByteArray readHexFrom: anInvocation argument imsi).
-	(HLRPurgeOperationV3 for: imsi)
+	sgsn := anInvocation argument sgsn_Number.
+	self flag: #todo. "Check the vlr-Number/sgsn-Number if it is matching?"
+	"Depending on the sgsn-Number we are either a purge from the SGSN or the VLR"
+	operation := sgsn isNil
+			ifTrue: [HLRPurgeOperationV3 for: imsi]
+			ifFalse: [HLRPurgeOperationGPRS for: imsi].
+
+	operation
 		hlr: hlr;
 		dialogue: self;
 		invocation: anInvocation;
