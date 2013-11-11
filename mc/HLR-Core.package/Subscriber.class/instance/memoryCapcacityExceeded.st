@@ -1,0 +1,3 @@
+sms
+memoryCapcacityExceeded
+	memoryAvailable := false

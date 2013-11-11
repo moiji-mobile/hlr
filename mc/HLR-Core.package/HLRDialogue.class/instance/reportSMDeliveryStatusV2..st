@@ -4,4 +4,15 @@ reportSMDeliveryStatusV2: anInvocation
 	<package: 'shortMsgGatewayPackage-v2'>
 	<operation: 'reportSM-DeliveryStatusV2'>
 
-	self notImplementedInHLR
+	| msisdn smsc |
+	msisdn := anInvocation argument msisdn fromE164.
+	smsc := anInvocation argument serviceCentreAddress fromE164.
+
+	HLRReportSMDeliveryStatusOperationV2 new
+		hlr: hlr;
+		msisdn: msisdn;
+		serviceCentreAddress: smsc;
+		dialogue: self;
+		invocation: anInvocation;
+		deliveryOutcome: anInvocation argument sm_DeliveryOutcome value;
+		execute.

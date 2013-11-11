@@ -1,0 +1,15 @@
+{
+	"category" : "HLR-Core-Operations",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		"serviceCentreAddress",
+		"deliveryOutcome" ],
+	"name" : "HLRReportSMDeliveryStatusOperationV2",
+	"pools" : [
+		 ],
+	"super" : "HLRMSISDNOperationBase",
+	"type" : "normal" }

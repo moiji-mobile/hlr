@@ -33,7 +33,8 @@
 		"sgsnNumber",
 		"sgsnAddress",
 		"mobileStationNotReachable",
-		"messageWaitingSet" ],
+		"messageWaitingSet",
+		"memoryAvailable" ],
 	"name" : "Subscriber",
 	"pools" : [
 		 ],

@@ -1,3 +1,3 @@
 sms
 memoryAvailable
-	"not implemented..."
+	memoryAvailable := true.
