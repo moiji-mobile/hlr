@@ -4,4 +4,12 @@ readyForSMV2: anInvocation
 	<consumer: 'VLR'>
 	<package: 'mwdMngtPackage-v2'>
 
-	self notImplementedInHLR
+	| imsi |
+	imsi := anInvocation argument imsi fromTBCD.
+	(HLRReadyForSMV2Operation for: imsi)
+		hlr: hlr;
+		dialogue: self;
+		invocation: anInvocation;
+		msPresent: (anInvocation argument alertReason value = 'ms-Present');
+		memoryAvailable: (anInvocation argument alertReason value = 'memoryAvailable');
+		execute.

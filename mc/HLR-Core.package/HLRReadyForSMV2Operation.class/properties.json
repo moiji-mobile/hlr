@@ -1,0 +1,15 @@
+{
+	"category" : "HLR-Core-Operations",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		"msPresent",
+		"memoryAvailable" ],
+	"name" : "HLRReadyForSMV2Operation",
+	"pools" : [
+		 ],
+	"super" : "HLRIMSIOperationBase",
+	"type" : "normal" }

@@ -1,0 +1,3 @@
+sms
+mobileStationNotPresent
+	mobileStationNotReachable := true

@@ -1,0 +1,3 @@
+sms
+memoryAvailable
+	"not implemented..."

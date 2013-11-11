@@ -20,6 +20,8 @@
 		"testPurgeGprsV3" : "HolgerHansPeterFreyther 11/9/2013 16:12",
 		"testPurgeV2" : "HolgerHansPeterFreyther 11/9/2013 18:18",
 		"testPurgeV3" : "HolgerHansPeterFreyther 11/9/2013 18:19",
+		"testReadyForSMV2" : "HolgerHansPeterFreyther 11/11/2013 14:49",
+		"testReadyForSMV2MemoryAvailable" : "HolgerHansPeterFreyther 11/11/2013 14:50",
 		"testRestoreData" : "HolgerHansPeterFreyther 11/9/2013 13:22",
 		"testRestoreDataFailsInsert" : "HolgerHansPeterFreyther 11/8/2013 13:53",
 		"testRestoreDataNotFound" : "HolgerHansPeterFreyther 11/8/2013 13:52",
