@@ -4,7 +4,7 @@ sendIMSI: anInvocation
 	<package: 'imsiRetrievalPackage-v2'>
 	| msisdn |
 
-	msisdn := GSMNumberDigits decodeFrom: (ByteArray readHexFrom: anInvocation argument) allButFirst.
+	msisdn := anInvocation argument fromE164.
 	HLRSendIMSIOperation new
 		hlr: hlr;
 		msisdn: msisdn;

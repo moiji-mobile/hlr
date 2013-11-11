@@ -5,9 +5,9 @@ updateGprsLocation: anInvocation
 
 	| imsi sgsnNumber sgsnAddress |
 
-	imsi := GSMNumberDigits decodeFrom: (ByteArray readHexFrom: anInvocation argument imsi).
-	sgsnNumber := GSMNumberDigits decodeFrom: (ByteArray readHexFrom: anInvocation argument sgsn_Number) allButFirst.
-	sgsnAddress := (ByteArray readHexFrom: anInvocation argument sgsn_Address).
+	imsi := anInvocation argument imsi fromTBCD.
+	sgsnNumber := anInvocation argument sgsn_Number fromE164.
+	sgsnAddress := anInvocation argument sgsn_Address fromE164.
 
 	(HLRUpdateGprsLocationOperation for: imsi)
 		sgsnNumber: sgsnNumber;

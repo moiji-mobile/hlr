@@ -4,8 +4,8 @@ sendRoutingInfoForSMV2: anInvocation
 	<package: 'shortMsgGatewayPackage-v2'>
 
 	| msisdn smscAddr |
-	msisdn := GSMNumberDigits decodeFrom: (ByteArray readHexFrom: anInvocation argument msisdn) allButFirst.
-	smscAddr := GSMNumberDigits decodeFrom: (ByteArray readHexFrom: anInvocation argument serviceCentreAddress) allButFirst.
+	msisdn := anInvocation argument msisdn fromE164.
+	smscAddr := anInvocation argument serviceCentreAddress fromE164.
 
 	HLRSendRoutingInfoForSMOperationV2 new
 		hlr: hlr;

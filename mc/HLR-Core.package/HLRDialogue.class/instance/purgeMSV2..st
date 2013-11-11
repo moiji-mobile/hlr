@@ -6,7 +6,7 @@ purgeMSV2: anInvocation
 	| imsi |
 
 	self flag: #todo. "Check the vlr-Number if it is matching?"
-	imsi := GSMNumberDigits decodeFrom: (ByteArray readHexFrom: anInvocation argument imsi).
+	imsi := anInvocation argument imsi fromTBCD.
 	(HLRPurgeOperation for: imsi)
 		hlr: hlr;
 		dialogue: self;

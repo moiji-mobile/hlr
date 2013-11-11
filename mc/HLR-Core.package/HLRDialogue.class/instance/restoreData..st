@@ -6,7 +6,7 @@ restoreData: anInvocation
 	| imsi |
 
 	self flag: #todo. "Check if the VLR address matches ours?"
-	imsi := 	GSMNumberDigits decodeFrom: (ByteArray readHexFrom: anInvocation argument imsi).
+	imsi := 	anInvocation argument imsi fromTBCD.
 	(HLRRestoreDataOperation for: imsi)
 		hlr: hlr;
 		dialogue: self;

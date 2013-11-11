@@ -5,11 +5,11 @@ updateLocation: anInvocation
 
 	| imsi mscNumber vlrNumber |
 
-	imsi := GSMNumberDigits decodeFrom: (ByteArray readHexFrom: anInvocation argument imsi).
+	imsi := anInvocation argument imsi fromTBCD.
 
 	"Assume these numbers are E164 numbers"
-	mscNumber := GSMNumberDigits decodeFrom: (ByteArray readHexFrom: anInvocation argument msc_Number) allButFirst.
-	vlrNumber := GSMNumberDigits decodeFrom: (ByteArray readHexFrom: anInvocation argument vlr_Number) allButFirst.
+	mscNumber := anInvocation argument msc_Number fromE164.
+	vlrNumber := anInvocation argument vlr_Number fromE164.
 
 	(HLRUpdateLocationOperation for: imsi)
 		mscNumber: mscNumber;

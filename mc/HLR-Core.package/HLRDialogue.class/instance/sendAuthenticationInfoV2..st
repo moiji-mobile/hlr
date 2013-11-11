@@ -5,7 +5,7 @@ sendAuthenticationInfoV2: anInvocation
 	<package: 'infoRetrievalPackage-v2'>
 	| imsi  |
 
-	imsi := GSMNumberDigits decodeFrom: (ByteArray readHexFrom: anInvocation argument).
+	imsi := anInvocation argument fromTBCD.
 	(HLRSendAuthenticationInfoOperation for: imsi)
 		hlr: hlr;
 		dialogue: self;

@@ -5,7 +5,7 @@ sendAuthenticationInfoV3: anInvocation
 	<package: 'infoRetrievalPackage-v3'>
 
 	| imsi vectors |
-	imsi := GSMNumberDigits decodeFrom: (ByteArray readHexFrom: anInvocation argument imsi).
+	imsi := anInvocation argument imsi fromTBCD.
 	vectors := anInvocation argument numberOfRequestedVectors.
 	vectors ifNil: [vectors := 4].
 	

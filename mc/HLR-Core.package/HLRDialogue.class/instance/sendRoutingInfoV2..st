@@ -5,7 +5,7 @@ sendRoutingInfoV2: anInvocation
 	<package: 'interrogationPackage-v2'>
 
 	| msisdn |
-	msisdn := GSMNumberDigits decodeFrom: (ByteArray readHexFrom: anInvocation argument msisdn) allButFirst.
+	msisdn := anInvocation argument msisdn fromE164.
 
 	HLRSendRoutingInfoOperationV2 new
 		hlr: hlr;
