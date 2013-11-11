@@ -1,0 +1,14 @@
+{
+	"category" : "HLR-Core-Operations",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		 ],
+	"name" : "HLRReportSMDeliveryStatusOperationV3",
+	"pools" : [
+		 ],
+	"super" : "HLRReportSMDeliveryStatusOperationV2",
+	"type" : "normal" }
