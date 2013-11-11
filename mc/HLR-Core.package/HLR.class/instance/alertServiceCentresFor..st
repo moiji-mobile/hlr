@@ -2,7 +2,7 @@ sms
 alertServiceCentresFor: aSubscriber 
 	self flag: #todo.
 	"Check for the other conditions too"
-	aSubscriber mobileStationNotReachable
+	aSubscriber isMobileStationNotReachable
 		ifTrue: [^false].
 
 	aSubscriber messageWaitingSet do: [:smscAddress |

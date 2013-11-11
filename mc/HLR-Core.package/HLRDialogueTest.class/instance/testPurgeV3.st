@@ -10,7 +10,7 @@ testPurgeV3
 	subscriber mscNumber: '4567'.	
 	self deny: subscriber vlrNumber isNil.
 	self deny: subscriber mscNumber isNil.
-	self deny: subscriber mobileStationNotReachable.
+	self deny: subscriber isMobileStationNotReachable.
 
 	operationName := 'purgeMSV3'.
 	dialogue := testEndPoint createDialogue.
@@ -29,4 +29,4 @@ testPurgeV3
 	self assert: invokeResult freezeTMSI = #null.
 	self assert: subscriber vlrNumber isNil.
 	self assert: subscriber mscNumber = '4567'.
-	self assert: subscriber mobileStationNotReachable.
+	self assert: subscriber isMobileStationNotReachable.

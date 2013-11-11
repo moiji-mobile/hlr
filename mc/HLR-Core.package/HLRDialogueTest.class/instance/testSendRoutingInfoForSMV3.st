@@ -6,7 +6,7 @@ testSendRoutingInfoForSMV3
 		mscNumber: '123';
 		vlrNumber: '456'.
 
-	self deny: subscriber mobileStationNotReachable.
+	self deny: subscriber isMobileStationNotReachable.
 	self assert: subscriber messageWaitingSet isEmpty.
 
 	sriArg := ASN1Dictionary new

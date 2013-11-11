@@ -5,6 +5,6 @@ onSubscriberFound: aSubscriber
 	care needs to be taken.."
 	subscriber := aSubscriber.
 
-	aSubscriber mobileStationNotReachable
+	aSubscriber isMobileStationNotReachable
 		ifTrue: [self handleNotReachable]
 		ifFalse: [self provideRoutingInformation].

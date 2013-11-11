@@ -8,7 +8,7 @@ testSendRoutingInfoForSMV3UnreachableLowPrio
 	invokeResult := 23.
 	mwStatus := nil.
 
-	self assert: subscriber mobileStationNotReachable.
+	self assert: subscriber isMobileStationNotReachable.
 	self assert: subscriber messageWaitingSet isEmpty.
 
 	sriArg := ASN1Dictionary new

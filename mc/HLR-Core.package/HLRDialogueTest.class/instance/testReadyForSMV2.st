@@ -5,7 +5,7 @@ testReadyForSMV2
 	dialogue := testEndPoint createDialogue.
 	
 	subscriber mobileStationNotPresent.
-	self assert: subscriber mobileStationNotReachable.
+	self assert: subscriber isMobileStationNotReachable.
 
 	param := ASN1Dictionary new
 				at: 'imsi' put: subscriber imsiAsTBCD;
@@ -24,4 +24,4 @@ testReadyForSMV2
 		applicationContextName: (self applicationContextFor: operationName).
 
 	self assert: res isNil.
-	self deny: subscriber mobileStationNotReachable.
+	self deny: subscriber isMobileStationNotReachable.

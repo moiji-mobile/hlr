@@ -21,4 +21,4 @@ testUpdateLocation
 		applicationContextName: (self applicationContextFor: operationName).
 
 	self assert: res.
-	self deny: subscriber mobileStationNotReachable.
+	self deny: subscriber isMobileStationNotReachable.

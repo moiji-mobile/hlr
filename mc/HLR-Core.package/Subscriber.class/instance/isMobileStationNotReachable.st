@@ -1,3 +1,3 @@
 vlr
-mobileStationNotReachable
+isMobileStationNotReachable
 	^ mobileStationNotReachable

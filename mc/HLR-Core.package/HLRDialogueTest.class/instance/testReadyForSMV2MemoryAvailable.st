@@ -5,7 +5,7 @@ testReadyForSMV2MemoryAvailable
 	dialogue := testEndPoint createDialogue.
 	
 	subscriber mobileStationNotPresent.
-	self assert: subscriber mobileStationNotReachable.
+	self assert: subscriber isMobileStationNotReachable.
 
 	param := ASN1Dictionary new
 				at: 'imsi' put: subscriber imsiAsTBCD;
