@@ -1,0 +1,14 @@
+{
+	"category" : "HLR-Core-Operations",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		 ],
+	"name" : "HLRReadyForSMV3Operation",
+	"pools" : [
+		 ],
+	"super" : "HLRReadyForSMV2Operation",
+	"type" : "normal" }
