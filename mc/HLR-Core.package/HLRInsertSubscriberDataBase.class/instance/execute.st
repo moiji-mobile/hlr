@@ -5,7 +5,8 @@ execute
 
 	"Always provide the IMSI"	
 	needsBegin ifTrue: [
-		self insertSubscriberData: self insertIMSI].
+		pendingRequests := true.
+		^self insertSubscriberData: self insertIMSI].
 	
 	self doExecute.
 

@@ -13,7 +13,8 @@
 		"failed",
 		"needsBegin",
 		"needsEnd",
-		"blockHandling" ],
+		"blockHandling",
+		"pendingRequests" ],
 	"name" : "HLRInsertSubscriberDataBase",
 	"pools" : [
 		 ],

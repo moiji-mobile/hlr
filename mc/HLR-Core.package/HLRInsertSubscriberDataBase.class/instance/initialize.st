@@ -4,3 +4,4 @@ initialize
 	needsBegin := false.
 	needsEnd := false.
 	failed := false.
+	pendingRequests := false.
