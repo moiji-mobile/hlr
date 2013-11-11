@@ -9,7 +9,7 @@ alertServiceCentre: aSmscAddress for: aSubscriber
 	HLRAlertServiceCentreOperation new
 		dialogueHandler: endPoint;
 		msisdn: aSubscriber msisdnAsE164;
-		smscAddress: aSmscAddress;
+		smscAddress: aSmscAddress toE164;
 		hlrAddress: self hlrNumber;
 		remoteAddress: self iwmscNumber;
 		remoteSSN: #msc;
