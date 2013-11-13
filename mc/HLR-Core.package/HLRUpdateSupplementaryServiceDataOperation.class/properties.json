@@ -1,0 +1,15 @@
+{
+	"category" : "HLR-Core-Operations",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		"imsi",
+		"ssData" ],
+	"name" : "HLRUpdateSupplementaryServiceDataOperation",
+	"pools" : [
+		 ],
+	"super" : "HLROperationBase",
+	"type" : "normal" }

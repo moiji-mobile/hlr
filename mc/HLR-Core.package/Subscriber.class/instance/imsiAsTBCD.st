@@ -1,3 +1,3 @@
 access
 imsiAsTBCD
-	^(GSMNumberDigits encodeFrom: imsi) hex
+	^imsi toTBCD

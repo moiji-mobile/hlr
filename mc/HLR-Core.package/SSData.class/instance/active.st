@@ -1,0 +1,3 @@
+creation
+active
+	activeBit := true

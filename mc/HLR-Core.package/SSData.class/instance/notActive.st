@@ -1,3 +1,3 @@
 creation
 notActive
-	activeBit := true.
+	activeBit := false.

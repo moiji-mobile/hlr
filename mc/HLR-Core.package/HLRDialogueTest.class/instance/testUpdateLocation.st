@@ -4,6 +4,8 @@ testUpdateLocation
 	operationName := 'updateLocation'.
 	dialogue := testEndPoint createDialogue.
 
+	subscriber activateSupplementaryServiceForCode: SSData callWaiting.
+
 	dialogue
 		onInvoke: [ :insert |
 			insert returnResultLast: nil.

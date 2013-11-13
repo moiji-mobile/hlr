@@ -1,9 +1,17 @@
 access
 ssSecondData
+	| array |
 	"MAP/TCAP/ASN1 is a mess.. we need to avoid segmentation on SCCP
 	so we group things into various bits.."
-	^ASN1Array new
-		add: (ASN1Dictionary new
+	
+	array := ASN1Array new.
+	array add: (ASN1Dictionary new
 				at: 'ss-Data' put: connectedLineIdentificationRestriction toAsn1;
-				yourself);
-		yourself
+				yourself).
+
+	"TODO: we might need to check if all of it fits.."
+	self provisionedSS keysAndValuesDo: [:key :value |
+		array add: (ASN1Dictionary new
+					at: 'ss-Data' put: value toAsn1;
+					yourself)].
+	^array

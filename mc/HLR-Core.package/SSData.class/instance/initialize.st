@@ -1,0 +1,3 @@
+creation
+initialize
+	notOperativeBit := false.

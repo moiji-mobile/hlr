@@ -10,7 +10,8 @@
 		"registeredBit",
 		"activeBit",
 		"subscriptionOption",
-		"ssCode" ],
+		"ssCode",
+		"notOperativeBit" ],
 	"name" : "SSData",
 	"pools" : [
 		 ],
