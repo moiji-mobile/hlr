@@ -4,4 +4,11 @@ interrogateSS: anInvocation
 	<package: 'functionalSsPackage-v1'>
 	<package: 'functionalSsPackage-v2'>
 
-	self notImplementedInHLR
+	| gt |
+	gt := self extractGlobalTitleOrAbort.
+
+	(HLRInterrogateSSOperation for: gt address)
+		hlr: hlr;
+		dialogue: self;
+		invocation: anInvocation;
+		execute.

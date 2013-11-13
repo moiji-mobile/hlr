@@ -1,4 +1,4 @@
-test-locationUpdatingPackage
+test-supplementary-services
 testDeactivateSS
 	| operationName dialogue  invoke invokeResult param invocations |
 	

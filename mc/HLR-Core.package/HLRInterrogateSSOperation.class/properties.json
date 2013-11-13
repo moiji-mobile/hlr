@@ -1,0 +1,14 @@
+{
+	"category" : "HLR-Core-Operations",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		 ],
+	"name" : "HLRInterrogateSSOperation",
+	"pools" : [
+		 ],
+	"super" : "HLRSSOperationBase",
+	"type" : "normal" }
