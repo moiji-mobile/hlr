@@ -6,9 +6,9 @@
 		 ],
 	"commentStamp" : "",
 	"instvars" : [
-		 ],
-	"name" : "HLRActivateSSOperation",
+		"subscriber" ],
+	"name" : "HLRSSOperationBase",
 	"pools" : [
 		 ],
-	"super" : "HLRSSOperationBase",
+	"super" : "HLRIMSIOperationBase",
 	"type" : "normal" }

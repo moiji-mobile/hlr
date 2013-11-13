@@ -7,7 +7,7 @@
 	"commentStamp" : "",
 	"instvars" : [
 		 ],
-	"name" : "HLRActivateSSOperation",
+	"name" : "HLRDeactivateSSOperation",
 	"pools" : [
 		 ],
 	"super" : "HLRSSOperationBase",
