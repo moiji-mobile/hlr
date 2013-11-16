@@ -1,6 +1,6 @@
 tests-infoRetrievalPackage
 testSendRoutingInfoV3NoForward
-	| operationName dialogue  invoke invokeResult sriArg |
+	| operationName dialogue  invoke sriArg err_name err_data |
 	
 	"Test that lack of vlrNumber/mscNumber/forwardingNumber will fail"
 	subscriber
@@ -19,7 +19,7 @@ testSendRoutingInfoV3NoForward
 				class: 1 timeout: 500.
 	invoke
 		onReturn: [self assert: false ];
-		onError: [self assert: false];
+		onError: [:err :param | err_name := err. err_data := param];
 		onReject: [self assert: false];
 		onReturnLast: [self assert: false].
 	dialogue
@@ -28,4 +28,5 @@ testSendRoutingInfoV3NoForward
 		applicationContextName: (self applicationContextFor: operationName).
 
 	"Verify things have failed"
-	self halt.
+	self assert: err_name originalBindingName = 'absentSubscriber'.
+	self assert: err_data isNil. 

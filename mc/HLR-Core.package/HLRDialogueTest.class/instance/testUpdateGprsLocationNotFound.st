@@ -1,6 +1,6 @@
 test-locationUpdatingPackage
 testUpdateGprsLocationNotFound
-	| operationName dialogue invoke res invoked param |
+	| operationName dialogue invoke invoked param err_name err_data |
 	invoked := 0.
 	operationName := 'updateGprsLocation'.
 	dialogue := testEndPoint createDialogue.
@@ -23,13 +23,14 @@ testUpdateGprsLocationNotFound
 	invoke := dialogue requestTcInvokeNamed: operationName parameters:  param class: 1 timeout: 500.
 	invoke
 		onReturn: [self assert: false ];
-		onError: [self assert: false];
+		onError: [:err :par | err_name := err. err_data := par];
 		onReject: [self assert: false];
-		onReturnLast: [:result | res := true ].
+		onReturnLast: [self assert: false].
 	dialogue
 		requestTcBeginDestinationAddress: self hlrAddr
 		originatingAddress: self localAddr
 		applicationContextName: (self applicationContextFor: operationName).
 
-	self assert: res.
-	self assert: invoked = 1.
+	self assert: err_data isNil.
+	self assert: err_name originalBindingName = 'unknownSubscriber'.
+	self assert: invoked = 0.

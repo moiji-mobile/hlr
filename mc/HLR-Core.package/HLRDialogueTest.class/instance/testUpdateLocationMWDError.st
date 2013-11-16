@@ -33,4 +33,4 @@ testUpdateLocationMWDError
 	self assert: res.
 	self deny: subscriber isMobileStationNotReachable.
 	self assert: receivedAlert.
-	self assert: subscriber messageWaitingSet isEmpty.
+	self deny: subscriber messageWaitingSet isEmpty.
