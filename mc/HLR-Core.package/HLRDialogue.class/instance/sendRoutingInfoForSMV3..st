@@ -5,7 +5,7 @@ sendRoutingInfoForSMV3: anInvocation
 
 	| msisdn smscAddr |
 	msisdn := anInvocation argument msisdn fromE164.
-	smscAddr := anInvocation argument serviceCentreAddress allButFirst fromE164.
+	smscAddr := anInvocation argument serviceCentreAddress fromE164.
 
 	HLRSendRoutingInfoForSMOperationV3 new
 		hlr: hlr;

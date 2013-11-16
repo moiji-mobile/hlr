@@ -1,11 +1,10 @@
 tests-infoRetrievalPackage
 testSendRoutingInfoForSMV2UnreachableLowPrio
-	| operationName dialogue  invoke invokeResult sriArg mwStatus  |
+	| operationName dialogue  invoke err_name err_data sriArg mwStatus  |
 	
 	subscriber
 		mscNumber: '123';
 		clearVlr.
-	invokeResult := 23.
 	mwStatus := nil.
 
 	self assert: subscriber isMobileStationNotReachable.
@@ -24,9 +23,9 @@ testSendRoutingInfoForSMV2UnreachableLowPrio
 				class: 1 timeout: 500.
 	invoke
 		onReturn: [self assert: false ];
-		onError: [self assert: false];
+		onError: [:err :param | err_name := err. err_data := param];
 		onReject: [self assert: false];
-		onReturnLast: [:result | invokeResult := result ].
+		onReturnLast: [:result | self assert: false].
 
 	dialogue onInvoke: [:invocation |
 				mwStatus := invocation argument mw_Status].
@@ -35,7 +34,8 @@ testSendRoutingInfoForSMV2UnreachableLowPrio
 		originatingAddress: self localAddr
 		applicationContextName: (self applicationContextFor: operationName).
 
-	"TODO.. make sure things return"
-	self assert: invokeResult isNil.
+	"TODO.. make sure things return".
 	self assert: mwStatus = '0100'.
+	self assert: err_name originalBindingName = 'absentSubscriberV2'.
+	self assert: err_data isNil.
 	self assert: (subscriber messageWaitingSet includes: '3234')

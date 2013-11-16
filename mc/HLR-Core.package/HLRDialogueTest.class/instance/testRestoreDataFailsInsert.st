@@ -1,6 +1,6 @@
 test-locationUpdatingPackage
 testRestoreDataFailsInsert
-	| operationName dialogue  invoke invokeResult param |
+	| operationName dialogue  invoke param error |
 
 	param := ASN1Dictionary new
 		at: 'imsi' put: subscriber imsiAsTBCD;
@@ -23,12 +23,12 @@ testRestoreDataFailsInsert
 	invoke := dialogue requestTcInvokeNamed: operationName parameters:  param class: 1 timeout: 500.
 	invoke
 		onReturn: [self assert: false ];
-		onError: [self assert: false];
+		onError: [error := true];
 		onReject: [self assert: false];
-		onReturnLast: [:result | invokeResult := true ].
+		onReturnLast: [self assert: false].
 	dialogue
 		requestTcBeginDestinationAddress: self hlrAddr
 		originatingAddress: self localAddr
 		applicationContextName: (self applicationContextFor: operationName).
 
-	self halt.
+	self assert: error
