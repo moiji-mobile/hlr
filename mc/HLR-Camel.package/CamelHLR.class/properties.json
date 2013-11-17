@@ -1,0 +1,14 @@
+{
+	"category" : "HLR-Camel",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		 ],
+	"name" : "CamelHLR",
+	"pools" : [
+		 ],
+	"super" : "HLR",
+	"type" : "normal" }

@@ -1,0 +1,3 @@
+*HLR-Camel
+isCamelSubscriber
+	^false
