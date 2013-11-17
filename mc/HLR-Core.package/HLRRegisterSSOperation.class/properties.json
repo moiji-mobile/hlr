@@ -1,0 +1,14 @@
+{
+	"category" : "HLR-Core-Operations",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		"forwardedToNumber" ],
+	"name" : "HLRRegisterSSOperation",
+	"pools" : [
+		 ],
+	"super" : "HLRSSOperationBase",
+	"type" : "normal" }

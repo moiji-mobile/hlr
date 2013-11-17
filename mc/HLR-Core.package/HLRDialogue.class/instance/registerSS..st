@@ -4,4 +4,14 @@ registerSS: anInvocation
 	<package: 'functionalSsPackage-v1'>
 	<package: 'functionalSsPackage-v2'>
 
-	self notImplementedInHLR
+	| forwardedToNumber gt |
+	"TODO: check if the number is international?!"
+	gt := self extractGlobalTitleOrAbort.
+	forwardedToNumber := anInvocation argument forwardedToNumber fromE164.
+
+	(HLRRegisterSSOperation for: gt address)
+		hlr: hlr;
+		dialogue: self;
+		invocation: anInvocation;
+		forwardedToNumber: forwardedToNumber;
+		execute.

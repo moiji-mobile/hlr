@@ -5,9 +5,7 @@ deleteSubscriberSuccess
 	param := ASN1Dictionary new
 				at: 'imsi' put: imsi toTBCD;
 				at: 'provisionedSS' put: (ASN1Array new
-					add: (ASN1Dictionary new
-						at: 'ss-Data' put: ssData toAsn1;
-						yourself);
+					add: ssData toAsn1;
 					yourself);
 				yourself.
 

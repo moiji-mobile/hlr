@@ -1,3 +1,3 @@
 supplementary-services
 supplementaryServiceActivationAllowedFor: aSSCode
-	^{SSData callWaiting.  } includes: aSSCode
+	^{SSData callWaiting. SSData callForwardingUnconditional.  } includes: aSSCode

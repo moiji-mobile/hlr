@@ -4,8 +4,7 @@ returnResult: ssCode
 
 	"Create a result"
 	ssData := subscriber supplementaryServiceStateFor: ssCode.
-	result := ASN1Dictionary new
-		at: 'ss-Data' put: ssData toAsn1. 
+	result := ssData toAsn1. 
 	invocation returnResultLast: result.
 	dialogue requestTcEnd: false.
 
