@@ -1,0 +1,3 @@
+capabilityHandling
+mobileTerminatedCallAllowed
+	^self camelPhaseTwoSupported
