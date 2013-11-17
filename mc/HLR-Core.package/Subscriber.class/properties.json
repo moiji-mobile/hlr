@@ -26,8 +26,6 @@
 		"connectedLineIdentificationRestriction",
 		"vlrNumber",
 		"mscNumber",
-		"forwardingMode",
-		"forwardingNumber",
 		"apnOctetString",
 		"teleServiceProfileGPRS",
 		"sgsnNumber",

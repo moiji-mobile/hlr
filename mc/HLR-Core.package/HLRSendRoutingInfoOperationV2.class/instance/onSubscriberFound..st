@@ -1,7 +1,6 @@
 as yet unclassified
 onSubscriberFound: aSubscriber 
 	"The subscriber has been found."
-
 	"Check if we unconditionally forward these calls"
 	aSubscriber alwaysForwardTeleService
 		ifTrue: [^self finishForward: aSubscriber].

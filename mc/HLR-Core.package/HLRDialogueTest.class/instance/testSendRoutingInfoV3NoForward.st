@@ -5,8 +5,7 @@ testSendRoutingInfoV3NoForward
 	"Test that lack of vlrNumber/mscNumber/forwardingNumber will fail"
 	subscriber
 		vlrNumber: nil;
-		mscNumber: nil;
-		forwardingNumber: nil.
+		mscNumber: nil.
 
 	sriArg := ASN1Dictionary new
 				at: 'msisdn' put: subscriber msisdnAsE164;

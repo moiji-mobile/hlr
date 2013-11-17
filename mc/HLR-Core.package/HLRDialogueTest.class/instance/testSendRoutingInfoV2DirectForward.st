@@ -6,8 +6,7 @@ testSendRoutingInfoV2DirectForward
 	subscriber
 		vlrNumber: '1234';
 		mscNumber: '1234';
-		forwardingMode: subscriber class forwardAlways;
-		forwardingNumber: '678'.
+		enableDirectForwardingTo: '678'.
 
 	sriArg := ASN1Dictionary new
 				at: 'msisdn' put: subscriber msisdnAsE164;
@@ -29,4 +28,4 @@ testSendRoutingInfoV2DirectForward
 		applicationContextName: (self applicationContextFor: operationName).
 
 	"Verify things"
-	self assert: invokeResult routingInfo forwardingData forwardedToNumber = subscriber forwardingNumberAsE164 asUppercase.
+	self assert: invokeResult routingInfo forwardingData forwardedToNumber fromE164 = '678'.
