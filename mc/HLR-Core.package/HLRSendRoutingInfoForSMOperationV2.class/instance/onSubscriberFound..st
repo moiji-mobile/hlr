@@ -5,6 +5,10 @@ onSubscriberFound: aSubscriber
 	care needs to be taken.."
 	subscriber := aSubscriber.
 
+	subscriber mobileTerminatedSMAllowed ifFalse: [
+		invocation returnError: 'callBarred' with: nil.
+		^dialogue requestTcEnd: false].
+
 	aSubscriber isMobileStationNotReachable
 		ifTrue: [self handleNotReachable]
 		ifFalse: [self provideRoutingInformation].
