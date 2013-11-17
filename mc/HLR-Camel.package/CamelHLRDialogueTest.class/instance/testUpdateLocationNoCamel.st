@@ -1,4 +1,4 @@
-as yet unclassified
+barr-handling
 testUpdateLocationNoCamel
 	"We expect that everything will be barred in case there is
 	no proper camel capabilities"

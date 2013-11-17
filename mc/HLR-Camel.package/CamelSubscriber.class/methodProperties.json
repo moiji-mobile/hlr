@@ -2,9 +2,15 @@
 	"class" : {
 		 },
 	"instance" : {
-		"camelPhaseTwoSupported" : "HolgerHansPeterFreyther 11/17/2013 18:52",
+		"camelPhaseTwoSupported" : "HolgerHansPeterFreyther 11/17/2013 21:00",
+		"camelSubscriberInfoAsASN1:" : "HolgerHansPeterFreyther 11/17/2013 21:31",
 		"isCamelSubscriber" : "HolgerHansPeterFreyther 11/17/2013 16:00",
+		"moCSIAsASN1:" : "HolgerHansPeterFreyther 11/17/2013 21:25",
 		"mobileTerminatedCallAllowed" : "HolgerHansPeterFreyther 11/17/2013 19:39",
 		"mobileTerminatedSMAllowed" : "HolgerHansPeterFreyther 11/17/2013 19:53",
+		"oCSIAsASN1:" : "HolgerHansPeterFreyther 11/17/2013 21:29",
+		"obcsmTDPCriteriaList:" : "HolgerHansPeterFreyther 11/17/2013 21:39",
 		"odbGeneralData" : "HolgerHansPeterFreyther 11/17/2013 18:49",
+		"ssCSIAsASN1:" : "HolgerHansPeterFreyther 11/17/2013 21:30",
+		"subscriberDataAsASN1:" : "HolgerHansPeterFreyther 11/17/2013 21:04",
 		"vlrCapability:" : "HolgerHansPeterFreyther 11/17/2013 18:47" } }

@@ -8,6 +8,7 @@ setUp
 			database: db;
 			hlrNumber: '35412';
 			iwmscNumber: '35413';
+			gsmSCFAddress: '1234';
 			yourself.
 
 	testEndPoint := TCAPTestServiceEndPoint new.
