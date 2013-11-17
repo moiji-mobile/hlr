@@ -1,0 +1,14 @@
+{
+	"category" : "HLR-Voyage",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		 ],
+	"name" : "CamelSubscriberVoyage",
+	"pools" : [
+		 ],
+	"super" : "CamelSubscriber",
+	"type" : "normal" }
