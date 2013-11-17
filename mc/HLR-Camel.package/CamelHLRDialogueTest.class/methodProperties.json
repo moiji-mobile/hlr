@@ -1,0 +1,10 @@
+{
+	"class" : {
+		 },
+	"instance" : {
+		"applicationContextFor:" : "HolgerHansPeterFreyther 11/17/2013 17:08",
+		"createUpdateLocationParams" : "HolgerHansPeterFreyther 11/17/2013 17:22",
+		"hlrAddr" : "HolgerHansPeterFreyther 11/17/2013 17:08",
+		"localAddr" : "HolgerHansPeterFreyther 11/17/2013 17:08",
+		"setUp" : "HolgerHansPeterFreyther 11/17/2013 17:24",
+		"testUpdateLocationNoCamel" : "HolgerHansPeterFreyther 11/17/2013 17:59" } }

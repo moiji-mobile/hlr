@@ -1,0 +1,17 @@
+{
+	"category" : "HLR-Camel-Tests",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "<historical>",
+	"instvars" : [
+		"subscriber",
+		"testHlr",
+		"testEndPoint",
+		"hlrEndPoint" ],
+	"name" : "CamelHLRDialogueTest",
+	"pools" : [
+		 ],
+	"super" : "TestCase",
+	"type" : "normal" }
