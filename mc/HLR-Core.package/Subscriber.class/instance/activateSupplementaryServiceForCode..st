@@ -4,3 +4,4 @@ activateSupplementaryServiceForCode: aSSCode
 
 	ssData := self supplementaryServiceStateFor: aSSCode.
 	ssData makeActive.
+	^ssData

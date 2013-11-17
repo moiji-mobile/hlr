@@ -1,0 +1,14 @@
+{
+	"category" : "HLR-Core",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		"forwardedToNumber" ],
+	"name" : "BarringSSData",
+	"pools" : [
+		 ],
+	"super" : "SSData",
+	"type" : "normal" }
