@@ -1,3 +1,3 @@
 accessing
 findMSISDN: anMSISDN
-	^voyageRepository selectOne: SubscriberVoyage where: {'msisdn'->anMSISDN} asDictionary. 
+	^voyageRepository selectOne: Subscriber where: {'msisdn'->anMSISDN} asDictionary. 

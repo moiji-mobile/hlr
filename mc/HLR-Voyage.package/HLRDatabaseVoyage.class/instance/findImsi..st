@@ -1,3 +1,3 @@
 accessing
 findImsi: anImsi
-	^voyageRepository selectOne: SubscriberVoyage where: {'imsi'->anImsi} asDictionary. 
+	^voyageRepository selectOne: Subscriber where: {'imsi'->anImsi} asDictionary. 

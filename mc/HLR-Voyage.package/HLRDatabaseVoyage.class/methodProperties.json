@@ -2,10 +2,10 @@
 	"class" : {
 		"createTestDefault" : "HolgerHansPeterFreyther 10/8/2013 16:19",
 		"initializeWith:" : "HolgerHansPeterFreyther 10/8/2013 16:19",
-		"populateWithDummySubscribers:" : "HolgerHansPeterFreyther 10/8/2013 17:40" },
+		"populateWithDummySubscribers:" : "HolgerHansPeterFreyther 11/17/2013 16:10" },
 	"instance" : {
-		"findImsi:" : "HolgerHansPeterFreyther 10/14/2013 11:09",
-		"findMSISDN:" : "HolgerHansPeterFreyther 10/21/2013 15:27",
+		"findImsi:" : "HolgerHansPeterFreyther 11/17/2013 16:11",
+		"findMSISDN:" : "HolgerHansPeterFreyther 11/17/2013 16:11",
 		"insert:" : "HolgerHansPeterFreyther 10/8/2013 16:26",
 		"newQuery" : "HolgerHansPeterFreyther 10/14/2013 10:59",
 		"updateSubscriber:" : "HolgerHansPeterFreyther 10/14/2013 12:05",
