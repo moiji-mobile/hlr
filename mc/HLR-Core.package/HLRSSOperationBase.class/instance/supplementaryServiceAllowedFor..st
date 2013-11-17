@@ -1,0 +1,3 @@
+as yet unclassified
+supplementaryServiceAllowedFor: ssCode
+	^hlr supplementaryServiceActivationAllowedFor: ssCode

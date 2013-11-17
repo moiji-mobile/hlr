@@ -15,7 +15,7 @@ onSubscriberFound: aSubscriber
 	].
 
 	"Check if manipulation is allowed. It should probably barr this"
-	(hlr supplementaryServiceActivationAllowedFor: ssCode)
+	(self supplementaryServiceAllowedFor: ssCode)
 		ifFalse: [^dialogue requestTcUAbort: (dialogue uAbortCause: 0)].
 
 	"Now update the subscriber and start another dialogue/invocation"

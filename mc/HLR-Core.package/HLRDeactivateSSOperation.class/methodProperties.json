@@ -2,4 +2,6 @@
 	"class" : {
 		 },
 	"instance" : {
-		"doUpdateSupplementaryService:" : "HolgerHansPeterFreyther 11/13/2013 10:55" } }
+		"deactivateAllCallRestriction" : "HolgerHansPeterFreyther 11/17/2013 14:34",
+		"doUpdateSupplementaryService:" : "HolgerHansPeterFreyther 11/17/2013 14:27",
+		"supplementaryServiceAllowedFor:" : "HolgerHansPeterFreyther 11/17/2013 14:18" } }
