@@ -1,0 +1,3 @@
+capabilityHandling
+mobileTerminatedSMAllowed
+	^self camelPhaseTwoSupported
