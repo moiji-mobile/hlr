@@ -1,4 +1,4 @@
 supplementary-services
 supplementaryServiceActivationAllowedFor: aSSCode
 	^{SSData callWaiting. SSData callForwardingUnconditional.
-	   SSData barrAllOutgoingCalls.} includes: aSSCode
+	   SSData barrAllOutgoingCalls. SSData barrIncomingCallRoam} includes: aSSCode
