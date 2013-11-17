@@ -9,4 +9,5 @@ onSubscriberFound: aSubscriber
 			subscriber: subscriber;
 			onSuccess: [self finishUpdate];
 			onFailure: [self failUpdate];
+			hlr: hlr;
 			execute
