@@ -1,0 +1,3 @@
+mobile-terminated
+mobileTerminatedCallAllowed
+	^true

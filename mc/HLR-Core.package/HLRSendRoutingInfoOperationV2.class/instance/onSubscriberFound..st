@@ -1,6 +1,10 @@
 as yet unclassified
 onSubscriberFound: aSubscriber 
 	"The subscriber has been found."
+	aSubscriber mobileTerminatedCallAllowed ifFalse: [
+			invocation returnError: 'callBarred' with: nil.
+			^dialogue requestTcEnd: false].	
+
 	"Check if we unconditionally forward these calls"
 	aSubscriber alwaysForwardTeleService
 		ifTrue: [^self finishForward: aSubscriber].
