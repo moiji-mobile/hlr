@@ -1,0 +1,3 @@
+insert-subscriber
+subscriberDataAsASN1For: aSubscriber
+	^aSubscriber subscriberDataAsASN1

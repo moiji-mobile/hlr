@@ -1,5 +1,5 @@
 insert-subscriberdata
-subscriberDataAsASN1: aHlr
+subscriberDataAsASN1
 	"This needs to segment the subscriber data..."
 	^OrderedCollection new
 		add: self subscriberDataFirst;
