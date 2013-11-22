@@ -13,7 +13,9 @@
 		"remoteAddress",
 		"remoteSSN",
 		"dialogueHandler",
-		"originatingCallDataRecord" ],
+		"originatingCallDataRecord",
+		"onErrorBlock",
+		"onSuccessBlock" ],
 	"name" : "HLROperationBase",
 	"pools" : [
 		 ],

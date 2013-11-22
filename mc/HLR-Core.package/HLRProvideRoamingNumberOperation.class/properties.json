@@ -7,9 +7,7 @@
 	"commentStamp" : "<historical>",
 	"instvars" : [
 		"invoke",
-		"subscriber",
-		"onSuccessBlock",
-		"onFailureBlock" ],
+		"subscriber" ],
 	"name" : "HLRProvideRoamingNumberOperation",
 	"pools" : [
 		 ],

@@ -7,8 +7,6 @@
 	"commentStamp" : "<historical>",
 	"instvars" : [
 		"msisdn",
-		"onSuccessBlock",
-		"onErrorBlock",
 		"smscAddr" ],
 	"name" : "HLRAlertServiceCentreOperation",
 	"pools" : [

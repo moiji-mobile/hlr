@@ -9,9 +9,7 @@
 		"subscriber",
 		"dialogue",
 		"invoke",
-		"imsi",
-		"onSuccessBlock",
-		"onFailureBlock" ],
+		"imsi" ],
 	"name" : "HLRCancelOperation",
 	"pools" : [
 		 ],
