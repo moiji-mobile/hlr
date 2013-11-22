@@ -12,6 +12,7 @@ finishUpdate
 	"Fire and forget the operation"
 	self flag: #todo. "Start something that tries V3 first and then V2"
 	HLRCancelOperation new
+		originatingCallDataRecord: originatingCallDataRecord;
 		imsi: subscriber imsi;
 		hlrAddress: hlr hlrNumber;
 		remoteAddress: subscriber vlrNumber;

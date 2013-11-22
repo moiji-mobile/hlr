@@ -5,6 +5,7 @@ onSubscriberFound: aSubscriber
 	subscriber vlrCapability: invocation argument vlr_Capability.
 
 	HLRInsertSubscriberData new
+			originatingCallDataRecord: originatingCallDataRecord;
 			dialogue: dialogue;
 			subscriber: subscriber;
 			onSuccess: [self finishUpdate];

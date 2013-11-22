@@ -4,11 +4,12 @@ sendRoutingInfoV2: anInvocation
 	<consumer: 'gsmSCF'>
 	<package: 'interrogationPackage-v2'>
 
-	| msisdn |
+	| msisdn cdr |
 	msisdn := anInvocation argument msisdn fromE164.
-	hlr cdrClient sendRoutingInfo: msisdn crn: nil dialogue: self.
+	cdr:= hlr cdrClient sendRoutingInfo: msisdn crn: nil dialogue: self.
 
 	HLRSendRoutingInfoOperationV2 new
+		originatingCallDataRecord: cdr;
 		hlr: hlr;
 		dialogue: self;
 		invocation: anInvocation;

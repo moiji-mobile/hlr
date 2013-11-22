@@ -12,7 +12,8 @@
 		"hlrAddress",
 		"remoteAddress",
 		"remoteSSN",
-		"dialogueHandler" ],
+		"dialogueHandler",
+		"originatingCallDataRecord" ],
 	"name" : "HLROperationBase",
 	"pools" : [
 		 ],
