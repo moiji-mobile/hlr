@@ -1,7 +1,6 @@
 {
 	"class" : {
-		"defaultOdbGeneralData" : "HolgerHansPeterFreyther 10/5/2013 11:56",
-		"dummySubscriber" : "HolgerHansPeterFreyther 11/9/2013 15:30",
+		"dummySubscriber" : "HolgerHansPeterFreyther 11/22/2013 11:39",
 		"forwardAlways" : "HolgerHansPeterFreyther 10/28/2013 11:33",
 		"forwardMaybe" : "HolgerHansPeterFreyther 10/28/2013 11:33",
 		"ssClipDefault" : "HolgerHansPeterFreyther 10/4/2013 18:22",
@@ -9,7 +8,7 @@
 		"ssColpDefault" : "HolgerHansPeterFreyther 10/4/2013 18:40",
 		"ssColrDefault" : "HolgerHansPeterFreyther 10/4/2013 18:42",
 		"supplementaryServiceFor:" : "HolgerHansPeterFreyther 11/17/2013 14:19",
-		"testSubscriber" : "HolgerHansPeterFreyther 11/9/2013 15:33" },
+		"testSubscriber" : "HolgerHansPeterFreyther 11/22/2013 11:39" },
 	"instance" : {
 		"activateSupplementaryServiceForCode:" : "HolgerHansPeterFreyther 11/17/2013 12:46",
 		"addToMessageWaitingList:" : "HolgerHansPeterFreyther 11/9/2013 21:09",
@@ -47,8 +46,6 @@
 		"msisdn" : "HolgerHansPeterFreyther 8/13/2013 15:36",
 		"msisdn:" : "HolgerHansPeterFreyther 8/19/2013 16:20",
 		"msisdnAsE164" : "HolgerHansPeterFreyther 10/15/2013 14:53",
-		"odbGeneralData" : "HolgerHansPeterFreyther 10/5/2013 11:57",
-		"odbGeneralData:" : "HolgerHansPeterFreyther 10/5/2013 11:56",
 		"provisionedSS" : "HolgerHansPeterFreyther 11/12/2013 15:34",
 		"regionalSubscriptionResponse" : "HolgerHansPeterFreyther 8/13/2013 16:46",
 		"removeFromWaitingList:" : "HolgerHansPeterFreyther 11/9/2013 22:34",
@@ -64,9 +61,6 @@
 		"ssSecondData" : "HolgerHansPeterFreyther 11/17/2013 12:16",
 		"subscriberCategory" : "HolgerHansPeterFreyther 8/13/2013 16:31",
 		"subscriberCategory:" : "HolgerHansPeterFreyther 10/4/2013 18:17",
-		"subscriberDataAsASN1" : "HolgerHansPeterFreyther 11/22/2013 11:03",
-		"subscriberDataFirst" : "HolgerHansPeterFreyther 11/17/2013 20:30",
-		"subscriberDataSecond" : "HolgerHansPeterFreyther 11/17/2013 20:30",
 		"subscriberStatus" : "HolgerHansPeterFreyther 8/13/2013 16:35",
 		"subscriberStatus:" : "HolgerHansPeterFreyther 10/4/2013 18:18",
 		"supplementaryServiceForCode:ifAbsentPut:" : "HolgerHansPeterFreyther 11/17/2013 11:44",

@@ -12,7 +12,6 @@ dummySubscriber
 		ssCallingLineIdentiticationRestriction: self ssClirDefault;
 		ssConnectedLineIdentificationPresentation: self ssColpDefault;
 		ssConnectedLineIdentificationRestriction: self ssColrDefault;
-		odbGeneralData: self defaultOdbGeneralData;
 		"GPRS related attributes"
 		teleServiceProfileGPRS: TeleServiceProfileGPRS defaultProfile;
 		apnAsOctetString: '025f66';

@@ -21,6 +21,7 @@
 		"mobileTerminatedCallAllowedFor:" : "HolgerHansPeterFreyther 11/22/2013 10:50",
 		"mobileTerminatedSMSAllowedFor:" : "HolgerHansPeterFreyther 11/22/2013 10:51",
 		"notImplementedInHLR" : "HolgerHansPeterFreyther 9/16/2013 15:39",
+		"odbGeneralDataFor:" : "HolgerHansPeterFreyther 11/22/2013 11:43",
 		"processUnstructuredSSData:" : "HolgerHansPeterFreyther 9/16/2013 15:35",
 		"processUnstructuredSSRequest:" : "HolgerHansPeterFreyther 9/16/2013 15:35",
 		"purgeMSV2:" : "HolgerHansPeterFreyther 11/11/2013 16:05",
@@ -43,6 +44,7 @@
 		"sendRoutingInfoV2:" : "HolgerHansPeterFreyther 11/11/2013 16:08",
 		"sendRoutingInfoV3:" : "HolgerHansPeterFreyther 11/11/2013 16:08",
 		"statusReport:" : "HolgerHansPeterFreyther 9/16/2013 15:36",
-		"subscriberDataAsASN1For:" : "HolgerHansPeterFreyther 11/22/2013 11:02",
+		"subscriberDataAsASN1For:" : "HolgerHansPeterFreyther 11/22/2013 11:43",
+		"subscriberDataGPRSAsASN1For:" : "HolgerHansPeterFreyther 11/22/2013 11:46",
 		"updateGprsLocation:" : "HolgerHansPeterFreyther 11/11/2013 16:08",
 		"updateLocation:" : "HolgerHansPeterFreyther 11/17/2013 18:41" } }
