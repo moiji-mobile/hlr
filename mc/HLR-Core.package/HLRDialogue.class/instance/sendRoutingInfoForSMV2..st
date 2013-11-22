@@ -6,6 +6,7 @@ sendRoutingInfoForSMV2: anInvocation
 	| msisdn smscAddr |
 	msisdn := anInvocation argument msisdn fromE164.
 	smscAddr := anInvocation argument serviceCentreAddress fromE164.
+	hlr cdrClient sendRoutingInfo: msisdn smscAddr: smscAddr dialogue: self.
 
 	HLRSendRoutingInfoForSMOperationV2 new
 		hlr: hlr;
