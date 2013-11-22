@@ -1,0 +1,3 @@
+mobile-terminated-handling
+mobileTerminatedSMSAllowedFor: aSubscriber 
+	^aSubscriber mobileTerminatedSMAllowed

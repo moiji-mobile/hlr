@@ -15,9 +15,11 @@
 		"extractGlobalTitleOrAbort" : "HolgerHansPeterFreyther 11/13/2013 10:38",
 		"failureReport:" : "HolgerHansPeterFreyther 9/16/2013 15:34",
 		"hlr:" : "HolgerHansPeterFreyther 10/1/2013 12:58",
-		"initialize" : "HolgerHansPeterFreyther 9/16/2013 16:36",
+		"initialize" : "HolgerHansPeterFreyther 11/17/2013 17:19",
 		"interrogateSS:" : "HolgerHansPeterFreyther 11/13/2013 11:11",
 		"istAlert:" : "HolgerHansPeterFreyther 9/16/2013 15:34",
+		"mobileTerminatedCallAllowedFor:" : "HolgerHansPeterFreyther 11/22/2013 10:50",
+		"mobileTerminatedSMSAllowedFor:" : "HolgerHansPeterFreyther 11/22/2013 10:51",
 		"notImplementedInHLR" : "HolgerHansPeterFreyther 9/16/2013 15:39",
 		"processUnstructuredSSData:" : "HolgerHansPeterFreyther 9/16/2013 15:35",
 		"processUnstructuredSSRequest:" : "HolgerHansPeterFreyther 9/16/2013 15:35",
@@ -42,4 +44,4 @@
 		"sendRoutingInfoV3:" : "HolgerHansPeterFreyther 11/11/2013 16:08",
 		"statusReport:" : "HolgerHansPeterFreyther 9/16/2013 15:36",
 		"updateGprsLocation:" : "HolgerHansPeterFreyther 11/11/2013 16:08",
-		"updateLocation:" : "HolgerHansPeterFreyther 11/11/2013 16:09" } }
+		"updateLocation:" : "HolgerHansPeterFreyther 11/17/2013 18:41" } }
