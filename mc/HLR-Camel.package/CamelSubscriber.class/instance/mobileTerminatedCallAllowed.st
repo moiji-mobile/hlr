@@ -1,3 +1,3 @@
 capabilityHandling
 mobileTerminatedCallAllowed
-	^self camelPhaseTwoSupported
+	^self camelPhaseTwoSupported and: [super mobileTerminatedCallAllowed].
