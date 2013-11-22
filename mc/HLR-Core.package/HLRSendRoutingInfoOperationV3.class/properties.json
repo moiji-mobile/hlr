@@ -6,7 +6,7 @@
 		 ],
 	"commentStamp" : "",
 	"instvars" : [
-		 ],
+		"callReferenceNumber" ],
 	"name" : "HLRSendRoutingInfoOperationV3",
 	"pools" : [
 		 ],

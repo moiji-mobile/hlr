@@ -41,10 +41,10 @@
 		"sendRoutingInfoForLCS:" : "HolgerHansPeterFreyther 9/16/2013 15:35",
 		"sendRoutingInfoForSMV2:" : "HolgerHansPeterFreyther 11/11/2013 16:07",
 		"sendRoutingInfoForSMV3:" : "HolgerHansPeterFreyther 11/16/2013 08:42",
-		"sendRoutingInfoV2:" : "HolgerHansPeterFreyther 11/11/2013 16:08",
-		"sendRoutingInfoV3:" : "HolgerHansPeterFreyther 11/11/2013 16:08",
+		"sendRoutingInfoV2:" : "HolgerHansPeterFreyther 11/22/2013 12:17",
+		"sendRoutingInfoV3:" : "HolgerHansPeterFreyther 11/22/2013 12:20",
 		"statusReport:" : "HolgerHansPeterFreyther 9/16/2013 15:36",
 		"subscriberDataAsASN1For:" : "HolgerHansPeterFreyther 11/22/2013 11:43",
 		"subscriberDataGPRSAsASN1For:" : "HolgerHansPeterFreyther 11/22/2013 11:46",
-		"updateGprsLocation:" : "HolgerHansPeterFreyther 11/22/2013 12:11",
-		"updateLocation:" : "HolgerHansPeterFreyther 11/22/2013 12:10" } }
+		"updateGprsLocation:" : "HolgerHansPeterFreyther 11/22/2013 12:15",
+		"updateLocation:" : "HolgerHansPeterFreyther 11/22/2013 12:16" } }

@@ -12,7 +12,7 @@ updateLocation: anInvocation
 	vlrNumber := anInvocation argument vlr_Number fromE164.
 
 	"Inform the CDR client about the request"
-	hlr cdrClient updateLocationRequest: vlrNumber msc: mscNumber imsi: imsi.
+	hlr cdrClient updateLocationRequest: vlrNumber msc: mscNumber imsi: imsi dialogue: self.
 
 	(HLRUpdateLocationOperation for: imsi)
 		mscNumber: mscNumber;

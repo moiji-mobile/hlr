@@ -6,6 +6,7 @@ sendRoutingInfoV2: anInvocation
 
 	| msisdn |
 	msisdn := anInvocation argument msisdn fromE164.
+	hlr cdrClient sendRoutingInfo: msisdn crn: nil dialogue: self.
 
 	HLRSendRoutingInfoOperationV2 new
 		hlr: hlr;
