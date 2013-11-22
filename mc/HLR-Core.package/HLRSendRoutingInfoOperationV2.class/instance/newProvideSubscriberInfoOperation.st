@@ -1,0 +1,3 @@
+as yet unclassified
+newProvideSubscriberInfoOperation
+	^self class provideSubscriberInfoClass new

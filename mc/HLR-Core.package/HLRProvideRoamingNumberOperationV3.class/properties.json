@@ -6,7 +6,7 @@
 		 ],
 	"commentStamp" : "",
 	"instvars" : [
-		 ],
+		"callReferenceNumber" ],
 	"name" : "HLRProvideRoamingNumberOperationV3",
 	"pools" : [
 		 ],

@@ -1,7 +1,7 @@
 execution
 querySubscriberInformation: aSubscriber
 	"We need to ask for more information now."
-	self class provideSubscriberInfoClass new
+	self newProvideSubscriberInfoOperation
 		subscriber: aSubscriber;
 		onSuccess: [:roamingNumber | self finishWithRoute: aSubscriber number: roamingNumber];
 		onFailure: [self fail];
