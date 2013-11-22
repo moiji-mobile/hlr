@@ -9,6 +9,9 @@ updateGprsLocation: anInvocation
 	sgsnNumber := anInvocation argument sgsn_Number fromE164.
 	sgsnAddress := anInvocation argument sgsn_Address fromE164.
 
+	"Inform the cdrClient"
+	hlr cdrClient updateGprsLocationRequest: sgsnNumber imsi: imsi.
+
 	(HLRUpdateGprsLocationOperation for: imsi)
 		sgsnNumber: sgsnNumber;
 		sgsnAddress: sgsnAddress;
