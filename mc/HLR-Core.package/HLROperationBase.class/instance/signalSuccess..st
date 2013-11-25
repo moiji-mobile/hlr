@@ -2,7 +2,7 @@ success-failure-handling
 signalSuccess: aResult
 	| cdr |
 	
-	cdr := (hlr cdrClient addRecordFor: dialogue)
+	cdr := (hlr cdrClient createRecordFor: dialogue)
 		at: 'status' put: 'success';
 		at: 'result' put: aResult;
 		yourself.
