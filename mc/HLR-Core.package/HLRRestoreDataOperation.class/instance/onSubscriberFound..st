@@ -4,6 +4,7 @@ onSubscriberFound: aSubscriber
 
 	subscriber := aSubscriber.
 	HLRInsertSubscriberData new
+			hlr: hlr;
 			dialogue: dialogue;
 			subscriber: subscriber;
 			onSuccess: [self finishUpdate];

@@ -9,4 +9,5 @@ querySubscriberInformation: aSubscriber
 		dialogueHandler: dialogue container dialogueHandler;
 		remoteAddress: aSubscriber vlrNumber;
 		hlrAddress: hlr hlrNumber;
+		hlr: hlr;
 		start.

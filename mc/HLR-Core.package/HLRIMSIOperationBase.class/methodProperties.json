@@ -2,6 +2,7 @@
 	"class" : {
 		"for:" : "HolgerHansPeterFreyther 10/2/2013 11:53" },
 	"instance" : {
+		"addStatusForCDR:" : "HolgerHansPeterFreyther 11/25/2013 11:46",
 		"execute" : "HolgerHansPeterFreyther 10/29/2013 09:12",
 		"imsi:" : "HolgerHansPeterFreyther 10/2/2013 11:53",
 		"onNoSubscriber:" : "HolgerHansPeterFreyther 11/25/2013 10:14" } }

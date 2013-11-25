@@ -15,6 +15,7 @@ testCancelLocation
 	"Fire and forget the operation"
 	HLRCancelOperation new
 		imsi: imsi;
+		hlr: testHlr;
 		hlrAddress: '3548999973';
 		remoteAddress: '46707963173';
 		dialogueHandler: hlrEndPoint;

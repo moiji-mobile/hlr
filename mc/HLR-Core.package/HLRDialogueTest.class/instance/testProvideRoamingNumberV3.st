@@ -17,6 +17,7 @@ testProvideRoamingNumberV3
 	"Fire and forget the operation"
 	HLRProvideRoamingNumberOperationV3 new
 		subscriber: subscriber;
+		hlr: testHlr;
 		hlrAddress: '3548999973';
 		remoteAddress: '46707963173';
 		dialogueHandler: hlrEndPoint;

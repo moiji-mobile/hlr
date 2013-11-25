@@ -11,6 +11,7 @@ finishUpdate
 	"Fire and forget.. we should also look at the update type"
 	HLRCancelOperationV3 new
 		imsi: subscriber imsi;
+		hlr: hlr;
 		hlrAddress: hlr hlrNumber;
 		remoteAddress: subscriber sgsnNumber;
 		remoteSSN: #sgsn;

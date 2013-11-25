@@ -3,6 +3,7 @@
 		"applicationContextFor:" : "HolgerHansPeterFreyther 10/21/2013 14:44" },
 	"instance" : {
 		"abort:" : "HolgerHansPeterFreyther 11/25/2013 10:24",
+		"addStatusToCDR:" : "HolgerHansPeterFreyther 11/25/2013 11:45",
 		"dialogue:" : "HolgerHansPeterFreyther 10/1/2013 17:50",
 		"dialogueHandler:" : "HolgerHansPeterFreyther 10/29/2013 08:39",
 		"endWithError:with:" : "HolgerHansPeterFreyther 11/25/2013 10:33",
@@ -18,5 +19,5 @@
 		"remoteAddress:" : "HolgerHansPeterFreyther 11/9/2013 15:43",
 		"remoteSCCPAddress" : "HolgerHansPeterFreyther 11/9/2013 15:43",
 		"remoteSSN:" : "HolgerHansPeterFreyther 11/9/2013 16:33",
-		"signalFailure" : "HolgerHansPeterFreyther 11/25/2013 10:15",
-		"signalSuccess:" : "HolgerHansPeterFreyther 11/25/2013 10:43" } }
+		"signalFailure" : "HolgerHansPeterFreyther 11/25/2013 12:15",
+		"signalSuccess:" : "HolgerHansPeterFreyther 11/25/2013 11:46" } }

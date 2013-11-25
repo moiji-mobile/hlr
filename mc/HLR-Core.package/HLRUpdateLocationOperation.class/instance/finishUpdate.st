@@ -14,6 +14,7 @@ finishUpdate
 	HLRCancelOperation new
 		originatingCallDataRecord: originatingCallDataRecord;
 		imsi: subscriber imsi;
+		hlr: hlr;
 		hlrAddress: hlr hlrNumber;
 		remoteAddress: subscriber vlrNumber;
 		dialogueHandler: hlr endPoint;

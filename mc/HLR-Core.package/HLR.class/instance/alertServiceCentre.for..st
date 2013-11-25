@@ -10,6 +10,7 @@ alertServiceCentre: aSmscAddress for: aSubscriber
 		dialogueHandler: endPoint;
 		msisdn: aSubscriber msisdnAsE164;
 		smscAddress: aSmscAddress toE164;
+		hlr: self;
 		hlrAddress: self hlrNumber;
 		remoteAddress: self iwmscNumber;
 		remoteSSN: #msc;

@@ -3,6 +3,7 @@ onSubscriberFound: aSubscriber
 	subscriber := aSubscriber.
 
 	HLRInsertSubscriberDataGprs new
+			hlr: hlr;
 			originatingCallDataRecord: originatingCallDataRecord;
 			dialogue: dialogue;
 			subscriber: subscriber;
