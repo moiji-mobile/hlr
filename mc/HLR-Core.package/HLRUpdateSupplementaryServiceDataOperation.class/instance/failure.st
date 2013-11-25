@@ -1,3 +1,3 @@
 execution
 failure
-	dialogue requestTcUAbort: (self uAbortCause: 0).
+	self abort: (dialogue uAbortCause: 0)

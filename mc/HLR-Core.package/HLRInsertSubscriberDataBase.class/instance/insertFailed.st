@@ -4,4 +4,4 @@ insertFailed
 	failed := true.
 	needsEnd ifTrue: [
 		dialogue requestTcUAbort: (dialogue uAbortCause: 0)].
-	onErrorBlock value.
+	self signalFailure.

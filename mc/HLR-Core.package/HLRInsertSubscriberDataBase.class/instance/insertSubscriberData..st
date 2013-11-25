@@ -1,6 +1,10 @@
 private
 insertSubscriberData: aParameter
 	| invoke |
+
+	"Do not insert anything if the operation has already failed. Mostly for the unit test"
+	failed ifTrue: [^self].	
+
 	invoke := dialogue requestTcInvokeNamed: 'insertSubscriberDataV3' parameters:  aParameter class: 1 timeout: 500.
 	invoke
 		onReturn: [self insertFailed];

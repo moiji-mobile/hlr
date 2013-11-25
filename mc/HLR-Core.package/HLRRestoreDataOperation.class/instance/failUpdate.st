@@ -1,3 +1,3 @@
 execution
 failUpdate
-	invocation returnError: 'unexpectedDataValue' with: nil
+	self endWithError: 'unexpectedDataValue' with: nil
