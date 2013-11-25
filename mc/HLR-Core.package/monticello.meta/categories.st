@@ -1,6 +1,10 @@
 SystemOrganization addCategory: #'HLR-Core'!
 SystemOrganization addCategory: #'HLR-Core-Database'!
 SystemOrganization addCategory: #'HLR-Core-Database-Tests'!
-SystemOrganization addCategory: #'HLR-Core-Operations'!
+SystemOrganization addCategory: #'HLR-Core-Operations-Base'!
+SystemOrganization addCategory: #'HLR-Core-Operations-CH'!
+SystemOrganization addCategory: #'HLR-Core-Operations-MM'!
+SystemOrganization addCategory: #'HLR-Core-Operations-SM'!
+SystemOrganization addCategory: #'HLR-Core-Operations-SS'!
 SystemOrganization addCategory: #'HLR-Core-Profiles'!
 SystemOrganization addCategory: #'HLR-Core-Tests'!
