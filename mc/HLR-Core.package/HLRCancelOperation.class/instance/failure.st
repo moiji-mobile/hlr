@@ -1,3 +1,0 @@
-result
-failure
-	self signalFailure

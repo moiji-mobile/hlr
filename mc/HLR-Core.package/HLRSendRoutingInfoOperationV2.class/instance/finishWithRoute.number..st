@@ -8,3 +8,4 @@ finishWithRoute: aSubscriber number: aMSRN
 				yourself);
 			yourself).
 	dialogue requestTcEnd: false.
+	self signalSuccess: aMSRN

@@ -7,5 +7,5 @@ checkDone
 
 	needsEnd ifTrue: [
 		dialogue requestTcEnd: false].
-	onSuccessBlock value.
+	self signalSuccess: 'done'
 	

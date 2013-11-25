@@ -13,6 +13,6 @@ deleteSubscriberSuccess
 		requestTcInvokeNamed: 'insertSubscriberDataV3'
 		parameters: param class: 1 timeout: 500.
 	invoke
-		onReturnLast: [dialogue requestTcEnd: false];
+		onReturnLast: [dialogue requestTcEnd: false. self signalSuccess: 'done'];
 		onError: [self failure].
 	dialogue requestTcContinue.

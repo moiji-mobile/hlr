@@ -17,3 +17,4 @@ handleNotReachableHighPriority
 	
 	"Send the two invocations and be done"
 	dialogue requestTcEnd: false.
+	self signalSuccess: 'low-priority'

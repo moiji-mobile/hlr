@@ -12,3 +12,4 @@ finishForward: aSubscriber number: aMSISDN
 					yourself);
 			yourself).
 	dialogue requestTcEnd: false.
+	self signalSuccess: aMSISDN

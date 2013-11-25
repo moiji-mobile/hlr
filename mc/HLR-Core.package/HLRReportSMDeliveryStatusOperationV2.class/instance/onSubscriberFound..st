@@ -4,15 +4,17 @@ onSubscriberFound: aSubscriber
 	deliveryOutcome = 'memoryCapacityExceeded'
 		ifTrue: [
 			aSubscriber memoryCapcacityExceeded.
-			^self addToMessageWaitingList: aSubscriber].
+			self addToMessageWaitingList: aSubscriber.
+			^self finish].
 	deliveryOutcome = 'absentSubscriber'
 		ifTrue: [
 			aSubscriber mobileStationNotPresent.
-			^self addToMessageWaitingList: aSubscriber].
+			self addToMessageWaitingList: aSubscriber.
+			^self finish].
 	deliveryOutcome = 'successfulTransfer'
 		ifTrue: [
 			aSubscriber mobileStationIsPresent.
-			^dialogue requestTcEnd: false].
+			^self finish].
 
 	"Can not be reached?!"
 	self halt.

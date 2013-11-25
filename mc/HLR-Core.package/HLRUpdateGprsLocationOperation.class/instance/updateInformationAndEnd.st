@@ -16,3 +16,4 @@ updateInformationAndEnd
 	"Done!"
 	invocation returnResultLast: result.
 	dialogue requestTcEnd: false.
+	self signalSuccess: 'done'

@@ -1,3 +1,3 @@
 as yet unclassified
 alertSuccess: aResult
-	onSuccessBlock value.
+	self signalSuccess: aResult

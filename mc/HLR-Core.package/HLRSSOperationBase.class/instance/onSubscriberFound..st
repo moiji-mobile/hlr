@@ -11,12 +11,12 @@ onSubscriberFound: aSubscriber
 		| teleService |
 		teleService := basicService teleservice.
 		teleService = '10'
-			ifFalse: [^dialogue requestTcUAbort: (dialogue uAbortCause: 0)].
+			ifFalse: [^self abort: (dialogue uAbortCause: 0)].
 	].
 
 	"Check if manipulation is allowed. It should probably barr this"
 	(self supplementaryServiceAllowedFor: ssCode)
-		ifFalse: [^dialogue requestTcUAbort: (dialogue uAbortCause: 0)].
+		ifFalse: [^self abort: (dialogue uAbortCause: 0)].
 
 	"Now update the subscriber and start another dialogue/invocation"
 	self doUpdateSupplementaryService: ssCode

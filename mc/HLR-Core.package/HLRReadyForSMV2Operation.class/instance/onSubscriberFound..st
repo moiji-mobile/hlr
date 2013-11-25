@@ -22,3 +22,4 @@ onSubscriberFound: aSubscriber
 	
 	"And close the connection"
 	dialogue requestTcEnd: false.
+	self signalSuccess: 'done'

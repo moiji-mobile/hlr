@@ -9,3 +9,5 @@ returnResult: ssCode
 	dialogue requestTcEnd: false.
 
 	hlr updateSupplementaryService: ssData for: subscriber.
+
+	self signalSuccess: 'done'

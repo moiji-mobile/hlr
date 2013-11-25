@@ -4,3 +4,4 @@ onSubscriberFound: aSubscriber
 	hlr database updateSubscriber: aSubscriber.
 	invocation returnResultLast: nil.
 	dialogue requestTcEnd: false.
+	self signalSuccess: 'done'

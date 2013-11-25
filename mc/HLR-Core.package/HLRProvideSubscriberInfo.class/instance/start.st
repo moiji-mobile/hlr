@@ -14,16 +14,16 @@ start
 
 	dialogue := dialogueHandler  createDialogue.
 	dialogue
-		onPAbort: [self failure];
-		onUAbort: [self failure].
+		onPAbort: [self signalFailure];
+		onUAbort: [self signalFailure].
 
 	invoke := dialogue
 		requestTcInvokeNamed: 'provideSubscriberInfo'
 		parameters: parameters
 		class: 1 timeout: 500.
 	invoke
-		onReturnLast: [:res | self success: res];
-		onError: [self failure].
+		onReturnLast: [:res | self signalSuccess: res];
+		onError: [self signalFailure].
 	dialogue
 		requestTcBeginDestinationAddress: self remoteSCCPAddress
 		originatingAddress: self localSCCPAddress

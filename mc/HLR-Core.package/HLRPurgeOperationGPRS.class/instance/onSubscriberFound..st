@@ -11,4 +11,5 @@ onSubscriberFound: aSubscriber
 	res := ASN1Dictionary new
 			yourself.
 	invocation returnResultLast: res.
-	dialogue requestTcEnd: false.	
+	dialogue requestTcEnd: false.
+	self signalSuccess: 'done'.

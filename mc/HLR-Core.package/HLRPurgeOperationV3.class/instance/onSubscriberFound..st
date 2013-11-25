@@ -10,4 +10,5 @@ onSubscriberFound: aSubscriber
 			at: 'freezeTMSI' put: 1;
 			yourself.
 	invocation returnResultLast: res.
-	dialogue requestTcEnd: false.	
+	dialogue requestTcEnd: false.
+	self signalSuccess: 'done'

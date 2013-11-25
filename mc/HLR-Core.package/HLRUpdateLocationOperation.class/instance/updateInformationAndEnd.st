@@ -17,3 +17,5 @@ updateInformationAndEnd
 
 	"Ask the HLR to ask to tell everyone waiting"
 	hlr alertServiceCentresFor: subscriber.
+
+	self signalSuccess: 'done'
