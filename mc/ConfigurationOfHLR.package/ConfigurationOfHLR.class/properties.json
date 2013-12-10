@@ -1,0 +1,14 @@
+{
+	"category" : "ConfigurationOfHLR",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		"LastVersionLoad" ],
+	"commentStamp" : "",
+	"instvars" : [
+		"project" ],
+	"name" : "ConfigurationOfHLR",
+	"pools" : [
+		 ],
+	"super" : "Object",
+	"type" : "normal" }
