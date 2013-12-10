@@ -4,9 +4,9 @@ version01: spec
 
 	spec for: #'common' do: [
 		spec blessing: #'development'.
-		spec description: '0.1 : bisecting SS7 into TCAP and HLR'.
+		spec description: '0.1 : added CDR as dependency'.
 		spec author: 'NorbertHartl'.
-		spec timestamp: '12/10/2013 11:58'.
+		spec timestamp: '12/10/2013 14:20'.
 		spec 
 			project: 'Phexample' with: '1.2';
 			project: 'Osmocom' with: '0.1.6';

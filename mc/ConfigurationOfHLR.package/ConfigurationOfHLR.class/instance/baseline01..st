@@ -6,7 +6,7 @@ baseline01: spec
 		spec blessing: #baseline.
                 spec repository: 'http://smalltalkhub.com/mc/osmocom/Osmocom/main'.    
                 spec 
-				package: 'HLR-Core' with: [ spec requires: #('TCAP' 'ASN1') ];
+				package: 'HLR-Core' with: [ spec requires: #('TCAP' 'CDR' 'ASN1') ];
 				package: 'HLR-Camel' with: [ spec requires: #('HLR-Core') ];
 				package: 'HLR-Voyage' with: [ spec requires: #('HLR-Core') ] .
 
@@ -22,6 +22,14 @@ baseline01: spec
 						className: 'ConfigurationOfOsmocom';
 						versionString: #'bleedingEdge';
 						file: 'ConfigurationOfOsmocom';
+						repository: 'http://smalltalkhub.com/mc/osmocom/Osmocom/main' ].
+					
+			spec
+				project: 'CDR' with: [
+					spec
+						className: 'ConfigurationOfCDR';
+						versionString: #'bleedingEdge';
+						file: 'ConfigurationOfCDR';
 						repository: 'http://smalltalkhub.com/mc/osmocom/Osmocom/main' ].
 
 			spec
