@@ -16,7 +16,7 @@ handleNotReachableLowPriority
 	param := ASN1Dictionary new
 		at: 'mw-Status' put: '0100';
 		yourself.
-	dialogue requestTcInvokeNamed: 'informServiceCentreV2' parameters:  param class: 1 timeout: 500.
+	dialogue requestTcInvokeNamed: 'informServiceCentreV3' parameters:  param class: 1 timeout: 500.
 	
 	"Send the two invocations and be done"
 	dialogue requestTcEnd: false.
