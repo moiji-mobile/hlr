@@ -5,7 +5,7 @@ oCSIAsASN1: aHlr
 			add: (ASN1Dictionary new
 				at: 'o-BcsmTriggerDetectionPoint' put: 'collectedInfo';
 				at: 'serviceKey' put: 110;
-				at: 'gsmSCF-Address' put: aHlr gsmSCFAddress toE164;
+				at: 'gsmSCF-Address' put: (self gsmSCFAddressToUse: aHlr) toE164;
 				at: 'defaultCallHandling' put: 'releaseCall';
 				yourself);
 			yourself);

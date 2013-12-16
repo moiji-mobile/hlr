@@ -6,7 +6,8 @@
 		 ],
 	"commentStamp" : "",
 	"instvars" : [
-		"supportedCamelPhases" ],
+		"supportedCamelPhases",
+		"gsmSCFAddress" ],
 	"name" : "CamelSubscriber",
 	"pools" : [
 		 ],

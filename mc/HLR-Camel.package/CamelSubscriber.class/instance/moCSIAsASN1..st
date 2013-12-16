@@ -5,7 +5,7 @@ moCSIAsASN1: aHlr
 			add: (ASN1Dictionary new
 				at: 'sms-TriggerDetectionPoint' put: 'sms-CollectedInfo';
 				at: 'serviceKey' put: 0;
-				at: 'gsmSCF-Address' put: aHlr gsmSCFAddress toE164;
+				at: 'gsmSCF-Address' put: (self gsmSCFAddressToUse: aHlr) toE164;
 				at: 'defaultSMS-Handling' put: 'continueTransaction';
 				yourself);
 			yourself);
