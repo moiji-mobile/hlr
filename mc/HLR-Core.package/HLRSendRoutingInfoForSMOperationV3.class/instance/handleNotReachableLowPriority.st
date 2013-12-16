@@ -3,7 +3,7 @@ handleNotReachableLowPriority
 	| param |
 
 	"This is still a mess. I think we need to report the old msc-Number"
-	subscriber addToMessageWaitingList: smscAddr.
+	subscriber addToMessageWaitingList: smscAddr gateway: dialogue transaction remoteAddress.
 	hlr database updateSubscriber: subscriber.
 
 	"Return absentSubscriberV2 now...Added to the MWD list. 3 is hardcoded

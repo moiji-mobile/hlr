@@ -5,5 +5,5 @@ alertServiceCentresFor: aSubscriber
 	aSubscriber isMobileStationNotReachable
 		ifTrue: [^false].
 
-	aSubscriber messageWaitingSet do: [:smscAddress |
-		self alertServiceCentre: smscAddress for: aSubscriber].
+	aSubscriber messageWaitingSet do: [:assoc |
+		self alertServiceCentre: assoc value iwmsc: assoc key for: aSubscriber].

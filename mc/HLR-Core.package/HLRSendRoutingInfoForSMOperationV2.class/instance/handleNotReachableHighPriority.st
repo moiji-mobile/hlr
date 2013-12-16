@@ -3,7 +3,7 @@ handleNotReachableHighPriority
 	| param |
 
 	"This is still a mess. I think we need to report the old msc-Number"
-	subscriber addToMessageWaitingList: smscAddr.
+	subscriber addToMessageWaitingList: smscAddr gateway: dialogue transaction remoteAddress.
 	hlr database updateSubscriber: subscriber.
 
 	"Now 'ACK' the request.. do that with the old msc-Number?"

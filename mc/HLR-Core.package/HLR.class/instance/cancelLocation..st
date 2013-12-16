@@ -10,7 +10,7 @@ cancelLocation: aSubscriber
 		dialogueHandler: endPoint;
 		hlr: self;
 		hlrAddress: self hlrNumber;
-		remoteAddress: aSubscriber vlrNumber;
+		remoteGlobalTitle: aSubscriber vlrNumber;
 		imsi: aSubscriber imsi;
 		onSuccess: [
 			aSubscriber clearVlr.

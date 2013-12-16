@@ -38,4 +38,4 @@ testSendRoutingInfoForSMV3UnreachableHighPrio
 	"TODO.. make sure things return"
 	self assert: invokeResult isNil.
 	self assert: mwStatus = '0100'.
-	self assert: (subscriber messageWaitingSet includes: '3234')
+	self assert: (subscriber messageWaitingSet anySatisfy: [:assoc | assoc value = '3234'])

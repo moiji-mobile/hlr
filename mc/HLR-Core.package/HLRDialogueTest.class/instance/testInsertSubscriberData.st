@@ -17,7 +17,7 @@ testInsertSubscriberData
 	HLRInsertSubscriberData new
 		hlr: testHlr;
 		hlrAddress: '3548999973';
-		remoteAddress: '46707963173';
+		remoteGlobalTitle: '46707963173';
 		dialogueHandler: hlrEndPoint;
 		subscriber: subscriber;
 		onSuccess: [onSuccessCount := onSuccessCount + 1];

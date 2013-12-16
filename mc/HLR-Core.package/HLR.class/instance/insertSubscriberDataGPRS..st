@@ -12,7 +12,7 @@ insertSubscriberDataGPRS: aSubscriber
 	HLRInsertSubscriberDataGprs new 
 		dialogueHandler: endPoint;
 		hlrAddress: self hlrNumber;
-		remoteAddress: sgsnNumber;
+		remoteGlobalTitle: sgsnNumber;
 		remoteSSN: #sgsn;
 		subscriber: aSubscriber;
 		startWithNewDialogue.

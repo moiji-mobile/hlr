@@ -7,7 +7,7 @@ querySubscriberInformation: aSubscriber
 		onSuccess: [:roamingNumber | self finishWithRoute: aSubscriber number: roamingNumber];
 		onFailure: [self fail];
 		dialogueHandler: dialogue container dialogueHandler;
-		remoteAddress: aSubscriber vlrNumber;
+		remoteGlobalTitle: aSubscriber vlrNumber;
 		hlrAddress: hlr hlrNumber;
 		hlr: hlr;
 		start.

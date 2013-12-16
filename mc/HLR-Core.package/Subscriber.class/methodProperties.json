@@ -11,7 +11,7 @@
 		"testSubscriber" : "HolgerHansPeterFreyther 11/22/2013 11:39" },
 	"instance" : {
 		"activateSupplementaryServiceForCode:" : "HolgerHansPeterFreyther 11/17/2013 12:46",
-		"addToMessageWaitingList:" : "HolgerHansPeterFreyther 11/9/2013 21:09",
+		"addToMessageWaitingList:gateway:" : "HolgerHansPeterFreyther 12/16/2013 17:47",
 		"alwaysForwardTeleService" : "HolgerHansPeterFreyther 10/28/2013 10:51",
 		"apnAsOctetString" : "HolgerHansPeterFreyther 11/9/2013 15:19",
 		"apnAsOctetString:" : "HolgerHansPeterFreyther 11/9/2013 15:30",
@@ -48,7 +48,7 @@
 		"msisdnAsE164" : "HolgerHansPeterFreyther 10/15/2013 14:53",
 		"provisionedSS" : "HolgerHansPeterFreyther 11/12/2013 15:34",
 		"regionalSubscriptionResponse" : "HolgerHansPeterFreyther 8/13/2013 16:46",
-		"removeFromWaitingList:" : "HolgerHansPeterFreyther 11/9/2013 22:34",
+		"removeFromWaitingList:" : "HolgerHansPeterFreyther 12/16/2013 18:01",
 		"roamingRestrictionsDueToUnsupportedFeature" : "HolgerHansPeterFreyther 8/13/2013 16:48",
 		"sgsnAddress:" : "HolgerHansPeterFreyther 11/9/2013 15:55",
 		"sgsnNumber" : "HolgerHansPeterFreyther 11/9/2013 15:52",

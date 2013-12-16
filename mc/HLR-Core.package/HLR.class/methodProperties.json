@@ -2,9 +2,9 @@
 	"class" : {
 		 },
 	"instance" : {
-		"alertServiceCentre:for:" : "HolgerHansPeterFreyther 11/25/2013 12:32",
-		"alertServiceCentresFor:" : "HolgerHansPeterFreyther 11/11/2013 14:53",
-		"cancelLocation:" : "HolgerHansPeterFreyther 11/25/2013 11:59",
+		"alertServiceCentre:iwmsc:for:" : "HolgerHansPeterFreyther 12/16/2013 18:00",
+		"alertServiceCentresFor:" : "HolgerHansPeterFreyther 12/16/2013 17:53",
+		"cancelLocation:" : "HolgerHansPeterFreyther 12/16/2013 17:56",
 		"cdrClient" : "HolgerHansPeterFreyther 11/22/2013 12:10",
 		"database" : "HolgerHansPeterFreyther 10/1/2013 13:41",
 		"database:" : "HolgerHansPeterFreyther 10/1/2013 13:10",
@@ -13,12 +13,10 @@
 		"hlrNumber" : "HolgerHansPeterFreyther 10/21/2013 10:16",
 		"hlrNumber:" : "HolgerHansPeterFreyther 10/21/2013 10:16",
 		"hlrNumberAsE164" : "HolgerHansPeterFreyther 10/21/2013 10:19",
-		"insertSubscriberData:" : "HolgerHansPeterFreyther 11/11/2013 14:53",
-		"insertSubscriberDataGPRS:" : "HolgerHansPeterFreyther 11/9/2013 16:27",
-		"iwmscNumber" : "HolgerHansPeterFreyther 11/9/2013 22:20",
-		"iwmscNumber:" : "HolgerHansPeterFreyther 11/9/2013 22:31",
-		"provideRoamingNumber:" : "HolgerHansPeterFreyther 11/11/2013 14:53",
-		"provideSubscriberInfo:" : "HolgerHansPeterFreyther 11/11/2013 14:53",
+		"insertSubscriberData:" : "HolgerHansPeterFreyther 12/16/2013 17:56",
+		"insertSubscriberDataGPRS:" : "HolgerHansPeterFreyther 12/16/2013 17:56",
+		"provideRoamingNumber:" : "HolgerHansPeterFreyther 12/16/2013 17:56",
+		"provideSubscriberInfo:" : "HolgerHansPeterFreyther 12/16/2013 17:56",
 		"supplementaryServiceActivationAllowedFor:" : "HolgerHansPeterFreyther 11/17/2013 13:46",
 		"supplementaryServiceDeactivationAllowedFor:" : "HolgerHansPeterFreyther 11/17/2013 14:20",
-		"updateSupplementaryService:for:" : "HolgerHansPeterFreyther 11/13/2013 09:21" } }
+		"updateSupplementaryService:for:" : "HolgerHansPeterFreyther 12/16/2013 17:56" } }

@@ -16,7 +16,7 @@ finishUpdate
 		imsi: subscriber imsi;
 		hlr: hlr;
 		hlrAddress: hlr hlrNumber;
-		remoteAddress: subscriber vlrNumber;
+		remoteGlobalTitle: subscriber vlrNumber;
 		dialogueHandler: hlr endPoint;
 		start.
 		

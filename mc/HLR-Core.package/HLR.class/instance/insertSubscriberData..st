@@ -9,6 +9,6 @@ insertSubscriberData: aSubscriber
 	HLRInsertSubscriberData new 
 		dialogueHandler: endPoint;
 		hlrAddress: self hlrNumber;
-		remoteAddress: aSubscriber vlrNumber;
+		remoteGlobalTitle: aSubscriber vlrNumber;
 		subscriber: aSubscriber;
 		startWithNewDialogue.

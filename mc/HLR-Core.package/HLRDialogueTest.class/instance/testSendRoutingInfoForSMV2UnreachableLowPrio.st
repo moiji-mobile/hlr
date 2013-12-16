@@ -38,4 +38,4 @@ testSendRoutingInfoForSMV2UnreachableLowPrio
 	self assert: mwStatus = '0100'.
 	self assert: err_name originalBindingName = 'absentSubscriberV2'.
 	self assert: err_data isNil.
-	self assert: (subscriber messageWaitingSet includes: '3234')
+	self assert: (subscriber messageWaitingSet anySatisfy: [:assoc | assoc value = '3234'])

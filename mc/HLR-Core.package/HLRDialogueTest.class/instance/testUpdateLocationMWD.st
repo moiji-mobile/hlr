@@ -17,7 +17,7 @@ testUpdateLocationMWD
 			insert returnResultLast: nil.
 			dialogue requestTcContinue].
 
-	subscriber addToMessageWaitingList: '2342'.
+	subscriber addToMessageWaitingList: '2342' gateway: self localAddr.
 
 	invoke := dialogue requestTcInvokeNamed: operationName parameters:  self createUpdateLocationParams class: 1 timeout: 500.
 	invoke

@@ -9,7 +9,6 @@
 		"database",
 		"endPoint",
 		"hlrNumber",
-		"iwmscNumber",
 		"cdrClient" ],
 	"name" : "HLR",
 	"pools" : [

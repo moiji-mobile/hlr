@@ -4,7 +4,7 @@ updateSupplementaryService: aSSData for: aSubscriber
 	HLRUpdateSupplementaryServiceDataOperation new
 		dialogueHandler: endPoint;
 		hlrAddress: self hlrNumber;
-		remoteAddress: aSubscriber vlrNumber;
+		remoteGlobalTitle: aSubscriber vlrNumber;
 		imsi: aSubscriber imsi;
 		hlr: self;
 		ssData: aSSData;

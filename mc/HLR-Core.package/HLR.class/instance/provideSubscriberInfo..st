@@ -9,6 +9,6 @@ provideSubscriberInfo: aSubscriber
 	HLRProvideSubscriberInfo new 
 		dialogueHandler: endPoint;
 		hlrAddress: self hlrNumber;
-		remoteAddress: aSubscriber vlrNumber;
+		remoteGlobalTitle: aSubscriber vlrNumber;
 		subscriber: aSubscriber;
 		start.

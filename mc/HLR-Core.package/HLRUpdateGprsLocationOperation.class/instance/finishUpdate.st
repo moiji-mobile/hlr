@@ -13,7 +13,7 @@ finishUpdate
 		imsi: subscriber imsi;
 		hlr: hlr;
 		hlrAddress: hlr hlrNumber;
-		remoteAddress: subscriber sgsnNumber;
+		remoteGlobalTitle: subscriber sgsnNumber;
 		remoteSSN: #sgsn;
 		dialogueHandler: hlr endPoint;
 		start.

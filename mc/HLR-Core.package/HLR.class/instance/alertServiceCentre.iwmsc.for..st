@@ -1,5 +1,5 @@
 sms
-alertServiceCentre: aSmscAddress for: aSubscriber 
+alertServiceCentre: aSmscAddress iwmsc: aMscSCCPAddress for: aSubscriber 
 	"From 09.02: The MWD entry is deleted when the positive acknowledge
 	is received from the IWMSC. The unsuccessful alert may be repeated.
 	The MWD entry should be purged in the unsuccessful case, at least
@@ -12,7 +12,7 @@ alertServiceCentre: aSmscAddress for: aSubscriber
 		smscAddress: aSmscAddress toE164;
 		hlr: self;
 		hlrAddress: self hlrNumber;
-		remoteAddress: self iwmscNumber;
+		remoteSCCPAddress: aMscSCCPAddress;
 		remoteSSN: #msc;
 		onSuccess: [aSubscriber removeFromWaitingList: aSmscAddress. self database updateSubscriber: aSubscriber];
 		onFailure: [aSubscriber removeFromWaitingList: aSmscAddress. self database updateSubscriber: aSubscriber];
