@@ -1,0 +1,3 @@
+mobile-terminated-handling
+mobileTerminatedCallAllowedFor: aSubscriber invocation: anInvocation
+	^aSubscriber mobileTerminatedCallAllowed

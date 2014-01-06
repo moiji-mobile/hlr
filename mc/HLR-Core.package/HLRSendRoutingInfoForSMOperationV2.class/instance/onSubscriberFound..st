@@ -5,7 +5,7 @@ onSubscriberFound: aSubscriber
 	care needs to be taken.."
 	subscriber := aSubscriber.
 
-	(dialogue mobileTerminatedCallAllowedFor: aSubscriber) ifFalse: [
+	(dialogue mobileTerminatedSMSAllowedFor: aSubscriber invocation: invocation) ifFalse: [
 		invocation returnError: 'callBarred' with: nil.
 		^dialogue requestTcEnd: false].
 
