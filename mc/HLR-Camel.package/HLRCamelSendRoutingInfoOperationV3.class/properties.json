@@ -1,0 +1,14 @@
+{
+	"category" : "HLR-Camel-Operations",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "<historical>",
+	"instvars" : [
+		 ],
+	"name" : "HLRCamelSendRoutingInfoOperationV3",
+	"pools" : [
+		 ],
+	"super" : "HLRSendRoutingInfoOperationV3",
+	"type" : "normal" }

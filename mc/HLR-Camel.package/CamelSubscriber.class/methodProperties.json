@@ -4,11 +4,11 @@
 	"instance" : {
 		"camelPhaseTwoSupported" : "HolgerHansPeterFreyther 11/17/2013 21:00",
 		"camelSubscriberInfoAsASN1:" : "HolgerHansPeterFreyther 11/17/2013 21:31",
+		"gmscCamelSubscriptionInfoFor:" : "HolgerHansPeterFreyther 1/6/2014 16:16",
 		"gsmSCFAddressToUse:" : "HolgerHansPeterFreyther 12/16/2013 19:23",
 		"isCamelSubscriber" : "HolgerHansPeterFreyther 11/17/2013 16:00",
 		"moCSIAsASN1:" : "HolgerHansPeterFreyther 12/16/2013 19:20",
-		"mobileTerminatedCallAllowed" : "HolgerHansPeterFreyther 11/22/2013 11:26",
-		"mobileTerminatedSMAllowed" : "HolgerHansPeterFreyther 11/22/2013 11:26",
+		"mtCSIAsASN1:" : "HolgerHansPeterFreyther 1/6/2014 16:09",
 		"oCSIAsASN1:" : "HolgerHansPeterFreyther 12/16/2013 19:20",
 		"obcsmTDPCriteriaList:" : "HolgerHansPeterFreyther 11/17/2013 21:39",
 		"ssCSIAsASN1:" : "HolgerHansPeterFreyther 12/16/2013 19:20",

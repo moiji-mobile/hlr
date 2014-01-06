@@ -11,10 +11,7 @@ testSendRoutingInfoV3NoCamel
 				yourself.
 
 	testEndPoint
-		onDialogue: [:diag |
-			diag onInvoke: [:invocation |
-				invocation returnResultLast: '10123' asAsn1Value.
-				diag requestTcEnd: false]].
+		onDialogue: [:diag | self assert: false].
 
 	operationName := 'sendRoutingInfoV3'.
 	dialogue := testEndPoint createDialogue.

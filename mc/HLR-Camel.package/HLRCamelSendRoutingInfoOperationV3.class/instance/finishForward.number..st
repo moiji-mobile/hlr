@@ -1,0 +1,17 @@
+as yet unclassified
+finishForward: aSubscriber number: aMSISDN
+	invocation returnResultLast:
+		(ASN1Dictionary new
+			at: 'imsi' put: aSubscriber imsiAsTBCD;
+			at: 'extendedRoutingInfo' put: (ASN1Dictionary new
+				at: 'camelRoutingInfo' put: (ASN1Dictionary new
+					at: 'forwardingData'  put:
+						(ASN1Dictionary new
+							at: 'forwardedToNumber' put: aMSISDN;
+							yourself);
+					at: 'gmscCamelSubscriptionInfo' put: (aSubscriber gmscCamelSubscriptionInfoFor: hlr);
+					yourself);
+				yourself);
+			yourself).
+
+	dialogue requestTcEnd: false.

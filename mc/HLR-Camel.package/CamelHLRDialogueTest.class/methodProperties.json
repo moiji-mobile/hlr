@@ -9,7 +9,10 @@
 		"setUp" : "HolgerHansPeterFreyther 12/16/2013 17:54",
 		"testSendRoutingInfoForSMV2NoCamel" : "HolgerHansPeterFreyther 11/17/2013 19:50",
 		"testSendRoutingInfoForSMV3NoCamel" : "HolgerHansPeterFreyther 11/17/2013 19:54",
-		"testSendRoutingInfoV2NoCamel" : "HolgerHansPeterFreyther 11/17/2013 19:41",
-		"testSendRoutingInfoV3NoCamel" : "HolgerHansPeterFreyther 11/17/2013 19:43",
+		"testSendRoutingInfoV2NoCamel" : "HolgerHansPeterFreyther 1/6/2014 10:08",
+		"testSendRoutingInfoV3CamelV1" : "HolgerHansPeterFreyther 1/6/2014 10:08",
+		"testSendRoutingInfoV3CamelV2" : "HolgerHansPeterFreyther 1/6/2014 16:19",
+		"testSendRoutingInfoV3CamelV2SuppressTCSI" : "HolgerHansPeterFreyther 1/6/2014 16:22",
+		"testSendRoutingInfoV3NoCamel" : "HolgerHansPeterFreyther 1/6/2014 10:09",
 		"testUpdateLocation" : "HolgerHansPeterFreyther 11/17/2013 20:42",
 		"testUpdateLocationNoCamel" : "HolgerHansPeterFreyther 11/17/2013 17:59" } }
