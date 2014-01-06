@@ -1,7 +1,7 @@
 as yet unclassified
 onSubscriberFound: aSubscriber 
 	"The subscriber has been found."
-	(dialogue mobileTerminatedSMSAllowedFor: aSubscriber) ifFalse: [
+	(dialogue mobileTerminatedCallAllowedFor: aSubscriber) ifFalse: [
 			invocation returnError: 'callBarred' with: nil.
 			^dialogue requestTcEnd: false].	
 
