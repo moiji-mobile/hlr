@@ -30,7 +30,8 @@
 		"sgsnAddress",
 		"mobileStationNotReachable",
 		"messageWaitingSet",
-		"memoryAvailable" ],
+		"memoryAvailable",
+		"a3a8Version" ],
 	"name" : "Subscriber",
 	"pools" : [
 		 ],
