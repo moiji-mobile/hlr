@@ -1,3 +1,3 @@
 as yet unclassified
 odbGeneralDataFor: aSubscriber 
-	^#[1 0 0] hex
+	^'00000000000000000000000000000'
