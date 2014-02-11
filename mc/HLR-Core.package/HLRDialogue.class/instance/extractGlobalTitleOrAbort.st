@@ -5,11 +5,11 @@ extractGlobalTitleOrAbort
 	gt := address parseGlobalTitle.
 	
 	"Abort if there is no GT"
-	gt ifNil: [^self requestTcUAbort: (self uAbortCause: 0)].
+	gt ifNil: [^self requestTcUAbort: TCAPDialogueUAbort serviceUser ].
 
 	"Abort if it is not a IMSI"
 	gt nature = SCCPGlobalTitle naiInternationalNumber
-		ifFalse: [^self requestTcUAbort: (self uAbortCause: 0)].
+		ifFalse: [^self requestTcUAbort: TCAPDialogueUAbort serviceUser ].
 	gt plan = SCCPGlobalTitle npLand
-		ifFalse: [^self requestTcUAbort: (self uAbortCause: 0)].
+		ifFalse: [^self requestTcUAbort: TCAPDialogueUAbort serviceUser ].
 	^gt

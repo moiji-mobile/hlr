@@ -5,6 +5,6 @@ dispatchInvocation: anInvocation
 
 	"Abort the entire dialogue in case we don't know the invocation."
 	(self respondsTo: selector)
-		ifFalse: [^self requestTcUAbort: (self uAbortCause: 0)].
+		ifFalse: [^self requestTcUAbort: TCAPDialogueUAbort serviceUser ].
 
 	self perform: anInvocation normalizedOperationName with: anInvocation.
