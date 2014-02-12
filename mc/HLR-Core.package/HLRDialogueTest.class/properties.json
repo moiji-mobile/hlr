@@ -9,7 +9,8 @@
 		"hlrEndPoint",
 		"testEndPoint",
 		"testHlr",
-		"subscriber" ],
+		"subscriber",
+		"secondSubscriber" ],
 	"name" : "HLRDialogueTest",
 	"pools" : [
 		 ],
