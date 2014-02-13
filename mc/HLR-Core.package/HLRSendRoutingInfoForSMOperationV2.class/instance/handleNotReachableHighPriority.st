@@ -11,7 +11,7 @@ handleNotReachableHighPriority
 
 	"Tell the GSMSC that we have now queued this SMSC. It a unconfirmed service"
 	param := ASN1Dictionary new
-		at: 'mw-Status' put: '0100';
+		at: 'mw-Status' put: '010';
 		yourself.
 	dialogue requestTcInvokeNamed: 'informServiceCentreV2' parameters:  param class: 1 timeout: 500.
 	
