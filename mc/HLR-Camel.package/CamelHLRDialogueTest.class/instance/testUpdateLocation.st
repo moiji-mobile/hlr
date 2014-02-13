@@ -12,7 +12,7 @@ testUpdateLocation
 		at: 'msc-Number' put: '916407973671F3';
 		at: 'vlr-Number' put: '916407973671F3';
 		at: 'vlr-Capability' put: (ASN1Dictionary new
-			at: 'supportedCamelPhases' put: '1110000';
+			at: 'supportedCamelPhases' put: '111';
 			yourself);
 		yourself.
 

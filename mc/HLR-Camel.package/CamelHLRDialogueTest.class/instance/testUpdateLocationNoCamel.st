@@ -40,5 +40,5 @@ testUpdateLocationNoCamel
 	"Might be fragile against... changes."
 	"Make sure that all outgoing calls are barred."
 	self assert: invocations first argument subscriberStatus value = 'operatorDeterminedBarring'.
-	self assert: invocations first argument odb_Data odb_GeneralData = '11111111111111111111111111111'
+	self assert: invocations first argument odb_Data odb_GeneralData allBitsAreSet
 	

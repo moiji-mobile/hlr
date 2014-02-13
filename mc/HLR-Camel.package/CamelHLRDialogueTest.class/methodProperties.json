@@ -10,9 +10,9 @@
 		"testSendRoutingInfoForSMV2NoCamel" : "HolgerHansPeterFreyther 11/17/2013 19:50",
 		"testSendRoutingInfoForSMV3NoCamel" : "HolgerHansPeterFreyther 11/17/2013 19:54",
 		"testSendRoutingInfoV2NoCamel" : "HolgerHansPeterFreyther 1/6/2014 10:08",
-		"testSendRoutingInfoV3CamelV1" : "HolgerHansPeterFreyther 1/6/2014 10:08",
-		"testSendRoutingInfoV3CamelV2" : "HolgerHansPeterFreyther 1/6/2014 16:19",
-		"testSendRoutingInfoV3CamelV2SuppressTCSI" : "HolgerHansPeterFreyther 1/6/2014 16:22",
+		"testSendRoutingInfoV3CamelV1" : "NorbertHartl 2/13/2014 13:55",
+		"testSendRoutingInfoV3CamelV2" : "NorbertHartl 2/13/2014 14:01",
+		"testSendRoutingInfoV3CamelV2SuppressTCSI" : "NorbertHartl 2/13/2014 14:01",
 		"testSendRoutingInfoV3NoCamel" : "HolgerHansPeterFreyther 1/25/2014 20:54",
-		"testUpdateLocation" : "HolgerHansPeterFreyther 11/17/2013 20:42",
-		"testUpdateLocationNoCamel" : "HolgerHansPeterFreyther 2/10/2014 09:33" } }
+		"testUpdateLocation" : "NorbertHartl 2/13/2014 14:02",
+		"testUpdateLocationNoCamel" : "NorbertHartl 2/13/2014 14:04" } }

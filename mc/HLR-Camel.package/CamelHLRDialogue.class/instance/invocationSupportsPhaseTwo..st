@@ -5,7 +5,4 @@ invocationSupportsPhaseTwo: anInvocation
 	camelInfo ifNil: [^false].
 
 	supportedPhases := camelInfo supportedCamelPhases.
-	supportedPhases size > 2
-		ifFalse: [^false].
-	^supportedPhases second = $1.
-	
+	^ supportedPhases includesBit: 'phase2'	

@@ -11,7 +11,7 @@ testSendRoutingInfoV3CamelV2SuppressTCSI
 				at: 'interrogationType' put: 'basicCall';
 				at: 'gmsc-OrGsmSCF-Address' put: '1234' toE164;
 				at: 'camelInfo' put: (ASN1Dictionary new
-					at: 'supportedCamelPhases' put: '110000';
+					at: 'supportedCamelPhases' put: '11';
 					at: 'suppress-T-CSI' put: 1;
 					yourself);
 				yourself.
