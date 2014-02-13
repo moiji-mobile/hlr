@@ -35,7 +35,7 @@ testSendRoutingInfoForSMV2UnreachableLowPrio
 		applicationContextName: (self applicationContextFor: operationName).
 
 	"TODO.. make sure things return".
-	self assert: mwStatus = '0100'.
+	self assert: (mwStatus includesBit: 'mnrf-Set').
 	self assert: err_name originalBindingName = 'absentSubscriberV2'.
 	self assert: err_data isNil.
 	self assert: (subscriber messageWaitingSet anySatisfy: [:assoc | assoc value = '3234'])
