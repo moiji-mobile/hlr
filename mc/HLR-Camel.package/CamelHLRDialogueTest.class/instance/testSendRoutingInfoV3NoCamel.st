@@ -1,6 +1,6 @@
 barr-handling
 testSendRoutingInfoV3NoCamel
-	| operationName dialogue invoke sriArg err_name err_param |
+	| operationName dialogue invoke sriArg err_message  |
 	
 	subscriber
 		mscNumber: '123';
@@ -22,7 +22,7 @@ testSendRoutingInfoV3NoCamel
 				class: 1 timeout: 500.
 	invoke
 		onReturn: [self assert: false ];
-		onError: [:err :par | err_name := err. err_param := par];
+		onError: [:errorMessage  | err_message := errorMessage ];
 		onReject: [self assert: false];
 		onReturnLast: [self assert: false].
 	dialogue
@@ -31,5 +31,5 @@ testSendRoutingInfoV3NoCamel
 		applicationContextName: (self applicationContextFor: operationName).
 
 	"TODO.. make sure things return"
-	self assert: err_name originalBindingName = 'callBarred'.
-	self assert: err_param isNil.
+	self assert: err_message error originalBindingName = 'callBarred'.
+	self assert: err_message parameter isNil.

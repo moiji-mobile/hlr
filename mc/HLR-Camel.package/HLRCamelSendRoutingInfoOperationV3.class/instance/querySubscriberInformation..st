@@ -4,7 +4,7 @@ querySubscriberInformation: aSubscriber
 	HLRProvideSubscriberInfo new
 		originatingCallDataRecord: originatingCallDataRecord;
 		subscriber: aSubscriber;
-		onSuccess: [:result | self finishWithRoute: aSubscriber subscriberInfo: result];
+		onSuccess: [:resultMessage | self finishWithRoute: aSubscriber subscriberInfo: resultMessage result ];
 		onFailure: [self fail];
 		dialogueHandler: dialogue container dialogueHandler;
 		remoteGlobalTitle: aSubscriber vlrNumber;

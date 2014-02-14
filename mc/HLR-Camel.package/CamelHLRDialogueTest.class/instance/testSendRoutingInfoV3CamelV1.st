@@ -1,6 +1,6 @@
 barr-handling
 testSendRoutingInfoV3CamelV1
-	| operationName dialogue invoke sriArg err_name err_param |
+	| operationName dialogue invoke sriArg err_message  |
 	
 	subscriber
 		mscNumber: '123';
@@ -25,7 +25,7 @@ testSendRoutingInfoV3CamelV1
 				class: 1 timeout: 500.
 	invoke
 		onReturn: [self assert: false ];
-		onError: [:err :par | err_name := err. err_param := par];
+		onError: [:errorMessage :par | err_message := errorMessage ];
 		onReject: [self assert: false];
 		onReturnLast: [self assert: false].
 	dialogue
@@ -34,5 +34,5 @@ testSendRoutingInfoV3CamelV1
 		applicationContextName: (self applicationContextFor: operationName).
 
 	"This is camel phase 1. It lacks on-line charging so barr the call"
-	self assert: err_name originalBindingName = 'callBarred'.
-	self assert: err_param isNil.
+	self assert: err_message error originalBindingName = 'callBarred'.
+	self assert: err_message parameter isNil.

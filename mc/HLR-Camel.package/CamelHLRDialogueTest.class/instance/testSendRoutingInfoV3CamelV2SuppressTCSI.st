@@ -33,7 +33,7 @@ testSendRoutingInfoV3CamelV2SuppressTCSI
 		onReturn: [self assert: false ];
 		onError: [self assert: false ];
 		onReject: [self assert: false];
-		onReturnLast: [:res | result := res].
+		onReturnLast: [:res | result := res result ].
 	dialogue
 		requestTcBeginDestinationAddress: self hlrAddr
 		originatingAddress: self localAddr
