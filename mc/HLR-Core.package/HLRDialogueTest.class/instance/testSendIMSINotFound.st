@@ -1,6 +1,6 @@
 tests-infoRetrievalPackage
 testSendIMSINotFound
-	| operationName dialogue  invoke err_name err_data |
+	| operationName dialogue  invoke err_message |
 	
 
 	operationName := 'sendIMSI'.
@@ -10,7 +10,7 @@ testSendIMSINotFound
 				class: 1 timeout: 500.
 	invoke
 		onReturn: [self assert: false ];
-		onError: [:err :param | err_name := err. err_data := param];
+		onError: [:errorMessage | err_message := errorMessage ];
 		onReject: [self assert: false];
 		onReturnLast: [self assert: false].
 	dialogue
@@ -19,5 +19,5 @@ testSendIMSINotFound
 		applicationContextName: (self applicationContextFor: operationName).
 
 	"TODO.. make sure things return"
-	self assert: err_name originalBindingName = 'unknownSubscriber'.
-	self assert: err_data isNil.
+	self assert: err_message error originalBindingName = 'unknownSubscriber'.
+	self assert: err_message parameter isNil.

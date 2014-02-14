@@ -1,6 +1,6 @@
 tests-infoRetrievalPackage
 testSendRoutingInfoForSMV3
-	| operationName dialogue  invoke invokeResult sriArg |
+	| operationName dialogue  invoke invokeResultMessage sriArg |
 	
 	subscriber
 		mscNumber: '123';
@@ -24,12 +24,12 @@ testSendRoutingInfoForSMV3
 		onReturn: [self assert: false ];
 		onError: [self assert: false];
 		onReject: [self assert: false];
-		onReturnLast: [:result | invokeResult := result ].
+		onReturnLast: [:result | invokeResultMessage := result ].
 	dialogue
 		requestTcBeginDestinationAddress: self hlrAddr
 		originatingAddress: self localAddr
 		applicationContextName: (self applicationContextFor: operationName).
 
 	"TODO.. make sure things return"
-	self assert: invokeResult imsi = subscriber imsiAsTBCD asUppercase.
+	self assert: invokeResultMessage result imsi = subscriber imsiAsTBCD asUppercase.
 	self assert: subscriber messageWaitingSet isEmpty.

@@ -1,6 +1,6 @@
 tests-infoRetrievalPackage
 testSendIMSI
-	| operationName dialogue  invoke invokeResult |
+	| operationName dialogue  invoke invokeResultMessage |
 	
 
 	operationName := 'sendIMSI'.
@@ -12,11 +12,11 @@ testSendIMSI
 		onReturn: [self assert: false ];
 		onError: [self assert: false];
 		onReject: [self assert: false];
-		onReturnLast: [:result | invokeResult := result ].
+		onReturnLast: [:result | invokeResultMessage := result ].
 	dialogue
 		requestTcBeginDestinationAddress: self hlrAddr
 		originatingAddress: self localAddr
 		applicationContextName: (self applicationContextFor: operationName).
 
 	"TODO.. make sure things return"
-	self assert: invokeResult = subscriber imsiAsTBCD asUppercase.
+	self assert: invokeResultMessage result = subscriber imsiAsTBCD asUppercase.

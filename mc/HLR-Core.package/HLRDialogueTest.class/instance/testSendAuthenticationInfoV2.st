@@ -14,4 +14,4 @@ testSendAuthenticationInfoV2
 		originatingAddress: self localAddr
 		applicationContextName: (self applicationContextFor: operationName).
 
-	self assert: invokeResult size = 3.
+	self assert: invokeResult result size = 3.

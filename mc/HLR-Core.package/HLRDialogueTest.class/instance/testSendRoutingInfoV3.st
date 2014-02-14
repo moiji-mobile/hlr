@@ -1,6 +1,6 @@
 tests-infoRetrievalPackage
 testSendRoutingInfoV3
-	| operationName dialogue  invoke invokeResult sriArg |
+	| operationName dialogue  invoke invokeResultMessage sriArg |
 	
 	subscriber
 		mscNumber: '123';
@@ -30,11 +30,11 @@ testSendRoutingInfoV3
 		onReturn: [self assert: false ];
 		onError: [self assert: false];
 		onReject: [self assert: false];
-		onReturnLast: [:result | invokeResult := result ].
+		onReturnLast: [:result | invokeResultMessage := result ].
 	dialogue
 		requestTcBeginDestinationAddress: self hlrAddr
 		originatingAddress: self localAddr
 		applicationContextName: (self applicationContextFor: operationName).
 
 	"TODO.. make sure things return"
-	self assert: invokeResult extendedRoutingInfo roamingNumber = '10123'.
+	self assert: invokeResultMessage result extendedRoutingInfo roamingNumber = '10123'.

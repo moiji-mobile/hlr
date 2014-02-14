@@ -1,6 +1,6 @@
 tests-infoRetrievalPackage
 testSendRoutingInfoV2DirectForward
-	| operationName dialogue  invoke invokeResult sriArg |
+	| operationName dialogue  invoke invokeResultMessage sriArg |
 	
 	"Test that direct forward will not ask anyone for the subscriber number"
 	subscriber
@@ -21,11 +21,11 @@ testSendRoutingInfoV2DirectForward
 		onReturn: [self assert: false ];
 		onError: [self assert: false];
 		onReject: [self assert: false];
-		onReturnLast: [:result | invokeResult := result ].
+		onReturnLast: [:result | invokeResultMessage := result ].
 	dialogue
 		requestTcBeginDestinationAddress: self hlrAddr
 		originatingAddress: self localAddr
 		applicationContextName: (self applicationContextFor: operationName).
 
 	"Verify things"
-	self assert: invokeResult routingInfo forwardingData forwardedToNumber fromE164 = '678'.
+	self assert: invokeResultMessage result routingInfo forwardingData forwardedToNumber fromE164 = '678'.

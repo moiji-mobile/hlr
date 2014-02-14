@@ -1,6 +1,6 @@
 tests-infoRetrievalPackage
 testSendRoutingInfoForSMV2UnreachableLowPrio
-	| operationName dialogue  invoke err_name err_data sriArg mwStatus  |
+	| operationName dialogue  invoke err_message sriArg mwStatus  |
 	
 	subscriber
 		mscNumber: '123';
@@ -23,7 +23,7 @@ testSendRoutingInfoForSMV2UnreachableLowPrio
 				class: 1 timeout: 500.
 	invoke
 		onReturn: [self assert: false ];
-		onError: [:err :param | err_name := err. err_data := param];
+		onError: [:errorMessage | err_message := errorMessage ];
 		onReject: [self assert: false];
 		onReturnLast: [:result | self assert: false].
 
@@ -36,6 +36,6 @@ testSendRoutingInfoForSMV2UnreachableLowPrio
 
 	"TODO.. make sure things return".
 	self assert: (mwStatus includesBit: 'mnrf-Set').
-	self assert: err_name originalBindingName = 'absentSubscriberV2'.
-	self assert: err_data isNil.
+	self assert: err_message error originalBindingName = 'absentSubscriberV2'.
+	self assert: err_message parameter isNil.
 	self assert: (subscriber messageWaitingSet anySatisfy: [:assoc | assoc value = '3234'])
