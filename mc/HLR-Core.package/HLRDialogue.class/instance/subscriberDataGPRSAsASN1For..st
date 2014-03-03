@@ -1,7 +1,7 @@
 insert-subscriber
 subscriberDataGPRSAsASN1For: aSubscriber
 	| pdpContext pdpList |
-		pdpContext := ASN1Dictionary new
+	pdpContext := ASN1Dictionary new
 		at: 'pdp-ContextId' put: 1;
 		at: 'pdp-Type' put: '0121';
 		at: 'qos-Subscribed' put: '23711f';
