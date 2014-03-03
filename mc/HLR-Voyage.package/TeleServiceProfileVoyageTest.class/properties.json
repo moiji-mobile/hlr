@@ -1,0 +1,14 @@
+{
+	"category" : "HLR-Voyage-Tests",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		"dataBase" ],
+	"name" : "TeleServiceProfileVoyageTest",
+	"pools" : [
+		 ],
+	"super" : "TestCase",
+	"type" : "normal" }
