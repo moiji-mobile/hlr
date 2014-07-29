@@ -24,10 +24,12 @@
 	"instance" : {
 		"baseline01:" : "NorbertHartl 12/10/2013 14:19",
 		"baseline02:" : "NorbertHartl 2/12/2014 15:14",
-		"development:" : "NorbertHartl 2/12/2014 15:19",
+		"baseline3:" : "HolgerHansPeterFreyther 7/29/2014 12:54",
+		"development:" : "HolgerHansPeterFreyther 7/29/2014 12:55",
 		"project" : "NorbertHartl 12/10/2013 11:54",
 		"stable:" : "NorbertHartl 12/10/2013 11:54",
 		"version01:" : "NorbertHartl 12/10/2013 14:20",
 		"version021:" : "NorbertHartl 2/12/2014 15:18",
 		"version022:" : "NorbertHartl 2/12/2014 15:19",
-		"version02:" : "NorbertHartl 12/10/2013 14:20" } }
+		"version02:" : "NorbertHartl 12/10/2013 14:20",
+		"version3:" : "HolgerHansPeterFreyther 7/29/2014 12:54" } }
