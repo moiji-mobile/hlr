@@ -14,6 +14,7 @@ sendAuthenticationInfoV3: anInvocation
 	As we have no notion of SIM vs. USIM right now just abort the V3 context
 	and hope that a V2 one is opened."
 	isSGSN ifTrue: [
+		applicationContextName := '0.4.0.0.1.0.14.2'.
 		applicationContext := (self tcapModel bindingNamed: 'infoRetrievalContext-v2') value.
 		^self requestTcUAbort: TCAPDialogueResponse serviceUser applicationContextNameNotSupported rejectPermanent].
 	
