@@ -31,5 +31,5 @@ testSendRoutingInfoForSMV3
 		applicationContextName: (self applicationContextFor: operationName).
 
 	"TODO.. make sure things return"
-	self assert: invokeResultMessage result imsi = subscriber imsiAsTBCD asUppercase.
+	self assert: invokeResultMessage result imsi = subscriber imsiAsTBCD.
 	self assert: subscriber messageWaitingSet isEmpty.

@@ -32,4 +32,4 @@ testSendRoutingInfoV2
 		applicationContextName: (self applicationContextFor: operationName).
 
 	"TODO.. make sure things return"
-	self assert: invokeResultMessage result routingInfo roamingNumber = '10123'.
+	self assert: invokeResultMessage result routingInfo roamingNumber asString = '10123'.

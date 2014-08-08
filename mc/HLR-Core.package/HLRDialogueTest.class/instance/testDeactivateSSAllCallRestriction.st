@@ -11,7 +11,7 @@ testDeactivateSSAllCallRestriction
 
 	invocations := 0.
 	param := ASN1Dictionary new
-		at: 'ss-Code' put: SSData allCallRestriction asByteArray hex;
+		at: 'ss-Code' put: SSData allCallRestriction asByteArray;
 		at: 'basicService' put: (ASN1Dictionary new
 					at: 'teleservice' put: '10';
 					yourself);

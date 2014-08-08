@@ -7,7 +7,7 @@ testDeactivateSSBaoc
 
 	invocations := 0.
 	param := ASN1Dictionary new
-		at: 'ss-Code' put: SSData barrAllOutgoingCalls asByteArray hex;
+		at: 'ss-Code' put: SSData barrAllOutgoingCalls asByteArray;
 		at: 'basicService' put: (ASN1Dictionary new
 					at: 'teleservice' put: '10';
 					yourself);

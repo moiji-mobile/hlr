@@ -8,7 +8,7 @@ testProvideSubscriberInfo
 	testEndPoint
 		onDialogue: [:diag |
 			diag onInvoke: [:invocation |
-				reqImsi := ByteArray readHexFrom: invocation argument imsi.
+				reqImsi := invocation argument imsi asByteArray.
 				invocation returnResultLast: (ASN1Dictionary new
 									at: 'subscriberInfo' put: (ASN1Dictionary new
 											at: 'imei' put: '1234';
@@ -27,4 +27,4 @@ testProvideSubscriberInfo
 		start.
 
 	self assert: (GSMNumberDigits decodeFrom: reqImsi) = subscriber imsi.
-	self assert: resImei = '1234'.
+	self assert: resImei asString = '1234'.

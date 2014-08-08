@@ -14,7 +14,7 @@ testSendRoutingInfoForSMV2UnreachableHighPrio
 	sriArg := ASN1Dictionary new
 				at: 'msisdn' put: subscriber msisdnAsE164;
 				at: 'sm-RP-PRI' put: true;
-				at: 'serviceCentreAddress' put: '912343';
+				at: 'serviceCentreAddress' put: '912343' byteArrayFromHex;
 				yourself.
 
 	operationName := 'sendRoutingInfoForSMV2'.
@@ -38,4 +38,4 @@ testSendRoutingInfoForSMV2UnreachableHighPrio
 	"TODO.. make sure things return"
 	self assert: invokeResultMessage result isNil.
 	self assert: (mwStatus includesBit: 'mnrf-Set').
-	self assert: (subscriber messageWaitingSet anySatisfy: [:assoc | assoc value = '3234'])
+	self assert: (subscriber messageWaitingSet anySatisfy: [:assoc |  assoc value asString= '3234'])

@@ -8,7 +8,7 @@ testProvideRoamingNumberV3
 	testEndPoint
 		onDialogue: [:diag |
 			diag onInvoke: [:invocation |
-				reqImsi := ByteArray readHexFrom: invocation argument imsi.
+				reqImsi := invocation argument imsi.
 				invocation returnResultLast: (ASN1Dictionary new
 						at: 'roamingNumber' put: '1234';
 						yourself).
@@ -25,4 +25,4 @@ testProvideRoamingNumberV3
 		start.
 
 	self assert: (GSMNumberDigits decodeFrom: reqImsi) = subscriber imsi.
-	self assert: resRoamingNumber = '1234'.
+	self assert: resRoamingNumber asString = '1234' .

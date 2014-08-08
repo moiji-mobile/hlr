@@ -26,6 +26,6 @@ testInsertSubscriberData
 
 	self assert: res size = 3.
 	self assert: res first keys size = 1.
-	self assert: res first imsi = subscriber imsiAsTBCD asUppercase.
+	self assert: res first imsi = subscriber imsiAsTBCD.
 	self assert: onSuccessCount = 1.
 	self assert: onFailureCount = 0.

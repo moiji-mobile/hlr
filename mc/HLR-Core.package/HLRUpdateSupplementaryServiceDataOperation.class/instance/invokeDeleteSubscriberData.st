@@ -4,7 +4,7 @@ invokeDeleteSubscriberData
 	param := ASN1Dictionary new
 				at: 'imsi' put: imsi toTBCD;
 				at: 'ss-List' put: (ASN1Array new
-								add: ssData ssCode asByteArray hex;
+								add: ssData ssCode asByteArray;
 								yourself);
 				yourself.
 

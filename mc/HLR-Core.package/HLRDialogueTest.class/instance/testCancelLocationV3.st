@@ -8,7 +8,7 @@ testCancelLocationV3
 	testEndPoint
 		onDialogue: [:diag |
 			diag onInvoke: [:invocation |
-				res := ByteArray readHexFrom: invocation argument identity imsi.
+				res := invocation argument identity imsi asByteArray.
 				invocation returnResultLast: nil.
 				diag requestTcEnd: false]].
 

@@ -12,7 +12,7 @@ testUpdateGprsLocationNotFound
 			dialogue requestTcContinue].
 
 	param := ASN1Dictionary new
-				at: 'imsi' put: '121212313213213';
+				at: 'imsi' put: '121212313213213' byteArrayFromHex;
 				at: 'sgsn-Number' put: '6123';
 				at: 'sgsn-Address' put: 'AABBCCDD';
 				at: 'sgsn-Capability' put: (ASN1Dictionary new

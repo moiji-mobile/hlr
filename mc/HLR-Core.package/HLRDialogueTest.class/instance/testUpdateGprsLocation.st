@@ -13,7 +13,7 @@ testUpdateGprsLocation
 
 	param := ASN1Dictionary new
 				at: 'imsi' put: subscriber imsiAsTBCD;
-				at: 'sgsn-Number' put: '9123';
+				at: 'sgsn-Number' put: '9123' byteArrayFromHex;
 				at: 'sgsn-Address' put: 'AABBCCDD';
 				at: 'sgsn-Capability' put: (ASN1Dictionary new
 						at: 'gprsEnhancementsSupportIndicator' put: #null;

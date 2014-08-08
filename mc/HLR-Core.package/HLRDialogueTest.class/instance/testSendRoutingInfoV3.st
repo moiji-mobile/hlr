@@ -10,7 +10,7 @@ testSendRoutingInfoV3
 				at: 'msisdn' put: subscriber msisdnAsE164;
 				at: 'interrogationType' put: 'basicCall';
 				at: 'gmsc-OrGsmSCF-Address' put: '123' toE164;
-				at: 'callReferenceNumber' put: #[0 1] hex;
+				at: 'callReferenceNumber' put: #[0 1];
 				yourself.
 
 	testEndPoint
@@ -37,4 +37,4 @@ testSendRoutingInfoV3
 		applicationContextName: (self applicationContextFor: operationName).
 
 	"TODO.. make sure things return"
-	self assert: invokeResultMessage result extendedRoutingInfo roamingNumber = '10123'.
+	self assert: invokeResultMessage result extendedRoutingInfo roamingNumber asString = '10123'.

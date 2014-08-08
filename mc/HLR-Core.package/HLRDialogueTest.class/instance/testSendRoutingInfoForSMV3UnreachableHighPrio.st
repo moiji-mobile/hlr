@@ -14,7 +14,7 @@ testSendRoutingInfoForSMV3UnreachableHighPrio
 	sriArg := ASN1Dictionary new
 				at: 'msisdn' put: subscriber msisdnAsE164;
 				at: 'sm-RP-PRI' put: true;
-				at: 'serviceCentreAddress' put: '912343';
+				at: 'serviceCentreAddress' put: '912343' byteArrayFromHex;
 				yourself.
 
 	operationName := 'sendRoutingInfoForSMV3'.

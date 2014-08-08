@@ -6,7 +6,7 @@ testInterrogateSS
 		vlrNumber: '1234'.
 
 	param := ASN1Dictionary new
-		at: 'ss-Code' put: SSData callWaiting asByteArray hex;
+		at: 'ss-Code' put: SSData callWaiting asByteArray;
 		yourself.
 
 	operationName := 'interrogateSS'.

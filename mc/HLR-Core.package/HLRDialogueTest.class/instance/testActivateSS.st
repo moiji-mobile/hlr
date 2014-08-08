@@ -7,7 +7,7 @@ testActivateSS
 
 	invocations := 0.
 	param := ASN1Dictionary new
-		at: 'ss-Code' put: SSData callWaiting asByteArray hex;
+		at: 'ss-Code' put: SSData callWaiting asByteArray;
 		at: 'basicService' put: (ASN1Dictionary new
 					at: 'teleservice' put: '10';
 					yourself);
@@ -22,12 +22,12 @@ testActivateSS
 
 	operationName := 'activateSS'.
 	dialogue := testEndPoint createDialogue.
-	invoke := dialogue requestTcInvokeNamed: operationName parameters:  param class: 1 timeout: 500.
+	invoke := dialogue requestTcInvokeNamed: operationName parameters:  param class: 1 timeout: 5.
 	invoke
 		onReturn: [self assert: false ];
 		onError: [self assert: false];
 		onReject: [self assert: false];
-		onReturnLast: [:result | invokeResult := result].
+		onReturnLast: [:result |  invokeResult := result].
 	dialogue
 		requestTcBeginDestinationAddress: self imsiAddr
 		originatingAddress: self localAddr
