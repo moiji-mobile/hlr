@@ -1,7 +1,7 @@
 execution
 onSubscriberFound: aSubscriber 
 	"Dispatch for the poor"
-	deliveryOutcome = 'memoryCapacityExceeded'
+	(deliveryOutcome isNil or: [deliveryOutcome = 'memoryCapacityExceeded'])
 		ifTrue: [
 			aSubscriber memoryCapcacityExceeded.
 			self addToMessageWaitingList: aSubscriber.

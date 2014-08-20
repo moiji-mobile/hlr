@@ -1,7 +1,7 @@
 test-locationUpdatingPackage
-testReportSMDeliveryStatusV3MemoryCapacityExceeded
+testReportSMDeliveryStatusV2NoOutcome
 	| operationName dialogue invoke res param |
-	operationName := 'reportSM-DeliveryStatusV3'.
+	operationName := 'reportSM-DeliveryStatusV2'.
 	dialogue := testEndPoint createDialogue.
 	
 	subscriber mobileStationNotPresent.
@@ -10,7 +10,6 @@ testReportSMDeliveryStatusV3MemoryCapacityExceeded
 	param := ASN1Dictionary new
 				at: 'msisdn' put: subscriber msisdnAsE164;
 				at: 'serviceCentreAddress' put: '91abcd';
-				at: 'sm-DeliveryOutcome' put: 'memoryCapacityExceeded';
 				yourself.
 
 	invoke := dialogue requestTcInvokeNamed: operationName parameters:  param class: 1 timeout: 500.
