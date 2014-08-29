@@ -10,7 +10,7 @@ testReportSMDeliveryStatusV2MemoryCapacityExceeded
 	param := ASN1Dictionary new
 				at: 'msisdn' put: subscriber msisdnAsE164;
 				at: 'serviceCentreAddress' put: '91abcd';
-				at: 'sm-DeliveryOutcome' put: 'memoryCapacityExceeded';
+				at: 'sm-DeliveryOutcome' put: 'absentSubscriber';
 				yourself.
 
 	invoke := dialogue requestTcInvokeNamed: operationName parameters:  param class: 1 timeout: 500.
