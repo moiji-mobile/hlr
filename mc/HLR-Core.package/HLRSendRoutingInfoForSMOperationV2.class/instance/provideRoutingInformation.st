@@ -6,4 +6,9 @@ provideRoutingInformation
 							at: 'networkNode-Number' put: subscriber mscNumberAsE164;
 							yourself);
 					yourself).
+
+	subscriber isMemoryAvailable ifFalse: [
+		mwStatus at: 3 put: $1.
+		self informServiceCentre].
+
 	dialogue requestTcEnd: false.

@@ -8,7 +8,8 @@
 	"instvars" : [
 		"subscriber",
 		"smscAddr",
-		"highPriority" ],
+		"highPriority",
+		"mwStatus" ],
 	"name" : "HLRSendRoutingInfoForSMOperationV2",
 	"pools" : [
 		 ],

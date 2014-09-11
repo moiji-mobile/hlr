@@ -1,13 +1,14 @@
 tests-infoRetrievalPackage
-testSendRoutingInfoForSMV3
-	| operationName dialogue  invoke invokeResultMessage sriArg |
+testSendRoutingInfoForSMV2NoMemory
+	| operationName dialogue  invoke invokeResultMessage sriArg informInvoke |
 	
 	subscriber
+		memoryCapcacityExceeded;
 		mscNumber: '123';
 		vlrNumber: '456'.
 
 	self deny: subscriber isMobileStationNotReachable.
-	self assert: subscriber isMemoryAvailable.
+	self deny: subscriber isMemoryAvailable.
 	self assert: subscriber messageWaitingSet isEmpty.
 
 	sriArg := ASN1Dictionary new
@@ -16,9 +17,9 @@ testSendRoutingInfoForSMV3
 				at: 'serviceCentreAddress' put: '912343';
 				yourself.
 
-	operationName := 'sendRoutingInfoForSMV3'.
+	operationName := 'sendRoutingInfoForSMV2'.
 	dialogue := testEndPoint createDialogue.
-	dialogue onInvoke: [:inv | self assert: false ].
+	dialogue onInvoke: [:inv | informInvoke := inv ].
 	invoke := dialogue
 				requestTcInvokeNamed: operationName parameters:  sriArg
 				class: 1 timeout: 500.
@@ -35,3 +36,6 @@ testSendRoutingInfoForSMV3
 	"TODO.. make sure things return"
 	self assert: invokeResultMessage result imsi = subscriber imsiAsTBCD.
 	self assert: subscriber messageWaitingSet isEmpty.
+	self deny: informInvoke isNil.
+	self assert: informInvoke operationName equals: 'informServiceCentreV2'.
+	self assert: (informInvoke argument mw_Status includesBit: 'mcef-Set').
