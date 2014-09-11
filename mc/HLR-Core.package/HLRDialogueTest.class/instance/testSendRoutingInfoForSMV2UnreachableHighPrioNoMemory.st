@@ -1,9 +1,10 @@
 tests-infoRetrievalPackage
-testSendRoutingInfoForSMV2UnreachableHighPrio
+testSendRoutingInfoForSMV2UnreachableHighPrioNoMemory
 	| operationName dialogue  invoke invokeError sriArg mwStatus  |
 	
 	subscriber
 		mscNumber: '123';
+		memoryCapcacityExceeded;
 		clearVlr.
 	mwStatus := nil.
 

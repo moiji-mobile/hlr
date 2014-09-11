@@ -1,7 +1,5 @@
 as yet unclassified
 handleNotReachableLowPriority
-	|  |
-
 	"This is still a mess. I think we need to report the old msc-Number"
 	subscriber addToMessageWaitingList: smscAddr gateway: dialogue transaction remoteAddress.
 	hlr database updateSubscriber: subscriber.

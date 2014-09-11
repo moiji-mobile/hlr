@@ -1,14 +1,18 @@
 tests-infoRetrievalPackage
-testSendRoutingInfoForSMV2UnreachableHighPrio
-	| operationName dialogue  invoke invokeError sriArg mwStatus  |
+testSendRoutingInfoForSMV2MNRFHighPrioInMWD
+	| operationName dialogue  invoke invokeResultMessage sriArg mwStatus  |
 	
 	subscriber
 		mscNumber: '123';
-		clearVlr.
+		vlrNumber: '456';
+		mobileStationNotPresent;
+		memoryCapcacityExceeded;
+		addToMessageWaitingList: '3234' gateway: nil.
+	invokeResultMessage := 23.
 	mwStatus := nil.
 
 	self assert: subscriber isMobileStationNotReachable.
-	self assert: subscriber messageWaitingSet isEmpty.
+	self assert: subscriber messageWaitingSet size equals: 1.
 
 	sriArg := ASN1Dictionary new
 				at: 'msisdn' put: subscriber msisdnAsE164;
@@ -23,9 +27,9 @@ testSendRoutingInfoForSMV2UnreachableHighPrio
 				class: 1 timeout: 500.
 	invoke
 		onReturn: [self assert: false ];
-		onError: [:err | invokeError := err];
+		onError: [self assert: false];
 		onReject: [self assert: false];
-		onReturnLast: [self assert: false].
+		onReturnLast: [:result | invokeResultMessage := result ].
 
 	dialogue onInvoke: [:invocation |
 				mwStatus := invocation argument mw_Status].
@@ -35,8 +39,8 @@ testSendRoutingInfoForSMV2UnreachableHighPrio
 		applicationContextName: (self applicationContextFor: operationName).
 
 	"TODO.. make sure things return"
-	self deny: invokeError isNil.
-	self assert: invokeError name equals: 'absentSubscriberV2'.
+	self deny: invokeResultMessage result isNil.
+	self deny: (mwStatus includesBit: 'sc-AddressNotIncluded').
 	self assert: (mwStatus includesBit: 'mnrf-Set').
 	self deny: (mwStatus includesBit: 'mcef-Set').
-	self assert: (subscriber messageWaitingSet anySatisfy: [:assoc |  assoc value asString= '3234'])
+	self assert: subscriber messageWaitingSet size equals: 1.

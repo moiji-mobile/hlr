@@ -1,9 +1,10 @@
 tests-infoRetrievalPackage
-testSendRoutingInfoForSMV2UnreachableHighPrio
+testSendRoutingInfoForSMV3UnreachableHighPrioNoMemory
 	| operationName dialogue  invoke invokeError sriArg mwStatus  |
 	
 	subscriber
 		mscNumber: '123';
+		memoryCapcacityExceeded;
 		clearVlr.
 	mwStatus := nil.
 
@@ -16,7 +17,7 @@ testSendRoutingInfoForSMV2UnreachableHighPrio
 				at: 'serviceCentreAddress' put: '912343' byteArrayFromHex;
 				yourself.
 
-	operationName := 'sendRoutingInfoForSMV2'.
+	operationName := 'sendRoutingInfoForSMV3'.
 	dialogue := testEndPoint createDialogue.
 	invoke := dialogue
 				requestTcInvokeNamed: operationName parameters:  sriArg
@@ -36,7 +37,7 @@ testSendRoutingInfoForSMV2UnreachableHighPrio
 
 	"TODO.. make sure things return"
 	self deny: invokeError isNil.
-	self assert: invokeError name equals: 'absentSubscriberV2'.
+	self assert: invokeError name equals: 'absentSubscriberSM'.
 	self assert: (mwStatus includesBit: 'mnrf-Set').
 	self deny: (mwStatus includesBit: 'mcef-Set').
 	self assert: (subscriber messageWaitingSet anySatisfy: [:assoc |  assoc value asString= '3234'])

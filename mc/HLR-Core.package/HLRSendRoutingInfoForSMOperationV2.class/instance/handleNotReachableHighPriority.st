@@ -1,14 +1,22 @@
 as yet unclassified
 handleNotReachableHighPriority
-	"This is still a mess. I think we need to report the old msc-Number"
-	subscriber addToMessageWaitingList: smscAddr gateway: dialogue transaction remoteAddress.
-	hlr database updateSubscriber: subscriber.
+	"The subscriber is not reachable for sure"
+	mwStatus at: 2 put: $1.
 
 	"Now 'ACK' the request.. do that with the old msc-Number?"
-	invocation returnResultLast: nil.
+	invocation returnResultLast: (ASN1Dictionary new
+					at: 'imsi' put: subscriber imsiAsTBCD;
+					at: 'locationInfoWithLMSI' put: (ASN1Dictionary new
+							at: 'networkNode-Number' put: subscriber mscNumberAsE164;
+							yourself);
+					yourself).
+
+	(subscriber messageWaitingListContains: smscAddr gateway: dialogue transaction remoteAddress)
+		ifFalse: [
+			mwStatus at: 1 put: $1.
+			subscriber isMemoryAvailable ifFalse: [mwStatus at: 3 put: $1]].
 
 	"Tell the GSMSC that we have now queued this SMSC. It a unconfirmed service"
-	mwStatus at: 2 put: $1.
 	self informServiceCentre.
 	
 	"Send the two invocations and be done"

@@ -1,11 +1,10 @@
 tests-infoRetrievalPackage
 testSendRoutingInfoForSMV3UnreachableHighPrio
-	| operationName dialogue  invoke invokeResultMessage sriArg mwStatus  |
+	| operationName dialogue  invoke invokeError sriArg mwStatus  |
 	
 	subscriber
 		mscNumber: '123';
 		clearVlr.
-	invokeResultMessage := 23.
 	mwStatus := nil.
 
 	self assert: subscriber isMobileStationNotReachable.
@@ -24,9 +23,9 @@ testSendRoutingInfoForSMV3UnreachableHighPrio
 				class: 1 timeout: 500.
 	invoke
 		onReturn: [self assert: false ];
-		onError: [self assert: false];
+		onError: [:err | invokeError := err];
 		onReject: [self assert: false];
-		onReturnLast: [:result | invokeResultMessage := result ].
+		onReturnLast: [self assert: false].
 
 	dialogue onInvoke: [:invocation |
 				mwStatus := invocation argument mw_Status].
@@ -36,6 +35,8 @@ testSendRoutingInfoForSMV3UnreachableHighPrio
 		applicationContextName: (self applicationContextFor: operationName).
 
 	"TODO.. make sure things return"
-	self assert: invokeResultMessage result isNil.
+	self deny: invokeError isNil.
+	self assert: invokeError name equals: 'absentSubscriberSM'.
 	self assert: (mwStatus includesBit: 'mnrf-Set').
-	self assert: (subscriber messageWaitingSet anySatisfy: [:assoc | assoc value = '3234'])
+	self deny: (mwStatus includesBit: 'mcef-Set').
+	self assert: (subscriber messageWaitingSet anySatisfy: [:assoc |  assoc value asString= '3234'])
