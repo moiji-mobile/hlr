@@ -6,14 +6,14 @@ handleNotReachableLowPriority
 	subscriber addToMessageWaitingList: smscAddr gateway: dialogue transaction remoteAddress.
 	hlr database updateSubscriber: subscriber.
 
-	"Return absentSubscriberV2 now...Added to the MWD list"
-	invocation returnError: 'absentSubscriberV2' with: true.
+	"Return absentSubscriberV2 with waiting list information"
+	invocation returnError: self class absentSubscriber with: self class absentSubscriberData.
 
 	"Tell the GSMSC that we have now queued this SMSC. It a unconfirmed service"
 	param := ASN1Dictionary new
 		at: 'mw-Status' put: '0010';
 		yourself.
-	dialogue requestTcInvokeNamed: 'informServiceCentreV2' parameters:  param class: 1 timeout: 500.
+	dialogue requestTcInvokeNamed: self class informServiceCentre parameters:  param class: 1 timeout: 500.
 	
 	"Send the two invocations and be done"
 	dialogue requestTcEnd: false.

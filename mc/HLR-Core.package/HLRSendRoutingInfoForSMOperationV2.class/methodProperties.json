@@ -1,10 +1,12 @@
 {
 	"class" : {
-		 },
+		"absentSubscriber" : "HolgerHansPeterFreyther 9/11/2014 11:07",
+		"absentSubscriberData" : "HolgerHansPeterFreyther 9/11/2014 11:12",
+		"informServiceCentre" : "HolgerHansPeterFreyther 9/11/2014 11:07" },
 	"instance" : {
 		"handleNotReachable" : "HolgerHansPeterFreyther 11/9/2013 20:50",
-		"handleNotReachableHighPriority" : "HolgerHansPeterFreyther 2/13/2014 14:51",
-		"handleNotReachableLowPriority" : "HolgerHansPeterFreyther 2/13/2014 14:51",
+		"handleNotReachableHighPriority" : "HolgerHansPeterFreyther 9/11/2014 11:08",
+		"handleNotReachableLowPriority" : "HolgerHansPeterFreyther 9/11/2014 11:22",
 		"highPriority:" : "HolgerHansPeterFreyther 11/9/2013 20:48",
 		"onSubscriberFound:" : "HolgerHansPeterFreyther 9/11/2014 10:28",
 		"provideRoutingInformation" : "HolgerHansPeterFreyther 11/9/2013 19:59",

@@ -1,6 +1,7 @@
 {
 	"class" : {
-		 },
+		"absentSubscriber" : "HolgerHansPeterFreyther 9/11/2014 11:09",
+		"absentSubscriberData" : "HolgerHansPeterFreyther 9/11/2014 11:23",
+		"informServiceCentre" : "HolgerHansPeterFreyther 9/11/2014 11:09" },
 	"instance" : {
-		"handleNotReachableHighPriority" : "HolgerHansPeterFreyther 2/13/2014 14:51",
-		"handleNotReachableLowPriority" : "HolgerHansPeterFreyther 2/13/2014 14:50" } }
+		 } }
