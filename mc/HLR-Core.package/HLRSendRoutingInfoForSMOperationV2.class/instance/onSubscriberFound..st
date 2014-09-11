@@ -6,8 +6,7 @@ onSubscriberFound: aSubscriber
 	subscriber := aSubscriber.
 
 	(dialogue mobileTerminatedSMSAllowedFor: aSubscriber invocation: invocation) ifFalse: [
-		invocation returnError: 'callBarred' with: nil.
-		^dialogue requestTcEnd: false].
+		^self endWithError: 'callBarred' with: nil].
 
 	aSubscriber isMobileStationNotReachable
 		ifTrue: [self handleNotReachable]
