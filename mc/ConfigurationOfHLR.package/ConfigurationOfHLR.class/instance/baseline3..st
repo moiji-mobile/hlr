@@ -14,7 +14,7 @@ baseline3: spec
 			project: 'Osmocom' with: [
 				spec
 					className: #ConfigurationOfOsmocom;
-					versionString: #'stable';
+					versionString: #'bleedingEdge';
 					repository: 'http://smalltalkhub.com/mc/osmocom/Osmocom/main' ];
 			project: 'CDR' with: [
 				spec
