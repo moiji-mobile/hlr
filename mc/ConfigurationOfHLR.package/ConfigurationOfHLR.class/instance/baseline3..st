@@ -19,7 +19,7 @@ baseline3: spec
 			project: 'CDR' with: [
 				spec
 					className: #ConfigurationOfCDR;
-					versionString: #'development';
+					versionString: #'bleedingEdge';
 					repository: 'http://smalltalkhub.com/mc/osmocom/Osmocom/main' ];
 			project: 'TCAP' with: [
 				spec
