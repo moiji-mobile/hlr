@@ -24,5 +24,5 @@ testReportSMDeliveryStatusV3
 		originatingAddress: self localAddr
 		applicationContextName: (self applicationContextFor: operationName).
 
-	self assert: res isNil.
+	self assert: res.
 	self deny: subscriber isMobileStationNotReachable.
