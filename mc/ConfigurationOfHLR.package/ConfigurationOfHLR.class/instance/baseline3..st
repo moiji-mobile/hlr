@@ -24,12 +24,12 @@ baseline3: spec
 			project: 'TCAP' with: [
 				spec
 					className: #ConfigurationOfTCAP;
-					versionString: '0.2.1';
+					versionString: #'bleedingEdge';
 					repository: 'http://smalltalkhub.com/mc/osmocom/Osmocom/main' ];
 			project: 'ASN1' with: [
 				spec
 					className: #ConfigurationOfASN1;
-					versionString: '0.8.26';
+					versionString: #'bleedingEdge';
 					repository: 'http://smalltalkhub.com/mc/NorbertHartl/ASN1/main' ];
 			project: 'VoyageMongo' with: [
 				spec
