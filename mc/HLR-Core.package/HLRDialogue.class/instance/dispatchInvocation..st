@@ -7,4 +7,4 @@ dispatchInvocation: anInvocation
 	(self respondsTo: selector)
 		ifFalse: [^self requestTcUAbort: TCAPDialogueUAbort serviceUser ].
 
-	self perform: anInvocation normalizedOperationName with: anInvocation.
+	self perform: selector with: anInvocation.
