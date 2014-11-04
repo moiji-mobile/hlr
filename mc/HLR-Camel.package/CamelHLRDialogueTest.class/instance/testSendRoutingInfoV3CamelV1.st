@@ -19,7 +19,7 @@ testSendRoutingInfoV3CamelV1
 		onDialogue: [:diag | self assert: false].
 
 	operationName := 'sendRoutingInfoV3'.
-	dialogue := testEndPoint createDialogue.
+	dialogue := testEndPoint newDialogue.
 	invoke := dialogue
 				requestTcInvokeNamed: operationName parameters:  sriArg
 				class: 1 timeout: 500.

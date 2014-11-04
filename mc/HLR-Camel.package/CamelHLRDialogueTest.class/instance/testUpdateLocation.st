@@ -2,7 +2,7 @@ camel-attributes
 testUpdateLocation
 	| operationName dialogue invoke res invocations updateParams |
 	operationName := 'updateLocation'.
-	dialogue := testEndPoint createDialogue.
+	dialogue := testEndPoint newDialogue.
 	invocations := OrderedCollection new.
 
 	subscriber activateSupplementaryServiceForCode: SSData callWaiting.

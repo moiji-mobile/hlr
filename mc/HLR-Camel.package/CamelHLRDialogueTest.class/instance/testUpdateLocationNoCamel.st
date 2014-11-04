@@ -5,7 +5,7 @@ testUpdateLocationNoCamel
 
 	| operationName dialogue invoke res param invocations |
 	operationName := 'updateLocation'.
-	dialogue := testEndPoint createDialogue.
+	dialogue := testEndPoint newDialogue.
 
 	subscriber activateSupplementaryServiceForCode: SSData callWaiting.
 	invocations := OrderedCollection new.
