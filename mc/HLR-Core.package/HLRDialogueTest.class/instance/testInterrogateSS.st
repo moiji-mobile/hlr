@@ -10,7 +10,7 @@ testInterrogateSS
 		yourself.
 
 	operationName := 'interrogateSS'.
-	dialogue := testEndPoint createDialogue.
+	dialogue := testEndPoint newDialogue.
 	invoke := dialogue requestTcInvokeNamed: operationName parameters:  param class: 1 timeout: 500.
 	invoke
 		onReturn: [self assert: false ];

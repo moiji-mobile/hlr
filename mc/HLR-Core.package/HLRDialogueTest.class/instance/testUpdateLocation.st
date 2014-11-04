@@ -2,7 +2,7 @@ test-locationUpdatingPackage
 testUpdateLocation
 	| operationName dialogue invoke res |
 	operationName := 'updateLocation'.
-	dialogue := testEndPoint createDialogue.
+	dialogue := testEndPoint newDialogue.
 
 	subscriber activateSupplementaryServiceForCode: SSData callWaiting.
 

@@ -4,7 +4,7 @@ testUpdateGprsLocationError
 	invoked := 0.
 	aborted := false.
 	operationName := 'updateGprsLocation'.
-	dialogue := testEndPoint createDialogue.
+	dialogue := testEndPoint newDialogue.
 
 	dialogue
 		onInvoke: [ :insert |

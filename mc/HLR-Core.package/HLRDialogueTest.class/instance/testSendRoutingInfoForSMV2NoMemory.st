@@ -18,7 +18,7 @@ testSendRoutingInfoForSMV2NoMemory
 				yourself.
 
 	operationName := 'sendRoutingInfoForSMV2'.
-	dialogue := testEndPoint createDialogue.
+	dialogue := testEndPoint newDialogue.
 	dialogue onInvoke: [:inv | informInvoke := inv ].
 	invoke := dialogue
 				requestTcInvokeNamed: operationName parameters:  sriArg

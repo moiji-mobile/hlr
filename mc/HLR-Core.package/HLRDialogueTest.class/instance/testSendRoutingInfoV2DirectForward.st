@@ -13,7 +13,7 @@ testSendRoutingInfoV2DirectForward
 				yourself.
 
 	operationName := 'sendRoutingInfoV2'.
-	dialogue := testEndPoint createDialogue.
+	dialogue := testEndPoint newDialogue.
 	invoke := dialogue
 				requestTcInvokeNamed: operationName parameters:  sriArg
 				class: 1 timeout: 500.

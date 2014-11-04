@@ -13,7 +13,7 @@ testPurgeV2
 	self deny: subscriber isMobileStationNotReachable.
 	
 	operationName := 'purgeMSV2'.
-	dialogue := testEndPoint createDialogue.
+	dialogue := testEndPoint newDialogue.
 	invoke := dialogue requestTcInvokeNamed: operationName parameters:  param class: 1 timeout: 500.
 	invoke
 		onReturn: [self assert: false ];

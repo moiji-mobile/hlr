@@ -2,7 +2,7 @@ test-locationUpdatingPackage
 testReportSMDeliveryStatusV2MemoryCapacityExceeded
 	| operationName dialogue invoke res param |
 	operationName := 'reportSM-DeliveryStatusV2'.
-	dialogue := testEndPoint createDialogue.
+	dialogue := testEndPoint newDialogue.
 	
 	subscriber mobileStationNotPresent.
 	self assert: subscriber isMobileStationNotReachable.

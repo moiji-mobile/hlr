@@ -20,7 +20,7 @@ testActivateSSBaoc
 				diag requestTcContinue]].
 
 	operationName := 'activateSS'.
-	dialogue := testEndPoint createDialogue.
+	dialogue := testEndPoint newDialogue.
 	invoke := dialogue requestTcInvokeNamed: operationName parameters:  param class: 1 timeout: 5.
 	invoke
 		onReturn: [self assert: false ];

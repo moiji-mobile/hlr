@@ -2,7 +2,7 @@ test-locationUpdatingPackage
 testReadyForSMV2
 	| operationName dialogue invoke res param |
 	operationName := 'readyForSMV2'.
-	dialogue := testEndPoint createDialogue.
+	dialogue := testEndPoint newDialogue.
 	
 	subscriber mobileStationNotPresent.
 	self assert: subscriber isMobileStationNotReachable.

@@ -3,7 +3,7 @@ testUpdateGprsLocationWithCancelLocation
 	| operationName dialogue invoke res invoked param receivedCancel |
 	invoked := 0.
 	operationName := 'updateGprsLocation'.
-	dialogue := testEndPoint createDialogue.
+	dialogue := testEndPoint newDialogue.
 
 	subscriber
 		sgsnNumber: '91555555'.

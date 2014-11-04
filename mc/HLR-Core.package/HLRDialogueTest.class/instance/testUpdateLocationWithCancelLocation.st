@@ -2,7 +2,7 @@ test-locationUpdatingPackage
 testUpdateLocationWithCancelLocation
 	| operationName dialogue invoke res receivedCancel |
 	operationName := 'updateLocation'.
-	dialogue := testEndPoint createDialogue.
+	dialogue := testEndPoint newDialogue.
 	
 	receivedCancel := false.
 

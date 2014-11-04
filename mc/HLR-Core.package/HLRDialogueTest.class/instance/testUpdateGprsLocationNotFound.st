@@ -3,7 +3,7 @@ testUpdateGprsLocationNotFound
 	| operationName dialogue invoke invoked param err_message |
 	invoked := 0.
 	operationName := 'updateGprsLocation'.
-	dialogue := testEndPoint createDialogue.
+	dialogue := testEndPoint newDialogue.
 
 	dialogue
 		onInvoke: [ :insert |

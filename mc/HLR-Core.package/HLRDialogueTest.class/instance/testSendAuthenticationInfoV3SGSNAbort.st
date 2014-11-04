@@ -2,7 +2,7 @@ tests-infoRetrievalPackage
 testSendAuthenticationInfoV3SGSNAbort
 	| operationName dialogue invoke wasAborted |
 	operationName := 'sendAuthenticationInfoV3'.
-	dialogue := testEndPoint createDialogue.
+	dialogue := testEndPoint newDialogue.
 	dialogue
 		onUAbort: [wasAborted := true].
 	invoke := dialogue requestTcInvokeNamed: operationName parameters:  self createAuthV3ParamsSGSN class: 1 timeout: 500.

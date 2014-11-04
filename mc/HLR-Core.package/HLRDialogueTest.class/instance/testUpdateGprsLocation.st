@@ -3,7 +3,7 @@ testUpdateGprsLocation
 	| operationName dialogue invoke res invoked param |
 	invoked := 0.
 	operationName := 'updateGprsLocation'.
-	dialogue := testEndPoint createDialogue.
+	dialogue := testEndPoint newDialogue.
 
 	dialogue
 		onInvoke: [ :insert |

@@ -10,7 +10,7 @@ testUpdateLocationMWD
 				invocation returnResultLast: nil.
 				diag requestTcEnd: false]].
 	
-	dialogue := testEndPoint createDialogue.
+	dialogue := testEndPoint newDialogue.
 
 	dialogue
 		onInvoke: [ :insert |

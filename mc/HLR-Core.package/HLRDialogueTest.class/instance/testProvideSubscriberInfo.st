@@ -22,7 +22,7 @@ testProvideSubscriberInfo
 		hlr: testHlr;
 		hlrAddress: '3548999973';
 		remoteGlobalTitle: '46707963173';
-		dialogueHandler: hlrEndPoint;
+		dialogueHandler: hlrEndPoint dialogueHandler;
 		onSuccess: [:res | resImei := res result subscriberInfo imei];
 		start.
 

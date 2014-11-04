@@ -2,7 +2,7 @@ tests-infoRetrievalPackage
 testSendAuthenticationInfoV2
 	| operationName dialogue  invoke invokeResult |
 	operationName := 'sendAuthenticationInfoV2'.
-	dialogue := testEndPoint createDialogue.
+	dialogue := testEndPoint newDialogue.
 	invoke := dialogue requestTcInvokeNamed: operationName parameters:  self imsi class: 1 timeout: 500.
 	invoke
 		onReturn: [self assert: false ];

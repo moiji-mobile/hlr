@@ -12,7 +12,7 @@ testRestoreDataNotFound
 	self deny: subscriber mscNumber isNil.
 	
 	operationName := 'restoreData'.
-	dialogue := testEndPoint createDialogue.
+	dialogue := testEndPoint newDialogue.
 
 	"We expect insertSubscriberData. Continue for now"
 	dialogue

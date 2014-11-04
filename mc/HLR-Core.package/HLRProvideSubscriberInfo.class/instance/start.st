@@ -12,7 +12,7 @@ start
 			yourself);
 		yourself.
 
-	dialogue := dialogueHandler  createDialogue.
+	dialogue := dialogueHandler newDialogue.
 	dialogue
 		onPAbort: [self signalFailure];
 		onUAbort: [self signalFailure].

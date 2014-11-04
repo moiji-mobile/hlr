@@ -4,7 +4,7 @@ testSendAuthenticationInfoV2NotFound
 	
 	"Test that searching a subscriber failed and an error is returned."
 	operationName := 'sendAuthenticationInfoV2'.
-	dialogue := testEndPoint createDialogue.
+	dialogue := testEndPoint newDialogue.
 	invoke := dialogue requestTcInvokeNamed: operationName parameters:  '12345678' class: 1 timeout: 500.
 	invoke
 		onReturn: [self assert: false ];

@@ -17,7 +17,7 @@ testSendRoutingInfoForSMV3
 				yourself.
 
 	operationName := 'sendRoutingInfoForSMV3'.
-	dialogue := testEndPoint createDialogue.
+	dialogue := testEndPoint newDialogue.
 	dialogue onInvoke: [:inv | self assert: false ].
 	invoke := dialogue
 				requestTcInvokeNamed: operationName parameters:  sriArg

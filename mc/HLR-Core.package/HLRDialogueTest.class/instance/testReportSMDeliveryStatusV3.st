@@ -2,7 +2,7 @@ test-locationUpdatingPackage
 testReportSMDeliveryStatusV3
 	| operationName dialogue invoke res param |
 	operationName := 'reportSM-DeliveryStatusV3'.
-	dialogue := testEndPoint createDialogue.
+	dialogue := testEndPoint newDialogue.
 	
 	subscriber mobileStationNotPresent.
 	self assert: subscriber isMobileStationNotReachable.

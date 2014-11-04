@@ -18,7 +18,7 @@ testSendRoutingInfoForSMV2UnreachableHighPrioNoMemory
 				yourself.
 
 	operationName := 'sendRoutingInfoForSMV2'.
-	dialogue := testEndPoint createDialogue.
+	dialogue := testEndPoint newDialogue.
 	invoke := dialogue
 				requestTcInvokeNamed: operationName parameters:  sriArg
 				class: 1 timeout: 500.

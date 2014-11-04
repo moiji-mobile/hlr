@@ -4,7 +4,7 @@ testSendIMSINotFound
 	
 
 	operationName := 'sendIMSI'.
-	dialogue := testEndPoint createDialogue.
+	dialogue := testEndPoint newDialogue.
 	invoke := dialogue
 				requestTcInvokeNamed: operationName parameters:  '999F'
 				class: 1 timeout: 500.
