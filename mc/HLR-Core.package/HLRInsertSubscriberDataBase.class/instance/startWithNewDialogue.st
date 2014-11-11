@@ -4,7 +4,7 @@ startWithNewDialogue
 	needsEnd := true.
 	dialogue := dialogueHandler newDialogue.
 	dialogue
-		onPAbort: [self failure];
-		onUAbort: [self failure].
+		onPAbort: [self signalFailure];
+		onUAbort: [self signalFailure].
 
 	self execute.
