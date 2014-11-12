@@ -2,7 +2,7 @@ as yet unclassified
 startWithNewDialogue
 	dialogue := dialogueHandler newDialogue.
 	dialogue
-		onPAbort: [self signalFailure];
-		onUAbort: [self signalFailure].
+		onPAbort: [self failure];
+		onUAbort: [self failure].
 
 	self execute.

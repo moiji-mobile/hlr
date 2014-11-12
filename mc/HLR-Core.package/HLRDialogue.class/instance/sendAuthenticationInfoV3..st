@@ -14,7 +14,7 @@ sendAuthenticationInfoV3: anInvocation
 	As we have no notion of SIM vs. USIM right now just abort the V3 context
 	and hope that a V2 one is opened."
 	isSGSN ifTrue: [
-		applicationContext := (self tcapModel bindingNamed: 'infoRetrievalContext-v2') value.
+		applicationContext := (self asn1Model bindingNamed: 'infoRetrievalContext-v2') value.
 		^self requestTcUAbort: TCAPDialogueResponse serviceUser applicationContextNameNotSupported rejectPermanent].
 	
 	(HLRSendAuthenticationInfoOperationV3 for: imsi)
