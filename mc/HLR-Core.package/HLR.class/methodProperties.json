@@ -1,9 +1,12 @@
 {
 	"class" : {
-		 },
+		"asn1Model" : "NorbertHartl 11/13/2014 18:10",
+		"asn1Model:" : "NorbertHartl 11/13/2014 14:46",
+		"defaultAsn1Model" : "NorbertHartl 11/13/2014 14:48" },
 	"instance" : {
 		"alertServiceCentre:iwmsc:for:" : "HolgerHansPeterFreyther 12/16/2013 19:24",
 		"alertServiceCentresFor:" : "HolgerHansPeterFreyther 12/16/2013 17:53",
+		"asn1Model:" : "NorbertHartl 11/13/2014 14:45",
 		"cancelLocation:" : "HolgerHansPeterFreyther 12/16/2013 17:56",
 		"cdrClient" : "HolgerHansPeterFreyther 11/22/2013 12:10",
 		"database" : "HolgerHansPeterFreyther 10/1/2013 13:41",

@@ -15,4 +15,4 @@ start
 	dialogue
 		requestTcBeginDestinationAddress: self remoteSCCPAddress
 		originatingAddress: self localSCCPAddress
-		applicationContextName: (self class applicationContextFor: self class operationName)
+		applicationContextName: (dialogue asn1Model applicationContextOidForOperationNamed: self class operationName)

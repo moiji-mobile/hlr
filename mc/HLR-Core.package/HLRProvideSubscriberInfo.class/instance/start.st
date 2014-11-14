@@ -27,4 +27,4 @@ start
 	dialogue
 		requestTcBeginDestinationAddress: self remoteSCCPAddress
 		originatingAddress: self localSCCPAddress
-		applicationContextName: (self class applicationContextFor:  'provideSubscriberInfo')
+		applicationContextName: (dialogue asn1Model applicationContextOidForOperationNamed:  'provideSubscriberInfo')

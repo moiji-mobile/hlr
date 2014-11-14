@@ -15,4 +15,4 @@ start
 	dialogue
 		requestTcBeginDestinationAddress: self remoteSCCPAddress
 		originatingAddress: self localSCCPAddress
-		applicationContextName: (self class applicationContextFor: self class cancelOperation)
+		applicationContextName: (dialogue applicationContextNamed: self class cancelOperation)

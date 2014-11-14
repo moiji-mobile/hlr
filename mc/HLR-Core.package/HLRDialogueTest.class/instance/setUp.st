@@ -15,8 +15,10 @@ setUp
 			hlrNumber: '35412';
 			yourself.
 
-	testEndPoint := TCAPTestServiceEndPoint new.
-	hlrEndPoint := TCAPTestServiceEndPoint newHLR.
+	testEndPoint := TCAPTestServiceEndPoint new
+		asn1Model: self asn1Model.
+	hlrEndPoint := TCAPTestServiceEndPoint newHLR
+		asn1Model: self asn1Model.
 	hlrEndPoint transactionCoordinator: TCAPTestTransactionCoordinator new.
 	hlrEndPoint factory hlr: testHlr.
 	testHlr endPoint: hlrEndPoint.

@@ -1,7 +1,7 @@
 {
 	"category" : "HLR-Core",
 	"classinstvars" : [
-		 ],
+		"asn1Model" ],
 	"classvars" : [
 		 ],
 	"commentStamp" : "",

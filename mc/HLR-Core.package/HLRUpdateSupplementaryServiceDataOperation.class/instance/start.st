@@ -9,4 +9,4 @@ start
 	dialogue
 		requestTcBeginDestinationAddress: self remoteSCCPAddress
 		originatingAddress: self localSCCPAddress
-		applicationContextName: (self class applicationContextFor: 'deleteSubscriberDataV3')
+		applicationContextName: (dialogue applicationContextNamed: 'deleteSubscriberDataV3')
