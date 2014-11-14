@@ -10,8 +10,10 @@ setUp
 			gsmSCFAddress: '1234';
 			yourself.
 
-	testEndPoint := TCAPTestServiceEndPoint new.
-	hlrEndPoint := TCAPTestServiceEndPoint newCamelHLR.
+	testEndPoint := TCAPTestServiceEndPoint new
+		asn1Model: self asn1Model.
+	hlrEndPoint := TCAPTestServiceEndPoint newCamelHLR
+		asn1Model: self asn1Model.
 	hlrEndPoint transactionCoordinator: TCAPTestTransactionCoordinator new.
 	hlrEndPoint factory hlr: testHlr.
 	testHlr endPoint: hlrEndPoint.

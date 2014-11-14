@@ -28,7 +28,7 @@ testSendRoutingInfoForSMV2NoCamel
 	dialogue
 		requestTcBeginDestinationAddress: self hlrAddr
 		originatingAddress: self localAddr
-		applicationContextName: (self applicationContextFor: operationName).
+		applicationContextName: (dialogue applicationContextNamed: operationName).
 
 	"TODO.. make sure things return"
 	self assert: err_message error originalBindingName = 'callBarred'.
