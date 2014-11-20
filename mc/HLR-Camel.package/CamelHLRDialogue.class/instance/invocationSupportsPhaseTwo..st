@@ -1,8 +1,8 @@
 as yet unclassified
 invocationSupportsPhaseTwo: anInvocation
-	| camelInfo supportedPhases |
-	camelInfo := anInvocation argument camelInfo.
-	camelInfo ifNil: [^false].
+	|  supportedPhases |
+	(anInvocation argument hasField: 'camelInfo')
+		ifFalse: [^false].
 
-	supportedPhases := camelInfo supportedCamelPhases.
+	supportedPhases := anInvocation argument camelInfo supportedCamelPhases.
 	^ supportedPhases includesBit: 'phase2'	
