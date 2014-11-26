@@ -16,7 +16,8 @@
 		"onSuccessBlock",
 		"remoteGlobalTitle",
 		"remoteSSN",
-		"remoteSCCPAddress" ],
+		"remoteSCCPAddress",
+		"localSSN" ],
 	"name" : "HLROperationBase",
 	"pools" : [
 		 ],
