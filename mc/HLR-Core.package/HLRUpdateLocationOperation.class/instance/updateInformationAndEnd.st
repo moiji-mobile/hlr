@@ -8,7 +8,7 @@ updateInformationAndEnd
 	hlr database updateSubscriber: subscriber.
 
 	result := ASN1Dictionary new
-		at: 'hlr-Number' put: hlr hlrNumberAsE164;
+		at: 'hlr-Number' put: hlr hlrNumber toE164;
 		yourself.
 	
 	"Save"
