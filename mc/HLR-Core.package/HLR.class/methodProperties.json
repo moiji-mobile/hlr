@@ -2,7 +2,8 @@
 	"class" : {
 		"asn1Model" : "NorbertHartl 11/13/2014 18:10",
 		"asn1Model:" : "NorbertHartl 11/13/2014 14:46",
-		"defaultAsn1Model" : "NorbertHartl 11/13/2014 14:48" },
+		"defaultAsn1Model" : "NorbertHartl 11/13/2014 14:48",
+		"reset" : "NorbertHartl 12/9/2014 17:33" },
 	"instance" : {
 		"alertServiceCentre:iwmsc:for:" : "HolgerHansPeterFreyther 12/16/2013 19:24",
 		"alertServiceCentresFor:" : "HolgerHansPeterFreyther 12/16/2013 17:53",
@@ -15,6 +16,7 @@
 		"endPoint:" : "HolgerHansPeterFreyther 10/14/2013 13:54",
 		"hlrNumber" : "HolgerHansPeterFreyther 10/21/2013 10:16",
 		"hlrNumber:" : "HolgerHansPeterFreyther 10/21/2013 10:16",
+		"hlrNumberAsE164" : "HolgerHansPeterFreyther 10/21/2013 10:19",
 		"insertSubscriberData:" : "HolgerHansPeterFreyther 12/16/2013 17:56",
 		"insertSubscriberDataGPRS:" : "HolgerHansPeterFreyther 12/16/2013 17:56",
 		"provideRoamingNumber:" : "HolgerHansPeterFreyther 12/16/2013 17:56",
