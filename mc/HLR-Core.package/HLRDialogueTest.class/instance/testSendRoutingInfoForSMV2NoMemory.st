@@ -34,7 +34,7 @@ testSendRoutingInfoForSMV2NoMemory
 		applicationContextName: (self applicationContextFor: operationName).
 
 	"TODO.. make sure things return"
-	self assert: invokeResultMessage result imsi = subscriber imsiAsTBCD.
+	self assert: invokeResultMessage resultObject imsi = subscriber imsiAsTBCD.
 	self assert: subscriber messageWaitingSet isEmpty.
 	self deny: informInvoke isNil.
 	self assert: informInvoke operationName equals: 'informServiceCentreV2'.

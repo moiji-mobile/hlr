@@ -10,7 +10,7 @@ start
 		parameters: self parameters
 		class: 1 timeout: 500.
 	invoke
-		onReturnLast: [:res | self success: res result];
+		onReturnLast: [:res | self success: res resultObject];
 		onError: [self signalFailure].
 	dialogue
 		requestTcBeginDestinationAddress: self remoteSCCPAddress

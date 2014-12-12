@@ -26,7 +26,7 @@ testPurgeV3
 		applicationContextName: (self applicationContextFor: operationName).
 
 	self deny: invokeResult isNil.
-	self assert: invokeResult result freezeTMSI = #null.
+	self assert: invokeResult resultObject freezeTMSI = #null.
 	self assert: subscriber vlrNumber isNil.
 	self assert: subscriber mscNumber = '4567'.
 	self assert: subscriber isMobileStationNotReachable.

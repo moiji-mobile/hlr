@@ -30,4 +30,4 @@ testSendRoutingInfoV3DirectForward
 		applicationContextName: (self applicationContextFor: operationName).
 
 	"Verify things"
-	self assert: invokeResultMessage result extendedRoutingInfo forwardingData forwardedToNumber fromE164 = '678'.
+	self assert: invokeResultMessage resultObject extendedRoutingInfo forwardingData forwardedToNumber fromE164 = '678'.

@@ -31,6 +31,6 @@ testUpdateGprsLocationNotFound
 		originatingAddress: self localAddr
 		applicationContextName: (self applicationContextFor: operationName).
 
-	self assert: err_message parameter isNil.
+	self assert: err_message parameter unknownSubscriberDiagnostic = 'imsiUnknown'.
 	self assert: err_message error originalBindingName = 'unknownSubscriber'.
 	self assert: invoked = 0.

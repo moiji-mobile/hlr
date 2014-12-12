@@ -23,7 +23,7 @@ testSendRoutingInfoForSMV2MNRFHighPrio
 	dialogue := testEndPoint newDialogue.
 	invoke := dialogue
 				requestTcInvokeNamed: operationName parameters:  sriArg
-				class: 1 timeout: 500.
+				class: TCAPReportSuccessAndFailure  timeout: 500.
 	invoke
 		onReturn: [self assert: false ];
 		onError: [self assert: false];

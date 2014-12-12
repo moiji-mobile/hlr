@@ -18,4 +18,4 @@ testSendAuthenticationInfoV2NotFound
 
 	self deny:  err_message error isNil.
 	self assert: err_message error originalBindingName = 'unknownSubscriber'.
-	self assert: err_message parameter isNil.
+	self assert: err_message parameter unknownSubscriberDiagnostic = 'imsiUnknown'.

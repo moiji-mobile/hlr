@@ -23,7 +23,7 @@ testProvideSubscriberInfo
 		hlrAddress: '3548999973';
 		remoteGlobalTitle: '46707963173';
 		dialogueHandler: hlrEndPoint dialogueHandler;
-		onSuccess: [:res | resImei := res result subscriberInfo imei];
+		onSuccess: [:res | resImei := res resultObject subscriberInfo imei];
 		start.
 
 	self assert: (GSMNumberDigits decodeFrom: reqImsi) = subscriber imsi.

@@ -27,5 +27,5 @@ testSendRoutingInfoV2NoForward
 		applicationContextName: (self applicationContextFor: operationName).
 
 	"Verify things have failed"
-	self assert: err_message parameter isNil.
+	self assert: err_message parameter absentSubscriberReason = 'imsiDetach'.
 	self assert: err_message error originalBindingName = 'absentSubscriber'.

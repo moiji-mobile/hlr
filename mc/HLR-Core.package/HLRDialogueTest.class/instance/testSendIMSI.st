@@ -19,4 +19,4 @@ testSendIMSI
 		applicationContextName: (self applicationContextFor: operationName).
 
 	"TODO.. make sure things return"
-	self assert: invokeResultMessage result = subscriber imsiAsTBCD.
+	self assert: invokeResultMessage resultObject = subscriber imsiAsTBCD.

@@ -28,4 +28,4 @@ testSendRoutingInfoV2DirectForward
 		applicationContextName: (self applicationContextFor: operationName).
 
 	"Verify things"
-	self assert: invokeResultMessage result routingInfo forwardingData forwardedToNumber fromE164 = '678'.
+	self assert: invokeResultMessage resultObject routingInfo forwardingData forwardedToNumber fromE164 = '678'.

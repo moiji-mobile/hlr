@@ -36,6 +36,6 @@ testSendRoutingInfoForSMV3UnreachableLowPrio
 
 	"TODO.. make sure things return"
 	self assert: err_message error originalBindingName = 'absentSubscriberSM'.
-	self assert: err_message parameter isNil.
+	self assert: err_message parameter absentSubscriberDiagnosticSM = 3.
 	self assert: (mwStatus includesBit: 'mnrf-Set').
 	self assert: (subscriber messageWaitingSet anySatisfy: [:assoc | assoc value = '3234'])
