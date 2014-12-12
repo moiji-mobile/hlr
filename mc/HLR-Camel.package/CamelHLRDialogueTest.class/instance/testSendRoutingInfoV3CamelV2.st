@@ -34,7 +34,7 @@ testSendRoutingInfoV3CamelV2
 		onReturn: [self assert: false ];
 		onError: [self assert: false ];
 		onReject: [self assert: false];
-		onReturnLast: [:res | result := res result].
+		onReturnLast: [:res | result := res resultObject].
 	dialogue
 		requestTcBeginDestinationAddress: self hlrAddr
 		originatingAddress: self localAddr
