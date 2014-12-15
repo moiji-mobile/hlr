@@ -12,7 +12,7 @@ testSendRoutingInfoV3CamelV2SuppressTCSI
 				at: 'gmsc-OrGsmSCF-Address' put: '1234' toE164;
 				at: 'camelInfo' put: (ASN1Dictionary new
 					at: 'supportedCamelPhases' put: '11';
-					at: 'suppress-T-CSI' put: 1;
+					at: 'suppress-T-CSI' put: nil asAsn1Value;
 					yourself);
 				yourself.
 
