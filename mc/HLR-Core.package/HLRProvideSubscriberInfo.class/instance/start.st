@@ -5,10 +5,10 @@ start
 	parameters := ASN1Dictionary new
 		at: 'imsi' put: subscriber imsiAsTBCD;
 		at: 'requestedInfo' put: (ASN1Dictionary new
-			at: 'locationInformation' put: 1;
-			at: 'subscriberState' put: 1;
-			at: 'currentLocation' put: 1;
-			at: 'imei' put: 1;
+			at: 'locationInformation' put: nil asAsn1Value;
+			at: 'subscriberState' put: nil asAsn1Value;
+			at: 'currentLocation' put: nil asAsn1Value;
+			at: 'imei' put: nil asAsn1Value;
 			yourself);
 		yourself.
 

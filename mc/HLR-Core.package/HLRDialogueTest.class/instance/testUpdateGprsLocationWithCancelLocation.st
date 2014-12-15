@@ -28,7 +28,7 @@ testUpdateGprsLocationWithCancelLocation
 				at: 'sgsn-Number' put: '9123' byteArrayFromHex;
 				at: 'sgsn-Address' put: 'AABBCCDD';
 				at: 'sgsn-Capability' put: (ASN1Dictionary new
-						at: 'gprsEnhancementsSupportIndicator' put: #null;
+						at: 'gprsEnhancementsSupportIndicator' put: nil asAsn1Value;
 						yourself);
 				yourself.
 

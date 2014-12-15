@@ -22,7 +22,7 @@ subscriberDataGPRSAsASN1For: aSubscriber
 					at: 'odb-GeneralData' put: (self odbGeneralDataFor: aSubscriber);
 					yourself);
 			at: 'gprsSubscriptionData' put: (ASN1Dictionary new
-					at: 'completeDataListIncluded' put: #null;
+					at: 'completeDataListIncluded' put: nil asAsn1Value;
 					at: 'gprsDataList' put: pdpList;
 					 yourself);
 			at: 'networkAccessMode' put: 'packetAndCircuit';
