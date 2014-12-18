@@ -6,7 +6,8 @@
 		 ],
 	"commentStamp" : "<historical>",
 	"instvars" : [
-		"hlr" ],
+		"hlr",
+		"invocationSubscription" ],
 	"name" : "HLRDialogue",
 	"pools" : [
 		 ],
