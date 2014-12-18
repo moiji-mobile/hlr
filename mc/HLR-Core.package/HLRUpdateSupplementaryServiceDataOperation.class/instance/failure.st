@@ -1,3 +1,3 @@
 execution
 failure
-	self abort: TCAPDialogueUAbort serviceUser 
+	self abort: dialogue newUAbort serviceUser
