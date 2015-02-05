@@ -1,3 +1,3 @@
 accessing
 asn1Model
-	^ TCAPTestModel instance
+	^ TCAPTestModel instance asTcapModelRoot
