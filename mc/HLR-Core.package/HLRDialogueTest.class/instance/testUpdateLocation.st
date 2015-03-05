@@ -1,13 +1,15 @@
 test-locationUpdatingPackage
 testUpdateLocation
-	| operationName dialogue invoke res |
+	| operationName dialogue invoke res data |
 	operationName := 'updateLocation'.
 	dialogue := testEndPoint newDialogue.
 
 	subscriber activateSupplementaryServiceForCode: SSData callWaiting.
+	data := OrderedCollection new.
 
 	dialogue
 		onInvoke: [ :insert |
+			data add: insert argument.
 			insert returnResultLast: nil.
 			dialogue requestTcContinue].
 
@@ -24,3 +26,10 @@ testUpdateLocation
 
 	self assert: res.
 	self deny: subscriber isMobileStationNotReachable.
+
+	"Check the ISD we get"
+	self assert: data first category equals: #[16r0A].
+	self assert: data first bearerServiceList first equals: #[16r11].
+	self assert: data first teleserviceList first equals: #[16r11].
+	self assert: data first provisionedSS elements second ss_Data ss_Code equals: #[16r12].
+	self assert: data first provisionedSS elements second ss_Data ss_Status equals: #[16r00].

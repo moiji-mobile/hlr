@@ -4,7 +4,7 @@ dummySubscriber
 		imsi: '274080000003000';
 		msisdn: '354385009999';
 		ki: (ByteArray readHexFrom: '00112233445566778899AABBCCDDEEFF');
-		subscriberCategory: '0a';
+		subscriberCategory: #[16r0a];
 		subscriberStatus: 'operatorDeterminedBarring';
 		bearerServiceProfile: BearerServiceProfile defaultProfile;
 		teleServiceProfile: TeleServiceProfile defaultProfile;

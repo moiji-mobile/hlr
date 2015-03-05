@@ -7,4 +7,4 @@ ssStatus
 	status := status bitAt: 3 put: provisionedBit asBit.
 	status := status bitAt: 4 put: notOperativeBit asBit.
 
-	^ (ByteArray with: status) hex
+	^ (ByteArray with: status)
