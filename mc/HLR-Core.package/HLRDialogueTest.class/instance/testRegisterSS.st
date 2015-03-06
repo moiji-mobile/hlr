@@ -1,11 +1,12 @@
 test-supplementary-services
 testRegisterSS
-	| operationName dialogue  invoke invokeResult param invocations |
+	| operationName dialogue  invoke invokeResult param invocations invocationData |
 	
 	subscriber
 		vlrNumber: '1234'.
 
 	invocations := 0.
+	invocationData := OrderedCollection new.
 	param := ASN1Dictionary new
 		at: 'ss-Code' put: SSData callForwardingUnconditional asByteArray;
 		at: 'basicService' put: (ASN1Dictionary new
@@ -17,6 +18,7 @@ testRegisterSS
 	testEndPoint
 		onDialogue: [:diag |
 			diag onInvoke: [:invocation |
+				invocationData add: invocation argument.
 				invocations := invocations + 1.
 				invocation returnResultLast: nil.
 				diag requestTcContinue]].
@@ -37,3 +39,7 @@ testRegisterSS
 	self deny: invokeResult isNil.
 	self assert: invocations = 2.
 	self assert: (subscriber supplementaryServiceStateFor: SSData callForwardingUnconditional) forwardedToNumber = '1234'.
+
+	"Verify the encoding of the forwardingInfo"
+	self assert: invocationData second provisionedSS elements first forwardingInfo ss_Code equals: #[33].
+	self assert: invocationData second provisionedSS elements first forwardingInfo forwardingFeatureList first forwardingOptions equals:  #[16r0C].
