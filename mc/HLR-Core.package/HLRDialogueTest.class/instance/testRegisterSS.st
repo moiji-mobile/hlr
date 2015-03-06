@@ -9,7 +9,7 @@ testRegisterSS
 	param := ASN1Dictionary new
 		at: 'ss-Code' put: SSData callForwardingUnconditional asByteArray;
 		at: 'basicService' put: (ASN1Dictionary new
-					at: 'teleservice' put: '10';
+					at: 'teleservice' put: #[16r10];
 					yourself);
 		at: 'forwardedToNumber' put: '1234' toE164;
 		yourself.

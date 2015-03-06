@@ -1,6 +1,6 @@
 test-supplementary-services
 testActivateSSBicRoam
-	| operationName dialogue  invoke invokeResult param invocations |
+	| operationName dialogue  invoke invokeResult param invocations invocationData |
 	
 	subscriber
 		vlrNumber: '1234'.
@@ -9,13 +9,15 @@ testActivateSSBicRoam
 	param := ASN1Dictionary new
 		at: 'ss-Code' put: SSData barrIncomingCallRoam asByteArray;
 		at: 'basicService' put: (ASN1Dictionary new
-					at: 'teleservice' put: '10';
+					at: 'teleservice' put: #[16r10];
 					yourself);
 		yourself.
 
+	invocationData := OrderedCollection new.
 	testEndPoint
 		onDialogue: [:diag |
 			diag onInvoke: [:invocation |
+				invocationData add: invocation argument.
 				invocations := invocations + 1.
 				invocation returnResultLast: nil.
 				diag requestTcContinue]].
@@ -35,3 +37,6 @@ testActivateSSBicRoam
 
 	self deny: invokeResult isNil.
 	self assert: invocations = 2.
+
+	"Check the barring"
+	self assert: invocationData second provisionedSS elements first callBarringInfo ss_Code equals: #[155].

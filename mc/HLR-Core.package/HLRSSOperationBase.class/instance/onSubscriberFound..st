@@ -9,8 +9,8 @@ onSubscriberFound: aSubscriber
 	"Only support allSpeechTransmissionServices right now"
 	basicService ifNotNil: [
 		| teleService |
-		teleService := basicService teleservice asString.
-		teleService = '10'
+		teleService := basicService teleservice.
+		teleService = #[16r10]
 			ifFalse: [^self abort: dialogue newUAbort serviceUser ].
 	].
 
