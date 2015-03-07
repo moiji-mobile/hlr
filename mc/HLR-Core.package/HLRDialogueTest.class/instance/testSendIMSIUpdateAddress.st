@@ -1,7 +1,9 @@
 tests-infoRetrievalPackage
-testSendIMSI
+testSendIMSIUpdateAddress
 	| operationName dialogue  invoke invokeResultMessage |
-	
+
+	self deny: testHlr updateAddress.
+	testHlr updateAddress: true.	
 
 	operationName := 'sendIMSI'.
 	dialogue := testEndPoint newDialogue.
@@ -21,5 +23,5 @@ testSendIMSI
 	"TODO.. make sure things return"
 	self assert: invokeResultMessage resultObject = subscriber imsiAsTBCD.
 
-	"Check that the GT of the HLR has not been updated"
-	self assert: dialogue transaction remoteAddress parseGlobalTitle isNil.
+	"Verify the address of the transaction has changed"
+	self assert: dialogue transaction remoteAddress parseGlobalTitle address equals: testHlr hlrNumber.

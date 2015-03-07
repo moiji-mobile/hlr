@@ -9,7 +9,8 @@
 		"database",
 		"endPoint",
 		"hlrNumber",
-		"cdrClient" ],
+		"cdrClient",
+		"updateAddress" ],
 	"name" : "HLR",
 	"pools" : [
 		 ],
