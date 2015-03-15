@@ -35,7 +35,17 @@ testDeactivateSSAllCallRestriction
 	dialogue
 		requestTcBeginDestinationAddress: self imsiAddr
 		originatingAddress: self localAddr
-		applicationContextName: (self applicationContextFor: operationName).
+		applicationContextName: (self applicationContextFor: operationName)
+		userInformation: (ASN1Array new 
+			add: (
+				ASN1Dictionary new
+					at: 'map-open' put: (ASN1Dictionary new
+						at: 'destinationReference' put: subscriber imsi toE212;
+						at: 'originationReference' put: '0815' toE164;
+						yourself);
+					at: 'oid' put: '0.4.0.0.1.1.1.1';
+					yourself); 
+			yourself).
 
 	self deny: invokeResult isNil.
 	self assert: invocations = 0.

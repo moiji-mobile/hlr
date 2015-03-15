@@ -4,11 +4,13 @@ activateSS: anInvocation
 	<package: 'functionalSsPackage-v1'>
 	<package: 'functionalSsPackage-v2'>
 
-	| gt |
+	| imsi |
 
-	gt := self extractGlobalTitleOrAbort.
 
-	(HLRActivateSSOperation for: gt address)
+	imsi := self extractIMSIOrAbort.
+	imsi ifNil: [^self].
+
+	(HLRActivateSSOperation for: imsi)
 		hlr: hlr;
 		dialogue: self;
 		invocation: anInvocation;

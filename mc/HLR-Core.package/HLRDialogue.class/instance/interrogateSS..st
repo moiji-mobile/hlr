@@ -4,10 +4,11 @@ interrogateSS: anInvocation
 	<package: 'functionalSsPackage-v1'>
 	<package: 'functionalSsPackage-v2'>
 
-	| gt |
-	gt := self extractGlobalTitleOrAbort.
+	| imsi |
+	imsi := self extractIMSIOrAbort.
+	imsi ifNil: [^self].
 
-	(HLRInterrogateSSOperation for: gt address)
+	(HLRInterrogateSSOperation for: imsi)
 		hlr: hlr;
 		dialogue: self;
 		invocation: anInvocation;
