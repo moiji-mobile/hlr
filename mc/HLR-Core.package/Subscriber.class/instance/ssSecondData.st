@@ -8,6 +8,6 @@ ssSecondData
 	array add: connectedLineIdentificationRestriction toAsn1.
 
 	"TODO: we might need to check if all of it fits.."
-	self provisionedSS keysAndValuesDo: [:key :value |
+	self provisionedSS do: [:value |
 		array add: value toAsn1].
 	^array

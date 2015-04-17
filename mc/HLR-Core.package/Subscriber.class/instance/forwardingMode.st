@@ -1,7 +1,7 @@
 forwarding
 forwardingMode
 	| ssData |
-	ssData := self provisionedSS at: SSData callForwardingUnconditional ifAbsent: [nil].
+	ssData := self supplementaryServiceForCode: SSData callForwardingUnconditional ifAbsent: [nil].
 	ssData ifNil: [^self class forwardMaybe].
 
 	^ssData isActive

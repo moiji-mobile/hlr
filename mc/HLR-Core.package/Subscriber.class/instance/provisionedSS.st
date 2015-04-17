@@ -1,3 +1,3 @@
 supplementary-services
 provisionedSS
-	^ provisionedSS ifNil: [provisionedSS := Dictionary new].
+	^ provisionedSS ifNil: [provisionedSS := OrderedCollection new].

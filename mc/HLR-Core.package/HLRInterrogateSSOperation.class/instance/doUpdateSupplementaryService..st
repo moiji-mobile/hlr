@@ -1,7 +1,7 @@
 execution
 doUpdateSupplementaryService: aSSCode
 	| ssData result |
-	ssData := subscriber provisionedSS at: aSSCode ifAbsent: [
+	ssData := subscriber supplementaryServiceForCode: aSSCode ifAbsent: [
 				SSData new
 					ssCode: aSSCode;
 					notProvisioned;
