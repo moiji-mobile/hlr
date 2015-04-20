@@ -1,0 +1,1 @@
+I specialize the HLRDialogue for more decisions

@@ -1,0 +1,1 @@
+I am a subclass for camel to make decisions for camel.

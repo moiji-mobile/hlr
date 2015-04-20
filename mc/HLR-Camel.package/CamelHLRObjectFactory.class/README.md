@@ -1,0 +1,1 @@
+I need to exist to create a CamelHLRDialogue
