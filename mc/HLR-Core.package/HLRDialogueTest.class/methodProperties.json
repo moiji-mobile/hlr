@@ -40,7 +40,7 @@
 		"testReadyForSMV2MemoryAvailable" : "NorbertHartl 11/4/2014 14:26",
 		"testReadyForSMV3" : "NorbertHartl 11/4/2014 14:26",
 		"testReadyForSMV3MemoryAvailable" : "NorbertHartl 11/4/2014 14:26",
-		"testRegisterSS" : "HolgerHansPeterFreyther 3/15/2015 16:40",
+		"testRegisterSS" : "HolgerHansPeterFreyther 4/20/2015 19:50",
 		"testReportSMDeliveryStatusV2" : "NorbertHartl 11/4/2014 14:26",
 		"testReportSMDeliveryStatusV2AbsentSubscriber" : "NorbertHartl 11/4/2014 14:26",
 		"testReportSMDeliveryStatusV2MemoryCapacityExceeded" : "NorbertHartl 11/4/2014 14:26",

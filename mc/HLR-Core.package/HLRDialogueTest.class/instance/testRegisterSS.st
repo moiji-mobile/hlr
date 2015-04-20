@@ -48,7 +48,7 @@ testRegisterSS
 
 	self deny: invokeResult isNil.
 	self assert: invocations = 2.
-	self assert: (subscriber supplementaryServiceStateFor: SSData callForwardingUnconditional) forwardedToNumber = '1234'.
+	self assert: (subscriber supplementaryServiceStateFor: SSData callForwardingUnconditional) forwardedToNumber = '1234' toE164.
 
 	"Verify the encoding of the forwardingInfo"
 	self assert: invocationData second provisionedSS elements first forwardingInfo ss_Code equals: #[33].
