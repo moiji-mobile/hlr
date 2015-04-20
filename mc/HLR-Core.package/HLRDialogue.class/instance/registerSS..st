@@ -9,7 +9,7 @@ registerSS: anInvocation
 	imsi := self extractIMSIOrAbort.
 	imsi ifNil: [^self].
 
-	forwardedToNumber := anInvocation argument forwardedToNumber fromE164.
+	forwardedToNumber := anInvocation argument forwardedToNumber.
 
 	(HLRRegisterSSOperation for: imsi)
 		hlr: hlr;

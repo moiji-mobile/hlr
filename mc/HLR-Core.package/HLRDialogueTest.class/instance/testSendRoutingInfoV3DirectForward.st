@@ -6,7 +6,7 @@ testSendRoutingInfoV3DirectForward
 	subscriber
 		vlrNumber: '1234';
 		mscNumber: '1234';
-		enableDirectForwardingTo: '678'.
+		enableDirectForwardingTo: '678' toE164.
 
 	sriArg := ASN1Dictionary new
 				at: 'msisdn' put: subscriber msisdnAsE164;
