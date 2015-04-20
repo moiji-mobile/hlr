@@ -1,0 +1,1 @@
+I handle updateGprsLocation from a SGSN.

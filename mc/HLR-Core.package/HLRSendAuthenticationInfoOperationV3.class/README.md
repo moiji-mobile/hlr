@@ -1,0 +1,1 @@
+I am a MAPv3 specialisation and return same tuples.

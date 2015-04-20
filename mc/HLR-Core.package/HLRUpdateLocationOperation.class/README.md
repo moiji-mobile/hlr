@@ -1,0 +1,1 @@
+I handle updateLocation from a VLR and will insert data into it

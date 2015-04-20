@@ -1,0 +1,1 @@
+I handle routing info for MT-SMS and message waiting list.

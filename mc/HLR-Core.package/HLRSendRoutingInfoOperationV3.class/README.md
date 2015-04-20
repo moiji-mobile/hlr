@@ -1,0 +1,1 @@
+I handle the sendRoutingInfoV3 case. See my parent class

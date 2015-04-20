@@ -1,0 +1,1 @@
+I am a HLR. I hold the database, GTs and other information

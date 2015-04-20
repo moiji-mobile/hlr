@@ -1,0 +1,1 @@
+I am necessary to create a HLRDialogue and give it a pointer to the HLR.

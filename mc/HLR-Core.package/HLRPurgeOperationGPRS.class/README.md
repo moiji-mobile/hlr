@@ -1,0 +1,1 @@
+I handle purge by the SGSN.

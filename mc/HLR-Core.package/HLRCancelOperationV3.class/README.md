@@ -1,0 +1,1 @@
+I am a MAPv3 specialisation, see my parent class

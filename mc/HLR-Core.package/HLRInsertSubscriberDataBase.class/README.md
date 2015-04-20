@@ -1,0 +1,1 @@
+I am a baseclass for different InsertSubscriberData operations

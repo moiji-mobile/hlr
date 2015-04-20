@@ -1,0 +1,1 @@
+I inform IWMSCs about the readynes of a subscriber

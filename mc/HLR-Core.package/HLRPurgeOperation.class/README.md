@@ -1,0 +1,1 @@
+A VLR is purging and this is the implementation of it.
