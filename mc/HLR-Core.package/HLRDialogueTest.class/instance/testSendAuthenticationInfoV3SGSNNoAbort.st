@@ -1,6 +1,7 @@
 tests-infoRetrievalPackage
-testSendAuthenticationInfoV3SGSNAbort
+testSendAuthenticationInfoV3SGSNNoAbort
 	| operationName dialogue invoke wasAborted |
+	wasAborted := false.
 	operationName := 'sendAuthenticationInfoV3'.
 	dialogue := testEndPoint newDialogue.
 	dialogue
@@ -10,11 +11,11 @@ testSendAuthenticationInfoV3SGSNAbort
 		onReturn: [self assert: false ];
 		onError: [self assert: false];
 		onReject: [self assert: false];
-		onReturnLast: [self assert: false].
+		onReturnLast: [].
 	dialogue
 		requestTcBeginDestinationAddress: self hlrAddr
 		originatingAddress: self localAddr
 		applicationContextName: (self applicationContextFor: operationName).
 		
 
-	self assert: wasAborted.
+	self deny: wasAborted.
