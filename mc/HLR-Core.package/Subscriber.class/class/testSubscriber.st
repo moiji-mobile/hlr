@@ -14,5 +14,5 @@ testSubscriber
 		ssConnectedLineIdentificationRestriction: self ssColrDefault;
 		"GPRS related attributes"
 		teleServiceProfileGPRS: TeleServiceProfileGPRS defaultProfile;
-		apnAsOctetString: '025f66';
+		applicationContextName: (ByteArray readHexFrom: '025f66');
 		yourself.

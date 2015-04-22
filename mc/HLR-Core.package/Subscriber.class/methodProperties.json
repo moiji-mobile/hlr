@@ -1,6 +1,6 @@
 {
 	"class" : {
-		"dummySubscriber" : "HolgerHansPeterFreyther 3/5/2015 19:12",
+		"dummySubscriber" : "HolgerHansPeterFreyther 4/22/2015 11:11",
 		"forwardAlways" : "HolgerHansPeterFreyther 10/28/2013 11:33",
 		"forwardMaybe" : "HolgerHansPeterFreyther 10/28/2013 11:33",
 		"ssClipDefault" : "HolgerHansPeterFreyther 10/4/2013 18:22",
@@ -8,14 +8,14 @@
 		"ssColpDefault" : "HolgerHansPeterFreyther 10/4/2013 18:40",
 		"ssColrDefault" : "HolgerHansPeterFreyther 10/4/2013 18:42",
 		"supplementaryServiceFor:" : "HolgerHansPeterFreyther 11/17/2013 14:19",
-		"testSubscriber" : "HolgerHansPeterFreyther 3/5/2015 19:13" },
+		"testSubscriber" : "HolgerHansPeterFreyther 4/22/2015 11:11" },
 	"instance" : {
 		"a3a8Version" : "HolgerHansPeterFreyther 1/8/2014 20:04",
 		"activateSupplementaryServiceForCode:" : "HolgerHansPeterFreyther 11/17/2013 12:46",
 		"addToMessageWaitingList:gateway:" : "HolgerHansPeterFreyther 12/16/2013 17:47",
 		"alwaysForwardTeleService" : "HolgerHansPeterFreyther 10/28/2013 10:51",
-		"apnAsOctetString" : "HolgerHansPeterFreyther 11/9/2013 15:19",
-		"apnAsOctetString:" : "HolgerHansPeterFreyther 11/9/2013 15:30",
+		"applicationContextName:" : "HolgerHansPeterFreyther 4/22/2015 11:11",
+		"applicationPointName" : "HolgerHansPeterFreyther 4/22/2015 11:09",
 		"bearerServiceList" : "HolgerHansPeterFreyther 10/5/2013 10:58",
 		"bearerServiceProfile" : "HolgerHansPeterFreyther 8/19/2013 16:07",
 		"bearerServiceProfile:" : "HolgerHansPeterFreyther 10/4/2013 18:18",

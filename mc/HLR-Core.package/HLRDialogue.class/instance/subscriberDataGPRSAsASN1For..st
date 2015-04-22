@@ -6,7 +6,7 @@ subscriberDataGPRSAsASN1For: aSubscriber
 		at: 'pdp-Type' put: #[1 33];
 		at: 'qos-Subscribed' put: #[35 113 31];
 		at: 'vplmnAddressAllowed' put: #null;
-		at: 'apn' put: (ByteArray readHexFrom: aSubscriber apnAsOctetString);
+		at: 'apn' put: aSubscriber applicationPointName;
 		yourself.
 	pdpList := ASN1Array new.
 	pdpList add: pdpContext.
