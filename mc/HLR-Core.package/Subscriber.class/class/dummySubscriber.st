@@ -3,7 +3,7 @@ dummySubscriber
 	^self new
 		imsi: '274080000003000';
 		msisdn: '354385009999';
-		ki: (ByteArray readHexFrom: '00112233445566778899AABBCCDDEEFF');
+		credentials: (SubscriberCOMP128Credentials initWith: (ByteArray readHexFrom: '00112233445566778899AABBCCDDEEFF'));
 		subscriberCategory: #[16r0a];
 		subscriberStatus: 'operatorDeterminedBarring';
 		bearerServiceProfile: BearerServiceProfile defaultProfile;

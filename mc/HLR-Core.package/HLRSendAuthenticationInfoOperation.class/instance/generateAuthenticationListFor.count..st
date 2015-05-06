@@ -7,7 +7,7 @@ generateAuthenticationListFor: aSubscriber count: numVectors
 		| uuid rand sreskc dict |
 		uuid := (UUIDGenerator default generateRandomBitsOfLength: 16*8) asByteArray.
 		rand := (ByteArray new: 16) copyReplaceFrom: 1 to: uuid size with: uuid.
-		sreskc := aSubscriber generateSRESKc: rand.
+		sreskc := aSubscriber credentials generateSRESKc: rand.
 
 		dict := ASN1Dictionary new
 			at: 'rand' put: rand;

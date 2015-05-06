@@ -1,4 +1,4 @@
-sreskc
+as yet unclassified
 generateSRESKc: aRand
 	| version |
 	

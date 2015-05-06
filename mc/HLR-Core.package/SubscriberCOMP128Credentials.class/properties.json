@@ -4,11 +4,12 @@
 		 ],
 	"classvars" : [
 		 ],
-	"commentStamp" : "HolgerHansPeterFreyther 4/20/2015 16:28",
+	"commentStamp" : "",
 	"instvars" : [
-		 ],
-	"name" : "BarringSSData",
+		"ki",
+		"a3a8Version" ],
+	"name" : "SubscriberCOMP128Credentials",
 	"pools" : [
 		 ],
-	"super" : "SSData",
+	"super" : "Object",
 	"type" : "normal" }

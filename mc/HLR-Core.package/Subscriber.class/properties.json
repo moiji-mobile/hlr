@@ -1,5 +1,5 @@
 {
-	"category" : "HLR-Core",
+	"category" : "HLR-Core-Subscriber",
 	"classinstvars" : [
 		 ],
 	"classvars" : [
@@ -17,7 +17,6 @@
 		"vgcsSubscriptionData",
 		"teleServiceProfile",
 		"bearerServiceProfile",
-		"ki",
 		"callingLineIdentifcationPresentation",
 		"callingLineIdentificationRestriction",
 		"connectedLineIdentificationPresentation",
@@ -31,7 +30,7 @@
 		"mobileStationNotReachable",
 		"messageWaitingSet",
 		"memoryAvailable",
-		"a3a8Version" ],
+		"credentials" ],
 	"name" : "Subscriber",
 	"pools" : [
 		 ],

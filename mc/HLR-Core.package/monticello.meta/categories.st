@@ -7,4 +7,5 @@ SystemOrganization addCategory: 'HLR-Core-Operations-MM'!
 SystemOrganization addCategory: 'HLR-Core-Operations-SM'!
 SystemOrganization addCategory: 'HLR-Core-Operations-SS'!
 SystemOrganization addCategory: 'HLR-Core-Profiles'!
+SystemOrganization addCategory: 'HLR-Core-Subscriber'!
 SystemOrganization addCategory: 'HLR-Core-Tests'!
