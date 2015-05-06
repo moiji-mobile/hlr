@@ -8,6 +8,7 @@ purgeMSV3: anInvocation
 	
 	imsi := anInvocation argument imsi fromTBCD.
 	sgsn := anInvocation argument sgsn_Number.
+	logger logDebug: 'purgeMSv3' with: { 'imsi' -> imsi. 'sgsn' -> sgsn }.
 	self flag: #todo. "Check the vlr-Number/sgsn-Number if it is matching?"
 	"Depending on the sgsn-Number we are either a purge from the SGSN or the VLR"
 	operation := sgsn isNil

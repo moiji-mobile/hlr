@@ -7,6 +7,7 @@ reportSMDeliveryStatusV3: anInvocation
 	| msisdn smsc |
 	msisdn := anInvocation argument msisdn fromE164.
 	smsc := anInvocation argument serviceCentreAddress fromE164.
+	logger logDebug: 'reportSMDeliveryStatusV3' with: { 'msisdn' -> msisdn. 'smsc' -> smsc }.
 
 	HLRReportSMDeliveryStatusOperationV3 new
 		hlr: hlr;

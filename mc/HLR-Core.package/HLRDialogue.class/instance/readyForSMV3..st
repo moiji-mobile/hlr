@@ -6,6 +6,7 @@ readyForSMV3: anInvocation
 
 	| imsi |
 	imsi := anInvocation argument imsi fromTBCD.
+	logger logDebug: 'readyForSMv3' with: { 'imsi' -> imsi }.
 	(HLRReadyForSMV3Operation for: imsi)
 		hlr: hlr;
 		dialogue: self;

@@ -6,6 +6,7 @@ deactivateSS: anInvocation
 
 	| imsi |
 	imsi := self extractIMSIOrAbort.
+	logger logDebug: 'deactivateSS' with: { 'imsi' -> imsi }.
 	imsi ifNil: [^self].
 
 	(HLRDeactivateSSOperation for: imsi)

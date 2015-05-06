@@ -7,6 +7,7 @@ purgeMSV2: anInvocation
 
 	self flag: #todo. "Check the vlr-Number if it is matching?"
 	imsi := anInvocation argument imsi fromTBCD.
+	logger logDebug: 'purgeMSv2' with: { 'imsi' -> imsi }.
 	(HLRPurgeOperation for: imsi)
 		hlr: hlr;
 		dialogue: self;

@@ -6,6 +6,7 @@ interrogateSS: anInvocation
 
 	| imsi |
 	imsi := self extractIMSIOrAbort.
+	logger logDebug: 'interrogateSS' with: { 'imsi' -> imsi }.
 	imsi ifNil: [^self].
 
 	(HLRInterrogateSSOperation for: imsi)

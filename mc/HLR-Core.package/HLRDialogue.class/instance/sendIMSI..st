@@ -5,6 +5,7 @@ sendIMSI: anInvocation
 	| msisdn |
 
 	msisdn := anInvocation argument fromE164.
+	logger logDebug: 'sendIMSI' with: { 'msisdn' -> msisdn }.
 	HLRSendIMSIOperation new
 		hlr: hlr;
 		msisdn: msisdn;

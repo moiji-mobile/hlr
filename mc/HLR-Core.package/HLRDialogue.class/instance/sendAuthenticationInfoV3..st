@@ -8,6 +8,7 @@ sendAuthenticationInfoV3: anInvocation
 	imsi := anInvocation argument imsi fromTBCD.
 	vectors := anInvocation argument numberOfRequestedVectors.
 	isSGSN := anInvocation argument requestingNodeType value = 'sgsn'.
+	logger logDebug: 'sendAuthenticationInfoV3' with: { 'imsi' -> imsi. 'isSGSN' -> isSGSN. 'vectors' -> vectors }.
 	vectors ifNil: [vectors := 4].
 	
 	(HLRSendAuthenticationInfoOperationV3 for: imsi)

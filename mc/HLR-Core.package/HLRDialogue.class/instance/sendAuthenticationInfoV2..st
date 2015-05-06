@@ -6,6 +6,7 @@ sendAuthenticationInfoV2: anInvocation
 	| imsi  |
 
 	imsi := anInvocation argument fromTBCD.
+	logger logDebug: 'sendAuthenticationInfoV2' with: { 'imsi' -> imsi }.
 	(HLRSendAuthenticationInfoOperation for: imsi)
 		hlr: hlr;
 		dialogue: self;

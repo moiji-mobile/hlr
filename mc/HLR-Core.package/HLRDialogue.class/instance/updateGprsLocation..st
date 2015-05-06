@@ -8,6 +8,7 @@ updateGprsLocation: anInvocation
 	imsi := anInvocation argument imsi fromTBCD.
 	sgsnNumber := anInvocation argument sgsn_Number fromE164.
 	sgsnAddress := anInvocation argument sgsn_Address fromE164.
+	logger logDebug: 'updateGprsLocation' with: { 'imsi' -> imsi. 'sgsnNumber' -> sgsnNumber. 'sgsnAddress' -> sgsnAddress }.
 
 	"Inform the cdrClient"
 	cdr := hlr cdrClient updateGprsLocationRequest: sgsnNumber imsi: imsi dialogue: self.

@@ -7,6 +7,7 @@ sendRoutingInfoV3: anInvocation
 	| msisdn crn cdr |
 	msisdn := anInvocation argument msisdn fromE164.
 	crn := anInvocation argument callReferenceNumber.
+	logger logDebug: 'sendRoutingInfoV3' with: { 'msisdn' -> msisdn. 'crn' -> crn }.
 	cdr := hlr cdrClient sendRoutingInfo: msisdn crn: crn dialogue: self.
 
 	HLRSendRoutingInfoOperationV3 new

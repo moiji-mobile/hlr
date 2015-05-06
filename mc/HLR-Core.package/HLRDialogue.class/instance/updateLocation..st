@@ -10,6 +10,7 @@ updateLocation: anInvocation
 	"Assume these numbers are E164 numbers"
 	mscNumber := anInvocation argument msc_Number fromE164.
 	vlrNumber := anInvocation argument vlr_Number fromE164.
+	logger logDebug: 'updateLocation' with: { 'imsi' -> imsi. 'mscNumber' -> mscNumber. 'vlrNumber' -> vlrNumber }.
 
 	"Inform the CDR client about the request"
 	cdr := hlr cdrClient updateLocationRequest: vlrNumber msc: mscNumber imsi: imsi dialogue: self.

@@ -7,6 +7,7 @@ registerSS: anInvocation
 	| forwardedToNumber imsi |
 	"TODO: check if the number is international?!"
 	imsi := self extractIMSIOrAbort.
+	logger logDebug: 'registerSS' with: { 'imsi' -> imsi }.
 	imsi ifNil: [^self].
 
 	forwardedToNumber := anInvocation argument forwardedToNumber.
