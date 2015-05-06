@@ -6,8 +6,8 @@ activateSS: anInvocation
 
 	| imsi |
 
-
 	imsi := self extractIMSIOrAbort.
+	logger logDebug: 'activateSS' with: { 'imsi' -> imsi }.
 	imsi ifNil: [^self].
 
 	(HLRActivateSSOperation for: imsi)

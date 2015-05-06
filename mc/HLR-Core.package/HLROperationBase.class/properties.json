@@ -17,7 +17,8 @@
 		"remoteGlobalTitle",
 		"remoteSSN",
 		"remoteSCCPAddress",
-		"localSSN" ],
+		"localSSN",
+		"logger" ],
 	"name" : "HLROperationBase",
 	"pools" : [
 		 ],
