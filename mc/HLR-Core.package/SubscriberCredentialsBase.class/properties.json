@@ -1,0 +1,14 @@
+{
+	"category" : "HLR-Core-Subscriber",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "HolgerHansPeterFreyther 5/7/2015 08:16",
+	"instvars" : [
+		 ],
+	"name" : "SubscriberCredentialsBase",
+	"pools" : [
+		 ],
+	"super" : "Object",
+	"type" : "normal" }

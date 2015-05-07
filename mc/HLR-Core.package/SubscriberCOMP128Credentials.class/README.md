@@ -1,0 +1,1 @@
+I hold a KI and the A3A8 version and can invoke the COMP128 algorithm

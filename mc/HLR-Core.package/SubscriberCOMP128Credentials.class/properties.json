@@ -4,12 +4,12 @@
 		 ],
 	"classvars" : [
 		 ],
-	"commentStamp" : "",
+	"commentStamp" : "HolgerHansPeterFreyther 5/7/2015 08:17",
 	"instvars" : [
 		"ki",
 		"a3a8Version" ],
 	"name" : "SubscriberCOMP128Credentials",
 	"pools" : [
 		 ],
-	"super" : "Object",
+	"super" : "SubscriberCredentialsBase",
 	"type" : "normal" }
