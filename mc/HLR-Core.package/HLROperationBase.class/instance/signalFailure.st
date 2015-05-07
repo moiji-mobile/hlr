@@ -1,6 +1,7 @@
 success-failure-handling
 signalFailure
 	| cdr |
+	logger logDebug: 'Operation failed' with: { 'dialogue' -> dialogue }.
 	cdr := (hlr cdrClient createRecordFor: dialogue)
 		at: 'type' put: 'end';
 		at: 'status' put: 'failure';

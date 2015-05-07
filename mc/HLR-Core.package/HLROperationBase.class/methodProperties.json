@@ -2,7 +2,7 @@
 	"class" : {
 		"applicationContextFor:" : "NorbertHartl 11/11/2014 14:01" },
 	"instance" : {
-		"abort:" : "HolgerHansPeterFreyther 4/28/2015 15:27",
+		"abort:" : "HolgerHansPeterFreyther 5/7/2015 16:56",
 		"addStatusToCDR:" : "HolgerHansPeterFreyther 11/25/2013 11:45",
 		"dialogue:" : "HolgerHansPeterFreyther 10/1/2013 17:50",
 		"dialogueHandler:" : "HolgerHansPeterFreyther 10/29/2013 08:39",
@@ -21,5 +21,5 @@
 		"remoteSCCPAddress" : "HolgerHansPeterFreyther 12/16/2013 18:00",
 		"remoteSCCPAddress:" : "HolgerHansPeterFreyther 12/16/2013 18:00",
 		"remoteSSN:" : "HolgerHansPeterFreyther 11/9/2013 16:33",
-		"signalFailure" : "HolgerHansPeterFreyther 11/25/2013 16:46",
-		"signalSuccess:" : "HolgerHansPeterFreyther 11/25/2013 16:46" } }
+		"signalFailure" : "HolgerHansPeterFreyther 5/7/2015 16:57",
+		"signalSuccess:" : "HolgerHansPeterFreyther 5/7/2015 16:57" } }

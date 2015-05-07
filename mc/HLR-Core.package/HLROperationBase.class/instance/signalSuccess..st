@@ -1,7 +1,8 @@
 success-failure-handling
 signalSuccess: aResult
 	| cdr |
-	
+
+	logger logDebug: 'Operation succeeded' with: { 'dialogue' -> dialogue. 'result' -> aResult }.
 	cdr := (hlr cdrClient createRecordFor: dialogue)
 		at: 'status' put: 'success';
 		at: 'result' put: aResult;
