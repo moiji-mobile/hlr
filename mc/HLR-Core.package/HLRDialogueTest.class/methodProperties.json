@@ -33,7 +33,7 @@
 		"testProvideRoamingNumberV3" : "NorbertHartl 11/3/2014 19:02",
 		"testProvideSubscriberInfo" : "NorbertHartl 12/11/2014 17:25",
 		"testPurgeGprsV3" : "NorbertHartl 11/4/2014 14:26",
-		"testPurgeV2" : "NorbertHartl 11/4/2014 14:26",
+		"testPurgeV2" : "HolgerHansPeterFreyther 5/11/2015 10:16",
 		"testPurgeV3" : "NorbertHartl 12/11/2014 17:47",
 		"testPurgeV3UnknownSubscriber" : "HolgerHansPeterFreyther 3/15/2015 17:12",
 		"testReadyForSMV2" : "NorbertHartl 11/4/2014 14:26",

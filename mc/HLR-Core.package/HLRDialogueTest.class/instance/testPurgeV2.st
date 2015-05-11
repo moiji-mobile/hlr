@@ -4,6 +4,7 @@ testPurgeV2
 
 	param := ASN1Dictionary new
 		at: 'imsi' put: self imsi;
+		at: 'vlr-Number' put: '1234' toE164
 		yourself.
 
 	subscriber vlrNumber: '1234'.
