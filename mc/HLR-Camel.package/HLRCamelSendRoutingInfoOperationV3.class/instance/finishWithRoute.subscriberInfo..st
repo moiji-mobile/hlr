@@ -10,7 +10,7 @@ finishWithRoute: aSubscriber subscriberInfo: aSubscriberInfo
 					yourself);
 				yourself);
 			at: 'subscriberInfo' put: (aSubscriberInfo at: 'subscriberInfo');
-			at: 'vmsc-Address' put: aSubscriber mscNumberAsE164;
+			at: 'vmsc-Address' put: aSubscriber mscNumber toE164;
 			yourself).
 
 	dialogue requestTcEnd: false.
