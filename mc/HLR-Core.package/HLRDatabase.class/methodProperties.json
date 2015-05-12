@@ -2,5 +2,7 @@
 	"class" : {
 		 },
 	"instance" : {
+		"addMessageWaitingEntryFor:serviceCentre:gateway:" : "HolgerHansPeterFreyther 5/12/2015 09:55",
 		"newQuery" : "HolgerHansPeterFreyther 8/14/2013 16:47",
+		"removeMessageWaitingEntryFor:serviceCentre:" : "HolgerHansPeterFreyther 5/12/2015 09:55",
 		"updateSubscriber:" : "HolgerHansPeterFreyther 10/14/2013 12:02" } }
