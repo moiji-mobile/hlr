@@ -12,7 +12,7 @@ testSendRoutingInfoForSMV3NoMemory
 	self assert: subscriber messageWaitingSet isEmpty.
 
 	sriArg := ASN1Dictionary new
-				at: 'msisdn' put: subscriber msisdnAsE164;
+				at: 'msisdn' put: subscriber msisdn toE164;
 				at: 'sm-RP-PRI' put: false;
 				at: 'serviceCentreAddress' put: '912343';
 				yourself.

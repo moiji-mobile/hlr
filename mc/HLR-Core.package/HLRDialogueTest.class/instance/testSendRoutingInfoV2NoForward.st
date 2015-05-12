@@ -8,7 +8,7 @@ testSendRoutingInfoV2NoForward
 		mscNumber: nil.
 
 	sriArg := ASN1Dictionary new
-				at: 'msisdn' put: subscriber msisdnAsE164;
+				at: 'msisdn' put: subscriber msisdn toE164;
 				yourself.
 
 	operationName := 'sendRoutingInfoV2'.

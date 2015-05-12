@@ -13,7 +13,7 @@ subscriberDataGPRSAsASN1For: aSubscriber
 
 	^OrderedCollection new
 		add: (ASN1Dictionary new
-			at: 'msisdn' put: aSubscriber msisdnAsE164;
+			at: 'msisdn' put: aSubscriber msisdn toE164;
 			at: 'category' put: aSubscriber subscriberCategory;
 			at: 'subscriberStatus' put: aSubscriber subscriberStatus;
 			at: 'teleserviceList' put: aSubscriber teleServiceListForGPRS;

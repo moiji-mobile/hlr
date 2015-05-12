@@ -7,7 +7,7 @@ testSendRoutingInfoV3
 		vlrNumber: '456'.
 
 	sriArg := ASN1Dictionary new
-				at: 'msisdn' put: subscriber msisdnAsE164;
+				at: 'msisdn' put: subscriber msisdn toE164;
 				at: 'interrogationType' put: 'basicCall';
 				at: 'gmsc-OrGsmSCF-Address' put: '123' toE164;
 				at: 'callReferenceNumber' put: #[0 1];

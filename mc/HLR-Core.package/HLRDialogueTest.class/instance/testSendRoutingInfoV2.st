@@ -7,7 +7,7 @@ testSendRoutingInfoV2
 		vlrNumber: '456'.
 
 	sriArg := ASN1Dictionary new
-				at: 'msisdn' put: subscriber msisdnAsE164;
+				at: 'msisdn' put: subscriber msisdn toE164;
 				yourself.
 
 	testEndPoint

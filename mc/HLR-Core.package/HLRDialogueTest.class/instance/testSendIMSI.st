@@ -6,7 +6,7 @@ testSendIMSI
 	operationName := 'sendIMSI'.
 	dialogue := testEndPoint newDialogue.
 	invoke := dialogue
-				requestTcInvokeNamed: operationName parameters:  subscriber msisdnAsE164
+				requestTcInvokeNamed: operationName parameters:  subscriber msisdn toE164
 				class: 1 timeout: 500.
 	invoke
 		onReturn: [self assert: false ];

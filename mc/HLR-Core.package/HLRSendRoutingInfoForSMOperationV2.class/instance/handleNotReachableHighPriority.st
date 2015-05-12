@@ -7,7 +7,7 @@ handleNotReachableHighPriority
 	invocation returnResultLast: (ASN1Dictionary new
 					at: 'imsi' put: subscriber imsiAsTBCD;
 					at: 'locationInfoWithLMSI' put: (ASN1Dictionary new
-							at: 'networkNode-Number' put: subscriber mscNumberAsE164;
+							at: 'networkNode-Number' put: subscriber mscNumber toE164;
 							yourself);
 					yourself).
 

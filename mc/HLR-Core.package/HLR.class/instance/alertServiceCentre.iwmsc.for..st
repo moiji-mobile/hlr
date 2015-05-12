@@ -8,7 +8,7 @@ alertServiceCentre: aSmscAddress iwmsc: aMscSCCPAddress for: aSubscriber
 
 	HLRAlertServiceCentreOperation new
 		dialogueHandler: endPoint;
-		msisdn: aSubscriber msisdnAsE164;
+		msisdn: aSubscriber msisdn toE164;
 		smscAddress: aSmscAddress toE164;
 		hlr: self;
 		hlrAddress: self hlrNumber;

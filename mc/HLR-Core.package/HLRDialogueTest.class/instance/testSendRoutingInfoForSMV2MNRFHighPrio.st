@@ -14,7 +14,7 @@ testSendRoutingInfoForSMV2MNRFHighPrio
 	self assert: subscriber messageWaitingSet isEmpty.
 
 	sriArg := ASN1Dictionary new
-				at: 'msisdn' put: subscriber msisdnAsE164;
+				at: 'msisdn' put: subscriber msisdn toE164;
 				at: 'sm-RP-PRI' put: true;
 				at: 'serviceCentreAddress' put: '912343' byteArrayFromHex;
 				yourself.

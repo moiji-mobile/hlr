@@ -8,7 +8,7 @@ testReportSMDeliveryStatusV3MemoryCapacityExceeded
 	self assert: subscriber isMobileStationNotReachable.
 
 	param := ASN1Dictionary new
-				at: 'msisdn' put: subscriber msisdnAsE164;
+				at: 'msisdn' put: subscriber msisdn toE164;
 				at: 'serviceCentreAddress' put: '91abcd';
 				at: 'sm-DeliveryOutcome' put: 'memoryCapacityExceeded';
 				yourself.
