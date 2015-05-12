@@ -1,0 +1,9 @@
+{
+	"class" : {
+		 },
+	"instance" : {
+		"addToMessageWaitingList:gateway:" : "HolgerHansPeterFreyther 5/12/2015 09:23",
+		"initialize" : "HolgerHansPeterFreyther 5/12/2015 09:25",
+		"messageWaitingListContains:gateway:" : "HolgerHansPeterFreyther 5/12/2015 09:23",
+		"messageWaitingSet" : "HolgerHansPeterFreyther 5/12/2015 09:24",
+		"removeFromWaitingList:" : "HolgerHansPeterFreyther 5/12/2015 09:25" } }

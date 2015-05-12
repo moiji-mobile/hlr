@@ -1,3 +1,3 @@
 sms
 removeFromWaitingList: aSmscAddress
-	self messageWaitingSet removeAllSuchThat: [:assoc | assoc value = aSmscAddress]
+	messageWaitingSet removeFromWaitingList: aSmscAddress.

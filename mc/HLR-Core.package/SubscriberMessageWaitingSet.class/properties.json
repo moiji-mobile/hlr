@@ -1,0 +1,14 @@
+{
+	"category" : "HLR-Core-Subscriber",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "HolgerHansPeterFreyther 5/12/2015 09:28",
+	"instvars" : [
+		"messageWaitingSet" ],
+	"name" : "SubscriberMessageWaitingSet",
+	"pools" : [
+		 ],
+	"super" : "Object",
+	"type" : "normal" }
