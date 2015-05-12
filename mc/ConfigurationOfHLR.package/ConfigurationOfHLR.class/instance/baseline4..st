@@ -34,7 +34,7 @@ baseline4: spec
 			project: 'CDR' with: [
 				spec
 					className: #ConfigurationOfCDR;
-					versionString: #'stable';
+					versionString: #'bleedingEdge';
 					repository: 'http://smalltalkhub.com/mc/osmocom/ChargingDataRecord/main/' ].
 		spec 
 			package: 'HLR-Core' with: [
