@@ -2,6 +2,7 @@
 	"class" : {
 		 },
 	"instance" : {
+		"addMessageWaitingEntryFor:serviceCentre:gateway:" : "HolgerHansPeterFreyther 5/12/2015 09:39",
 		"findImsi:" : "HolgerHansPeterFreyther 10/7/2013 15:48",
 		"findMSISDN:" : "HolgerHansPeterFreyther 10/21/2013 15:29",
 		"imsis" : "HolgerHansPeterFreyther 8/19/2013 16:21",

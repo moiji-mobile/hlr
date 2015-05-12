@@ -1,8 +1,9 @@
 as yet unclassified
 handleNotReachableLowPriority
+	| gateway |
 	"This is still a mess. I think we need to report the old msc-Number"
-	subscriber addToMessageWaitingList: smscAddr gateway: dialogue transaction remoteAddress.
-	hlr database updateSubscriber: subscriber.
+	gateway := dialogue transaction remoteAddress.
+	hlr database addMessageWaitingEntryFor: subscriber serviceCentre: smscAddr gateway: gateway.
 
 	"Return absentSubscriberV2 with waiting list information"
 	invocation returnError: self class absentSubscriber with: self class absentSubscriberData.

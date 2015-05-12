@@ -1,4 +1,5 @@
 execution
-addToMessageWaitingList: aSubscriber 
-	aSubscriber addToMessageWaitingList: serviceCentreAddress gateway: dialogue transaction remoteAddress.
-	hlr database updateSubscriber: aSubscriber.
+addToMessageWaitingList: aSubscriber
+	| gateway |
+	gateway := dialogue transaction remoteAddress.
+	hlr database addMessageWaitingEntryFor: aSubscriber serviceCentre: serviceCentreAddress gateway: gateway.
