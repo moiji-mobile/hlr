@@ -13,6 +13,8 @@ alertServiceCentre: aSmscAddress iwmsc: aMscSCCPAddress for: aSubscriber
 		hlr: self;
 		hlrAddress: self hlrNumber;
 		remoteSCCPAddress: aMscSCCPAddress;
-		onSuccess: [aSubscriber removeFromWaitingList: aSmscAddress. self database updateSubscriber: aSubscriber];
-		onFailure: [aSubscriber removeFromWaitingList: aSmscAddress. self database updateSubscriber: aSubscriber];
+		onSuccess: [
+			self database removeMessageWaitingEntryFor: aSubscriber serviceCentre: aSmscAddress];
+		onFailure: [
+			self database removeMessageWaitingEntryFor: aSubscriber serviceCentre: aSmscAddress];
 		startWithNewDialogue.
