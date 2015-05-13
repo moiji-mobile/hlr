@@ -35,10 +35,15 @@ baseline4: spec
 				spec
 					className: #ConfigurationOfCDR;
 					versionString: #'bleedingEdge';
-					repository: 'http://smalltalkhub.com/mc/osmocom/ChargingDataRecord/main/' ].
+					repository: 'http://smalltalkhub.com/mc/osmocom/ChargingDataRecord/main/' ];
+			project: 'OsmoGSM' with: [
+				spec
+					className: #ConfigurationOfOsmoGSM;
+					versionString: #'bleedingEdge';
+					repository: 'http://smalltalkhub.com/mc/osmocom/GSM/main/' ].
 		spec 
 			package: 'HLR-Core' with: [
-				spec requires: #('TCAP' 'CDR' 'ASN1' ). ];
+				spec requires: #('TCAP' 'CDR' 'ASN1' 'OsmoGSM' ). ];
 			package: 'HLR-Camel' with: [
 				spec requires: #('HLR-Core' ). ];
 			package: 'HLR-Voyage' with: [
