@@ -1,0 +1,14 @@
+{
+	"category" : "HLR-Core",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		 ],
+	"name" : "Milenage",
+	"pools" : [
+		 ],
+	"super" : "Object",
+	"type" : "normal" }
