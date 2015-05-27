@@ -1,0 +1,19 @@
+{
+	"category" : "HLR-Core-Subscriber",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		"ki",
+		"opc",
+		"amf",
+		"ind",
+		"seq",
+		"initialSqn" ],
+	"name" : "SubscriberMilenageCredentials",
+	"pools" : [
+		 ],
+	"super" : "SubscriberCredentialsBase",
+	"type" : "normal" }
