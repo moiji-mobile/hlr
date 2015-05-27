@@ -1,0 +1,14 @@
+{
+	"category" : "AuC",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		"database" ],
+	"name" : "AuCMySQLIMSIDatabaseQuery",
+	"pools" : [
+		 ],
+	"super" : "HLRDatabaseQuery",
+	"type" : "normal" }

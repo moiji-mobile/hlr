@@ -1,0 +1,17 @@
+{
+	"category" : "AuC",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		"connectionString",
+		"connection",
+		"kiQuery",
+		"sqnUpdate" ],
+	"name" : "AuCMySQLDatabase",
+	"pools" : [
+		 ],
+	"super" : "HLRDatabase",
+	"type" : "normal" }
