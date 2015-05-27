@@ -2,7 +2,7 @@ as yet unclassified
 testFindSubscriberMSISDN
 	| sub |
 
-	dataBase newQuery
+	dataBase newMSISDNQuery
 		msisdn: Subscriber dummySubscriber msisdn;
 		onSuccess: [:subscriber |
 			sub := subscriber];

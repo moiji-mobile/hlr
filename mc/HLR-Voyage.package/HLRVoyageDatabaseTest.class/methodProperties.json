@@ -3,6 +3,6 @@
 		 },
 	"instance" : {
 		"setUp" : "HolgerHansPeterFreyther 11/17/2013 16:23",
-		"testFindSubscriber" : "HolgerHansPeterFreyther 11/17/2013 16:12",
-		"testFindSubscriberMSISDN" : "HolgerHansPeterFreyther 11/17/2013 16:12",
-		"testUnavailableSubscriber" : "HolgerHansPeterFreyther 10/14/2013 10:53" } }
+		"testFindSubscriber" : "HolgerHansPeterFreyther 5/26/2015 21:59",
+		"testFindSubscriberMSISDN" : "HolgerHansPeterFreyther 5/26/2015 22:00",
+		"testUnavailableSubscriber" : "HolgerHansPeterFreyther 5/26/2015 22:00" } }
