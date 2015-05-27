@@ -2,7 +2,7 @@ as yet unclassified
 testFindSubscriber
 	| sub |
 
-	dataBase newQuery
+	dataBase newIMSIQuery
 		imsi: self availableIMSI;
 		onSuccess: [:subscriber |
 			sub := subscriber];

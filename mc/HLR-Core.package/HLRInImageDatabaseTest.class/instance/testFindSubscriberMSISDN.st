@@ -2,7 +2,7 @@ as yet unclassified
 testFindSubscriberMSISDN
 	| sub |
 
-	dataBase newQuery
+	dataBase newMSISDNQuery
 		msisdn: self availableMSISDN;
 		onSuccess: [:subscriber |
 			sub := subscriber];

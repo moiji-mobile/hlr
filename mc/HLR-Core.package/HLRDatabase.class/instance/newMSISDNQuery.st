@@ -1,0 +1,3 @@
+query
+newMSISDNQuery
+	^self newQuery

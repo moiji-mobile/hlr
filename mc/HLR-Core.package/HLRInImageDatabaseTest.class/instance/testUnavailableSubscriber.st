@@ -2,7 +2,7 @@ as yet unclassified
 testUnavailableSubscriber
 	| res |
 
-	dataBase newQuery
+	dataBase newIMSIQuery
 		imsi: '6666666666666666666';
 		onSuccess: [:subscriber |
 			self assert: false];

@@ -1,6 +1,6 @@
 execution
 execute
-	hlr database newQuery
+	hlr database newIMSIQuery
 		imsi: imsi;
 		onSuccess: [:subscriber |
 			logger logDebug: 'Found subscriber by IMSI' with: { 'dialogue' -> dialogue. 'imsi' -> imsi }.

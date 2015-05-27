@@ -1,0 +1,3 @@
+query
+newIMSIQuery
+	^self newQuery

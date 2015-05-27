@@ -1,6 +1,6 @@
 as yet unclassified
 execute
-	hlr database newQuery
+	hlr database newMSISDNQuery
 		msisdn: msisdn;
 		onSuccess: [:subscriber |
 			logger logDebug: 'Found subscriber by MSISDN' with: { 'dialogue' -> dialogue. 'msisdn' -> msisdn }.
