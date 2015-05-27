@@ -1,0 +1,1 @@
+I bind the libosmocore milenage routines for 2G and 3G authentication.
