@@ -32,9 +32,11 @@ respondWithQuinTuplets: aSubscriber
 				ck: ck;
 				ik: ik;
 				autn: autn].
-	invocation returnResultLast: result.
-	dialogue requestTcEnd: false.
+
 	credentials incrementIndex.
 	credentials incrementSeq.
 	hlr database updateSQN: aSubscriber.
+
+	invocation returnResultLast: result.
+	dialogue requestTcEnd: false.
 	self signalSuccess: 'done'.
