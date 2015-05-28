@@ -10,4 +10,5 @@ signalSuccess: aResult
 	self addStatusToCDR: cdr.
 	cdr created.	
 
-	onSuccessBlock ifNotNil: [:block | block cull: aResult]
+	onSuccessBlock ifNotNil: [:block | block cull: aResult].
+	hlr operationSucceeded: self with: aResult.
