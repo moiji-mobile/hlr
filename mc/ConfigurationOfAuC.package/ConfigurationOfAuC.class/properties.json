@@ -1,0 +1,14 @@
+{
+	"category" : "ConfigurationOfAuC",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		"LastVersionLoad" ],
+	"commentStamp" : "",
+	"instvars" : [
+		"project" ],
+	"name" : "ConfigurationOfAuC",
+	"pools" : [
+		 ],
+	"super" : "Object",
+	"type" : "normal" }
