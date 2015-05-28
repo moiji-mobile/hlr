@@ -5,6 +5,9 @@ start
 	"TODO: not very object orientated..."
 	self flag: #todo.
 
+	database shouldForceFailure ifTrue: [ 
+		^systemFailure value: 'Failure forced!'].
+
 	"Start the query for the IMSI"
 	imsi ifNotNil: [
 		subscriber := database findImsi: imsi.

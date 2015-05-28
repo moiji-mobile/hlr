@@ -6,6 +6,9 @@ execute
 			logger logDebug: 'Found subscriber by IMSI' with: { 'dialogue' -> dialogue. 'imsi' -> imsi }.
 			self onSubscriberFound: subscriber];
 		onFailure: [:reason |
-			logger logDebug: 'Didn''t find subscriber by IMSI' with: { 'dialogue' -> dialogue. 'imsi' -> imsi}.
+			logger logDebug: 'Didn''t find subscriber by IMSI' with: { 'dialogue' -> dialogue. 'imsi' -> imsi. 'reason' -> reason}.
 			self onNoSubscriber: reason];
+		onSystemFailure: [:reason |
+			logger logError: 'Database query failed' with: { 'dialogue' -> dialogue. 'imsi' -> imsi. 'reason' -> reason}.
+			self onSystemFailure];
 		start.

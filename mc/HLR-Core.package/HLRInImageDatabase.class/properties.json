@@ -6,7 +6,8 @@
 		 ],
 	"commentStamp" : "<historical>",
 	"instvars" : [
-		"imsis" ],
+		"imsis",
+		"forceFailure" ],
 	"name" : "HLRInImageDatabase",
 	"pools" : [
 		 ],

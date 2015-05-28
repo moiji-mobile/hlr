@@ -9,7 +9,8 @@
 		"onSuccess",
 		"onFailure",
 		"imsi",
-		"msisdn" ],
+		"msisdn",
+		"systemFailure" ],
 	"name" : "HLRDatabaseQuery",
 	"pools" : [
 		 ],
