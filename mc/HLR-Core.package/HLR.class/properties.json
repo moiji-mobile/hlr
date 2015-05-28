@@ -10,7 +10,8 @@
 		"endPoint",
 		"hlrNumber",
 		"cdrClient",
-		"updateAddress" ],
+		"updateAddress",
+		"logger" ],
 	"name" : "HLR",
 	"pools" : [
 		 ],
