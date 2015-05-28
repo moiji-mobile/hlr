@@ -4,6 +4,8 @@
 	"instance" : {
 		"amf:" : "HolgerHansPeterFreyther 5/26/2015 23:54",
 		"buildSqn" : "HolgerHansPeterFreyther 5/27/2015 12:09",
+		"decrementIndex" : "HolgerHansPeterFreyther 5/28/2015 16:30",
+		"decrementSeq" : "HolgerHansPeterFreyther 5/28/2015 16:30",
 		"generate:autn:ik:ck:xres:" : "HolgerHansPeterFreyther 5/27/2015 12:06",
 		"generateSRESKc:" : "HolgerHansPeterFreyther 5/27/2015 00:35",
 		"incrementIndex" : "HolgerHansPeterFreyther 5/27/2015 11:28",
@@ -12,6 +14,8 @@
 		"initialSqn" : "HolgerHansPeterFreyther 5/27/2015 12:50",
 		"ki:" : "HolgerHansPeterFreyther 5/26/2015 23:53",
 		"opc:" : "HolgerHansPeterFreyther 5/26/2015 23:54",
+		"resetSqn:" : "HolgerHansPeterFreyther 5/28/2015 16:29",
 		"seq" : "HolgerHansPeterFreyther 5/27/2015 12:30",
 		"sqn:" : "HolgerHansPeterFreyther 5/27/2015 10:39",
-		"supportsMutualAuthentication" : "HolgerHansPeterFreyther 5/27/2015 10:33" } }
+		"supportsMutualAuthentication" : "HolgerHansPeterFreyther 5/27/2015 10:33",
+		"verifyAuts:rand:" : "HolgerHansPeterFreyther 5/28/2015 16:10" } }
