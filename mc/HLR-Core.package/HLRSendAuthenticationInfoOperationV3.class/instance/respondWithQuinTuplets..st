@@ -6,8 +6,7 @@ respondWithQuinTuplets: aSubscriber
 	resultList := result authenticationSetList quintupletList.
 
 	credentials := aSubscriber credentials.	"We increment the index for the new batch"
-	credentials incrementIndex.
-	
+
 	"Temporaries for the result"
 	autn := ByteArray new: 16.
 	ik := ByteArray new: 16.
@@ -20,7 +19,7 @@ respondWithQuinTuplets: aSubscriber
 			stream
 				binary;
 				next: 16 ].
-		credentials incrementSeq.
+
 		credentials
 				generate: rand
 				autn: autn
@@ -35,5 +34,7 @@ respondWithQuinTuplets: aSubscriber
 				autn: autn].
 	invocation returnResultLast: result.
 	dialogue requestTcEnd: false.
+	credentials incrementIndex.
+	credentials incrementSeq.
+	hlr database updateSQN: aSubscriber.
 	self signalSuccess: 'done'.
-	hlr database updateSQN: aSubscriber
