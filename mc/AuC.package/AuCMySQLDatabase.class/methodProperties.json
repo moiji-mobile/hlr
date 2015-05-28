@@ -1,9 +1,12 @@
 {
 	"class" : {
-		"createForDevelopment" : "HolgerHansPeterFreyther 5/26/2015 20:25" },
+		"createForDevelopment" : "HolgerHansPeterFreyther 5/28/2015 18:34" },
 	"instance" : {
-		"connect" : "HolgerHansPeterFreyther 5/27/2015 14:11",
+		"connect" : "HolgerHansPeterFreyther 5/28/2015 21:35",
+		"connectOrFail:" : "HolgerHansPeterFreyther 5/28/2015 21:09",
 		"connectionString:" : "HolgerHansPeterFreyther 5/26/2015 20:20",
+		"initialize" : "HolgerHansPeterFreyther 5/28/2015 21:45",
 		"newIMSIQuery" : "HolgerHansPeterFreyther 5/26/2015 21:46",
-		"queryKiBySubscriber:" : "HolgerHansPeterFreyther 5/26/2015 22:09",
-		"updateSQN:" : "HolgerHansPeterFreyther 5/27/2015 14:15" } }
+		"queryKiBySubscriber:" : "HolgerHansPeterFreyther 5/28/2015 21:46",
+		"updateSQN:" : "HolgerHansPeterFreyther 5/28/2015 21:46",
+		"updateSubscriberInformation:remoteGlobalTitle:" : "HolgerHansPeterFreyther 5/28/2015 21:44" } }

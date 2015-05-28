@@ -9,7 +9,9 @@
 		"connectionString",
 		"connection",
 		"kiQuery",
-		"sqnUpdate" ],
+		"sqnUpdate",
+		"subscriberInformation",
+		"logger" ],
 	"name" : "AuCMySQLDatabase",
 	"pools" : [
 		 ],

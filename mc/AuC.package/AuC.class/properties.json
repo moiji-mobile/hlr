@@ -1,0 +1,14 @@
+{
+	"category" : "AuC",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		 ],
+	"name" : "AuC",
+	"pools" : [
+		 ],
+	"super" : "HLR",
+	"type" : "normal" }
