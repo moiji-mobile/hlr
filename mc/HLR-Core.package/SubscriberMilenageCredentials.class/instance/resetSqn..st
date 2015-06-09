@@ -1,3 +1,5 @@
 as yet unclassified
-resetSqn: anInteger 
-	self sqn: anInteger.
+resetSqn: anInteger
+	"We don't want to update initialSqn due a re-sync. Otherwise the
+	incremental DB update might fail" 
+	self splitSqn: anInteger.
