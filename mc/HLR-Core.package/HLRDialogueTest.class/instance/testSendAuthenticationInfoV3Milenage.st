@@ -24,4 +24,4 @@ testSendAuthenticationInfoV3Milenage
 
 	self assert: invokeResponse size = 1.
 	self assert: subscriber credentials seq equals: 0.
-	self assert: subscriber credentials ind equals: 0.
+	self assert: subscriber credentials ind equals: 31.

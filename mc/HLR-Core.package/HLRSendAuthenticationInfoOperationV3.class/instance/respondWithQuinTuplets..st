@@ -7,6 +7,9 @@ respondWithQuinTuplets: aSubscriber
 
 	credentials := aSubscriber credentials.	"We increment the index for the new batch"
 
+	"Move to the next SQN. Consider all numbers from the same batch"
+	credentials incrementSeq.
+
 	"Temporaries for the result"
 	autn := ByteArray new: 16.
 	ik := ByteArray new: 16.
@@ -33,8 +36,6 @@ respondWithQuinTuplets: aSubscriber
 				ik: ik;
 				autn: autn].
 
-	credentials incrementIndex.
-	credentials incrementSeq.
 	hlr database updateSQN: aSubscriber.
 
 	invocation returnResultLast: result.
