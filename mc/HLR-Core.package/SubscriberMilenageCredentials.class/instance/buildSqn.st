@@ -1,3 +1,3 @@
 as yet unclassified
 buildSqn
-	^((seq bitShift: 5) bitOr: ind) asByteArrayOfSize: 6
+	^self assembleSqn asByteArrayOfSize: 6.
