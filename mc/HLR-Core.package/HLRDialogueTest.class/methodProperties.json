@@ -20,6 +20,7 @@
 		"testActivateSSNoSubscriber" : "HolgerHansPeterFreyther 3/15/2015 17:29",
 		"testActivateSSNoUserInformation" : "HolgerHansPeterFreyther 3/15/2015 16:09",
 		"testActivateSSNoVlrNumber" : "HolgerHansPeterFreyther 3/15/2015 16:33",
+		"testAuthenticationFailure" : "HolgerHansPeterFreyther 6/10/2015 20:19",
 		"testCancelLocation" : "NorbertHartl 8/6/2014 16:24",
 		"testCancelLocationV3" : "NorbertHartl 8/6/2014 16:24",
 		"testDeactivateSS" : "HolgerHansPeterFreyther 3/15/2015 16:39",
