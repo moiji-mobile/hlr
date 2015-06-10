@@ -1,4 +1,5 @@
 as yet unclassified
 notImplementedInHLR
-	self flag: #todo. "Abort the dialogue?"
-	^self notYetImplemented
+	"Just close the dialogue as if nothing has happened"
+	logger logDebug: 'notImplemented silently aborting' with: {}.
+	self requestTcEnd: true.
