@@ -4,6 +4,6 @@ maybeResyncSqn: aSubscriber
 	invocation argument re_synchronisationInfo ifNotNil: [:info |
 		| res |
 		res := aSubscriber credentials verifyAuts: info auts rand: info rand.
-		logger logDebug: 'AUTS response' with: { 'result' -> res key. 'sqn' -> res value asInteger }.
+		logger logDebug: 'AUTS response' with: { 'result' -> res key. 'sqn' -> res value asInteger. 'initialSqn' -> aSubscriber credentials initialSqn. }.
 		res key = 0 ifTrue: [
 			aSubscriber credentials resetSqn: res value asInteger].].
