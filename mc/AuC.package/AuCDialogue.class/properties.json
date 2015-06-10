@@ -1,0 +1,14 @@
+{
+	"category" : "AuC",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		 ],
+	"name" : "AuCDialogue",
+	"pools" : [
+		 ],
+	"super" : "HLRDialogue",
+	"type" : "normal" }

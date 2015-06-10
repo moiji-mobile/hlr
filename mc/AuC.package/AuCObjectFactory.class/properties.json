@@ -1,0 +1,14 @@
+{
+	"category" : "AuC",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		 ],
+	"name" : "AuCObjectFactory",
+	"pools" : [
+		 ],
+	"super" : "HLRObjectFactory",
+	"type" : "normal" }
