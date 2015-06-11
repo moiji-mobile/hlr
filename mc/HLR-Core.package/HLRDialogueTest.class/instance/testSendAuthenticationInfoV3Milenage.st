@@ -3,11 +3,11 @@ testSendAuthenticationInfoV3Milenage
 	| operationName dialogue invoke invokeResponse |
 
 	subscriber credentials: (SubscriberMilenageCredentials new
-		sqn: 16rFFFFFFFFFFE0;
+		sqn: 16rFFFFFFFFFFFE;
 		opc: (ByteArray new: 16);
 		ki: (ByteArray new: 16);
 		yourself).
-	self assert: subscriber credentials assembleSqn equals: 16rFFFFFFFFFFE0.
+	self assert: subscriber credentials sqn equals: 16rFFFFFFFFFFFE.
 
 	operationName := 'sendAuthenticationInfoV3'.
 	dialogue := testEndPoint newDialogue.
@@ -24,11 +24,7 @@ testSendAuthenticationInfoV3Milenage
 		
 
 	self assert: invokeResponse size = 1.
-	self assert: subscriber credentials seq equals: 0.
-	self assert: subscriber credentials ind equals: 0.
-	self assert: subscriber credentials assembleSqn equals: 0.
+	self assert: subscriber credentials sqn equals: 16rFFFFFFFFFFFF.
 
-	subscriber credentials incrementSeq.
-	self assert: subscriber credentials seq equals: 1.
-	self assert: subscriber credentials ind equals: 0.
-	self assert: subscriber credentials assembleSqn equals: 32.	
+	subscriber credentials incrementSqn.
+	self assert: subscriber credentials sqn equals: 32.	

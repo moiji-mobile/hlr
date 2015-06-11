@@ -9,9 +9,8 @@
 		"ki",
 		"opc",
 		"amf",
-		"ind",
-		"seq",
-		"initialSqn" ],
+		"initialSqn",
+		"sqn" ],
 	"name" : "SubscriberMilenageCredentials",
 	"pools" : [
 		 ],

@@ -1,3 +1,3 @@
 as yet unclassified
 buildSqn
-	^self assembleSqn asByteArrayOfSize: 6.
+	^sqn asByteArrayOfSize: 6.

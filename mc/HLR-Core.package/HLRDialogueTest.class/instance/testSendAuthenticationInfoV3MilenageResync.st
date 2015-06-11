@@ -23,5 +23,4 @@ testSendAuthenticationInfoV3MilenageResync
 		
 
 	self assert: invokeResponse size = 1.
-	self assert: subscriber credentials seq equals: 2125201402220.
-	self assert: subscriber credentials ind equals: 30.
+	self assert: subscriber credentials sqn equals: 68006444871071.

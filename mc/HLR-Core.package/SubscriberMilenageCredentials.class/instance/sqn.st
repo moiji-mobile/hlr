@@ -1,3 +1,3 @@
 as yet unclassified
-seq
-	^ seq
+sqn
+	^ sqn
