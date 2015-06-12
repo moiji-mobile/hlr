@@ -8,7 +8,6 @@
 	"instvars" : [
 		"connectionString",
 		"connection",
-		"kiQuery",
 		"sqnUpdate",
 		"subscriberInformation",
 		"logger" ],
