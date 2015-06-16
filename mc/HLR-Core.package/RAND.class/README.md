@@ -1,0 +1,1 @@
+I wrap libcrypto get cryptographic random numbers
