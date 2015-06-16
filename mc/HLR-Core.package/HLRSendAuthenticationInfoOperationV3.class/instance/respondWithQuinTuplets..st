@@ -18,10 +18,7 @@ respondWithQuinTuplets: aSubscriber
 
 	resultList addUsing: [ :tuple | 
 		| rand |
-		rand := '/dev/urandom' asFileReference readStreamDo: [ :stream | 
-			stream
-				binary;
-				next: 16 ].
+		rand := RAND rand: 16.
 
 		credentials
 				generate: rand
@@ -29,7 +26,7 @@ respondWithQuinTuplets: aSubscriber
 				ik: ik
 				ck: ck
 				xres: xres.
-			tuple
+		tuple
 				rand: rand;
 				xres: xres;
 				ck: ck;
