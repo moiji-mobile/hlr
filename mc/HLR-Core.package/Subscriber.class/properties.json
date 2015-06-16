@@ -30,7 +30,8 @@
 		"mobileStationNotReachable",
 		"messageWaitingSet",
 		"memoryAvailable",
-		"credentials" ],
+		"credentials",
+		"iccid" ],
 	"name" : "Subscriber",
 	"pools" : [
 		 ],
