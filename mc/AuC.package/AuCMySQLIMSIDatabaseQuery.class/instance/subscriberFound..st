@@ -3,6 +3,7 @@ subscriberFound: aResult
 	| subscriber algorithmCode |
 	subscriber := Subscriber new. 
 	subscriber imsi: imsi.
+	subscriber iccid: (aResult atName: 'Subscriber_ICCID').
 	algorithmCode := aResult atName: 'ALGORITHMCODE'.
 	algorithmCode = 0
 		ifTrue: [

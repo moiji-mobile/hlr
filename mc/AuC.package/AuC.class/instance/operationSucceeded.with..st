@@ -7,4 +7,4 @@ operationSucceeded: anOperation with: aResult
 
 	"Assume it is an HLRIMSIOperation"
 	anOperation dialogue transaction remoteAddress parseGlobalTitle ifNotNil: [:gt |
-		database updateSubscriberInformation: anOperation imsi remoteGlobalTitle: gt address].
+		database updateSubscriberInformation: anOperation foundSubscriber remoteGlobalTitle: gt address].
