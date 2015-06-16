@@ -4,6 +4,7 @@ execute
 		imsi: imsi;
 		onSuccess: [:subscriber |
 			logger logDebug: 'Found subscriber by IMSI' with: { 'dialogue' -> dialogue. 'imsi' -> imsi }.
+			foundSubscriber := subscriber.
 			self onSubscriberFound: subscriber];
 		onFailure: [:reason |
 			logger logDebug: 'Didn''t find subscriber by IMSI' with: { 'dialogue' -> dialogue. 'imsi' -> imsi. 'reason' -> reason}.

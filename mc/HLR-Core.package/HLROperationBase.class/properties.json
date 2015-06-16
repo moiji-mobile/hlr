@@ -18,7 +18,8 @@
 		"remoteSSN",
 		"remoteSCCPAddress",
 		"localSSN",
-		"logger" ],
+		"logger",
+		"foundSubscriber" ],
 	"name" : "HLROperationBase",
 	"pools" : [
 		 ],

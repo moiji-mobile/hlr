@@ -4,6 +4,7 @@ execute
 		msisdn: msisdn;
 		onSuccess: [:subscriber |
 			logger logDebug: 'Found subscriber by MSISDN' with: { 'dialogue' -> dialogue. 'msisdn' -> msisdn }.
+			foundSubscriber := subscriber.
 			self onSubscriberFound: subscriber];
 		onFailure: [:reason |
 			logger logDebug: 'Didn''t find subscriber by MSISDN' with: { 'dialogue' -> dialogue. 'msisdn' -> msisdn. 'reason' -> reason}.
