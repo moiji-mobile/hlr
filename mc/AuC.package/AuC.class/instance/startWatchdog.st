@@ -1,9 +1,9 @@
 as yet unclassified
 startWatchdog
 	watchdogProc := [
-		self
+		[self
 			watchdogSleep;
-			watchdogProcess.
+			watchdogProcess] repeat.
 	] newProcess.
 
 	watchdogProc name: 'AuC Watchdog'.
