@@ -2,4 +2,9 @@
 	"class" : {
 		 },
 	"instance" : {
-		"operationSucceeded:with:" : "HolgerHansPeterFreyther 6/16/2015 20:26" } }
+		"initialize" : "HolgerHansPeterFreyther 6/19/2015 08:02",
+		"operationSucceeded:with:" : "HolgerHansPeterFreyther 6/19/2015 07:59",
+		"readResetSuccessCounter" : "HolgerHansPeterFreyther 6/19/2015 08:00",
+		"startWatchdog" : "HolgerHansPeterFreyther 6/19/2015 08:03",
+		"watchdogProcess" : "HolgerHansPeterFreyther 6/19/2015 08:09",
+		"watchdogSleep" : "HolgerHansPeterFreyther 6/19/2015 08:03" } }
