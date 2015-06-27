@@ -31,6 +31,7 @@
 		"testInsertSubscriberDataFailed" : "HolgerHansPeterFreyther 1/25/2014 21:06",
 		"testInterrogateSS" : "HolgerHansPeterFreyther 3/15/2015 16:40",
 		"testNonHLROperation" : "HolgerHansPeterFreyther 12/18/2014 20:18",
+		"testOperationFilter" : "HolgerHansPeterFreyther 6/27/2015 10:01",
 		"testProvideRoamingNumber" : "NorbertHartl 11/3/2014 19:01",
 		"testProvideRoamingNumberV3" : "NorbertHartl 11/3/2014 19:02",
 		"testProvideSubscriberInfo" : "NorbertHartl 12/11/2014 17:25",
