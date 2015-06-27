@@ -12,3 +12,4 @@ provideRoutingInformation
 		self informServiceCentre].
 
 	dialogue requestTcEnd: false.
+	self signalSuccess: 'provided info'
