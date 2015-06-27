@@ -2,4 +2,4 @@ as yet unclassified
 initialize
 	super initialize.
 	successCounter := 0.
-	logger := LogStructuredLogger for: self area: #hlr.
+	operationFilter := #('sendAuthenticationInfoV2' 'sendAuthenticationInfoV3' 'authenticationFailureReport').
