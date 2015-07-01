@@ -11,8 +11,7 @@
 		"hlrNumber",
 		"cdrClient",
 		"updateAddress",
-		"logger",
-		"operationFilter" ],
+		"logger" ],
 	"name" : "HLR",
 	"pools" : [
 		 ],
