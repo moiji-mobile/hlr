@@ -6,8 +6,7 @@
 		 ],
 	"commentStamp" : "",
 	"instvars" : [
-		"successCounter",
-		"watchdogProc" ],
+		 ],
 	"name" : "AuC",
 	"pools" : [
 		 ],

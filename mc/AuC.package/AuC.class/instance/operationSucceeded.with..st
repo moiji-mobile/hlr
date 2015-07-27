@@ -2,7 +2,7 @@ as yet unclassified
 operationSucceeded: anOperation with: aResult 
 	"Central hook for extensions.. use Announcements in the future"
 
-	successCounter := successCounter + 1.
+	super operationSucceeded: anOperation with: aResult.
 
 	database connectOrFail: [
 		logger logError: 'Failed to connect to database. Not updating' with: #().
