@@ -6,10 +6,10 @@ sendRoutingInfoForSMV3: anInvocation
 	| msisdn smscAddr cdr |
 	msisdn := anInvocation argument msisdn fromE164.
 	smscAddr := anInvocation argument serviceCentreAddress fromE164.
-	logger logDebug: 'sendRoutingInfoForSMv2' with: { 'msisdn' -> msisdn. 'smscAddr' -> smscAddr }.
+	logger logDebug: 'sendRoutingInfoForSMv3' with: { 'msisdn' -> msisdn. 'smscAddr' -> smscAddr }.
 	cdr := hlr cdrClient sendRoutingInfo: msisdn smscAddr: smscAddr dialogue: self.
 
-	HLRSendRoutingInfoForSMOperationV3 new
+	self sendRoutingInfoForSMOperationV3Class new
 		originatingCallDataRecord: cdr;		
 		hlr: hlr;
 		dialogue: self;

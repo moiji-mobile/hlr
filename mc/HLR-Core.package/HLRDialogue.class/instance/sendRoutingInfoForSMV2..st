@@ -9,7 +9,7 @@ sendRoutingInfoForSMV2: anInvocation
 	logger logDebug: 'sendRoutingInfoForSMv2' with: { 'msisdn' -> msisdn. 'smscAddr' -> smscAddr }.
 	cdr := hlr cdrClient sendRoutingInfo: msisdn smscAddr: smscAddr dialogue: self.
 
-	HLRSendRoutingInfoForSMOperationV2 new
+	self sendRoutingInfoForSMOperationV2Class new
 		originatingCallDataRecord: cdr;
 		hlr: hlr;
 		dialogue: self;

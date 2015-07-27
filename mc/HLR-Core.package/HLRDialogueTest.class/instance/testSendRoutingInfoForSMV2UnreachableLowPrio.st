@@ -1,8 +1,7 @@
 tests-infoRetrievalPackage
 testSendRoutingInfoForSMV2UnreachableLowPrio
 	| operationName dialogue  invoke err_message sriArg mwStatus  |
-
-
+	
 	subscriber
 		mscNumber: '123';
 		clearVlr.
@@ -38,5 +37,5 @@ testSendRoutingInfoForSMV2UnreachableLowPrio
 	"TODO.. make sure things return".
 	self assert: (mwStatus includesBit: 'mnrf-Set').
 	self assert: err_message error originalBindingName = 'absentSubscriberV2'.
-	self assert: err_message parameter isNil.
+	self assert: err_message parameter value.
 	self assert: (subscriber messageWaitingSet anySatisfy: [:assoc | assoc value = '3234'])

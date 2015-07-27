@@ -11,7 +11,10 @@
 		"hlrNumber",
 		"cdrClient",
 		"updateAddress",
-		"logger" ],
+		"logger",
+		"operationFilter",
+		"successCounter",
+		"watchdogProc" ],
 	"name" : "HLR",
 	"pools" : [
 		 ],

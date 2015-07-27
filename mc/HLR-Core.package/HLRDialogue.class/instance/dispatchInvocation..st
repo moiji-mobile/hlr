@@ -1,7 +1,14 @@
 as yet unclassified
 dispatchInvocation: anInvocation
-	| selector |
+	| selector operationName |
+	operationName := anInvocation operationName.
 	selector := anInvocation normalizedOperationName.
+
+	"Check if there is a filter for the operation"
+	(hlr operationIsAllowed: operationName) ifFalse: [
+		logger logError: 'Operation not handled by AuC' with: { 'operationName' -> operationName }.
+		^self requestTcUAbort: self newUAbort serviceUser.
+	].
 
 	"Abort the entire dialogue in case we don't know the invocation."
 	(self respondsTo: selector)

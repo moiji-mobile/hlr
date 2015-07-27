@@ -1,0 +1,3 @@
+shortMsgGatewayPackage
+sendRoutingInfoForSMOperationV3Class
+	^HLRSendRoutingInfoForSMOperationV3

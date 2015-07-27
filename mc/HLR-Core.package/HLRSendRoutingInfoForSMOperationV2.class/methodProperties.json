@@ -1,7 +1,7 @@
 {
 	"class" : {
 		"absentSubscriber" : "HolgerHansPeterFreyther 9/11/2014 11:07",
-		"absentSubscriberData" : "HolgerHansPeterFreyther 7/1/2015 12:18",
+		"absentSubscriberData" : "HolgerHansPeterFreyther 9/11/2014 11:12",
 		"informServiceCentre" : "HolgerHansPeterFreyther 9/11/2014 11:07" },
 	"instance" : {
 		"handleNotReachable" : "HolgerHansPeterFreyther 11/9/2013 20:50",
@@ -11,5 +11,5 @@
 		"informServiceCentre" : "HolgerHansPeterFreyther 9/11/2014 16:02",
 		"initialize" : "HolgerHansPeterFreyther 9/11/2014 16:00",
 		"onSubscriberFound:" : "HolgerHansPeterFreyther 9/11/2014 16:43",
-		"provideRoutingInformation" : "HolgerHansPeterFreyther 5/12/2015 09:13",
+		"provideRoutingInformation" : "HolgerHansPeterFreyther 6/27/2015 18:06",
 		"smscAddr:" : "HolgerHansPeterFreyther 11/9/2013 20:48" } }
