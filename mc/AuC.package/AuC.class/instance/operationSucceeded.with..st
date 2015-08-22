@@ -9,4 +9,7 @@ operationSucceeded: anOperation with: aResult
 		^self].
 
 	anOperation dialogue transaction remoteAddress parseGlobalTitle ifNotNil: [:gt |
-		database updateSubscriberInformation: anOperation foundSubscriber remoteGlobalTitle: gt address].
+		| sub addr |
+		sub := anOperation foundSubscriber.
+		addr := gt address.
+		database updateSubscriberInformation:  sub remoteGlobalTitle: addr version: anOperation acnVersion].
