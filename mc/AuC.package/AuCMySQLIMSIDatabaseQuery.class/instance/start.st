@@ -6,5 +6,6 @@ start
 		self doStart
 	] on: Error do: [:err |
 		err logException: 'Failed to start query' area: #hlr.
+		database discardOldConnection.
 		^systemFailure value: 'Query failure'.
 	].
