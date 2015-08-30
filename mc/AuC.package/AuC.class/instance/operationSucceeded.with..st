@@ -4,12 +4,8 @@ operationSucceeded: anOperation with: aResult
 
 	super operationSucceeded: anOperation with: aResult.
 
-	database connectOrFail: [
-		logger logError: 'Failed to connect to database. Not updating' with: #().
-		^self].
-
 	anOperation dialogue transaction remoteAddress parseGlobalTitle ifNotNil: [:gt |
 		| sub addr |
 		sub := anOperation foundSubscriber.
 		addr := gt address.
-		database updateSubscriberInformation:  sub remoteGlobalTitle: addr version: anOperation acnVersion].
+		self updateSubscriberInformation:  sub remoteGlobalTitle: addr version: anOperation acnVersion].
