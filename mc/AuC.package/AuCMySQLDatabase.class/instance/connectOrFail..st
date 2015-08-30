@@ -1,5 +1,11 @@
 as yet unclassified
 connectOrFail: aBlock
+
+	"Create the connection if it doesn't exist"
+	connection ifNil: [
+		logger logNotice: 'DB connection being initialized' with: {}.
+		^self reconnectOrFail: aBlock].
+
 	"Make sure the connection is still active"
 	connection isConnected ifTrue: [
 		[
