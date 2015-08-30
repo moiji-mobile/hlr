@@ -1,4 +1,4 @@
 *AUC
 newAuC
 	^ self new
-		factory: AuCObjectFactory new
+		factory: HLRObjectFactory new
