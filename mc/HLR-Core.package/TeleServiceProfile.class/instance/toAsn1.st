@@ -1,5 +1,6 @@
 accessing
 toAsn1
+self halt.
 	^ASN1Array new
 		add: (self class teleServiceAsn1: self class telephony);
 		add: (self class teleServiceAsn1: self class emergencyCalls);

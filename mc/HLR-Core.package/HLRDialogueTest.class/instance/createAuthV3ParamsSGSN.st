@@ -1,7 +1,7 @@
 as yet unclassified
 createAuthV3ParamsSGSN
-	^ASN1Dictionary new 
-	at: 'imsi' put:'72040800004067F4' byteArrayFromHex;
-	at: 'numberOfRequestedVectors' put: 4;
-	at: 'requestingNodeType' put: 'sgsn';
-	yourself
+	^ (self newValueForTypeNamed: 'SendIdentificationArgV3')  
+		imsi: '72040800004067F4' byteArrayFromHex;
+		numberOfRequestedVectors: 4;
+		requestingNodeType: 'sgsn';
+		yourself

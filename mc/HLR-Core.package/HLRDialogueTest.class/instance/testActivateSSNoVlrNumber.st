@@ -1,14 +1,14 @@
 test-supplementary-services
 testActivateSSNoVlrNumber
-	| operationName dialogue  invoke invokeResult param invocations |
+	|  dialogue  invoke invokeResult param invocations acn operation dialoguePortion |
 
 	invocations := 0.
-	param := ASN1Dictionary new
-		at: 'ss-Code' put: SSData callWaiting asByteArray;
-		at: 'basicService' put: (ASN1Dictionary new
-					at: 'teleservice' put: #[16r10];
-					yourself);
-		yourself.
+	
+	acn := self applicationContextNamed: 'networkFunctionalSsContext-v2'.
+	operation := self rosOperationNamed: 'activateSS'.
+	
+	param := self activateSSParam: operation ssCode: SSData callWaiting asByteArray.
+	dialoguePortion := self mapOpenDestination:subscriber imsi toE212 origination: '0815' toE164.
 
 	testEndPoint
 		onDialogue: [:diag |
@@ -17,28 +17,18 @@ testActivateSSNoVlrNumber
 				invocation returnResultLast: nil.
 				diag requestTcContinue]].
 
-	operationName := 'activateSS'.
 	dialogue := testEndPoint newDialogue.
-	invoke := dialogue requestTcInvokeNamed: operationName parameters:  param class: 1 timeout: 5.
+	invoke := dialogue requestTcInvoke: operation parameters:  param class: 1 timeout: 5.
 	invoke
 		onReturn: [self assert: false ];
 		onError: [self assert: false];
 		onReject: [self assert: false];
 		onReturnLast: [:result |  invokeResult := result].
 	dialogue
+		applicationContext: acn;
 		requestTcBeginDestinationAddress: self imsiAddr
 		originatingAddress: self localAddr
-		applicationContextName: (self applicationContextFor: operationName)
-		userInformation: (ASN1Array new 
-			add: (
-				ASN1Dictionary new
-					at: 'map-open' put: (ASN1Dictionary new
-						at: 'destinationReference' put: subscriber imsi toE212;
-						at: 'originationReference' put: '0815' toE164;
-						yourself);
-					at: 'oid' put: '0.4.0.0.1.1.1.1';
-					yourself); 
-			yourself).
+		userInformation: {  dialoguePortion }.
 
 	self deny: invokeResult isNil.
 	self assert: invocations equals: 0.

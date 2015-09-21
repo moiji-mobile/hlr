@@ -4,7 +4,7 @@ returnResult: ssCode
 
 	"Create a result"
 	ssData := subscriber supplementaryServiceStateFor: ssCode.
-	result := ssData toAsn1. 
+	result := ssData toAsn1: dialogue asn1Model. 
 	invocation returnResultLast: result.
 	dialogue requestTcEnd: false.
 

@@ -5,7 +5,7 @@ extractIMSIOrAbort
 	userInformation ifNil: [
 		self requestTcUAbort: self newUAbort serviceUser.
 		^nil].
-	destinationReference := userInformation find: 'destinationReference'.
+	destinationReference := (userInformation find: 'destinationReference') basicValue.
 	(destinationReference isNil or: [destinationReference isEmpty]) ifTrue: [
 		self requestTcUAbort: self newUAbort serviceUser.
 		^nil].

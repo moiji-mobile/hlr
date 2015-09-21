@@ -1,6 +1,7 @@
 insert-subscriber
 subscriberDataAsASN1For: aSubscriber
 	"We need to segment the data by hand. Here we decide on things"
+	self halt.
 	^OrderedCollection new
 		add: (ASN1Dictionary new
 			at: 'msisdn' put: aSubscriber msisdn toE164;
