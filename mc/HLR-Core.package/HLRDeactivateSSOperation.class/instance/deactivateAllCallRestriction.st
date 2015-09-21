@@ -11,5 +11,5 @@ deactivateAllCallRestriction
 		provisioned;
 		notRegistered;
 		notActive.
-	invocation returnResultLast: ssData toAsn1.
+	invocation returnResultLast: (ssData toAsn1: dialogue asn1Model).
 	dialogue requestTcEnd: false.	
