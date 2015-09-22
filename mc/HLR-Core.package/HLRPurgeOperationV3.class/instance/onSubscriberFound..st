@@ -6,9 +6,9 @@ onSubscriberFound: aSubscriber
 	aSubscriber clearVlr.
 	hlr database updateSubscriber: aSubscriber.
 
-	res := ASN1Dictionary new
-			at: 'freezeTMSI' put: nil asAsn1Value;
-			yourself.
+	res :=invocation resultValue
+		at: 'freezeTMSI' put: nil;
+		yourself.
 	invocation returnResultLast: res.
 	dialogue requestTcEnd: false.
 	self signalSuccess: 'done'

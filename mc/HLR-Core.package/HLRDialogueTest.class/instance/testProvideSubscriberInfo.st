@@ -7,13 +7,12 @@ testProvideSubscriberInfo
 
 	testEndPoint
 		onDialogue: [:diag |
-			diag onInvoke: [:invocation |
+			diag onInvoke: [:invocation | | result |
 				reqImsi := invocation argument imsi asByteArray.
-				invocation returnResultLast: (ASN1Dictionary new
-									at: 'subscriberInfo' put: (ASN1Dictionary new
-											at: 'imei' put: '1234';
-											yourself);
-									yourself).
+				result := invocation resultValue.
+				(result expandFieldNamed: 'subscriberInfo')
+					at: 'imei' put: '1234'.
+				invocation returnResultLast: result.
 				diag requestTcEnd: false]].
 
 	"Fire and forget the operation"

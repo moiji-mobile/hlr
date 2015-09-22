@@ -10,7 +10,5 @@ onNoSubscriber: reason
 		ifTrue: [
 			self endWithError: 'unexpectedDataValue' with: nil]
 		ifFalse: [
-			self endWithError: 'unknownSubscriber' with: (
-					ASN1Dictionary new
-						at: 'unknownSubscriberDiagnostic' put: 'imsiUnknown';
-						yourself)].
+			self endWithError: 'unknownSubscriber' using: [ :item | 
+				item at: 'unknownSubscriberDiagnostic' put: 'imsiUnknown' ]]

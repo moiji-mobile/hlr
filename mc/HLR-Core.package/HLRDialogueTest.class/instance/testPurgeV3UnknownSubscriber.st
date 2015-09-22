@@ -1,14 +1,15 @@
 test-locationUpdatingPackage
 testPurgeV3UnknownSubscriber
-	| operationName dialogue  invoke error param |
-
-	param := ASN1Dictionary new
-		at: 'imsi' put: '55555555555' toTBCD;
-		yourself.
+	| operationName dialogue  invoke error param operation |
 
 	operationName := 'purgeMSV3'.
 	dialogue := testEndPoint newDialogue.
-	invoke := dialogue requestTcInvokeNamed: operationName parameters:  param class: 1 timeout: 500.
+	operation := dialogue rosOperationNamed: operationName.
+	param := operation argumentValue 
+		at: 'imsi' put: '55555555555' toTBCD;
+		yourself.
+	
+	invoke := dialogue requestTcInvoke: operation parameters:  param class: 1 timeout: 500.
 	invoke
 		onReturn: [self assert: false ];
 		onError: [:err | error := err];

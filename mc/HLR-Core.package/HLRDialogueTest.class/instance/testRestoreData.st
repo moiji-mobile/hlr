@@ -1,12 +1,8 @@
 test-locationUpdatingPackage
 testRestoreData
-	| operationName dialogue  invoke invoked invokeResult param |
+	| operationName dialogue  invoke invoked invokeResult param operation |
 	
 	invoked := 0.
-
-	param := ASN1Dictionary new
-		at: 'imsi' put: subscriber imsiAsTBCD;
-		yourself.
 
 	subscriber vlrNumber: '1234'.
 	subscriber mscNumber: '4567'.
@@ -15,6 +11,10 @@ testRestoreData
 	
 	operationName := 'restoreData'.
 	dialogue := testEndPoint newDialogue.
+	operation := self rosOperationNamed: operationName.
+	param := operation argumentValue 
+		at: 'imsi' put: subscriber imsiAsTBCD;
+		yourself.
 
 	"We expect insertSubscriberData. Continue for now"
 	dialogue
@@ -23,7 +23,7 @@ testRestoreData
 			insert returnResultLast: nil.
 			dialogue requestTcContinue].
 
-	invoke := dialogue requestTcInvokeNamed: operationName parameters:  param class: 1 timeout: 500.
+	invoke := dialogue requestTcInvoke: operation parameters:  param class: 1 timeout: 500.
 	invoke
 		onReturn: [self assert: false ];
 		onError: [self assert: false];

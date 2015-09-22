@@ -6,7 +6,7 @@ start
 		onPAbort: [self signalFailure];
 		onUAbort: [self signalFailure].
 
-	operation := dialogue operationNamed: self class operationName.
+	operation := dialogue rosOperationNamed: self class operationName.
 	invoke := dialogue
 		requestTcInvoke: operation
 		parameters: (self parametersOn: operation argumentValue)

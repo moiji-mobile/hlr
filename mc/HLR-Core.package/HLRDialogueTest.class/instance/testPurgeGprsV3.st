@@ -1,11 +1,6 @@
 test-locationUpdatingPackage
 testPurgeGprsV3
-	| operationName dialogue  invoke invokeResult param |
-
-	param := ASN1Dictionary new
-		at: 'imsi' put: self imsi;
-		at: 'sgsn-Number' put: '919810';
-		yourself.
+	| operationName dialogue  invoke invokeResult param operation |
 
 	subscriber vlrNumber: '1234'.
 	subscriber mscNumber: '4567'.	
@@ -16,7 +11,13 @@ testPurgeGprsV3
 
 	operationName := 'purgeMSV3'.
 	dialogue := testEndPoint newDialogue.
-	invoke := dialogue requestTcInvokeNamed: operationName parameters:  param class: 1 timeout: 500.
+	operation := dialogue rosOperationNamed: operationName.
+	param := operation argumentValue 
+		at: 'imsi' put: self imsi;
+		at: 'sgsn-Number' put: '919810';
+		yourself.
+
+	invoke := dialogue requestTcInvoke: operation parameters:  param class: 1 timeout: 500.
 	invoke
 		onReturn: [self assert: false ];
 		onError: [self assert: false];

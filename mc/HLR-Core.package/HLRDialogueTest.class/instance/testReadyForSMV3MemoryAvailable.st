@@ -1,18 +1,18 @@
 test-locationUpdatingPackage
 testReadyForSMV3MemoryAvailable
-	| operationName dialogue invoke res param |
+	| operationName dialogue invoke res param operation |
 	operationName := 'readyForSMV3'.
 	dialogue := testEndPoint newDialogue.
+	operation := self rosOperationNamed: operationName.
+	param := operation argumentValue 
+		at: 'imsi' put: subscriber imsiAsTBCD;
+		at: 'alertReason' put: 'memoryAvailable';
+		yourself.
 	
 	subscriber mobileStationNotPresent.
 	self assert: subscriber isMobileStationNotReachable.
 
-	param := ASN1Dictionary new
-				at: 'imsi' put: subscriber imsiAsTBCD;
-				at: 'alertReason' put: 'memoryAvailable';
-				yourself.
-
-	invoke := dialogue requestTcInvokeNamed: operationName parameters:  param class: 1 timeout: 500.
+	invoke := dialogue requestTcInvoke: operation parameters:  param class: 1 timeout: 500.
 	invoke
 		onReturn: [self assert: false ];
 		onError: [self assert: false];

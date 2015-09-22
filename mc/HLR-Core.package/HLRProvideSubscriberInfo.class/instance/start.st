@@ -1,24 +1,25 @@
 execution
 start
-	| parameters |
-
-	parameters := ASN1Dictionary new
-		at: 'imsi' put: subscriber imsiAsTBCD;
-		at: 'requestedInfo' put: (ASN1Dictionary new
-			at: 'locationInformation' put: nil asAsn1Value;
-			at: 'subscriberState' put: nil asAsn1Value;
-			at: 'currentLocation' put: nil asAsn1Value;
-			at: 'imei' put: nil asAsn1Value;
-			yourself);
-		yourself.
+	| parameters operation |
 
 	dialogue := dialogueHandler newDialogue.
 	dialogue
 		onPAbort: [self signalFailure];
 		onUAbort: [self signalFailure].
 
+	operation := dialogue rosOperationNamed: 'provideSubscriberInfo'.
+	parameters := operation argumentValue
+		at: 'imsi' put: subscriber imsiAsTBCD;
+		yourself.
+		
+	(parameters expandFieldNamed: 'requestedInfo') 
+			at: 'locationInformation' put: nil ;
+			at: 'subscriberState' put: nil;
+			at: 'currentLocation' put: nil;
+			at: 'imei' put: nil.
+
 	invoke := dialogue
-		requestTcInvokeNamed: 'provideSubscriberInfo'
+		requestTcInvoke: operation
 		parameters: parameters
 		class: 1 timeout: 500.
 	invoke

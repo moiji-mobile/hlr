@@ -1,19 +1,19 @@
 test-locationUpdatingPackage
 testReportSMDeliveryStatusV3AbsentSubscriber
-	| operationName dialogue invoke res param |
+	| operationName dialogue invoke res param operation |
 	operationName := 'reportSM-DeliveryStatusV3'.
 	dialogue := testEndPoint newDialogue.
-	
+	operation := self rosOperationNamed: operationName.
+	param := operation argumentValue 
+		at: 'msisdn' put: subscriber msisdn toE164;
+		at: 'serviceCentreAddress' put: '91abcd';
+		at: 'sm-DeliveryOutcome' put: 'absentSubscriber';
+		yourself.
+		
 	subscriber mobileStationNotPresent.
 	self assert: subscriber isMobileStationNotReachable.
 
-	param := ASN1Dictionary new
-				at: 'msisdn' put: subscriber msisdn toE164;
-				at: 'serviceCentreAddress' put: '91abcd';
-				at: 'sm-DeliveryOutcome' put: 'absentSubscriber';
-				yourself.
-
-	invoke := dialogue requestTcInvokeNamed: operationName parameters:  param class: 1 timeout: 500.
+	invoke := dialogue requestTcInvoke: operation parameters:  param class: 1 timeout: 500.
 	invoke
 		onReturn: [self assert: false ];
 		onError: [self assert: false];

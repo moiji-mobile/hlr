@@ -9,7 +9,8 @@ testProvideRoamingNumberV3
 		onDialogue: [:diag |
 			diag onInvoke: [:invocation |
 				reqImsi := invocation argument imsi.
-				invocation returnResultLast: (ASN1Dictionary new
+				self halt.
+				invocation returnResultLast: (invocation operation resultValue
 						at: 'roamingNumber' put: '1234';
 						yourself).
 				diag requestTcEnd: false]].

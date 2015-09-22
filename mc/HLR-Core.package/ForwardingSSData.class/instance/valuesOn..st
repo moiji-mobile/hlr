@@ -1,7 +1,6 @@
 as yet unclassified
 valuesOn: ssInfo
 	| info |
-	self halt.
 	info := (ssInfo expandFieldNamed: 'forwardingInfo')
 		ss_Code: (ByteArray with: ssCode).
 	(info expandFieldNamed: 'forwardingFeatureList') 
