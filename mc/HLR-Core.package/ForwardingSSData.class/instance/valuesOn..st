@@ -1,6 +1,7 @@
 as yet unclassified
 valuesOn: ssInfo
 	| info |
+	self halt.
 	info := (ssInfo expandFieldNamed: 'forwardingInfo')
 		ss_Code: (ByteArray with: ssCode).
 	(info expandFieldNamed: 'forwardingFeatureList') 
@@ -10,5 +11,6 @@ valuesOn: ssInfo
 				forwardedToNumber: forwardedToNumber;
 				forwardingOptions: #[16r0C]  ].
 	subscriptionOption ifNotNil: [  
-		ssInfo ss_SubscriptionOption: subscriptionOption ].
+		(ssInfo expandFieldNamed: 'ss-SubscriptionOption')
+			at: subscriptionOption key put: subscriptionOption value].
 	^ ssInfo 

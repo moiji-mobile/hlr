@@ -8,7 +8,7 @@ doUpdateSupplementaryService: aSSCode
 					notRegistered;
 					notActive;
 					yourself].
-	result := ASN1Dictionary new
-		at: 'ss-Status' put: ssData ssStatus. 
+	result := invocation resultValue
+		ss_Status: ssData ssStatus. 
 	invocation returnResultLast: result.
 	dialogue requestTcEnd: false.

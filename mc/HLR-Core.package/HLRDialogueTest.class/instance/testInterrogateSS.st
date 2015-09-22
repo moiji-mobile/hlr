@@ -1,17 +1,18 @@
 test-supplementary-services
 testInterrogateSS
-	| operationName dialogue  invoke invokeResult param |
+	| operationName dialogue  invoke invokeResult param operation dialoguePortion |
 	
 	subscriber
 		vlrNumber: '1234'.
 
-	param := ASN1Dictionary new
-		at: 'ss-Code' put: SSData callWaiting asByteArray;
-		yourself.
-
 	operationName := 'interrogateSS'.
 	dialogue := testEndPoint newDialogue.
-	invoke := dialogue requestTcInvokeNamed: operationName parameters:  param class: 1 timeout: 500.
+	operation := dialogue rosOperationNamed: operationName.
+	param := operation argumentValue
+		ss_Code: SSData callWaiting asByteArray.
+	dialoguePortion := self mapOpenDestination:  subscriber imsi toE212 origination: '0815' toE164.
+	
+	invoke := dialogue requestTcInvoke: operation parameters:  param class: 1 timeout: 500.
 	invoke
 		onReturn: [self assert: false ];
 		onError: [self assert: false];
@@ -21,15 +22,6 @@ testInterrogateSS
 		requestTcBeginDestinationAddress: self imsiAddr
 		originatingAddress: self localAddr
 		applicationContextName: (self applicationContextFor: operationName)
-		userInformation: (ASN1Array new 
-			add: (
-				ASN1Dictionary new
-					at: 'map-open' put: (ASN1Dictionary new
-						at: 'destinationReference' put: subscriber imsi toE212;
-						at: 'originationReference' put: '0815' toE164;
-						yourself);
-					at: 'oid' put: '0.4.0.0.1.1.1.1';
-					yourself); 
-			yourself).
-
+		userInformation: { dialoguePortion }.
+		
 	self deny: invokeResult isNil.

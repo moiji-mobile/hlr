@@ -1,13 +1,15 @@
 execution
 start
+	| operation |
 	dialogue := dialogueHandler newDialogue.
 	dialogue
 		onPAbort: [self signalFailure];
 		onUAbort: [self signalFailure].
 
+	operation := dialogue rosOperationNamed: self class cancelOperation.
 	invoke := dialogue
-		requestTcInvokeNamed: self class cancelOperation
-		parameters: self parameters
+		requestTcInvoke: operation
+		parameters: (self parametersOn: operation argumentValue)
 		class: 1 timeout: 500.
 	invoke
 		onReturnLast: [self signalSuccess: 'success'];
