@@ -7,7 +7,7 @@ updateInformationAndEnd
 		mscNumber: mscNumber.
 	hlr database updateSubscriber: subscriber.
 
-	result := ASN1Dictionary new
+	result := invocation resultValue
 		at: 'hlr-Number' put: hlr hlrNumber toE164;
 		yourself.
 	

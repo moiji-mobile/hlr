@@ -1,7 +1,9 @@
 as yet unclassified
 informServiceCentre
-	| param |
-	param := ASN1Dictionary new
+	| param operation |
+	
+	operation := dialogue rosOperationNamed: self class informServiceCentre.
+	param := operation argumentValue
 		at: 'mw-Status' put: mwStatus;
 		yourself.
-	dialogue requestTcInvokeNamed: self class informServiceCentre parameters:  param class: 1 timeout: 500.
+	dialogue requestTcInvoke: operation parameters:  param class: 1 timeout: 500.

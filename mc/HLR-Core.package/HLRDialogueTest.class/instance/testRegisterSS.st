@@ -1,20 +1,12 @@
 test-supplementary-services
 testRegisterSS
-	| operationName dialogue  invoke invokeResult param invocations invocationData |
+	| operationName dialogue  invoke invokeResult param invocations invocationData operation dialoguePortion |
 	
 	subscriber
 		vlrNumber: '1234'.
 
 	invocations := 0.
 	invocationData := OrderedCollection new.
-	param := ASN1Dictionary new
-		at: 'ss-Code' put: SSData callForwardingUnconditional asByteArray;
-		at: 'basicService' put: (ASN1Dictionary new
-					at: 'teleservice' put: #[16r10];
-					yourself);
-		at: 'forwardedToNumber' put: '1234' toE164;
-		yourself.
-
 	testEndPoint
 		onDialogue: [:diag |
 			diag onInvoke: [:invocation |
@@ -25,7 +17,17 @@ testRegisterSS
 
 	operationName := 'registerSS'.
 	dialogue := testEndPoint newDialogue.
-	invoke := dialogue requestTcInvokeNamed: operationName parameters:  param class: 1 timeout: 500.
+	operation := dialogue rosOperationNamed: operationName.
+	param := operation argumentValue 
+		at: 'ss-Code' put: SSData callForwardingUnconditional asByteArray;
+		at: 'forwardedToNumber' put: '1234' toE164;
+		yourself.
+	(param expandFieldNamed: 'basicService')
+		at: 'teleservice' put: #[16r10].
+
+	dialoguePortion := self mapOpenDestination:  subscriber imsi toE212 origination:  '0815' toE164.
+	
+	invoke := dialogue requestTcInvoke: operation parameters:  param class: 1 timeout: 500.
 	invoke
 		onReturn: [self assert: false ];
 		onError: [self assert: false];
@@ -35,16 +37,7 @@ testRegisterSS
 		requestTcBeginDestinationAddress: self imsiAddr
 		originatingAddress: self localAddr
 		applicationContextName: (self applicationContextFor: operationName)
-		userInformation: (ASN1Array new 
-			add: (
-				ASN1Dictionary new
-					at: 'map-open' put: (ASN1Dictionary new
-						at: 'destinationReference' put: subscriber imsi toE212;
-						at: 'originationReference' put: '0815' toE164;
-						yourself);
-					at: 'oid' put: '0.4.0.0.1.1.1.1';
-					yourself); 
-			yourself).
+		userInformation: { dialoguePortion }.
 
 	self deny: invokeResult isNil.
 	self assert: invocations = 2.

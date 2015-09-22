@@ -1,11 +1,19 @@
 test-locationUpdatingPackage
 testUpdateGprsLocationError
-	| operationName dialogue invoke invoked param aborted |
+	| operationName dialogue invoke invoked param aborted operation |
 	invoked := 0.
 	aborted := false.
 	operationName := 'updateGprsLocation'.
 	dialogue := testEndPoint newDialogue.
-
+	operation := self rosOperationNamed: operationName.
+	param := operation argumentValue 
+		at: 'imsi' put: subscriber imsiAsTBCD;
+		at: 'sgsn-Number' put: '9123';
+		at: 'sgsn-Address' put: 'AABBCCDD';
+		yourself.
+	(param expandFieldNamed: 'sgsn-Capability')
+		at: 'gprsEnhancementsSupportIndicator' put: nil.
+		
 	dialogue
 		onInvoke: [ :insert |
 			invoked  := invoked + 1.
@@ -13,16 +21,7 @@ testUpdateGprsLocationError
 			dialogue requestTcContinue];
 		onUAbort: [aborted := true].
 
-	param := ASN1Dictionary new
-				at: 'imsi' put: subscriber imsiAsTBCD;
-				at: 'sgsn-Number' put: '9123';
-				at: 'sgsn-Address' put: 'AABBCCDD';
-				at: 'sgsn-Capability' put: (ASN1Dictionary new
-						at: 'gprsEnhancementsSupportIndicator' put: nil asAsn1Value;
-						yourself);
-				yourself.
-
-	invoke := dialogue requestTcInvokeNamed: operationName parameters:  param class: 1 timeout: 500.
+	invoke := dialogue requestTcInvoke: operation parameters:  param class: 1 timeout: 500.
 	invoke
 		onReturn: [self assert: false ];
 		onError: [self assert: false];

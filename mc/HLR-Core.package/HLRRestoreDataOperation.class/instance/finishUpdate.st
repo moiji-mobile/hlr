@@ -1,7 +1,7 @@
 execution
 finishUpdate
 	| result |
-	result := ASN1Dictionary new
+	result := invocation resultValue
 		at: 'hlr-Number' put: hlr hlrNumber toE164;
 		yourself.
 	

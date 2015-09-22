@@ -1,11 +1,13 @@
 execution
 provideRoutingInformation
-	invocation returnResultLast: (ASN1Dictionary new
-					at: 'imsi' put: subscriber imsiAsTBCD;
-					at: 'locationInfoWithLMSI' put: (ASN1Dictionary new
-							at: 'networkNode-Number' put: subscriber mscNumber toE164;
-							yourself);
-					yourself).
+	| result |
+	
+	result := invocation resultValue
+		at: 'imsi' put: subscriber imsiAsTBCD;
+		yourself.
+	(result expandFieldNamed: 'locationInfoWithLMSI')
+		at: 'networkNode-Number' put: subscriber mscNumber toE164.
+	invocation returnResultLast: result.
 
 	subscriber isMemoryAvailable ifFalse: [
 		mwStatus at: 3 put: $1.

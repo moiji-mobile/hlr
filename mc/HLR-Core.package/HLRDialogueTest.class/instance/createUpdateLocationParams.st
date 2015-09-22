@@ -1,8 +1,10 @@
 as yet unclassified
 createUpdateLocationParams
-	^  (self newValueForTypeNamed: 'UpdateLocationArg')  
+	| value |
+	value := (self newValueForTypeNamed: 'UpdateLocationArg')  
 		at: 'imsi' put: '72040800004067F4' byteArrayFromHex;
 		at: 'msc-Number' put: '916407973671F3' byteArrayFromHex;
 		at: 'vlr-Number' put: '916407973671F3' byteArrayFromHex;
-		at: 'vlr-Capability' put: ASN1Dictionary new;
-		yourself
+		yourself.
+	value expandFieldNamed:  'vlr-Capability'.
+	^ value

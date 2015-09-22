@@ -1,10 +1,18 @@
 test-locationUpdatingPackage
 testUpdateGprsLocationWithCancelLocation
-	| operationName dialogue invoke res invoked param receivedCancel |
+	| operationName dialogue invoke res invoked param receivedCancel operation |
 	invoked := 0.
 	operationName := 'updateGprsLocation'.
 	dialogue := testEndPoint newDialogue.
-
+	operation := self rosOperationNamed: operationName.
+	param := operation argumentValue 
+		at: 'imsi' put: subscriber imsiAsTBCD;
+		at: 'sgsn-Number' put: '9123' byteArrayFromHex;
+		at: 'sgsn-Address' put: 'AABBCCDD';
+		yourself.
+	(param expandFieldNamed: 'sgsn-Capability')
+		at: 'gprsEnhancementsSupportIndicator' put: nil.
+		
 	subscriber
 		sgsnNumber: '91555555'.
 
@@ -23,16 +31,7 @@ testUpdateGprsLocationWithCancelLocation
 			insert returnResultLast: nil.
 			dialogue requestTcContinue].
 
-	param := ASN1Dictionary new
-				at: 'imsi' put: subscriber imsiAsTBCD;
-				at: 'sgsn-Number' put: '9123' byteArrayFromHex;
-				at: 'sgsn-Address' put: 'AABBCCDD';
-				at: 'sgsn-Capability' put: (ASN1Dictionary new
-						at: 'gprsEnhancementsSupportIndicator' put: nil asAsn1Value;
-						yourself);
-				yourself.
-
-	invoke := dialogue requestTcInvokeNamed: operationName parameters:  param class: 1 timeout: 500.
+	invoke := dialogue requestTcInvoke: operation parameters:  param class: 1 timeout: 500.
 	invoke
 		onReturn: [self assert: false ];
 		onError: [self assert: false];

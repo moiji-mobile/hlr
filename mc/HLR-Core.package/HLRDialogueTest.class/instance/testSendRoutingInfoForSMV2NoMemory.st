@@ -1,6 +1,6 @@
 tests-infoRetrievalPackage
 testSendRoutingInfoForSMV2NoMemory
-	| operationName dialogue  invoke invokeResultMessage sriArg informInvoke |
+	| operationName dialogue  invoke invokeResultMessage sriArg informInvoke operation |
 	
 	subscriber
 		memoryCapcacityExceeded;
@@ -11,17 +11,18 @@ testSendRoutingInfoForSMV2NoMemory
 	self deny: subscriber isMemoryAvailable.
 	self assert: subscriber messageWaitingSet isEmpty.
 
-	sriArg := ASN1Dictionary new
-				at: 'msisdn' put: subscriber msisdn toE164;
-				at: 'sm-RP-PRI' put: false;
-				at: 'serviceCentreAddress' put: '912343';
-				yourself.
-
 	operationName := 'sendRoutingInfoForSMV2'.
 	dialogue := testEndPoint newDialogue.
+	operation := dialogue rosOperationNamed: operationName.
+	sriArg := operation argumentValue
+		at: 'msisdn' put: subscriber msisdn toE164;
+		at: 'sm-RP-PRI' put: false;
+		at: 'serviceCentreAddress' put: '912343';
+		yourself.
 	dialogue onInvoke: [:inv | informInvoke := inv ].
 	invoke := dialogue
-				requestTcInvokeNamed: operationName parameters:  sriArg
+				requestTcInvoke: operation 
+				parameters:  sriArg
 				class: 1 timeout: 500.
 	invoke
 		onReturn: [self assert: false ];

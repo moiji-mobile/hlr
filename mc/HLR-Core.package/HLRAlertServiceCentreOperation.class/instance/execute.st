@@ -1,13 +1,15 @@
 as yet unclassified
 execute
-	| invoke param |
+	| invoke param operationName operation |
 
-	param := ASN1Dictionary new
-				at: 'msisdn' put: msisdn;
-				at: 'serviceCentreAddress' put: smscAddr;
-				yourself.
+	operationName := 'alertServiceCentre'.
+	operation := dialogue rosOperationNamed: operationName.
+	param := operation argumentValue
+		at: 'msisdn' put: msisdn;
+		at: 'serviceCentreAddress' put: smscAddr;
+		yourself.
 
-	invoke := dialogue requestTcInvokeNamed: 'alertServiceCentre' parameters:  param class: 1 timeout: 500.
+	invoke := dialogue requestTcInvoke: operation parameters:  param class: 1 timeout: 500.
 	invoke
 		onReturn: [self alertFailed];
 		onError: [self alertFailed];

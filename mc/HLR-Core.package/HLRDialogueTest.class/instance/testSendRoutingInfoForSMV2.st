@@ -1,6 +1,6 @@
 tests-infoRetrievalPackage
 testSendRoutingInfoForSMV2
-	| operationName dialogue  invoke invokeResultMessage sriArg |
+	| operationName dialogue  invoke invokeResultMessage sriArg operation |
 	
 	subscriber
 		mscNumber: '123';
@@ -9,16 +9,17 @@ testSendRoutingInfoForSMV2
 	self deny: subscriber isMobileStationNotReachable.
 	self assert: subscriber messageWaitingSet isEmpty.
 
-	sriArg := ASN1Dictionary new
-				at: 'msisdn' put: subscriber msisdn toE164;
-				at: 'sm-RP-PRI' put: false;
-				at: 'serviceCentreAddress' put: '912343';
-				yourself.
-
 	operationName := 'sendRoutingInfoForSMV2'.
 	dialogue := testEndPoint newDialogue.
+	operation := self rosOperationNamed: operationName.
+	sriArg := operation argumentValue 
+		at: 'msisdn' put: subscriber msisdn toE164;
+		at: 'sm-RP-PRI' put: false;
+		at: 'serviceCentreAddress' put: '912343';
+		yourself.
+
 	invoke := dialogue
-				requestTcInvokeNamed: operationName parameters:  sriArg
+				requestTcInvoke: operation parameters:  sriArg
 				class: 1 timeout: 500.
 	invoke
 		onReturn: [self assert: false ];

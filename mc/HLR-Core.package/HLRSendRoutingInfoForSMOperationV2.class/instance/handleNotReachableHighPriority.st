@@ -1,15 +1,17 @@
 as yet unclassified
 handleNotReachableHighPriority
 	"The subscriber is not reachable for sure"
+	| result |
 	mwStatus at: 2 put: $1.
 
 	"Now 'ACK' the request.. do that with the old msc-Number?"
-	invocation returnResultLast: (ASN1Dictionary new
-					at: 'imsi' put: subscriber imsiAsTBCD;
-					at: 'locationInfoWithLMSI' put: (ASN1Dictionary new
-							at: 'networkNode-Number' put: subscriber mscNumber toE164;
-							yourself);
-					yourself).
+	result := invocation resultValue
+		at: 'imsi' put: subscriber imsiAsTBCD;
+		yourself.
+	(result expandFieldNamed: 'locationInfoWithLMSI' )
+		at: 'networkNode-Number' put: subscriber mscNumber toE164.
+		
+	invocation returnResultLast: result.
 
 	(subscriber messageWaitingListContains: smscAddr gateway: dialogue transaction remoteAddress)
 		ifFalse: [
