@@ -17,4 +17,4 @@ execute
 	dialogue
 		requestTcBeginDestinationAddress: self remoteSCCPAddress
 		originatingAddress: self localSCCPAddress
-		applicationContextName: (dialogue applicationContextNamed: 'alertServiceCentre').
+		applicationContextName: (dialogue applicationContextOidForOperationNamed: 'alertServiceCentre').

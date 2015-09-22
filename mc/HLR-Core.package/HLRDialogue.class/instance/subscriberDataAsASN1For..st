@@ -1,21 +1,25 @@
 insert-subscriber
 subscriberDataAsASN1For: aSubscriber
 	"We need to segment the data by hand. Here we decide on things"
-	self halt.
-	^OrderedCollection new
-		add: (ASN1Dictionary new
-			at: 'msisdn' put: aSubscriber msisdn toE164;
-			at: 'category' put: aSubscriber subscriberCategory;
-			at: 'subscriberStatus' put: aSubscriber subscriberStatus;
-			at: 'bearerServiceList' put: aSubscriber bearerServiceList;
-			at: 'teleserviceList' put: aSubscriber teleServiceList;
-			at: 'provisionedSS' put: aSubscriber ssFirstData;
-			at: 'odb-Data' put: 
-				(ASN1Dictionary new
-					at: 'odb-GeneralData' put: (self odbGeneralDataFor: aSubscriber);
-					yourself);
-			yourself);
-		add: (ASN1Dictionary new
-			at: 'provisionedSS' put: aSubscriber ssSecondData;
-			yourself);
-		yourself
+	| type col first second bearerServiceList  teleServiceList |
+	col := OrderedCollection new.
+	type := self asn1TypeNamed: 'SubscriberDataV3'.
+	first := type newValue
+		at: 'msisdn' put: aSubscriber msisdn toE164;
+		at: 'category' put: aSubscriber subscriberCategory;
+		at: 'subscriberStatus' put: aSubscriber subscriberStatus;
+		yourself.
+	bearerServiceList := first expandFieldNamed: 'bearerServiceList'.
+	aSubscriber bearerServiceList do: [ :bearerService |
+		bearerServiceList addUsing:[ :item | item basicValue: bearerService ] ].
+	teleServiceList := first expandFieldNamed: 'teleserviceList'.
+	aSubscriber teleServiceList do: [ :teleService |
+		teleServiceList addUsing:[ :item | item basicValue: teleService ] ].
+	 aSubscriber ssFirstData: (first expandFieldNamed: 'provisionedSS').
+	(first expandFieldNamed: 'odb-Data')
+		at: 'odb-GeneralData' put: (self odbGeneralDataFor: aSubscriber).
+		
+	second := type newValue.
+	aSubscriber ssSecondDataOn: (second expandFieldNamed: 'provisionedSS').
+	
+	^ {  first . second }

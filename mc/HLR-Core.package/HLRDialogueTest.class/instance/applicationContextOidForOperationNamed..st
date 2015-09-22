@@ -1,3 +1,3 @@
 as yet unclassified
-applicationContextNamed: aString
+applicationContextOidForOperationNamed: aString
 	^ self asn1Model typeNamed: aString

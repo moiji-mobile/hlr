@@ -2,7 +2,7 @@ test-supplementary-services
 testActivateSSNoSubscriber
 	|  dialogue  invoke error param acn operation dialoguePortion |
 	
-	acn := self applicationContextNamed: 'networkFunctionalSsContext-v2'.
+	acn := self applicationContextOidForOperationNamed: 'networkFunctionalSsContext-v2'.
 	operation := self rosOperationNamed: 'activateSS'.
 	
 	param := self activateSSParam: operation ssCode: SSData callWaiting asByteArray.

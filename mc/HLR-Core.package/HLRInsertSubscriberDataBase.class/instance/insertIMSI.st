@@ -1,5 +1,4 @@
 invoke
 insertIMSI
-	^ASN1Dictionary new
-		at: 'imsi' put: subscriber imsiAsTBCD;
-		yourself.
+	^ (dialogue asn1TypeNamed: 'InsertSubscriberDataArgV3') newValue
+		imsi: subscriber imsiAsTBCD

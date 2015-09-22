@@ -1,7 +1,7 @@
 accessing
 toAsn1
 	"Assume this is the default profile"
-	^ASN1Array new
+	^OrderedCollection new
 		add: (self class bearerAsn1: self class dataCDA300bps);
 		add: (self class bearerAsn1: self class dataCDA1200bps);
 		add: (self class bearerAsn1: self class dataCDA120075bps);

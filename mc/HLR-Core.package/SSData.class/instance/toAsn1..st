@@ -1,5 +1,5 @@
 converting
 toAsn1: aContext
 
-	^ self valuesOn: (aContext typeNamed: 'SS-Info') newValue.
+	^ self valuesOn: (aContext typeNamed: 'Ext-SS-Info') newValue.
 	

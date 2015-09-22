@@ -1,6 +1,8 @@
 tests-access
 testSsSecondData
-	| subscriber data |
+	| subscriber data value type |
+	type := (self asn1Model bindingNamed: 'Ext-SS-InfoList') value.
 	subscriber := Subscriber dummySubscriber.
-	data := subscriber ssSecondData.
+	value := type newValue.
+	data := subscriber ssSecondDataOn: value.
 	ASN1 write: data usingType: (self asn1Model bindingNamed: 'Ext-SS-InfoList') value.

@@ -7,7 +7,7 @@ testActivateSSNoUserInformation
 
 	invocations := 0.
 	
-	acn := self applicationContextNamed: 'networkFunctionalSsContext-v2'.
+	acn := self applicationContextOidForOperationNamed: 'networkFunctionalSsContext-v2'.
 	operation := self rosOperationNamed: 'activateSS'.
 	
 	param := self activateSSParam: operation ssCode: SSData callWaiting asByteArray.

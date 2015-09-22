@@ -11,7 +11,7 @@ testDeactivateSSAllCallRestriction
 
 	invocations := 0.
 	
-	acn := self applicationContextNamed: 'networkFunctionalSsContext-v2'.
+	acn := self applicationContextOidForOperationNamed: 'networkFunctionalSsContext-v2'.
 	operation := self rosOperationNamed: 'deactivateSS'.
 	param := self activateSSParam: operation ssCode: SSData allCallRestriction asByteArray.
 	dialoguePortion := self mapOpenDestination:subscriber imsi toE212 origination: '0815' toE164.
