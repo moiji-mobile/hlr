@@ -31,7 +31,7 @@ testSendRoutingInfoForSMV2UnreachableLowPrio
 		onReturnLast: [:result | self assert: false].
 
 	dialogue onInvoke: [:invocation |
-				mwStatus := invocation argument mw_Status].
+				mwStatus := invocation argument basicAt:  'mw-Status'].
 	dialogue
 		requestTcBeginDestinationAddress: self hlrAddr
 		originatingAddress: self localAddr
