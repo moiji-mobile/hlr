@@ -1,6 +1,6 @@
 tests-infoRetrievalPackage
 testSendRoutingInfoForSMV3NoMemory
-	| operationName dialogue  invoke invokeResultMessage sriArg informInvoke |
+	| operationName dialogue  invoke invokeResultMessage param informInvoke operation |
 	
 	subscriber
 		memoryCapcacityExceeded;
@@ -11,17 +11,18 @@ testSendRoutingInfoForSMV3NoMemory
 	self deny: subscriber isMemoryAvailable.
 	self assert: subscriber messageWaitingSet isEmpty.
 
-	sriArg := ASN1Dictionary new
-				at: 'msisdn' put: subscriber msisdn toE164;
-				at: 'sm-RP-PRI' put: false;
-				at: 'serviceCentreAddress' put: '912343';
-				yourself.
-
 	operationName := 'sendRoutingInfoForSMV3'.
 	dialogue := testEndPoint newDialogue.
+	operation := dialogue rosOperationNamed: operationName.
+	param := operation argumentValue
+		at: 'msisdn' put: subscriber msisdn toE164;
+		at: 'sm-RP-PRI' put: false;
+		at: 'serviceCentreAddress' put: '912343';
+		yourself.
+		
 	dialogue onInvoke: [:inv | informInvoke := inv ].
 	invoke := dialogue
-				requestTcInvokeNamed: operationName parameters:  sriArg
+				requestTcInvokeNamed: operationName parameters:  param
 				class: 1 timeout: 500.
 	invoke
 		onReturn: [self assert: false ];
@@ -38,4 +39,4 @@ testSendRoutingInfoForSMV3NoMemory
 	self assert: subscriber messageWaitingSet isEmpty.
 	self deny: informInvoke isNil.
 	self assert: informInvoke operationName equals: 'informServiceCentreV3'.
-	self assert: (informInvoke argument mw_Status includesBit: 'mcef-Set').
+	self assert: ((informInvoke argument basicAt: 'mw-Status') includesBit: 'mcef-Set').

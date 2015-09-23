@@ -1,6 +1,6 @@
 tests-infoRetrievalPackage
 testSendRoutingInfoForSMV3MNRFHighPrioInMWD
-	| operationName dialogue  invoke invokeResultMessage sriArg mwStatus  operation |
+	| operationName dialogue  invoke invokeResultMessage param mwStatus  operation |
 	
 	subscriber
 		mscNumber: '123';
@@ -17,7 +17,7 @@ testSendRoutingInfoForSMV3MNRFHighPrioInMWD
 	operationName := 'sendRoutingInfoForSMV3'.
 	dialogue := testEndPoint newDialogue.
 	operation := dialogue rosOperationNamed: operationName.
-	sriArg := operation argumentValue
+	param := operation argumentValue
 		at: 'msisdn' put: subscriber msisdn toE164;
 		at: 'sm-RP-PRI' put: true;
 		at: 'serviceCentreAddress' put: '912343' byteArrayFromHex;
@@ -25,7 +25,7 @@ testSendRoutingInfoForSMV3MNRFHighPrioInMWD
 		
 	invoke := dialogue
 				requestTcInvoke: operation 
-				parameters:  sriArg
+				parameters:  param
 				class: 1 timeout: 500.
 	invoke
 		onReturn: [self assert: false ];
