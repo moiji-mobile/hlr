@@ -8,7 +8,7 @@ onNoSubscriber: reason
 	in all cases."
 	(invocation errorNamed: 'unknownSubscriber') isNil
 		ifTrue: [
-			self endWithError: 'unexpectedDataValue' with: nil]
+			self endWithErrorNamed: 'unexpectedDataValue']
 		ifFalse: [
-			self endWithError: 'unknownSubscriber' using: [ :item | 
+			self endWithErrorNamed: 'unknownSubscriber' using: [ :item | 
 				item at: 'unknownSubscriberDiagnostic' put: 'imsiUnknown' ]]

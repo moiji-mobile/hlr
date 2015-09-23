@@ -5,7 +5,7 @@ testInsertSubscriberDataFailed
 	testEndPoint
 		onDialogue: [:diag |
 			diag onInvoke: [:invocation |
-				invocation returnError: 'unidentifiedSubscriber' with: nil.
+				invocation returnErrorNamed: 'unidentifiedSubscriber'.
 				diag requestTcContinue]].
 
 	"Fire and forget the operation"

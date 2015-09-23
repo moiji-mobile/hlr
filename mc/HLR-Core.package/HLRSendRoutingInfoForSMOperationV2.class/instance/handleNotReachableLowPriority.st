@@ -6,7 +6,7 @@ handleNotReachableLowPriority
 	hlr database addMessageWaitingEntryFor: subscriber serviceCentre: smscAddr gateway: gateway.
 
 	"Return absentSubscriberV2 with waiting list information"
-	invocation returnError: self class absentSubscriber with: self class absentSubscriberData.
+	self returnError.
 
 	"Tell the GSMSC that we have now queued this SMSC. It a unconfirmed service"
 	mwStatus at: 2 put: $1.

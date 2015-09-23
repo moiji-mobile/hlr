@@ -17,7 +17,7 @@ testRestoreDataFailsInsert
 	"We expect insertSubscriberData. Continue for now"
 	dialogue
 		onInvoke: [ :insert |
-			insert returnError: 'unexpectedDataValue' with: nil.
+			insert returnErrorNamed: 'unexpectedDataValue'.
 			dialogue requestTcContinue].
 
 	invoke := dialogue requestTcInvoke: operation parameters:  param class: 1 timeout: 500.

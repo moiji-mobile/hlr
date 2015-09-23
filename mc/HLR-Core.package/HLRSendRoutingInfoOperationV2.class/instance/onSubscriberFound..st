@@ -2,7 +2,7 @@ as yet unclassified
 onSubscriberFound: aSubscriber 
 	"The subscriber has been found."
 	(dialogue mobileTerminatedCallAllowedFor: aSubscriber invocation: invocation) ifFalse: [
-			invocation returnError: 'callBarred' with: nil.
+			invocation returnErrorNamed: 'callBarred'.
 			^dialogue requestTcEnd: false].	
 
 	"Check if we unconditionally forward these calls"

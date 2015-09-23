@@ -1,15 +1,15 @@
 {
 	"class" : {
 		"absentSubscriber" : "HolgerHansPeterFreyther 9/11/2014 11:07",
-		"absentSubscriberData" : "HolgerHansPeterFreyther 7/1/2015 12:18",
 		"informServiceCentre" : "HolgerHansPeterFreyther 9/11/2014 11:07" },
 	"instance" : {
 		"handleNotReachable" : "HolgerHansPeterFreyther 11/9/2013 20:50",
 		"handleNotReachableHighPriority" : "NorbertHartl 9/22/2015 20:31",
-		"handleNotReachableLowPriority" : "HolgerHansPeterFreyther 5/12/2015 09:46",
+		"handleNotReachableLowPriority" : "NorbertHartl 9/23/2015 11:19",
 		"highPriority:" : "HolgerHansPeterFreyther 11/9/2013 20:48",
 		"informServiceCentre" : "NorbertHartl 9/22/2015 20:32",
 		"initialize" : "HolgerHansPeterFreyther 9/11/2014 16:00",
-		"onSubscriberFound:" : "HolgerHansPeterFreyther 9/11/2014 16:43",
+		"onSubscriberFound:" : "NorbertHartl 9/23/2015 11:11",
 		"provideRoutingInformation" : "NorbertHartl 9/22/2015 20:29",
+		"returnError" : "NorbertHartl 9/23/2015 11:16",
 		"smscAddr:" : "HolgerHansPeterFreyther 11/9/2013 20:48" } }

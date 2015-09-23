@@ -17,7 +17,7 @@ testUpdateGprsLocationError
 	dialogue
 		onInvoke: [ :insert |
 			invoked  := invoked + 1.
-			insert returnError: 'unexpectedDataValue' with: nil.
+			insert returnErrorNamed: 'unexpectedDataValue'.
 			dialogue requestTcContinue];
 		onUAbort: [aborted := true].
 

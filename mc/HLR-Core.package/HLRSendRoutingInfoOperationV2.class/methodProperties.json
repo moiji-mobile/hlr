@@ -2,11 +2,11 @@
 	"class" : {
 		"provideSubscriberInfoClass" : "HolgerHansPeterFreyther 10/29/2013 16:46" },
 	"instance" : {
-		"fail" : "HolgerHansPeterFreyther 11/25/2013 10:26",
+		"fail" : "NorbertHartl 9/23/2015 11:12",
 		"finishForward:" : "HolgerHansPeterFreyther 4/20/2015 17:57",
 		"finishForward:number:" : "HolgerHansPeterFreyther 11/25/2013 10:45",
 		"finishWithRoute:number:" : "HolgerHansPeterFreyther 11/25/2013 10:45",
 		"maybeForward:" : "HolgerHansPeterFreyther 11/16/2013 09:29",
 		"newProvideSubscriberInfoOperation" : "HolgerHansPeterFreyther 11/22/2013 12:39",
-		"onSubscriberFound:" : "HolgerHansPeterFreyther 1/6/2014 09:32",
+		"onSubscriberFound:" : "NorbertHartl 9/23/2015 11:06",
 		"querySubscriberInformation:" : "HolgerHansPeterFreyther 12/16/2013 17:57" } }

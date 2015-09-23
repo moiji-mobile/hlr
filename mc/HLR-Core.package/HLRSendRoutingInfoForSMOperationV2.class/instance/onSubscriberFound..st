@@ -7,7 +7,7 @@ onSubscriberFound: aSubscriber
 
 	"TODO: there are multiple reasons for callBarred. Wait until it matters."
 	(dialogue mobileTerminatedSMSAllowedFor: aSubscriber invocation: invocation) ifFalse: [
-		^self endWithError: 'callBarred' with: nil].
+		^self endWithErrorNamed: 'callBarred' ].
 
 	"Sheet 2/5"
 	aSubscriber hasVLR ifFalse: [

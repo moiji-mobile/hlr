@@ -1,6 +1,4 @@
 execution
 fail
-	self endWithError:  'absentSubscriber' with: (
-					ASN1Dictionary new
-						at: 'absentSubscriberReason' put: 'imsiDetach';
-						yourself).
+	self endWithErrorNamed:  'absentSubscriber' using: [ :error | 
+		error at: 'absentSubscriberReason' put: 'imsiDetach' ]

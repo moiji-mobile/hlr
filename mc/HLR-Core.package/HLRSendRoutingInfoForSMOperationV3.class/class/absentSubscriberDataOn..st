@@ -1,7 +1,7 @@
 as yet unclassified
-absentSubscriberData
+absentSubscriberDataOn: anError
 	"Return absentSubscriberV3 now...Added to the MWD list. 3 is hardcoded
 	as the reference to 23.040 does not describe it."
-	^ASN1Dictionary new
+	^ anError
 		at: 'absentSubscriberDiagnosticSM' put: 3;
 		yourself

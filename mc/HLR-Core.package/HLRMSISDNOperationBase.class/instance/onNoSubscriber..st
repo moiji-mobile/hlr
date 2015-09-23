@@ -4,6 +4,6 @@ onNoSubscriber: aString
 	in all cases."
 	(invocation errorNamed: 'unknownSubscriber') isNil
 		ifTrue: [
-			self endWithError: 'unexpectedDataValue' with: nil]
+			self endWithErrorNamed: 'unexpectedDataValue']
 		ifFalse: [
-			self endWithError: 'unknownSubscriber' with: nil]
+			self endWithErrorNamed: 'unknownSubscriber' ]
