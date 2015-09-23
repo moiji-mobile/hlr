@@ -2,7 +2,7 @@
 	"class" : {
 		 },
 	"instance" : {
-		"formatResponse:" : "HolgerHansPeterFreyther 10/5/2013 14:12",
+		"formatTripletListFor:on:" : "NorbertHartl 9/23/2015 14:19",
 		"maybeResyncSqn:" : "HolgerHansPeterFreyther 6/10/2015 23:19",
 		"onSubscriberFound:" : "HolgerHansPeterFreyther 5/28/2015 15:54",
 		"respondWithQuinTuplets:" : "HolgerHansPeterFreyther 6/16/2015 20:14",

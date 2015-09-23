@@ -1,8 +1,9 @@
 execution
 onSubscriberFound: subscriber
-	| tripletList |
+	| result |
+	result := invocation resultValue.
+	self formatTripletListFor: subscriber on: result.
+	invocation returnResultLast: result.
 	
-	tripletList := self generateAuthenticationListFor: subscriber count: self vectors.
-	invocation returnResultLast: (self formatResponse: tripletList).
 	dialogue requestTcEnd: false.
 	self signalSuccess: 'done'.
