@@ -3,9 +3,15 @@ testUpdateLocationNoCamel
 	"We expect that everything will be barred in case there is
 	no proper camel capabilities"
 
-	| operationName dialogue invoke res param invocations |
+	| operationName dialogue invoke res param invocations operation |
 	operationName := 'updateLocation'.
 	dialogue := testEndPoint newDialogue.
+	operation := dialogue rosOperationNamed: operationName.
+	param := operation argumentValue 
+		at: 'imsi' put: '72040800004067F4' byteArrayFromHex;
+		at: 'msc-Number' put: '916407973671F3' byteArrayFromHex;
+		at: 'vlr-Number' put: '916407973671F3' byteArrayFromHex;
+		expandAt: 'vlr-Capability' using: [ :a | ].
 
 	subscriber activateSupplementaryServiceForCode: SSData callWaiting.
 	invocations := OrderedCollection new.
@@ -15,13 +21,6 @@ testUpdateLocationNoCamel
 			insert returnResultLast: nil.
 			invocations add: insert.
 			dialogue requestTcContinue].
-
-	param := ASN1Dictionary new
-		at: 'imsi' put: '72040800004067F4' byteArrayFromHex;
-		at: 'msc-Number' put: '916407973671F3' byteArrayFromHex;
-		at: 'vlr-Number' put: '916407973671F3' byteArrayFromHex;
-		at: 'vlr-Capability' put: ASN1Dictionary new;
-		yourself.
 
 	invoke := dialogue requestTcInvokeNamed: operationName parameters:  param class: 1 timeout: 500.
 	invoke
@@ -40,5 +39,5 @@ testUpdateLocationNoCamel
 	"Might be fragile against... changes."
 	"Make sure that all outgoing calls are barred."
 	self assert: invocations first argument subscriberStatus value = 'operatorDeterminedBarring'.
-	self assert: invocations first argument odb_Data odb_GeneralData allBitsAreSet
+	self assert: (invocations first argument odb_Data privAt: 'odb-GeneralData') allBitsAreSet
 	

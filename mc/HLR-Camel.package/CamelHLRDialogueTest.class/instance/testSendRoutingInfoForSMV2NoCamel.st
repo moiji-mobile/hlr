@@ -1,6 +1,6 @@
 barr-handling
 testSendRoutingInfoForSMV2NoCamel
-	| operationName dialogue invoke sriArg err_message |
+	| operationName dialogue invoke  err_message operation param |
 	
 	subscriber
 		mscNumber: '123' byteArrayFromHex;
@@ -9,16 +9,18 @@ testSendRoutingInfoForSMV2NoCamel
 	self deny: subscriber isMobileStationNotReachable.
 	self assert: subscriber messageWaitingSet isEmpty.
 
-	sriArg := ASN1Dictionary new
-				at: 'msisdn' put: subscriber msisdn toE164;
-				at: 'sm-RP-PRI' put: false;
-				at: 'serviceCentreAddress' put: '912343' byteArrayFromHex;
-				yourself.
-
 	operationName := 'sendRoutingInfoForSMV2'.
 	dialogue := testEndPoint newDialogue.
+	operation := dialogue rosOperationNamed: operationName.
+	param := operation argumentValue
+		at: 'msisdn' put: subscriber msisdn toE164;
+		at: 'sm-RP-PRI' put: false;
+		at: 'serviceCentreAddress' put: '912343' byteArrayFromHex;
+		yourself.
+
 	invoke := dialogue
-				requestTcInvokeNamed: operationName parameters:  sriArg
+				requestTcInvoke: operation 
+				parameters: param
 				class: 1 timeout: 500.
 	invoke
 		onReturn: [self assert: false ];

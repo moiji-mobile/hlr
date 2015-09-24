@@ -1,21 +1,19 @@
 camel-attributes
 testUpdateLocation
-	| operationName dialogue invoke res invocations updateParams |
+	| operationName dialogue invoke res invocations updateParams operation |
 	operationName := 'updateLocation'.
 	dialogue := testEndPoint newDialogue.
 	invocations := OrderedCollection new.
-
-	subscriber activateSupplementaryServiceForCode: SSData callWaiting.
-	
-	updateParams := ASN1Dictionary new
+	operation := dialogue rosOperationNamed: operationName.
+	updateParams := operation argumentValue 
 		at: 'imsi' put: '72040800004067F4' byteArrayFromHex;
 		at: 'msc-Number' put: '916407973671F3' byteArrayFromHex;
 		at: 'vlr-Number' put: '916407973671F3' byteArrayFromHex;
-		at: 'vlr-Capability' put: (ASN1Dictionary new
-			at: 'supportedCamelPhases' put: '111';
-			yourself);
-		yourself.
+		expandAt: 'vlr-Capability' using: [ :capability |
+			capability at: 'supportedCamelPhases' put: '111' ].
 
+	subscriber activateSupplementaryServiceForCode: SSData callWaiting.
+	 
 	dialogue
 		onInvoke: [ :insert |
 			insert returnResultLast: nil.

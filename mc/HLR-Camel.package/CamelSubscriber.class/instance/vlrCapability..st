@@ -1,4 +1,4 @@
 vlr
-vlrCapability: aDictionary
-	super vlrCapability: aDictionary.
-	supportedCamelPhases := aDictionary supportedCamelPhases.
+vlrCapability: anObject
+	super vlrCapability: anObject.
+	supportedCamelPhases := anObject privAt: supportedCamelPhases.

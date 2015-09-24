@@ -1,33 +1,32 @@
 barr-handling
 testSendRoutingInfoV3CamelV2SuppressTCSI
-	| operationName dialogue invoke sriArg result |
+	| operationName dialogue invoke  result operation param |
 	
 	subscriber
 		mscNumber: '123';
 		vlrNumber: '456'.
 
-	sriArg := ASN1Dictionary new
-				at: 'msisdn' put: subscriber msisdn toE164;
-				at: 'interrogationType' put: 'basicCall';
-				at: 'gmsc-OrGsmSCF-Address' put: '1234' toE164;
-				at: 'camelInfo' put: (ASN1Dictionary new
-					at: 'supportedCamelPhases' put: '11';
-					at: 'suppress-T-CSI' put: nil asAsn1Value;
-					yourself);
-				yourself.
-
 	testEndPoint
 		onDialogue: [:diag |
 			diag onInvoke: [:invocation |
-				invocation returnResultLast: (ASN1Dictionary new
-					at: 'roamingNumber' put: '10123' toE164;
-					yourself).
+				invocation returnResultLastUsing: [ :res | 
+					res at: 'roamingNumber' put: '10123' toE164 ].
 				diag requestTcEnd: false]].
 
 	operationName := 'sendRoutingInfoV3'.
 	dialogue := testEndPoint newDialogue.
+	operation := dialogue rosOperationNamed: operationName.
+	param := operation argumentValue 
+		at: 'msisdn' put: subscriber msisdn toE164;
+		at: 'interrogationType' put: 'basicCall';
+		at: 'gmsc-OrGsmSCF-Address' put: '1234' toE164;
+		expandAt: 'camelInfo' using: [ :camelInfo | 
+			camelInfo
+				at: 'supportedCamelPhases' put: '11';
+				at: 'suppress-T-CSI' put: nil ].
+
 	invoke := dialogue
-				requestTcInvokeNamed: operationName parameters:  sriArg
+				requestTcInvokeNamed: operationName parameters: param
 				class: 1 timeout: 500.
 	invoke
 		onReturn: [self assert: false ];

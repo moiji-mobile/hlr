@@ -4,5 +4,5 @@ invocationSupportsPhaseTwo: anInvocation
 	((anInvocation argument hasField: 'camelInfo') and: [ anInvocation argument camelInfo notNil ])
 		ifFalse: [^false].
 
-	supportedPhases := anInvocation argument camelInfo supportedCamelPhases.
+	supportedPhases := anInvocation argument camelInfo privAt: 'supportedCamelPhases'.
 	^ supportedPhases includesBit: 'phase2'	
