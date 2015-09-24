@@ -1,30 +1,30 @@
 tests-infoRetrievalPackage
 testSendRoutingInfoV3
-	| operationName dialogue  invoke invokeResultMessage sriArg |
+	| operationName dialogue  invoke invokeResultMessage  operation param |
 	
 	subscriber
 		mscNumber: '123';
 		vlrNumber: '456'.
 
-	sriArg := ASN1Dictionary new
-				at: 'msisdn' put: subscriber msisdn toE164;
-				at: 'interrogationType' put: 'basicCall';
-				at: 'gmsc-OrGsmSCF-Address' put: '123' toE164;
-				at: 'callReferenceNumber' put: #[0 1];
-				yourself.
-
 	testEndPoint
 		onDialogue: [:diag |
 			diag onInvoke: [:invocation |
-				invocation returnResultLast: (ASN1Dictionary new
-						at: 'roamingNumber' put: '10123';
-						yourself).
+				invocation returnResultLastUsing: [ :result | 
+					result at: 'roamingNumber' put: '10123' ].
 				diag requestTcEnd: false]].
 
 	operationName := 'sendRoutingInfoV3'.
 	dialogue := testEndPoint newDialogue.
+	operation := dialogue rosOperationNamed: operationName.
+	param := operation argumentValue 
+		at: 'msisdn' put: subscriber msisdn toE164;
+		at: 'interrogationType' put: 'basicCall';
+		at: 'gmsc-OrGsmSCF-Address' put: '123' toE164;
+		at: 'callReferenceNumber' put: #[0 1];
+		yourself.
+
 	invoke := dialogue
-				requestTcInvokeNamed: operationName parameters:  sriArg
+				requestTcInvokeNamed: operationName parameters:  param
 				class: 1 timeout: 500.
 	invoke
 		onReturn: [self assert: false ];

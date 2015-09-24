@@ -29,7 +29,7 @@ testSendRoutingInfoForSMV3UnreachableHighPrio
 		onReturnLast: [self assert: false].
 
 	dialogue onInvoke: [:invocation |
-				mwStatus := invocation argument mw_Status].
+				mwStatus := invocation argument privAt: 'mw-Status'].
 	dialogue
 		requestTcBeginDestinationAddress: self hlrAddr
 		originatingAddress: self localAddr

@@ -11,10 +11,10 @@ subscriberDataAsASN1For: aSubscriber
 		yourself.
 	bearerServiceList := first expandFieldNamed: 'bearerServiceList'.
 	aSubscriber bearerServiceList do: [ :bearerService |
-		bearerServiceList addUsing:[ :item | item basicValue: bearerService ] ].
+		bearerServiceList addUsing:[ :item | item contents: bearerService ] ].
 	teleServiceList := first expandFieldNamed: 'teleserviceList'.
 	aSubscriber teleServiceList do: [ :teleService |
-		teleServiceList addUsing:[ :item | item basicValue: teleService ] ].
+		teleServiceList addUsing:[ :item | item contents: teleService ] ].
 	 aSubscriber ssFirstData: (first expandFieldNamed: 'provisionedSS').
 	(first expandFieldNamed: 'odb-Data')
 		at: 'odb-GeneralData' put: (self odbGeneralDataFor: aSubscriber).

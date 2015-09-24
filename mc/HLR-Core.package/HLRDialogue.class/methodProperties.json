@@ -13,7 +13,7 @@
 		"dispatchInvocation:" : "HolgerHansPeterFreyther 6/27/2015 09:53",
 		"eraseCCEntry:" : "HolgerHansPeterFreyther 9/16/2013 15:34",
 		"eraseSS:" : "HolgerHansPeterFreyther 9/17/2013 16:54",
-		"extractIMSIOrAbort" : "NorbertHartl 9/18/2015 11:35",
+		"extractIMSIOrAbort" : "NorbertHartl 9/23/2015 17:48",
 		"failureReport:" : "HolgerHansPeterFreyther 9/16/2013 15:34",
 		"hlr:" : "HolgerHansPeterFreyther 10/1/2013 12:58",
 		"initialize" : "HolgerHansPeterFreyther 4/28/2015 15:25",
@@ -48,7 +48,7 @@
 		"sendRoutingInfoV2:" : "HolgerHansPeterFreyther 5/6/2015 23:13",
 		"sendRoutingInfoV3:" : "HolgerHansPeterFreyther 5/6/2015 23:13",
 		"statusReport:" : "HolgerHansPeterFreyther 9/16/2013 15:36",
-		"subscriberDataAsASN1For:" : "NorbertHartl 9/22/2015 15:45",
-		"subscriberDataGPRSAsASN1For:" : "NorbertHartl 9/18/2015 11:54",
+		"subscriberDataAsASN1For:" : "NorbertHartl 9/24/2015 16:57",
+		"subscriberDataGPRSAsASN1For:type:" : "NorbertHartl 9/24/2015 16:57",
 		"updateGprsLocation:" : "HolgerHansPeterFreyther 5/6/2015 23:14",
 		"updateLocation:" : "HolgerHansPeterFreyther 5/6/2015 23:14" } }

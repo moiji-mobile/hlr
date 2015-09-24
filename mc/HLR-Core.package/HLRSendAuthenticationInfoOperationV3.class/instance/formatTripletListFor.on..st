@@ -1,12 +1,12 @@
 as yet unclassified
 formatTripletListFor: aSubscriber on: aValue
-self halt.
-	((aValue expandFieldNamed: 'authenticationSetList')
-		expandFieldNamed: 'tripletList')
-			addAll: (self 
+	| tripletList |
+	tripletList := ((aValue expandFieldNamed: 'authenticationSetList')
+		expandFieldNamed: 'tripletList').
+	tripletList addAll: (self 
 				generateAuthenticationListFor: aSubscriber 
 				count: self vectors 
-				type: aValue type type).
+				type: tripletList type basicType type).
 						
 	"^ASN1Dictionary new
 		at: 'authenticationSetList' put:

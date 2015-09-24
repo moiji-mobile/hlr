@@ -1,6 +1,6 @@
 tests-infoRetrievalPackage
 testSendRoutingInfoV2DirectForward
-	| operationName dialogue  invoke invokeResultMessage sriArg |
+	| operationName dialogue  invoke invokeResultMessage  operation param |
 	
 	"Test that direct forward will not ask anyone for the subscriber number"
 	subscriber
@@ -8,14 +8,14 @@ testSendRoutingInfoV2DirectForward
 		mscNumber: '1234';
 		enableDirectForwardingTo: '678' toE164.
 
-	sriArg := ASN1Dictionary new
-				at: 'msisdn' put: subscriber msisdn toE164;
-				yourself.
-
 	operationName := 'sendRoutingInfoV2'.
 	dialogue := testEndPoint newDialogue.
+	operation := dialogue rosOperationNamed: operationName.
+	param := operation argumentValue 
+		at: 'msisdn' put: subscriber msisdn toE164;
+		yourself.
 	invoke := dialogue
-				requestTcInvokeNamed: operationName parameters:  sriArg
+				requestTcInvokeNamed: operationName parameters: param
 				class: 1 timeout: 500.
 	invoke
 		onReturn: [self assert: false ];

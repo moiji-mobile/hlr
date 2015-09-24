@@ -1,12 +1,8 @@
 as yet unclassified
 finishWithRoute: aSubscriber number: aMSISDN
-	invocation returnResultLast:
-		(ASN1Dictionary new
-			at: 'imsi' put: aSubscriber imsiAsTBCD;
-			at: 'extendedRoutingInfo' put: 
-				(ASN1Dictionary new
-					at: 'roamingNumber' put: aMSISDN;
-					yourself);
-			yourself).
+	invocation returnResultLastUsing: [ :result | 
+		result at: 'imsi' put: aSubscriber imsiAsTBCD.
+		(result expandFieldNamed: 'extendedRoutingInfo')
+			at: 'roamingNumber' put: aMSISDN ].
 
 	dialogue requestTcEnd: false.

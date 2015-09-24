@@ -6,7 +6,7 @@ invokeDeleteSubscriberData
 				imsi: imsi toTBCD.
 
 	param beSelfExpanding ss_List
-		addUsing: [:item | item basicValue: ssData ssCode asByteArray ].
+		addUsing: [:item | item contents: ssData ssCode asByteArray ].
 		
 	invoke := dialogue
 		requestTcInvoke: operation

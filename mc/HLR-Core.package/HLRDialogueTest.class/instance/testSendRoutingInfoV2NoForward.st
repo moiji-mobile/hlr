@@ -1,20 +1,21 @@
 tests-infoRetrievalPackage
 testSendRoutingInfoV2NoForward
-	| operationName dialogue  invoke sriArg err_message |
+	| operationName dialogue  invoke  err_message operation param |
 	
 	"Test that lack of vlrNumber/mscNumber/forwardingNumber will fail"
 	subscriber
 		vlrNumber: nil;
 		mscNumber: nil.
 
-	sriArg := ASN1Dictionary new
-				at: 'msisdn' put: subscriber msisdn toE164;
-				yourself.
-
 	operationName := 'sendRoutingInfoV2'.
 	dialogue := testEndPoint newDialogue.
+	operation := dialogue rosOperationNamed: operationName.
+	param := operation argumentValue 
+		at: 'msisdn' put: subscriber msisdn toE164;
+		yourself.
+		
 	invoke := dialogue
-				requestTcInvokeNamed: operationName parameters:  sriArg
+				requestTcInvokeNamed: operationName parameters: param
 				class: 1 timeout: 500.
 	invoke
 		onReturn: [self assert: false ];

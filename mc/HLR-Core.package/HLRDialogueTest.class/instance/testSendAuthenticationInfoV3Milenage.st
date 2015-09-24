@@ -1,6 +1,6 @@
 tests-infoRetrievalPackage
 testSendAuthenticationInfoV3Milenage
-	| operationName dialogue invoke invokeResponse |
+	| operationName dialogue invoke invokeResponse operation param |
 
 	subscriber credentials: (SubscriberMilenageCredentials new
 		sqn: 16rFFFFFFFFFFFE;
@@ -11,7 +11,9 @@ testSendAuthenticationInfoV3Milenage
 
 	operationName := 'sendAuthenticationInfoV3'.
 	dialogue := testEndPoint newDialogue.
-	invoke := dialogue requestTcInvokeNamed: operationName parameters:  self createAuthV3Params class: 1 timeout: 500.
+	operation := dialogue rosOperationNamed: operationName.
+	param := operation argumentValue.
+	invoke := dialogue requestTcInvokeNamed: operationName parameters: (self createAuthV3ParamsOn: param) class: 1 timeout: 500.
 	invoke
 		onReturn: [self assert: false ];
 		onError: [self assert: false];

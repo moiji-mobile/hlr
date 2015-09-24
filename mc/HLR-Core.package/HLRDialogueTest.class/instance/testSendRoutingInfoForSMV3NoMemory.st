@@ -39,4 +39,4 @@ testSendRoutingInfoForSMV3NoMemory
 	self assert: subscriber messageWaitingSet isEmpty.
 	self deny: informInvoke isNil.
 	self assert: informInvoke operationName equals: 'informServiceCentreV3'.
-	self assert: ((informInvoke argument basicAt: 'mw-Status') includesBit: 'mcef-Set').
+	self assert: ((informInvoke argument privAt: 'mw-Status') includesBit: 'mcef-Set').

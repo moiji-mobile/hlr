@@ -1,14 +1,10 @@
 tests-infoRetrievalPackage
 testSendRoutingInfoV2
-	| operationName dialogue  invoke invokeResultMessage sriArg |
+	| operationName dialogue  invoke invokeResultMessage  operation param |
 	
 	subscriber
 		mscNumber: '123';
 		vlrNumber: '456'.
-
-	sriArg := ASN1Dictionary new
-				at: 'msisdn' put: subscriber msisdn toE164;
-				yourself.
 
 	testEndPoint
 		onDialogue: [:diag |
@@ -18,8 +14,13 @@ testSendRoutingInfoV2
 
 	operationName := 'sendRoutingInfoV2'.
 	dialogue := testEndPoint newDialogue.
+	operation := dialogue rosOperationNamed: operationName.
+	param := operation argumentValue 
+		at: 'msisdn' put: subscriber msisdn toE164;
+		yourself.
+
 	invoke := dialogue
-				requestTcInvokeNamed: operationName parameters:  sriArg
+				requestTcInvokeNamed: operationName parameters: param
 				class: 1 timeout: 500.
 	invoke
 		onReturn: [self assert: false ];

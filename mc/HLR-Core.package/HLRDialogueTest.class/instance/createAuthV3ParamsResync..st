@@ -1,7 +1,7 @@
 as yet unclassified
-createAuthV3ParamsResync
+createAuthV3ParamsResync: aValue
 	| param |
-	param := (self newValueForTypeNamed: 'SendIdentificationArgV3')  
+	param := aValue  
 			imsi: '72040800004067F4' byteArrayFromHex;
 			yourself .
 	param beSelfExpanding re_synchronisationInfo 

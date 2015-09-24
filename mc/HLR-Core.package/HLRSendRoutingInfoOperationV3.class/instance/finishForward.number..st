@@ -1,15 +1,9 @@
 as yet unclassified
 finishForward: aSubscriber number: aMSISDN
-	invocation returnResultLast:
-		(ASN1Dictionary new
-			at: 'imsi' put: aSubscriber imsiAsTBCD;
-			at: 'extendedRoutingInfo' put: 
-				(ASN1Dictionary new
-					at: 'forwardingData'  put:
-						(ASN1Dictionary new
-							at: 'forwardedToNumber' put: aMSISDN;
-							yourself);
-						yourself);
-			yourself).
+	invocation returnResultLastUsing: [ :result | 
+		result at: 'imsi' put: aSubscriber imsiAsTBCD.
+		((result expandFieldNamed: 'extendedRoutingInfo')
+			expandFieldNamed: 'forwardingData')
+				at: 'forwardedToNumber' put: aMSISDN ].
 
 	dialogue requestTcEnd: false.

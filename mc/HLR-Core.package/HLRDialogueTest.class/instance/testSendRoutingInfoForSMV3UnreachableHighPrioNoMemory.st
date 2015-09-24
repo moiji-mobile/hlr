@@ -1,6 +1,6 @@
 tests-infoRetrievalPackage
 testSendRoutingInfoForSMV3UnreachableHighPrioNoMemory
-	| operationName dialogue  invoke invokeError sriArg mwStatus  |
+	| operationName dialogue  invoke invokeError  mwStatus  operation param |
 	
 	subscriber
 		mscNumber: '123';
@@ -11,16 +11,17 @@ testSendRoutingInfoForSMV3UnreachableHighPrioNoMemory
 	self assert: subscriber isMobileStationNotReachable.
 	self assert: subscriber messageWaitingSet isEmpty.
 
-	sriArg := ASN1Dictionary new
-				at: 'msisdn' put: subscriber msisdn toE164;
-				at: 'sm-RP-PRI' put: true;
-				at: 'serviceCentreAddress' put: '912343' byteArrayFromHex;
-				yourself.
-
 	operationName := 'sendRoutingInfoForSMV3'.
 	dialogue := testEndPoint newDialogue.
+	operation := dialogue rosOperationNamed: operationName.
+	param := operation argumentValue 
+		at: 'msisdn' put: subscriber msisdn toE164;
+		at: 'sm-RP-PRI' put: true;
+		at: 'serviceCentreAddress' put: '912343' byteArrayFromHex;
+		yourself.
+
 	invoke := dialogue
-				requestTcInvokeNamed: operationName parameters:  sriArg
+				requestTcInvokeNamed: operationName parameters:  param
 				class: 1 timeout: 500.
 	invoke
 		onReturn: [self assert: false ];
@@ -29,7 +30,7 @@ testSendRoutingInfoForSMV3UnreachableHighPrioNoMemory
 		onReturnLast: [self assert: false].
 
 	dialogue onInvoke: [:invocation |
-				mwStatus := invocation argument mw_Status].
+				mwStatus := invocation argument privAt: 'mw-Status'].
 	dialogue
 		requestTcBeginDestinationAddress: self hlrAddr
 		originatingAddress: self localAddr

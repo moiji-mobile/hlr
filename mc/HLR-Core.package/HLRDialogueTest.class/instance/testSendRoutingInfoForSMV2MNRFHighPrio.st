@@ -32,7 +32,7 @@ testSendRoutingInfoForSMV2MNRFHighPrio
 		onReturnLast: [:result | invokeResultMessage := result ].
 
 	dialogue onInvoke: [:invocation |
-				mwStatus := invocation argument mw_Status].
+				mwStatus := invocation argument privAt: 'mw-Status'].
 	dialogue
 		requestTcBeginDestinationAddress: self hlrAddr
 		originatingAddress: self localAddr
