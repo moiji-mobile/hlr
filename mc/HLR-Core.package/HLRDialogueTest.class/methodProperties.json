@@ -81,7 +81,7 @@
 		"testSendRoutingInfoForSMV2UnreachableHighPrioNoMemory" : "NorbertHartl 9/24/2015 16:57",
 		"testSendRoutingInfoForSMV2UnreachableLowPrio" : "NorbertHartl 9/24/2015 16:57",
 		"testSendRoutingInfoForSMV3" : "NorbertHartl 9/24/2015 16:57",
-		"testSendRoutingInfoForSMV3MNRFHighPrio" : "NorbertHartl 9/24/2015 16:57",
+		"testSendRoutingInfoForSMV3MNRFHighPrio" : "HolgerHansPeterFreyther 9/25/2015 14:36",
 		"testSendRoutingInfoForSMV3MNRFHighPrioInMWD" : "NorbertHartl 9/24/2015 16:57",
 		"testSendRoutingInfoForSMV3NoMemory" : "NorbertHartl 9/24/2015 16:57",
 		"testSendRoutingInfoForSMV3UnreachableHighPrio" : "NorbertHartl 9/24/2015 16:57",

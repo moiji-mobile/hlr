@@ -18,8 +18,8 @@ testSendRoutingInfoForSMV3MNRFHighPrio
 	operation := dialogue rosOperationNamed: operationName.
 	sriArg := operation argumentValue
 		at: 'msisdn' put: subscriber msisdn toE164;
-		at: 'sm-RP-PRI' put: false;
-		at: 'serviceCentreAddress' put: '912343';
+		at: 'sm-RP-PRI' put: true;
+		at: 'serviceCentreAddress' put: '912343' byteArrayFromHex;
 		yourself.
 	invoke := dialogue
 				requestTcInvoke: operation parameters:  sriArg
@@ -31,7 +31,7 @@ testSendRoutingInfoForSMV3MNRFHighPrio
 		onReturnLast: [:result | invokeResultMessage := result ].
 
 	dialogue onInvoke: [:invocation |
-				mwStatus := invocation argument mw_Status].
+				mwStatus := invocation argument privAt: 'mw-Status'].
 	dialogue
 		requestTcBeginDestinationAddress: self hlrAddr
 		originatingAddress: self localAddr
