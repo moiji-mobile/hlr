@@ -17,7 +17,7 @@ testSendRoutingInfoV3CamelV1
 		at: 'interrogationType' put: 'basicCall';
 		at: 'gmsc-OrGsmSCF-Address' put: '1234' toE164;
 		expandAt: 'camelInfo' using: [ :item | 
-			item at: 'supportedCamelPhases' put: '1' ];
+			item at: 'supportedCamelPhases' put: '0001' ];
 		yourself.
 
 	invoke := dialogue

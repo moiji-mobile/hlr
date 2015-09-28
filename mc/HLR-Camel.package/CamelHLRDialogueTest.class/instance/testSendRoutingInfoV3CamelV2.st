@@ -22,7 +22,7 @@ testSendRoutingInfoV3CamelV2
 		at: 'interrogationType' put: 'basicCall';
 		at: 'gmsc-OrGsmSCF-Address' put: '1234' toE164;
 		expandAt: 'camelInfo' using: [ :info |
-			info at: 'supportedCamelPhases' put: '11' ].
+			info at: 'supportedCamelPhases' put: '0011' ].
 		
 	invoke := dialogue
 				requestTcInvokeNamed: operationName parameters:  param

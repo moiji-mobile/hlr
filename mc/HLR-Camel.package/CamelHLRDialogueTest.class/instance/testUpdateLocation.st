@@ -10,7 +10,7 @@ testUpdateLocation
 		at: 'msc-Number' put: '916407973671F3' byteArrayFromHex;
 		at: 'vlr-Number' put: '916407973671F3' byteArrayFromHex;
 		expandAt: 'vlr-Capability' using: [ :capability |
-			capability at: 'supportedCamelPhases' put: '111' ].
+			capability at: 'supportedCamelPhases' put: '0111' ].
 
 	subscriber activateSupplementaryServiceForCode: SSData callWaiting.
 	 
