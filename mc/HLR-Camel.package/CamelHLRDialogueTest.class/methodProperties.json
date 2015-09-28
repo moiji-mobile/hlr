@@ -11,9 +11,9 @@
 		"testSendRoutingInfoForSMV2NoCamel" : "NorbertHartl 9/24/2015 16:57",
 		"testSendRoutingInfoForSMV3NoCamel" : "NorbertHartl 9/24/2015 16:57",
 		"testSendRoutingInfoV2NoCamel" : "NorbertHartl 9/24/2015 16:57",
-		"testSendRoutingInfoV3CamelV1" : "NorbertHartl 9/28/2015 12:16",
-		"testSendRoutingInfoV3CamelV2" : "NorbertHartl 9/28/2015 12:16",
-		"testSendRoutingInfoV3CamelV2SuppressTCSI" : "NorbertHartl 9/28/2015 12:16",
+		"testSendRoutingInfoV3CamelV1" : "NorbertHartl 9/28/2015 14:39",
+		"testSendRoutingInfoV3CamelV2" : "NorbertHartl 9/28/2015 14:38",
+		"testSendRoutingInfoV3CamelV2SuppressTCSI" : "NorbertHartl 9/28/2015 14:38",
 		"testSendRoutingInfoV3NoCamel" : "NorbertHartl 9/24/2015 16:57",
 		"testUpdateLocation" : "NorbertHartl 9/28/2015 12:17",
 		"testUpdateLocationNoCamel" : "NorbertHartl 9/24/2015 16:57" } }

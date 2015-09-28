@@ -22,7 +22,7 @@ testSendRoutingInfoV3CamelV2SuppressTCSI
 		at: 'gmsc-OrGsmSCF-Address' put: '1234' toE164;
 		expandAt: 'camelInfo' using: [ :camelInfo | 
 			camelInfo
-				at: 'supportedCamelPhases' put: '0011';
+				at: 'supportedCamelPhases' put: '11';
 				at: 'suppress-T-CSI' put: nil ].
 
 	invoke := dialogue
