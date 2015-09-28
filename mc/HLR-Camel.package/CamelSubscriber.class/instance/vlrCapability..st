@@ -1,6 +1,4 @@
 vlr
 vlrCapability: anObject
 	super vlrCapability: anObject.
-	supportedCamelPhases := anObject value 
-		privAt: 'supportedCamelPhases' 
-		ifAbsent: [ anObject expandFieldNamed: 'supportedCamelPhases' ] .
+	supportedCamelPhases := anObject privAt: 'supportedCamelPhases'.

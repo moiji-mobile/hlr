@@ -3,17 +3,17 @@
 		 },
 	"instance" : {
 		"camelPhaseTwoSupported" : "NorbertHartl 2/13/2014 14:03",
-		"camelSubscriberInfo:for:" : "NorbertHartl 9/29/2015 11:48",
+		"camelSubscriberInfoAsASN1:" : "NorbertHartl 9/24/2015 13:32",
 		"gmscCamelSubscriptionInfo:for:" : "NorbertHartl 9/24/2015 13:32",
 		"gmscCamelSubscriptionInfoFor:" : "NorbertHartl 9/24/2015 17:32",
 		"gsmSCFAddressToUse:" : "HolgerHansPeterFreyther 12/16/2013 19:23",
 		"isCamelSubscriber" : "HolgerHansPeterFreyther 11/17/2013 16:00",
-		"moCSI:for:" : "NorbertHartl 9/29/2015 11:26",
+		"moCSIAsASN1:" : "HolgerHansPeterFreyther 12/16/2013 19:20",
 		"mtCSI:for:" : "NorbertHartl 9/24/2015 16:57",
 		"mtCSIAsASN1:" : "HolgerHansPeterFreyther 1/6/2014 16:09",
-		"oCSI:for:" : "NorbertHartl 9/29/2015 11:09",
+		"oCSI:for:" : "NorbertHartl 9/24/2015 16:57",
 		"oCSIAsASN1:" : "HolgerHansPeterFreyther 12/16/2013 19:20",
 		"obcsmTDPCriteriaList:" : "HolgerHansPeterFreyther 11/17/2013 21:39",
-		"obcsmTDPCriteriaList:for:" : "NorbertHartl 9/29/2015 11:23",
-		"ssCSI:for:" : "NorbertHartl 9/29/2015 11:14",
-		"vlrCapability:" : "NorbertHartl 9/29/2015 12:04" } }
+		"obcsmTDPCriteriaList:for:" : "NorbertHartl 9/24/2015 16:57",
+		"ssCSIAsASN1:" : "HolgerHansPeterFreyther 12/16/2013 19:20",
+		"vlrCapability:" : "HolgerHansPeterFreyther 9/28/2015 16:54" } }
