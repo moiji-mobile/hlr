@@ -1,3 +1,0 @@
-gprs
-teleServiceListForGPRS
-	^teleServiceProfileGPRS toAsn1
