@@ -1,17 +1,15 @@
 as yet unclassified
 finishForward: aSubscriber number: aMSISDN
-	invocation returnResultLast:
-		(ASN1Dictionary new
+	invocation returnResultLastUsing: [ :result | 
+		result
 			at: 'imsi' put: aSubscriber imsiAsTBCD;
-			at: 'extendedRoutingInfo' put: (ASN1Dictionary new
-				at: 'camelRoutingInfo' put: (ASN1Dictionary new
-					at: 'forwardingData'  put:
-						(ASN1Dictionary new
-							at: 'forwardedToNumber' put: aMSISDN;
-							yourself);
-					at: 'gmscCamelSubscriptionInfo' put: (aSubscriber gmscCamelSubscriptionInfoFor: hlr);
-					yourself);
-				yourself);
-			yourself).
-
+			expandAt: 'extendedRoutingInfo' using: [ :extendedRoutingInfo |
+				extendedRoutingInfo 
+					expandAt: 'camelRoutingInfo' using: [ :camelRoutingInfo | 
+						camelRoutingInfo 
+							expandAt: 'forwardingData'  using: [ :forwardingData |
+								forwardingData at: 'forwardedToNumber' put: aMSISDN ];
+							expandAt: 'gmscCamelSubscriptionInfo' using: [ :subscriptionInfo |
+								aSubscriber gmscCamelSubscriptionInfo: subscriptionInfo for: hlr ] ] ] ].
+					
 	dialogue requestTcEnd: false.

@@ -1,6 +1,6 @@
 capabilityHandling
-oCSI: acsi for: aHlr
-	^ acsi
+oCSI: ocsi for: aHlr
+	^ ocsi
 		expandAt: 'o-BcsmCamelTDPDataList' using: [ :dataList | 
 			dataList addUsing: [ :item | 
 				item
