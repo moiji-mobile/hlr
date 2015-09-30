@@ -7,7 +7,7 @@ testUpdateLocationNoCamel
 	operationName := 'updateLocation'.
 	dialogue := testEndPoint newDialogue.
 	operation := dialogue rosOperationNamed: operationName.
-	param := operation argumentValue 
+	param := operation newArgumentValue 
 		at: 'imsi' put: '72040800004067F4' byteArrayFromHex;
 		at: 'msc-Number' put: '916407973671F3' byteArrayFromHex;
 		at: 'vlr-Number' put: '916407973671F3' byteArrayFromHex;

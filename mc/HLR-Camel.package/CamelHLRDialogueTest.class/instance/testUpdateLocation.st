@@ -5,7 +5,7 @@ testUpdateLocation
 	dialogue := testEndPoint newDialogue.
 	invocations := OrderedCollection new.
 	operation := dialogue rosOperationNamed: operationName.
-	updateParams := operation argumentValue 
+	updateParams := operation newArgumentValue 
 		at: 'imsi' put: '72040800004067F4' byteArrayFromHex;
 		at: 'msc-Number' put: '916407973671F3' byteArrayFromHex;
 		at: 'vlr-Number' put: '916407973671F3' byteArrayFromHex;
