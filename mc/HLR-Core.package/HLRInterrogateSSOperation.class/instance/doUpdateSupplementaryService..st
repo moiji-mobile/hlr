@@ -8,7 +8,7 @@ doUpdateSupplementaryService: aSSCode
 					notRegistered;
 					notActive;
 					yourself].
-	result := invocation resultValue
+	result := invocation newResultValue
 		ss_Status: ssData ssStatus. 
 	invocation returnResultLast: result.
 	dialogue requestTcEnd: false.

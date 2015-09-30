@@ -4,7 +4,7 @@ testReadyForSMV2MemoryAvailable
 	operationName := 'readyForSMV2'.
 	dialogue := testEndPoint newDialogue.
 	operation := dialogue rosOperationNamed: operationName.
-	param := operation argumentValue 
+	param := operation newArgumentValue 
 		at: 'imsi' put: subscriber imsiAsTBCD;
 		at: 'alertReason' put: 'memoryAvailable';
 		yourself.

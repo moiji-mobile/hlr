@@ -9,7 +9,7 @@ updateInformationAndEnd
 
 	self flag: #todo. "Handle things for GPRS?"
 
-	result := invocation resultValue
+	result := invocation newResultValue
 		at: 'hlr-Number' put: hlr hlrNumber toE164;
 		yourself.
 

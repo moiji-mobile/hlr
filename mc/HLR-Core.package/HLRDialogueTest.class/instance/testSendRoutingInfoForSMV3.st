@@ -13,7 +13,7 @@ testSendRoutingInfoForSMV3
 	operationName := 'sendRoutingInfoForSMV3'.
 	dialogue := testEndPoint newDialogue.
 	operation := dialogue rosOperationNamed: operationName.
-	sriArg := operation argumentValue
+	sriArg := operation newArgumentValue
 		at: 'msisdn' put: subscriber msisdn toE164;
 		at: 'sm-RP-PRI' put: false;
 		at: 'serviceCentreAddress' put: '912343';

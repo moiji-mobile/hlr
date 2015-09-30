@@ -2,7 +2,7 @@ execution
 invokeDeleteSubscriberData
 	| invoke param operation |
 	operation := dialogue rosOperationNamed: 'deleteSubscriberDataV3'.
-	param := operation argumentValue
+	param := operation newArgumentValue
 				imsi: imsi toTBCD.
 
 	param beSelfExpanding ss_List

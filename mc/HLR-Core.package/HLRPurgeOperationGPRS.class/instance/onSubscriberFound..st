@@ -8,6 +8,6 @@ onSubscriberFound: aSubscriber
 		sgsnNumber: nil.
 	hlr database updateSubscriber: aSubscriber.
 
-	invocation returnResultLast: invocation resultValue.
+	invocation returnResultLast: invocation newResultValue.
 	dialogue requestTcEnd: false.
 	self signalSuccess: 'done'.

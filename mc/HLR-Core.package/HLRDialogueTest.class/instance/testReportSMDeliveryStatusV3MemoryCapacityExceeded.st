@@ -4,7 +4,7 @@ testReportSMDeliveryStatusV3MemoryCapacityExceeded
 	operationName := 'reportSM-DeliveryStatusV3'.
 	dialogue := testEndPoint newDialogue.
 	operation := self rosOperationNamed: operationName.
-	param := operation argumentValue 
+	param := operation newArgumentValue 
 		at: 'msisdn' put: subscriber msisdn toE164;
 		at: 'serviceCentreAddress' put: '91abcd';
 		at: 'sm-DeliveryOutcome' put: 'memoryCapacityExceeded';

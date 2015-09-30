@@ -4,7 +4,7 @@ execute
 
 	operationName := 'alertServiceCentre'.
 	operation := dialogue rosOperationNamed: operationName.
-	param := operation argumentValue
+	param := operation newArgumentValue
 		at: 'msisdn' put: msisdn;
 		at: 'serviceCentreAddress' put: smscAddr;
 		yourself.

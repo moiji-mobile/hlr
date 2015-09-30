@@ -9,7 +9,7 @@ start
 	operation := dialogue rosOperationNamed: self class operationName.
 	invoke := dialogue
 		requestTcInvoke: operation
-		parameters: (self parametersOn: operation argumentValue)
+		parameters: (self parametersOn: operation newArgumentValue)
 		class: 1 timeout: 500.
 	invoke
 		onReturnLast: [:res | self success: res resultObject];

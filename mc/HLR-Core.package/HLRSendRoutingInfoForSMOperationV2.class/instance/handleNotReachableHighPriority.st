@@ -5,7 +5,7 @@ handleNotReachableHighPriority
 	mwStatus at: 2 put: $1.
 
 	"Now 'ACK' the request.. do that with the old msc-Number?"
-	result := invocation resultValue
+	result := invocation newResultValue
 		at: 'imsi' put: subscriber imsiAsTBCD;
 		yourself.
 	(result expandFieldNamed: 'locationInfoWithLMSI' )

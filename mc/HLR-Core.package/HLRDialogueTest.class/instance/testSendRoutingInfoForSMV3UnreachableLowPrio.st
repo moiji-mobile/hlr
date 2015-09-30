@@ -13,7 +13,7 @@ testSendRoutingInfoForSMV3UnreachableLowPrio
 	operationName := 'sendRoutingInfoForSMV3'.
 	dialogue := testEndPoint newDialogue.
 	operation := dialogue rosOperationNamed: operationName.
-	param := operation argumentValue 
+	param := operation newArgumentValue 
 		at: 'msisdn' put: subscriber msisdn toE164;
 		at: 'sm-RP-PRI' put: false;
 		at: 'serviceCentreAddress' put: '912343' byteArrayFromHex;

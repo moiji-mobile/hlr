@@ -18,7 +18,7 @@ testRegisterSS
 	operationName := 'registerSS'.
 	dialogue := testEndPoint newDialogue.
 	operation := dialogue rosOperationNamed: operationName.
-	param := operation argumentValue 
+	param := operation newArgumentValue 
 		at: 'ss-Code' put: SSData callForwardingUnconditional asByteArray;
 		at: 'forwardedToNumber' put: '1234' toE164;
 		yourself.

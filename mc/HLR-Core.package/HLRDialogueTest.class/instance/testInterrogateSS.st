@@ -8,7 +8,7 @@ testInterrogateSS
 	operationName := 'interrogateSS'.
 	dialogue := testEndPoint newDialogue.
 	operation := dialogue rosOperationNamed: operationName.
-	param := operation argumentValue
+	param := operation newArgumentValue
 		ss_Code: SSData callWaiting asByteArray.
 	dialoguePortion := self mapOpenDestination:  subscriber imsi toE212 origination: '0815' toE164.
 	

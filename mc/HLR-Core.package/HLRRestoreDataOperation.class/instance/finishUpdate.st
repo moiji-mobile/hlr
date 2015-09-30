@@ -1,7 +1,7 @@
 execution
 finishUpdate
 	| result |
-	result := invocation resultValue
+	result := invocation newResultValue
 		at: 'hlr-Number' put: hlr hlrNumber toE164;
 		yourself.
 	

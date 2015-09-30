@@ -6,7 +6,7 @@ onSubscriberFound: aSubscriber
 	aSubscriber clearVlr.
 	hlr database updateSubscriber: aSubscriber.
 
-	res :=invocation resultValue
+	res :=invocation newResultValue
 		at: 'freezeTMSI' put: nil;
 		yourself.
 	invocation returnResultLast: res.

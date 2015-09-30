@@ -11,7 +11,7 @@ testPurgeV3
 	operationName := 'purgeMSV3'.
 	dialogue := testEndPoint newDialogue.
 	operation := dialogue rosOperationNamed: operationName.
-	param := operation argumentValue
+	param := operation newArgumentValue
 		at: 'imsi' put: self imsi;
 		yourself.
 	

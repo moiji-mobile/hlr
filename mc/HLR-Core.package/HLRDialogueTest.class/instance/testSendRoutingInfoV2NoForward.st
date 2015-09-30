@@ -10,7 +10,7 @@ testSendRoutingInfoV2NoForward
 	operationName := 'sendRoutingInfoV2'.
 	dialogue := testEndPoint newDialogue.
 	operation := dialogue rosOperationNamed: operationName.
-	param := operation argumentValue 
+	param := operation newArgumentValue 
 		at: 'msisdn' put: subscriber msisdn toE164;
 		yourself.
 		

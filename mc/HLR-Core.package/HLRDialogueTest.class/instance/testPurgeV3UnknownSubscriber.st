@@ -5,7 +5,7 @@ testPurgeV3UnknownSubscriber
 	operationName := 'purgeMSV3'.
 	dialogue := testEndPoint newDialogue.
 	operation := dialogue rosOperationNamed: operationName.
-	param := operation argumentValue 
+	param := operation newArgumentValue 
 		at: 'imsi' put: '55555555555' toTBCD;
 		yourself.
 	

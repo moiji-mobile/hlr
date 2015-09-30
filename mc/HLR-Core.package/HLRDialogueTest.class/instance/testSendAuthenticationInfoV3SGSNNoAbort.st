@@ -5,7 +5,7 @@ testSendAuthenticationInfoV3SGSNNoAbort
 	operationName := 'sendAuthenticationInfoV3'.
 	dialogue := testEndPoint newDialogue.
 	operation := dialogue rosOperationNamed: operationName.
-	param := operation argumentValue.
+	param := operation newArgumentValue.
 	dialogue
 		onUAbort: [wasAborted := true].
 	invoke := dialogue requestTcInvokeNamed: operationName parameters:  (self createAuthV3ParamsSGSN: param) class: 1 timeout: 500.

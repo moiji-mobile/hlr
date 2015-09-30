@@ -16,7 +16,7 @@ testSendRoutingInfoForSMV2MNRFHighPrio
 	operationName := 'sendRoutingInfoForSMV2'.
 	dialogue := testEndPoint newDialogue.
 	operation := self rosOperationNamed: operationName.
-	sriArg := operation argumentValue 
+	sriArg := operation newArgumentValue 
 		at: 'msisdn' put: subscriber msisdn toE164;
 		at: 'sm-RP-PRI' put: true;
 		at: 'serviceCentreAddress' put: '912343' byteArrayFromHex;

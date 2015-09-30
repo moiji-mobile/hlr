@@ -7,7 +7,7 @@ updateInformationAndEnd
 		mscNumber: mscNumber.
 	hlr database updateSubscriber: subscriber.
 
-	result := invocation resultValue
+	result := invocation newResultValue
 		at: 'hlr-Number' put: hlr hlrNumber toE164;
 		yourself.
 	

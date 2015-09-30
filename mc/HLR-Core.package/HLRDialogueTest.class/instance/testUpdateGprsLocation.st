@@ -5,7 +5,7 @@ testUpdateGprsLocation
 	operationName := 'updateGprsLocation'.
 	dialogue := testEndPoint newDialogue.
 	operation := self rosOperationNamed: operationName.
-	param := operation argumentValue 
+	param := operation newArgumentValue 
 		at: 'imsi' put: subscriber imsiAsTBCD;
 		at: 'sgsn-Number' put: '9123' byteArrayFromHex;
 		at: 'sgsn-Address' put: 'AABBCCDD';

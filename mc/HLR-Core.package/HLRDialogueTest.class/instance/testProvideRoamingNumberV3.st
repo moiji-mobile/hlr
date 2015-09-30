@@ -9,7 +9,7 @@ testProvideRoamingNumberV3
 		onDialogue: [:diag |
 			diag onInvoke: [:invocation |
 				reqImsi := invocation argument imsi.
-				invocation returnResultLast: (invocation operation resultValue
+				invocation returnResultLast: (invocation operation newResultValue
 						at: 'roamingNumber' put: '1234';
 						yourself).
 				diag requestTcEnd: false]].

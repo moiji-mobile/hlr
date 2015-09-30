@@ -6,7 +6,7 @@ testAuthenticationFailure
 	operationName := 'authenticationFailureReport'.
 	operation := dialogue rosOperationNamed: operationName.
 	
-	param := operation argumentValue
+	param := operation newArgumentValue
 		imsi:  '2324234' toTBCD;
 		failureCause: 'wrongUserResponse'.
 	

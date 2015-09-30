@@ -10,7 +10,7 @@ testRestoreDataNotFound
 	operationName := 'restoreData'.
 	dialogue := testEndPoint newDialogue.
 	operation := self rosOperationNamed: operationName.
-	param := operation argumentValue 
+	param := operation newArgumentValue 
 		at: 'imsi' put: '1234';
 		yourself.
 

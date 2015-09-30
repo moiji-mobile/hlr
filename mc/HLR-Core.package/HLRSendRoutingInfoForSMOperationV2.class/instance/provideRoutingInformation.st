@@ -2,7 +2,7 @@ execution
 provideRoutingInformation
 	| result |
 	
-	result := invocation resultValue
+	result := invocation newResultValue
 		at: 'imsi' put: subscriber imsiAsTBCD;
 		yourself.
 	(result expandFieldNamed: 'locationInfoWithLMSI')

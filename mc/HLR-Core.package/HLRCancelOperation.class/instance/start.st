@@ -9,7 +9,7 @@ start
 	operation := dialogue rosOperationNamed: self class cancelOperation.
 	invoke := dialogue
 		requestTcInvoke: operation
-		parameters: (self parametersOn: operation argumentValue)
+		parameters: (self parametersOn: operation newArgumentValue)
 		class: 1 timeout: 500.
 	invoke
 		onReturnLast: [self signalSuccess: 'success'];

@@ -8,7 +8,7 @@ start
 		onUAbort: [self signalFailure].
 
 	operation := dialogue rosOperationNamed: 'provideSubscriberInfo'.
-	parameters := operation argumentValue
+	parameters := operation newArgumentValue
 		at: 'imsi' put: subscriber imsiAsTBCD;
 		yourself.
 		

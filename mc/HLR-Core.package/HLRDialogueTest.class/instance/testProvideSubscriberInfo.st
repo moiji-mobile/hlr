@@ -9,7 +9,7 @@ testProvideSubscriberInfo
 		onDialogue: [:diag |
 			diag onInvoke: [:invocation | | result |
 				reqImsi := invocation argument imsi asByteArray.
-				result := invocation resultValue.
+				result := invocation newResultValue.
 				(result expandFieldNamed: 'subscriberInfo')
 					at: 'imei' put: '1234'.
 				invocation returnResultLast: result.

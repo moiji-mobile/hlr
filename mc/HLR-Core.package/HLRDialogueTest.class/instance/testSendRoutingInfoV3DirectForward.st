@@ -11,7 +11,7 @@ testSendRoutingInfoV3DirectForward
 	operationName := 'sendRoutingInfoV3'.
 	dialogue := testEndPoint newDialogue.
 	operation := dialogue rosOperationNamed: operationName.
-	param := operation argumentValue 
+	param := operation newArgumentValue 
 		at: 'msisdn' put: subscriber msisdn toE164;
 		at: 'interrogationType' put: 'basicCall';
 		at: 'gmsc-OrGsmSCF-Address' put: '123' toE164;

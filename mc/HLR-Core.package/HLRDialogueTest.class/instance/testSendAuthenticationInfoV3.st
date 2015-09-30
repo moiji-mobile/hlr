@@ -4,7 +4,7 @@ testSendAuthenticationInfoV3
 	operationName := 'sendAuthenticationInfoV3'.
 	dialogue := testEndPoint newDialogue.
 	operation := dialogue rosOperationNamed: operationName.
-	param := operation argumentValue.
+	param := operation newArgumentValue.
 	invoke := dialogue requestTcInvokeNamed: operationName parameters:  (self createAuthV3ParamsOn: param) class: 1 timeout: 500.
 	invoke
 		onReturn: [self assert: false ];

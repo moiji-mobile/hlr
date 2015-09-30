@@ -5,7 +5,7 @@ testUpdateGprsLocationNotFound
 	operationName := 'updateGprsLocation'.
 	dialogue := testEndPoint newDialogue.
 	operation := self rosOperationNamed: operationName.
-	param := operation argumentValue 
+	param := operation newArgumentValue 
 		at: 'imsi' put: '121212313213213' byteArrayFromHex;
 		at: 'sgsn-Number' put: '6123';
 		at: 'sgsn-Address' put: 'AABBCCDD';

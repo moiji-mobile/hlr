@@ -5,7 +5,7 @@ deleteSubscriberSuccess
 	
 	operation := dialogue rosOperationNamed: 'insertSubscriberDataV3' .
 	
-	param := operation argumentValue 
+	param := operation newArgumentValue 
 		imsi: imsi toTBCD.
 	(param expandFieldNamed: 'provisionedSS')
 		addUsing: [ :item | (ssData valuesOn: item) ].

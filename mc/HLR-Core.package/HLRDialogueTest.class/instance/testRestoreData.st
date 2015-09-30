@@ -12,7 +12,7 @@ testRestoreData
 	operationName := 'restoreData'.
 	dialogue := testEndPoint newDialogue.
 	operation := self rosOperationNamed: operationName.
-	param := operation argumentValue 
+	param := operation newArgumentValue 
 		at: 'imsi' put: subscriber imsiAsTBCD;
 		yourself.
 

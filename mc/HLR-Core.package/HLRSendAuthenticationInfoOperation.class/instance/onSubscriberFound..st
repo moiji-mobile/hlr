@@ -1,7 +1,7 @@
 execution
 onSubscriberFound: subscriber
 	| result |
-	result := invocation resultValue.
+	result := invocation newResultValue.
 	self formatTripletListFor: subscriber on: result.
 	invocation returnResultLast: result.
 	
