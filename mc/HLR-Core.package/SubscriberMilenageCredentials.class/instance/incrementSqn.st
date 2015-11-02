@@ -1,3 +1,5 @@
 as yet unclassified
 incrementSqn
-	self privSetSQN: sqn + 1.
+	| curSqn |
+	curSqn := sqn ifNil: [0].
+	self privSetSQN: curSqn + 1.
