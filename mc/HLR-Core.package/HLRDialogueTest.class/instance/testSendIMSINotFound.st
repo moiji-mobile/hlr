@@ -6,7 +6,7 @@ testSendIMSINotFound
 	operationName := 'sendIMSI'.
 	dialogue := testEndPoint newDialogue.
 	invoke := dialogue
-				requestTcInvokeNamed: operationName parameters:  '999F'
+				requestTcInvokeNamed: operationName parameters:  '1234' toTBCD
 				class: 1 timeout: 500.
 	invoke
 		onReturn: [self assert: false ];

@@ -10,7 +10,7 @@ testSendRoutingInfoV3
 		onDialogue: [:diag |
 			diag onInvoke: [:invocation |
 				invocation returnResultLastUsing: [ :result | 
-					result at: 'roamingNumber' put: '10123' ].
+					result at: 'roamingNumber' put: '10123' toE164 ].
 				diag requestTcEnd: false]].
 
 	operationName := 'sendRoutingInfoV3'.
@@ -37,4 +37,4 @@ testSendRoutingInfoV3
 		applicationContextName: (self applicationContextFor: operationName).
 
 	"TODO.. make sure things return"
-	self assert: invokeResultMessage resultObject extendedRoutingInfo roamingNumber asString = '10123'.
+	self assert: invokeResultMessage resultObject extendedRoutingInfo roamingNumber fromE164 = '10123'.

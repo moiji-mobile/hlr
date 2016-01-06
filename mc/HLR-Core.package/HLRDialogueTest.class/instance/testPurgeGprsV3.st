@@ -14,7 +14,7 @@ testPurgeGprsV3
 	operation := dialogue rosOperationNamed: operationName.
 	param := operation newArgumentValue 
 		at: 'imsi' put: self imsi;
-		at: 'sgsn-Number' put: '919810';
+		at: 'sgsn-Number' put: '919810' asByteArray;
 		yourself.
 
 	invoke := dialogue requestTcInvoke: operation parameters:  param class: 1 timeout: 500.

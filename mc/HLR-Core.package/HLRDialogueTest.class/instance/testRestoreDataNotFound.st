@@ -11,7 +11,7 @@ testRestoreDataNotFound
 	dialogue := testEndPoint newDialogue.
 	operation := self rosOperationNamed: operationName.
 	param := operation newArgumentValue 
-		at: 'imsi' put: '1234';
+		at: 'imsi' put: '1234' toTBCD;
 		yourself.
 
 	"We expect insertSubscriberData. Continue for now"

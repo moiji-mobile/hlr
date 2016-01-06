@@ -8,8 +8,8 @@ testUpdateGprsLocationError
 	operation := self rosOperationNamed: operationName.
 	param := operation newArgumentValue 
 		at: 'imsi' put: subscriber imsiAsTBCD;
-		at: 'sgsn-Number' put: '9123';
-		at: 'sgsn-Address' put: 'AABBCCDD';
+		at: 'sgsn-Number' put: '9123' toE164;
+		at: 'sgsn-Address' put: #[4 0 0 0 0];
 		yourself.
 	(param expandFieldNamed: 'sgsn-Capability')
 		at: 'gprsEnhancementsSupportIndicator' put: nil.

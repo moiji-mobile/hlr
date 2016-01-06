@@ -9,7 +9,7 @@ testSendRoutingInfoV2
 	testEndPoint
 		onDialogue: [:diag |
 			diag onInvoke: [:invocation |
-				invocation returnResultLast: '10123' asAsn1Value.
+				invocation returnResultLast: '10123' asByteArray asAsn1Value.
 				diag requestTcEnd: false]].
 
 	operationName := 'sendRoutingInfoV2'.

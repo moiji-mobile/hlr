@@ -11,7 +11,7 @@ testProvideSubscriberInfo
 				reqImsi := invocation argument imsi asByteArray.
 				result := invocation newResultValue.
 				(result expandFieldNamed: 'subscriberInfo')
-					at: 'imei' put: '1234'.
+					at: 'imei' put: '1234' asByteArray.
 				invocation returnResultLast: result.
 				diag requestTcEnd: false]].
 

@@ -9,7 +9,7 @@ testProvideRoamingNumber
 		onDialogue: [:diag |
 			diag onInvoke: [:invocation |
 				reqImsi := invocation argument imsi .
-				invocation returnResultLast: '1234' asAsn1Value.
+				invocation returnResultLast: '1234' asByteArray asAsn1Value.
 				diag requestTcEnd: false]].
 
 	"Fire and forget the operation"

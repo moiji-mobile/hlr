@@ -7,8 +7,8 @@ testUpdateGprsLocationNotFound
 	operation := self rosOperationNamed: operationName.
 	param := operation newArgumentValue 
 		at: 'imsi' put: '121212313213213' byteArrayFromHex;
-		at: 'sgsn-Number' put: '6123';
-		at: 'sgsn-Address' put: 'AABBCCDD';
+		at: 'sgsn-Number' put: '6123' toE164;
+		at: 'sgsn-Address' put: #[4 0 0 0 0];
 		yourself.
 	(param expandFieldNamed: 'sgsn-Capability')
 		at: 'gprsEnhancementsSupportIndicator' put: nil.

@@ -17,7 +17,7 @@ testSendRoutingInfoForSMV3NoMemory
 	param := operation newArgumentValue
 		at: 'msisdn' put: subscriber msisdn toE164;
 		at: 'sm-RP-PRI' put: false;
-		at: 'serviceCentreAddress' put: '912343';
+		at: 'serviceCentreAddress' put: '912343' toE164;
 		yourself.
 		
 	dialogue onInvoke: [:inv | informInvoke := inv ].

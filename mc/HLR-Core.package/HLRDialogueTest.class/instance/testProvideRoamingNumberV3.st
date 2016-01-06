@@ -10,7 +10,7 @@ testProvideRoamingNumberV3
 			diag onInvoke: [:invocation |
 				reqImsi := invocation argument imsi.
 				invocation returnResultLast: (invocation operation newResultValue
-						at: 'roamingNumber' put: '1234';
+						at: 'roamingNumber' put: '1234' asByteArray;
 						yourself).
 				diag requestTcEnd: false]].
 

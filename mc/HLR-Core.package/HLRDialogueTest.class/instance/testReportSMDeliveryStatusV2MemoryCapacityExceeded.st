@@ -6,7 +6,7 @@ testReportSMDeliveryStatusV2MemoryCapacityExceeded
 	operation := self rosOperationNamed: operationName.
 	param := operation newArgumentValue 
 		at: 'msisdn' put: subscriber msisdn toE164;
-		at: 'serviceCentreAddress' put: '91abcd';
+		at: 'serviceCentreAddress' put: '1234' toE164;
 		at: 'sm-DeliveryOutcome' put: 'memoryCapacityExceeded';
 		yourself.
 
