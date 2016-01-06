@@ -12,7 +12,6 @@ version022: spec
 			project: 'Osmocom' with: '0.1.6';
 			project: 'CDR' with: '0.22';
 			project: 'TCAP' with: '0.2.1';
-			project: 'ASN1' with: '0.8.26';
 			project: 'VoyageMongo' with: #'stable';
 			project: 'RFB' with: '0.6'.
 		spec 

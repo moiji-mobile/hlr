@@ -25,7 +25,7 @@ baseline3: spec
 				spec
 					className: #ConfigurationOfTCAP;
 					versionString: #'bleedingEdge';
-					repository: 'http://smalltalkhub.com/mc/osmocom/Osmocom/main' ];
+					repository: 'http://smalltalkhub.com/mc/osmocom/TCAP/main' ];
 			project: 'ASN1' with: [
 				spec
 					className: #ConfigurationOfASN1;
