@@ -22,7 +22,7 @@ testUpdateLocation
 	dialogue
 		requestTcBeginDestinationAddress: self hlrAddr
 		originatingAddress: self localAddr
-		applicationContextName: (self applicationContextFor: operationName).
+		applicationContextName: '0.4.0.0.1.0.1.3' asAsn1Oid.
 
 	self assert: res.
 	self deny: subscriber isMobileStationNotReachable.
