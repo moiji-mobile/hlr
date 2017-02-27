@@ -11,8 +11,8 @@ generateAuthenticationListFor: aSubscriber count: numVectors type: aType
 
 		dict := aType newValue
 			at: 'rand' put: rand;
-			at: 'sres' put: (sreskc copyFrom: 1 to: 4);
-			at: 'kc' put: (sreskc copyFrom: 5 to: 12);
+			at: 'sres' put: sreskc first;
+			at: 'kc' put: sreskc second;
 			yourself.
 		res add: dict.
 	].

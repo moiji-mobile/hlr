@@ -1,8 +1,9 @@
 as yet unclassified
 COMP128_v3: aKi rand: aRand
-	| res |
+	| sres kc |
 	self checkKi: aKi rand: aRand.
 
-	res := ByteArray new: 16.
-	self int_COMP128_v3: aKi asByteArray rand: aRand result: res.
-	^res
+	sres := ByteArray new: 4.
+	kc := ByteArray new: 8.
+	self int_COMP128_v3: aKi asByteArray rand: aRand sres: sres kc: kc.
+	^{sres. kc}
