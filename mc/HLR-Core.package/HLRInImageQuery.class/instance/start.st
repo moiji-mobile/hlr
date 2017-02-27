@@ -5,7 +5,7 @@ start
 	"TODO: not very object orientated..."
 	self flag: #todo.
 
-	database shouldForceFailure ifTrue: [ 
+	self shouldForceFailure ifTrue: [ 
 		^systemFailure value: 'Failure forced!'].
 
 	"Start the query for the IMSI"

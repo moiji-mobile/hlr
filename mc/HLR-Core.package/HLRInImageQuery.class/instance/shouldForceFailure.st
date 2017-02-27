@@ -1,0 +1,3 @@
+execution
+shouldForceFailure
+	^database shouldForceFailure
