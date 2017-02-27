@@ -1,0 +1,36 @@
+language: smalltalk
+sudo: false
+
+os:
+- linux
+
+install:
+- pip install --user benchupload
+
+services:
+- mongodb # For the voyage tests
+
+addons:
+  apt:
+    packages:
+     - autoconf
+     - automake
+     - libtool
+     - pkg-config
+     - libssl1.0.0:i386
+     - libtalloc-dev:i386
+     - gcc-multilib
+
+smalltalk:
+- Pharo-5.0
+
+script:
+- ./build_libosmocore.sh $PWD/install
+- ln -sf /lib/i386-linux-gnu/libcrypto.so.1.0.0 $PWD/install/lib/libcrypto.so
+- LD_LIBRARY_PATH=$PWD/install/lib $SMALLTALK_CI_HOME/run.sh
+
+after_success:
+ - python -mbenchupload --dir=$SMALLTALK_CI_BUILD
+
+after_failure:
+- python -mbenchupload --dir=$SMALLTALK_CI_BUILD
