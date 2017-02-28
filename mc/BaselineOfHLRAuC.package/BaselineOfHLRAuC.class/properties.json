@@ -1,0 +1,14 @@
+{
+	"category" : "BaselineOfHLRAuC",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		 ],
+	"name" : "BaselineOfHLRAuC",
+	"pools" : [
+		 ],
+	"super" : "BaselineOf",
+	"type" : "normal" }
