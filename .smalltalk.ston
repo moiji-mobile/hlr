@@ -1,7 +1,7 @@
 SmalltalkCISpec {
   #loading : [
       SCIMetacelloLoadSpec {
-          #baseline : 'HLR',
+          #baseline : 'HLRAuC',
           #directory : 'mc',
           #load: [ 'default' ],
           #platforms : [ #pharo ]
