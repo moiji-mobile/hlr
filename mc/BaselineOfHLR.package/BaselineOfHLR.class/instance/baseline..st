@@ -1,12 +1,12 @@
-as yet unclassified
+baselines
 baseline: spec
 	<baseline>
 
 	spec for: #'common' do: [
 		spec baseline: 'Voyage' with: [
-				spec
-					repository: 'github://pharo-nosql/voyage/mc';
-					loads: 'mongo'].
+			spec
+				repository: 'github://zecke/voyage-stable:master/mc';
+				loads: #('mongo tests')].
 		
 		spec project: 'RFB' with: [
 				spec
