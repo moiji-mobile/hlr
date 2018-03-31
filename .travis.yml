@@ -22,7 +22,7 @@ addons:
      - gcc-multilib
 
 smalltalk:
-- Pharo-5.0
+- Pharo-6.1
 
 script:
 - ./build_libosmocore.sh $PWD/install
